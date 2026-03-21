@@ -83,6 +83,18 @@ nav{padding:1rem 0;max-width:1200px;margin:0 auto;border-bottom:1px solid #1e1e4
 .b-tq{color:#fff;background:linear-gradient(135deg,#059669,#065f46);border-radius:50px;box-shadow:0 4px 18px rgba(5,150,105,.4);border:none}
 .b-tq:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(5,150,105,.55)}
 .b-tq.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(5,150,105,.35)}
+.b-th{color:#fff;background:linear-gradient(135deg,#1d4ed8,#1e40af);border-radius:50px;box-shadow:0 4px 18px rgba(29,78,216,.4);border:none}
+.b-th:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(29,78,216,.55)}
+.b-th.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(29,78,216,.35)}
+.b-fg{color:#fff;background:linear-gradient(135deg,#b45309,#92400e);border-radius:50px;box-shadow:0 4px 18px rgba(180,83,9,.4);border:none}
+.b-fg:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(180,83,9,.55)}
+.b-fg.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(180,83,9,.35)}
+.b-is{color:#fff;background:linear-gradient(135deg,#0f766e,#115e59);border-radius:50px;box-shadow:0 4px 18px rgba(15,118,110,.4);border:none}
+.b-is:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(15,118,110,.55)}
+.b-is.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(15,118,110,.35)}
+.b-ar{color:#fff;background:linear-gradient(135deg,#7e22ce,#581c87);border-radius:50px;box-shadow:0 4px 18px rgba(126,34,206,.4);border:none}
+.b-ar:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(126,34,206,.55)}
+.b-ar.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(126,34,206,.35)}
 /* FLASHCARD */
 .fc-wrap{max-width:700px;margin:0 auto}
 .fc-progress{display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem}
@@ -472,9 +484,16 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     <button class="btn b-ex" onclick="chShow('ex',this)">⇄ Exchange<span class="bs">Any → Any</span></button>
     <button class="btn b-sy" onclick="chShow('sy',this)">🔬 How Made<span class="bs">Synthesis</span></button>
   </div>
+  <div class="nav-divider">📖 Theory & Reference</div>
+  <div class="nav-group">
+    <button class="btn b-th" onclick="chShow('th',this)">📖 Theory<span class="bs">EV Textbook</span></button>
+    <button class="btn b-fg" onclick="chShow('fg',this)">🏷️ Func. Groups<span class="bs">11 Types</span></button>
+    <button class="btn b-is" onclick="chShow('is',this)">🔄 Isomerism<span class="bs">Structural/Geo</span></button>
+    <button class="btn b-ar" onclick="chShow('ar',this)">💎 Arenes<span class="bs">Benzene Ring</span></button>
+  </div>
   <div class="nav-divider">🧪 Study Tools</div>
   <div class="nav-group">
-    <button class="btn b-mq" onclick="chShow('mq',this)">📝 MCQ Exam<span class="bs">268 Qs · 20 Min</span></button>
+    <button class="btn b-mq" onclick="chShow('mq',this)">📝 MCQ Exam<span class="bs">300+ Qs · 20 Min</span></button>
     <button class="btn b-tq" onclick="chShow('tq',this)">🎯 Topic Quiz<span class="bs">5 Qs / Topic</span></button>
     <button class="btn b-fc" onclick="chShow('fc',this)">⏱️ Flashcards<span class="bs">Flip & Revise</span></button>
     <button class="btn b-nm" onclick="chShow('nm',this)">🔍 Name Lookup<span class="bs">150+ Compounds</span></button>
@@ -1357,6 +1376,27 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {topic:'Mixed',q:'Lactic acid is found in?',a:'Curd (yoghurt)',hint:'2-hydroxypropanoic acid'},
     {topic:'Mixed',q:'Citric acid is found in?',a:'Lemon juice',hint:'Gives lemons their sour taste'},
     {topic:'Mixed',q:'KMnO₄ decolourises when added to?',a:'Unsaturated compounds (alkene/alkyne)',hint:'Pink → colourless proves C=C or C≡C'},
+    // ── NEW CARDS FROM EV CHEMISTRY CH.2 ──
+    {topic:'Theory',q:'Who is the Father of Organic Chemistry?',a:'Friedrich Wöhler — synthesised urea (1828) from inorganic ammonium cyanate',hint:'Disproving vital force theory'},
+    {topic:'Theory',q:'What is Vital Force Theory?',a:'Berzelius (1815) — organic compounds can ONLY be made by living organisms. Disproved by Wöhler.',hint:'NH₄CNO → Urea proved it wrong'},
+    {topic:'Theory',q:'What is Catenation?',a:'Carbon\'s ability to bond with other carbons to form chains and rings. Latin "catena" = chain',hint:'Main reason for 80 lakh+ organic compounds'},
+    {topic:'Theory',q:'What are Fullerenes?',a:'3D polymeric allotropes of carbon with 30–70 C atoms. C₆₀ = Buckminsterfullerene ("Bucky Ball")',hint:'Discovered 1985 by Kroto, Smalley, Walton'},
+    {topic:'Theory',q:'C₆₀ structure consists of?',a:'12 pentagons + 20 hexagons — looks like a football. All C atoms are sp² hybridised',hint:'Named after architect Buckminster Fuller'},
+    {topic:'Theory',q:'3 reasons carbon forms millions of compounds?',a:'1. Catenation  2. Isomerism  3. Polymerisation',hint:'From EV Chemistry Ch.2'},
+    {topic:'Theory',q:'What is the first organic compound made in lab?',a:'Urea CO(NH₂)₂ — by Wöhler in 1828 from NH₄CNO',hint:'Found naturally in human urine'},
+    {topic:'Theory',q:'Pyridine is which type of compound?',a:'Hetero aromatic — ring contains nitrogen (N) as heteroatom',hint:'NOT benzene — benzene has only C'},
+    {topic:'Bonds',q:'Difference between σ and π bond strength?',a:'σ bond is STRONG (head-on overlap). π bond is WEAK (sideways overlap). π breaks easily in addition reactions.',hint:'C=C has 1σ + 1π'},
+    {topic:'Bonds',q:'Why can\'t atoms rotate around C=C?',a:'Because the π bond prevents free rotation — atoms are fixed. This causes cis/trans isomerism.',hint:'σ allows rotation, π does NOT'},
+    {topic:'Bonds',q:'Bond angles: sp³, sp², sp hybridisation?',a:'sp³ = 109.5° (tetrahedral) | sp² = 120° (trigonal planar) | sp = 180° (linear)',hint:'Methane, ethene, ethyne respectively'},
+    {topic:'Bonds',q:'σ and π bonds in ethyne CH≡CH?',a:'3 σ bonds (2 C–H + 1 C–C) + 2 π bonds. Total = 3σ + 2π',hint:'Triple bond = 1σ + 2π'},
+    {topic:'Isomers',q:'Definition of isomerism?',a:'Same molecular formula but different structural formulae. Compounds are called isomers.',hint:'e.g. C₂H₆O = ethanol OR dimethyl ether'},
+    {topic:'Isomers',q:'2 isomers of C₂H₆O?',a:'Ethanol CH₃CH₂OH (alcohol) and Dimethyl ether CH₃OCH₃',hint:'Same formula — different functional groups'},
+    {topic:'Isomers',q:'Number of optical isomers formula?',a:'2ⁿ where n = number of asymmetric (chiral) carbon atoms',hint:'1 asymmetric C → 2 optical isomers'},
+    {topic:'Isomers',q:'ortho, meta, para positions in benzene?',a:'ortho = position 2/6 (nearer) | meta = position 3/5 (alternate) | para = position 4 (far away)',hint:'Disubstituted benzene has 3 isomers'},
+    {topic:'Arenes',q:'What are arenes?',a:'Aromatic hydrocarbons with one or more six-membered benzenoid rings. Also called arenes.',hint:'Benzene, toluene, naphthalene, anthracene'},
+    {topic:'Arenes',q:'Source of aromatic compounds?',a:'Coal tar (destructive distillation of bituminous coal at 900–1100°C in absence of air) and petroleum',hint:'Coal → coal-tar → fractional distillation'},
+    {topic:'Arenes',q:'Bromine solution test result?',a:'Red/brown Br₂ solution turns COLOURLESS with unsaturated compounds (alkene/alkyne)',hint:'CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br (colourless)'},
+    {topic:'Arenes',q:'Bayer\'s KMnO₄ test result?',a:'Pink KMnO₄+KOH solution turns COLOURLESS with alkene/alkyne. Alkanes give NO reaction.',hint:'Both tests confirm unsaturation'},
   ];
 
   panels['fc'] = `
@@ -1371,6 +1411,10 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     <button class="fc-filter" onclick="fcFilter('Aldehyde',this)" style="color:var(--ad)">✨ Aldehyde</button>
     <button class="fc-filter" onclick="fcFilter('Fatty Acid',this)" style="color:var(--ac)">🧬 Fatty Acid</button>
     <button class="fc-filter" onclick="fcFilter('Polymer',this)" style="color:#a78bfa">🔗 Polymer</button>
+    <button class="fc-filter" onclick="fcFilter('Theory',this)" style="color:#60a5fa">📖 Theory</button>
+    <button class="fc-filter" onclick="fcFilter('Bonds',this)" style="color:#c084fc">🔗 Bonds</button>
+    <button class="fc-filter" onclick="fcFilter('Isomers',this)" style="color:#2dd4bf">🔄 Isomers</button>
+    <button class="fc-filter" onclick="fcFilter('Arenes',this)" style="color:#a78bfa">💎 Arenes</button>
     <button class="fc-filter" onclick="fcFilter('Mixed',this)" style="color:#94a3b8">🔬 Mixed</button>
   </div>
   <div class="fc-progress"><div class="fc-bar"><div class="fc-fill" id="fc-fill" style="width:0%"></div></div><div class="fc-count" id="fc-count">1 / ${FC_CARDS.length}</div></div>
@@ -1541,7 +1585,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   <div id="tq-home">
     <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:#94a3b8;margin-bottom:.9rem">Choose a topic to quiz yourself:</div>
     <div class="tq-picks">
-      ${[['ka','🔥','Alkane','CₙH₂ₙ₊₂'],['ke','🌿','Alkene','CₙH₂ₙ'],['ky','⚡','Alkyne','CₙH₂ₙ₋₂'],['al','🧪','Alcohol','–OH group'],['ad','✨','Aldehyde','–CHO group'],['ac','🧬','Fatty Acid','–COOH group'],['Petroleum','⛽','Petroleum','Fossil fuels'],['Polymer','🔗','Polymer','Polymerisation'],['Bonds','🔗','Bonds','σ and π'],['Naming','🏷️','IUPAC Naming','SPWPS rule'],['Isomers','🔄','Isomers','Cis/Trans'],['Reactions','⚗️','Reactions','Mechanisms'],['Mixed','🔬','Mixed','General']].map(([id,icon,name,sub])=>`<div class="tq-pick" style="color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'});border-color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'})" onclick="tqStart('${id}','${name}')"><span class="tq-pick-icon">${icon}</span><span class="tq-pick-name">${name}</span><span class="tq-pick-count">${sub}</span></div>`).join('')}
+      ${[['ka','🔥','Alkane','CₙH₂ₙ₊₂'],['ke','🌿','Alkene','CₙH₂ₙ'],['ky','⚡','Alkyne','CₙH₂ₙ₋₂'],['al','🧪','Alcohol','–OH group'],['ad','✨','Aldehyde','–CHO group'],['ac','🧬','Fatty Acid','–COOH group'],['Petroleum','⛽','Petroleum','Fossil fuels'],['Polymer','🔗','Polymer','Polymerisation'],['Bonds','🔗','Bonds','σ and π'],['Naming','🏷️','IUPAC Naming','SPWPS rule'],['Isomers','🔄','Isomers','Cis/Trans'],['Theory','📖','Theory','EV Textbook'],['Arenes','💎','Arenes','Benzene ring'],['Reactions','⚗️','Reactions','Mechanisms'],['Mixed','🔬','Mixed','General']].map(([id,icon,name,sub])=>`<div class="tq-pick" style="color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'});border-color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'})" onclick="tqStart('${id}','${name}')"><span class="tq-pick-icon">${icon}</span><span class="tq-pick-name">${name}</span><span class="tq-pick-count">${sub}</span></div>`).join('')}
     </div>
   </div>
   <div class="tq-exam" id="tq-exam">
@@ -1682,10 +1726,377 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     document.getElementById('tq-home').style.display='block';
   };
 
+  // ══════════════════════════════════════════════
+  //  📖  THEORY PANEL (from EV Chemistry Textbook)
+  // ══════════════════════════════════════════════
+  panels['th'] = `
+<div class="ph" style="border-color:#1d4ed8;color:#1d4ed8"><div class="phi">📖</div><div><div class="pht">Theory — Organic Chemistry</div><div class="phb"><span class="badge">EV Chemistry Ch.2</span><span class="badge">Vital Force Theory</span><span class="badge">Catenation</span><span class="badge">Fullerenes</span></div><div class="phd">Complete theory from your EV Chemistry 2nd Paper textbook — Chapter 2. Everything explained with examples.</div></div></div>
+<div class="nt-wrap">
+  <div class="nt-tabs">
+    <button class="nt-tab on" style="color:#60a5fa" onclick="ntTab(this,'th-intro')">🔬 Introduction</button>
+    <button class="nt-tab" style="color:#34d399" onclick="ntTab(this,'th-carbon')">⚛️ Carbon's Specialty</button>
+    <button class="nt-tab" style="color:#f59e0b" onclick="ntTab(this,'th-class')">🗂️ Classification</button>
+    <button class="nt-tab" style="color:#c084fc" onclick="ntTab(this,'th-bond')">🔗 σ & π Bonds</button>
+    <button class="nt-tab" style="color:#f472b6" onclick="ntTab(this,'th-hybrid')">🔭 Hybridisation</button>
+    <button class="nt-tab" style="color:#fb923c" onclick="ntTab(this,'th-homo')">📊 Homologous Series</button>
+  </div>
+
+  <div id="th-intro" class="nt-pane on">
+    <div class="note-card"><div class="note-card-head" style="border-color:#60a5fa"><span class="note-card-icon">📖</span><span class="note-card-title" style="color:#60a5fa">What is Organic Chemistry?</span></div>
+    <div class="note-card-body">Organic chemistry is the branch of chemistry dealing with compounds formed by <strong>carbon chains and carbo-cyclic structures</strong>. In modern terms, it is the chemistry of <strong>hydrocarbons and their derivatives</strong>.<br><br>Organic compounds must contain carbon, with which <strong>H, O, N, S, P, halogens</strong> etc. may remain combined.<br><br><strong>Examples:</strong> Methane (CH₄), Methanol (CH₃OH), Ethane (C₂H₆), Ethylamine (C₂H₅NH₂)</div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#ef4444"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#ef4444">Vital Force Theory & Its Failure</span></div>
+    <div class="note-card-body">
+      <strong>Berzelius (1808)</strong> — Named compounds from living organisms as <em>organic</em> and from non-living sources as <em>inorganic</em>.<br><br>
+      <strong>Vital Force Theory (1815)</strong> — Berzelius proposed that organic compounds can only be formed in plants/animals by the influence of a mysterious "vital force." So organic compounds could NOT be prepared in a laboratory.<br><br>
+      <strong>Friedrich Wöhler (1828)</strong> — A German chemist accidentally <strong>disproved</strong> the vital force theory by preparing <strong>urea</strong> (found in human urine) from ammonium cyanate — an inorganic compound:
+      <div class="note-formula">NH₄CNO → Heat → CO(NH₂)₂ (Urea)</div>
+      Wöhler is called the <strong>"Father of Organic Chemistry"</strong><br><br>
+      <strong>Scale of organic compounds:</strong> Over <strong>80 lakh (8 million)</strong> organic compounds are known, compared to only ~1 lakh inorganic compounds.
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">🔑</span><span class="note-card-title" style="color:#fbbf24">Key Words from This Chapter</span></div>
+    <div class="note-card-body">
+      <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.3rem">
+        ${['Homologous series','Functional groups','Isomerism','Chiral compound','Arenes','Friedel-Craft reaction','Aromaticity','Alkane','Alkene','Alkyne','Alcohol','Amine','Carbonyl compounds','Carboxylic acid','Ester','Amide','IR-spectroscope','Polymer','Addition polymer','Condensation polymer','Glycoside-bond','Peptide-bond'].map(k=>`<span style="padding:.25rem .65rem;background:rgba(251,191,36,.08);border:1.5px solid rgba(251,191,36,.25);border-radius:20px;font-size:.75rem;color:#fde68a">${k}</span>`).join('')}
+      </div>
+    </div></div>
+  </div>
+
+  <div id="th-carbon" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">⚛️</span><span class="note-card-title" style="color:#34d399">3 Reasons Carbon Forms So Many Compounds</span></div>
+    <div class="note-card-body">
+      <div style="display:flex;flex-direction:column;gap:.9rem">
+        <div style="background:rgba(52,211,153,.07);border:1.5px solid rgba(52,211,153,.25);border-radius:12px;padding:.9rem 1.1rem">
+          <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:#34d399;margin-bottom:.4rem">1️⃣ Catenation</div>
+          <div style="font-size:.9rem;color:#94a3b8">The capacity of carbon to form carbon–carbon chains or rings by covalent bonds. Latin <em>"catena"</em> = chain.<br><br>Carbon forms: <strong>sp³ hybridisation</strong> (single bond, chain), <strong>sp² hybridisation</strong> (double bond), <strong>sp hybridisation</strong> (triple bond)<br>→ straight chain, branched chain, ring structures</div>
+        </div>
+        <div style="background:rgba(96,165,250,.07);border:1.5px solid rgba(96,165,250,.25);border-radius:12px;padding:.9rem 1.1rem">
+          <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:#60a5fa;margin-bottom:.4rem">2️⃣ Isomerism</div>
+          <div style="font-size:.9rem;color:#94a3b8">Same molecular formula but different structural formulae. The larger the molecule, the more isomers are possible.<br><br>Example: C₂H₆O has 2 isomers — ethanol (CH₃CH₂OH) and dimethyl ether (CH₃OCH₃)</div>
+        </div>
+        <div style="background:rgba(251,146,60,.07);border:1.5px solid rgba(251,146,60,.25);border-radius:12px;padding:.9rem 1.1rem">
+          <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:#fb923c;margin-bottom:.4rem">3️⃣ Polymerisation</div>
+          <div style="font-size:.9rem;color:#94a3b8">Joining many small monomer units into large polymer molecules. Gives enormous variety — plastics, proteins, DNA, rubber etc.</div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#a78bfa"><span class="note-card-icon">⚽</span><span class="note-card-title" style="color:#a78bfa">Fullerenes — Special Carbon Allotropes</span></div>
+    <div class="note-card-body">
+      <strong>Discovered in 1985</strong> by <strong>Kroto, Smalley and Walton</strong><br><br>
+      Fullerenes are 3-dimensional polymeric allotropic structures of carbon — different from graphite and diamond. They contain <strong>30–70 carbon atoms</strong> bonded by covalent bonds.<br><br>
+      <table class="note-table"><tr><th>Allotrope</th><th>C atoms</th><th>Special Name</th></tr>
+      <tr><td>C₆₀</td><td>60</td><td><strong>Buckminsterfullerene / "Bucky Ball"</strong></td></tr>
+      <tr><td>C₇₀</td><td>70</td><td>Fullerene-70</td></tr>
+      <tr><td>C₅₀, C₃₂</td><td>50, 32</td><td>Other fullerenes</td></tr></table><br>
+      <strong>C₆₀ structure:</strong> 12 pentagons + 20 hexagons — looks like a <strong>football</strong>. All carbons are <strong>sp² hybridised</strong>.<br>
+      Named after architect <strong>Buckminster Fuller</strong> who designed geodesic domes.<br><br>
+      <strong>Uses:</strong> Semiconductors · Superconductors · Catalysts · Batteries
+    </div></div>
+  </div>
+
+  <div id="th-class" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#f59e0b"><span class="note-card-icon">🗂️</span><span class="note-card-title" style="color:#f59e0b">Complete Classification of Organic Compounds</span></div>
+    <div class="note-card-body">
+      <div style="background:rgba(251,191,36,.07);border:1.5px solid rgba(251,191,36,.2);border-radius:12px;padding:1rem;font-family:'JetBrains Mono',monospace;font-size:.78rem;line-height:2;color:#e2e8f0">
+        <div style="color:#fbbf24;font-family:'Fredoka One',cursive;font-size:.95rem;margin-bottom:.5rem">Organic Compounds</div>
+        <div style="margin-left:1rem">├── <span style="color:#60a5fa">Aliphatic (open chain)</span><br>
+        <div style="margin-left:2rem">├── Saturated → CH₃–CH₃ (Alkane)<br>
+        └── Unsaturated → CH₂=CH₂ (Alkene)</div><br>
+        └── <span style="color:#34d399">Cyclic (closed chain)</span><br>
+        <div style="margin-left:2rem">├── <span style="color:#f59e0b">Carbocyclic (Homocyclic)</span><br>
+        <div style="margin-left:2rem">├── Alicyclic → cyclopropane △<br>
+        └── Aromatic → benzene ⬡</div><br>
+        └── <span style="color:#f472b6">Heterocyclic</span><br>
+        <div style="margin-left:2rem">├── Hetero-alicyclic → ethylene oxide<br>
+        └── Hetero-aromatic → thiophene, pyridine, furan</div></div></div>
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">💡</span><span class="note-card-title" style="color:#34d399">Key Definitions</span></div>
+    <div class="note-card-body">
+      <strong>Aliphatic compounds:</strong> Open chain organic compounds. Saturated (only C–C) or unsaturated (C=C or C≡C).<br><br>
+      <strong>Alicyclic compounds:</strong> Cyclic compounds with ring structure but WITHOUT benzene ring. e.g. cyclopropane.<br><br>
+      <strong>Aromatic compounds:</strong> Cyclic compounds with benzene ring and delocalised π electrons. e.g. benzene, toluene.<br><br>
+      <strong>Heterocyclic compounds:</strong> Cyclic compounds with ring containing atoms other than carbon (O, N, S). e.g. pyridine (N), furan (O), thiophene (S).<br><br>
+      <strong>MCQ tip:</strong> Which is heterocyclic aromatic? → <strong>Pyridine</strong> ✅ (not benzene — benzene has only C atoms)
+    </div></div>
+  </div>
+
+  <div id="th-bond" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">🔗</span><span class="note-card-title" style="color:#c084fc">Sigma (σ) vs Pi (π) Bond — Full Comparison</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>Feature</th><th style="color:#4ade80">σ (Sigma) Bond</th><th style="color:#f472b6">π (Pi) Bond</th></tr>
+        <tr><td>Definition</td><td>Head-on (axial) overlap of two orbitals</td><td>Sideways (lateral) overlap of two p-orbitals after σ formation</td></tr>
+        <tr><td>Orbital axis</td><td>Two orbitals lie on same axis</td><td>Two p-orbitals lie on parallel axis</td></tr>
+        <tr><td>Orbital type</td><td>Forms with hybrid and pure orbitals</td><td>Only p-orbitals (not s or hybrid)</td></tr>
+        <tr><td>Primary/Secondary</td><td><strong>Primary</strong> — forms first</td><td>Secondary — forms after σ bond</td></tr>
+        <tr><td>Strength</td><td><strong>Strong</strong></td><td><strong>Weak</strong></td></tr>
+        <tr><td>Free rotation</td><td>✅ Atoms rotate freely along axis</td><td>❌ Cannot rotate → causes cis/trans isomers</td></tr>
+        <tr><td>All single bonds</td><td>All single bonds are σ bonds</td><td>Only in double or triple bonds</td></tr>
+      </table><br>
+      <div style="background:rgba(192,132,252,.08);border:1.5px solid rgba(192,132,252,.25);border-radius:10px;padding:.8rem 1rem;font-size:.88rem;color:#94a3b8">
+        💡 <strong>Remember:</strong> C–C = 1σ | C=C = 1σ + 1π | C≡C = 1σ + 2π<br>
+        The π bond BREAKS in addition reactions. σ bond stays intact.
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#60a5fa"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#60a5fa">Bond Lengths — Increasing Order</span></div>
+    <div class="note-card-body">
+      <div style="display:flex;justify-content:space-around;flex-wrap:wrap;gap:.8rem;margin:.5rem 0">
+        <div style="text-align:center;background:rgba(196,181,253,.1);border:2px solid #c084fc;border-radius:12px;padding:.8rem 1.2rem"><div style="font-family:'JetBrains Mono',monospace;font-size:1rem;color:#c084fc">C≡C</div><div style="font-size:.72rem;color:#6b7280;margin-top:.3rem">1.20 Å<br>SHORTEST</div></div>
+        <div style="text-align:center;font-size:1.5rem;color:#374151;align-self:center">&lt;</div>
+        <div style="text-align:center;background:rgba(244,114,182,.1);border:2px solid #f472b6;border-radius:12px;padding:.8rem 1.2rem"><div style="font-family:'JetBrains Mono',monospace;font-size:1rem;color:#f472b6">C=C</div><div style="font-size:.72rem;color:#6b7280;margin-top:.3rem">1.34 Å<br>Middle</div></div>
+        <div style="text-align:center;font-size:1.5rem;color:#374151;align-self:center">&lt;</div>
+        <div style="text-align:center;background:rgba(74,222,128,.1);border:2px solid #4ade80;border-radius:12px;padding:.8rem 1.2rem"><div style="font-family:'JetBrains Mono',monospace;font-size:1rem;color:#4ade80">C–C</div><div style="font-size:.72rem;color:#6b7280;margin-top:.3rem">1.54 Å<br>LONGEST</div></div>
+      </div>
+      <div style="font-size:.82rem;color:#6b7280;margin-top:.5rem;font-style:italic">More bonds = shorter length AND stronger bond. Triple bond is shortest and strongest.</div>
+    </div></div>
+  </div>
+
+  <div id="th-hybrid" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#f472b6"><span class="note-card-icon">🔭</span><span class="note-card-title" style="color:#f472b6">Hybridisation of Carbon Orbitals</span></div>
+    <div class="note-card-body">
+      <strong>Definition:</strong> Hybridisation is the process of mixing orbitals of different energy and equalising their energy to form equal number of equivalent hybrid orbitals.<br><br>
+      <strong>Carbon ground state:</strong> C(6) → 1s² 2s² 2p¹ₓ 2p¹ᵧ 2p⁰_z<br>
+      <strong>Carbon excited state:</strong> C*(6) → 1s² 2s¹ 2p¹ₓ 2p¹ᵧ 2p¹_z (4 unpaired electrons → forms 4 bonds)<br><br>
+      <table class="note-table">
+        <tr><th>Type</th><th>Shape</th><th>Bond Angle</th><th>Bond Type</th><th>Example</th></tr>
+        <tr><td style="color:#fde68a">sp³</td><td>Tetrahedral</td><td><strong>109.5°</strong></td><td>C–C single bond</td><td>CH₄, C₂H₆, cycloalkanes</td></tr>
+        <tr><td style="color:#6ee7b7">sp²</td><td>Trigonal planar</td><td><strong>120°</strong></td><td>C=C double bond</td><td>CH₂=CH₂, benzene</td></tr>
+        <tr><td style="color:#c4b5fd">sp</td><td>Linear</td><td><strong>180°</strong></td><td>C≡C triple bond</td><td>CH≡CH</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">🧮</span><span class="note-card-title" style="color:#fbbf24">Counting Bonds in Molecules</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>Molecule</th><th>σ bonds</th><th>π bonds</th><th>Formula</th></tr>
+        <tr><td>Ethane</td><td>7</td><td>0</td><td>CH₃–CH₃</td></tr>
+        <tr><td>Ethene</td><td>5</td><td>1</td><td>CH₂=CH₂</td></tr>
+        <tr><td>Ethyne</td><td>3</td><td>2</td><td>CH≡CH</td></tr>
+        <tr><td>Propene</td><td>8</td><td>1</td><td>CH₃–CH=CH₂</td></tr>
+        <tr><td>Propyne</td><td>6</td><td>2</td><td>CH₃–C≡CH</td></tr>
+        <tr><td>Benzene (C₆H₆)</td><td>12</td><td>3</td><td>Aromatic ring</td></tr>
+      </table>
+    </div></div>
+  </div>
+
+  <div id="th-homo" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#fb923c"><span class="note-card-icon">📊</span><span class="note-card-title" style="color:#fb923c">Homologous Series — 6 Characteristics</span></div>
+    <div class="note-card-body">
+      ${['All members can be represented by a general formula. e.g. Alcohols = CₙH₂ₙ₊₁OH (n=1 gives methanol, n=2 gives ethanol)','All members have a common functional group. e.g. all alcohols have –OH','All members contain same elements. e.g. alcohols all contain C, H, O','Adjacent members differ by –CH₂– group (mass difference = 14). e.g. CH₃OH → C₂H₅OH differs by –CH₂–','Members of same series prepared by same general methods. e.g. CH₃I + NaOH → CH₃OH, C₂H₅I + NaOH → C₂H₅OH','With increasing molecular mass, physical properties change gradually. Boiling point of CH₃OH = 65°C, C₂H₅OH = 78.3°C'].map((c,i)=>`<div style="display:flex;gap:.7rem;padding:.5rem .7rem;background:rgba(251,146,60,.05);border-radius:9px;border-left:3px solid #fb923c;margin-bottom:.4rem"><span style="font-family:'Fredoka One',cursive;font-size:1rem;color:#fb923c;min-width:24px">${i+1}.</span><span style="font-size:.87rem;color:#94a3b8">${c}</span></div>`).join('')}
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fde68a"><span class="note-card-icon">📋</span><span class="note-card-title" style="color:#fde68a">Table 2.4 — Homologous Series Summary</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>#</th><th>Series</th><th>General Formula</th><th>Examples</th></tr>
+        <tr><td>1</td><td style="color:#ff7043">Alkane</td><td>CₙH₂ₙ₊₂</td><td>CH₄ (methane), C₂H₆ (ethane)</td></tr>
+        <tr><td>2</td><td style="color:#00e5a0">Alkene</td><td>CₙH₂ₙ</td><td>C₂H₄ (ethene), C₃H₆ (propene)</td></tr>
+        <tr><td>3</td><td style="color:#c084fc">Alkyne</td><td>CₙH₂ₙ₋₂</td><td>C₂H₂ (ethyne), C₃H₄ (propyne)</td></tr>
+        <tr><td>4</td><td style="color:#38bdf8">Alcohol</td><td>CₙH₂ₙ₊₁–OH</td><td>CH₃OH, C₂H₅OH</td></tr>
+        <tr><td>5</td><td style="color:#fbbf24">Aldehyde</td><td>CₙH₂ₙ₊₁–CHO</td><td>CH₃CHO, C₂H₅CHO</td></tr>
+        <tr><td>6</td><td style="color:#f472b6">Carboxylic acid</td><td>CₙH₂ₙ₊₁–COOH</td><td>CH₃COOH, C₂H₅COOH</td></tr>
+        <tr><td>7</td><td style="color:#a78bfa">Amine</td><td>CₙH₂ₙ₊₁–NH₂</td><td>CH₃NH₂, C₂H₅NH₂</td></tr>
+      </table>
+    </div></div>
+  </div>
+</div>`;
+
+  // ══════════════════════════════════════════════
+  //  🏷️  FUNCTIONAL GROUPS PANEL
+  // ══════════════════════════════════════════════
+  panels['fg'] = `
+<div class="ph" style="border-color:#b45309;color:#b45309"><div class="phi">🏷️</div><div><div class="pht">Functional Groups — All 11 Types</div><div class="phb"><span class="badge">11 functional groups</span><span class="badge">Structures shown</span><span class="badge">Examples from textbook</span></div><div class="phd">All functional groups from EV Chemistry Chapter 2 — with formula, structure and reaction type.</div></div></div>
+<div class="nt-wrap">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;margin-bottom:1rem">
+    ${[
+      {n:1,name:'Alkene',class:'–',group:'C=C',type:'Carbon–Carbon double bond',fg:'C=C',hyb:'sp²',react:'Addition reactions',example:'Ethene CH₂=CH₂',col:'#00e5a0',icon:'🌿'},
+      {n:2,name:'Alkyne',class:'–',group:'C≡C',type:'Carbon–Carbon triple bond',fg:'C≡C',hyb:'sp',react:'Addition reactions',example:'Ethyne CH≡CH',col:'#c084fc',icon:'⚡'},
+      {n:3,name:'Alcohol',class:'R–OH',group:'–OH',type:'Hydroxyl group',fg:'–OH',hyb:'sp³',react:'Substitution & Elimination',example:'Ethanol C₂H₅OH',col:'#38bdf8',icon:'🧪'},
+      {n:4,name:'Amine',class:'R–NH₂',group:'–NH₂',type:'Amino group',fg:'–NH₂',hyb:'sp³',react:'Substitution',example:'Methylamine CH₃NH₂',col:'#a78bfa',icon:'🟣'},
+      {n:5,name:'Ether',class:'R–O–R',group:'–O–',type:'Ether linkage',fg:'–O–',hyb:'sp³',react:'Substitution',example:'Dimethyl ether CH₃OCH₃',col:'#67e8f9',icon:'💨'},
+      {n:6,name:'Aldehyde',class:'R–CHO',group:'–CHO',type:'Aldehyde group (terminal C=O)',fg:'–CHO',hyb:'sp²',react:'Addition & Oxidation',example:'Ethanal CH₃CHO',col:'#fbbf24',icon:'✨'},
+      {n:7,name:'Ketone',class:'R–CO–R',group:'>C=O',type:'Carbonyl / keto group',fg:'>C=O',hyb:'sp²',react:'Addition',example:'Acetone CH₃COCH₃',col:'#f59e0b',icon:'🫧'},
+      {n:8,name:'Carboxylic Acid',class:'R–COOH',group:'–COOH',type:'Carboxyl group',fg:'–COOH',hyb:'sp²',react:'Substitution + single & double bond',example:'Ethanoic acid CH₃COOH',col:'#f472b6',icon:'🧬'},
+      {n:9,name:'Ester',class:'R–COO–R',group:'–COO–',type:'Ester group',fg:'–COO–',hyb:'sp²',react:'Hydrolysis',example:'Methyl ethanoate CH₃COOCH₃',col:'#4ade80',icon:'🌺'},
+      {n:10,name:'Amide',class:'R–CONH₂',group:'–CONH₂',type:'Amide group',fg:'–CONH₂',hyb:'sp²',react:'Hydrolysis',example:'Ethanamide CH₃CONH₂',col:'#818cf8',icon:'🔵'},
+      {n:11,name:'Nitrile',class:'R–CN',group:'–C≡N',type:'Nitrile / Cyanide group',fg:'–C≡N:',hyb:'sp',react:'Addition / Hydrolysis',example:'Ethanenitrile CH₃CN',col:'#60a5fa',icon:'🔵'}
+    ].map(f=>`<div style="background:var(--sf);border:2px solid ${f.col};border-radius:14px;overflow:hidden">
+      <div style="background:rgba(0,0,0,.3);padding:.7rem 1rem;display:flex;align-items:center;gap:.7rem;border-bottom:1px solid var(--bd)">
+        <span style="font-size:1.4rem">${f.icon}</span>
+        <div>
+          <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:${f.col}">${f.n}. ${f.name}</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#6b7280">${f.class}</div>
+        </div>
+        <div style="margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:1.1rem;color:${f.col};font-weight:800">${f.fg}</div>
+      </div>
+      <div style="padding:.8rem 1rem;font-size:.82rem;color:#94a3b8;display:flex;flex-direction:column;gap:.3rem">
+        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Type · </span>${f.type}</div>
+        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Hybridisation · </span><span style="color:#fde68a">${f.hyb}</span></div>
+        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Reaction type · </span><span style="color:#6ee7b7">${f.react}</span></div>
+        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Example · </span>${f.example}</div>
+      </div>
+    </div>`).join('')}
+  </div>
+  <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">💡</span><span class="note-card-title" style="color:#fbbf24">Reaction Type Rule (from PDF)</span></div>
+  <div class="note-card-body">
+    <strong>Single bond only (–OH, –NH₂):</strong> Undergo <span style="color:#4ade80">substitution</span> and <span style="color:#4ade80">elimination</span> reactions<br><br>
+    <strong>Double or triple bond (C=C, C≡C):</strong> Undergo <span style="color:#fbbf24">addition</span> reactions<br><br>
+    <strong>Both single + double bond (–COOH, –COO–):</strong> Undergo <span style="color:#f472b6">substitution</span> reactions
+  </div></div>
+</div>`;
+
+  // ══════════════════════════════════════════════
+  //  🔄  ISOMERISM PANEL
+  // ══════════════════════════════════════════════
+  panels['is'] = `
+<div class="ph" style="border-color:#0f766e;color:#0f766e"><div class="phi">🔄</div><div><div class="pht">Isomerism</div><div class="phb"><span class="badge">Structural isomers</span><span class="badge">Geometric (cis/trans)</span><span class="badge">Optical isomers</span></div><div class="phd">Complete isomerism from EV Chemistry Chapter 2 — types, examples and how to identify them.</div></div></div>
+<div class="nt-wrap">
+  <div class="note-card"><div class="note-card-head" style="border-color:#2dd4bf"><span class="note-card-icon">🔄</span><span class="note-card-title" style="color:#2dd4bf">What is Isomerism?</span></div>
+  <div class="note-card-body">Organic compounds having the <strong>same molecular formula but different structural formulae</strong> are called <strong>isomers</strong> and this phenomenon is called <strong>isomerism</strong>.<br><br>
+  The larger the molecular formula (more C atoms), the more isomers are possible.<br><br>
+  <strong>Example:</strong> C₂H₆O has 2 isomers:<br>
+  <div class="note-formula">Ethanol: CH₃–CH₂–OH (alcohol)</div>
+  <div class="note-formula">Dimethyl ether: CH₃–O–CH₃ (ether)</div></div></div>
+
+  <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">1️⃣</span><span class="note-card-title" style="color:#34d399">Structural Isomerism</span></div>
+  <div class="note-card-body">
+    Same molecular formula, different connectivity of atoms. Types:<br><br>
+    <strong>Chain isomerism:</strong> Different carbon chain arrangement<br>
+    <div class="note-formula">C₄H₁₀ → n-Butane: CH₃CH₂CH₂CH₃ | Isobutane: (CH₃)₃CH</div>
+    <strong>Position isomerism:</strong> Same chain, functional group at different position<br>
+    <div class="note-formula">C₃H₇OH → Propan-1-ol: CH₃CH₂CH₂OH | Propan-2-ol: CH₃CHOHCH₃</div>
+    <strong>Functional group isomerism:</strong> Same formula, different functional group<br>
+    <div class="note-formula">C₂H₆O → Ethanol (alcohol) | Dimethyl ether (ether)</div>
+    <strong>Metamerism:</strong> Same molecular formula, different alkyl groups on same functional group<br>
+    <div class="note-formula">C₄H₁₀O → Ethyl ether C₂H₅OC₂H₅ | Methyl propyl ether CH₃OC₃H₇</div>
+  </div></div>
+
+  <div class="note-card"><div class="note-card-head" style="border-color:#60a5fa"><span class="note-card-icon">2️⃣</span><span class="note-card-title" style="color:#60a5fa">Geometric (Cis-Trans) Isomerism</span></div>
+  <div class="note-card-body">
+    Occurs due to <strong>restricted rotation around C=C double bond</strong>. Both carbons of C=C must have <strong>different groups</strong>.<br><br>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:.5rem 0">
+      <div style="background:rgba(96,165,250,.07);border:1.5px solid rgba(96,165,250,.25);border-radius:10px;padding:.7rem;text-align:center">
+        <div style="font-family:'Fredoka One',cursive;color:#60a5fa;margin-bottom:.3rem">cis- isomer</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:.8rem;color:#94a3b8">Similar groups on<br><strong>SAME side</strong></div>
+      </div>
+      <div style="background:rgba(244,114,182,.07);border:1.5px solid rgba(244,114,182,.25);border-radius:10px;padding:.7rem;text-align:center">
+        <div style="font-family:'Fredoka One',cursive;color:#f472b6;margin-bottom:.3rem">trans- isomer</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:.8rem;color:#94a3b8">Similar groups on<br><strong>OPPOSITE sides</strong></div>
+      </div>
+    </div>
+    <strong>Example:</strong> But-2-ene CH₃–CH=CH–CH₃ (has both cis and trans forms)<br>
+    <strong>Does NOT show:</strong> But-1-ene CH₂=CH–CH₂–CH₃ (one C of C=C has 2 identical H atoms)
+  </div></div>
+
+  <div class="note-card"><div class="note-card-head" style="border-color:#a78bfa"><span class="note-card-icon">3️⃣</span><span class="note-card-title" style="color:#a78bfa">Optical Isomerism</span></div>
+  <div class="note-card-body">
+    Compounds that rotate plane-polarised light are called <strong>optically active compounds</strong>.<br><br>
+    A compound is optically active if it has a <strong>chiral carbon</strong> (asymmetric carbon) — a carbon with <strong>4 different groups</strong> attached.<br><br>
+    <strong>Enantiomers:</strong> Optical isomers that are non-superimposable mirror images of each other.<br>
+    <strong>Racemic mixture:</strong> Equal mixture of both enantiomers — optically inactive.<br>
+    <strong>Meso compound:</strong> Has chiral carbons but is internally compensated — optically inactive.<br><br>
+    <strong>Example:</strong> Lactic acid (2-hydroxypropanoic acid) — shows optical isomerism<br>
+    <strong>Number of optical isomers</strong> = 2ⁿ (where n = number of asymmetric carbon atoms)
+  </div></div>
+
+  <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">📊</span><span class="note-card-title" style="color:#fbbf24">Number of Isomers — Quick Table</span></div>
+  <div class="note-card-body">
+    <table class="note-table">
+      <tr><th>Formula</th><th>Compound class</th><th>Isomers</th><th>Note</th></tr>
+      <tr><td>C₄H₁₀</td><td>Alkane</td><td>2</td><td>n-butane + isobutane</td></tr>
+      <tr><td>C₄H₈</td><td>Alkene</td><td>6</td><td>includes cyclobutane</td></tr>
+      <tr><td>C₄H₉Br</td><td>Alkyl halide</td><td>4</td><td>chain + position isomers</td></tr>
+      <tr><td>C₂H₆O</td><td>–</td><td>2</td><td>ethanol + dimethyl ether</td></tr>
+      <tr><td>C₈H₁₀ (aromatic)</td><td>Arene</td><td>4</td><td>ethylbenzene + 3 xylenes</td></tr>
+    </table>
+  </div></div>
+</div>`;
+
+  // ══════════════════════════════════════════════
+  //  💎  ARENES PANEL
+  // ══════════════════════════════════════════════
+  panels['ar'] = `
+<div class="ph" style="border-color:#7e22ce;color:#7e22ce"><div class="phi">💎</div><div><div class="pht">Arenes — Aromatic Compounds</div><div class="phb"><span class="badge">Benzene ring</span><span class="badge">ortho/meta/para</span><span class="badge">Coal tar source</span><span class="badge">Aromaticity rules</span></div><div class="phd">Complete aromatic chemistry from EV Chemistry Chapter 2 — benzene, arenes, substituent positions and identification.</div></div></div>
+<div class="nt-wrap">
+  <div class="note-card"><div class="note-card-head" style="border-color:#a78bfa"><span class="note-card-icon">💎</span><span class="note-card-title" style="color:#a78bfa">What are Arenes?</span></div>
+  <div class="note-card-body">
+    <strong>Aromatic hydrocarbons</strong> are also called <strong>arenes</strong>. They have one or more <strong>six-membered benzenoid rings</strong> with delocalised π electrons.<br><br>
+    <strong>Aromaticity rule (Hückel's rule):</strong> A compound is aromatic if it has <strong>(4n+2) π electrons</strong> where n = 0,1,2,3...<br>
+    Benzene has 6 π electrons (n=1): <strong>4(1)+2 = 6</strong> ✅<br><br>
+    <table class="note-table">
+      <tr><th>Compound</th><th>Formula</th><th>π electrons</th><th>Aromatic?</th></tr>
+      <tr><td>Benzene</td><td>C₆H₆</td><td>6</td><td>✅ Yes</td></tr>
+      <tr><td>Naphthalene</td><td>C₁₀H₈</td><td>10</td><td>✅ Yes</td></tr>
+      <tr><td>Anthracene</td><td>C₁₄H₁₀</td><td>14</td><td>✅ Yes</td></tr>
+      <tr><td>Cyclobutadiene</td><td>C₄H₄</td><td>4</td><td>❌ Anti-aromatic</td></tr>
+    </table>
+  </div></div>
+
+  <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">⬡</span><span class="note-card-title" style="color:#c084fc">Benzene Homologues</span></div>
+  <div class="note-card-body">
+    When one or more H atoms of benzene are replaced by alkyl groups, the resulting compounds are called <strong>benzene homologues</strong>.<br><br>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.7rem;margin:.5rem 0">
+      ${[
+        {name:'Benzene',formula:'C₆H₆',sub:'No substituent'},
+        {name:'Toluene',formula:'C₆H₅CH₃',sub:'1 methyl group'},
+        {name:'Ethylbenzene',formula:'C₆H₅C₂H₅',sub:'1 ethyl group'},
+        {name:'ortho-Xylene',formula:'C₆H₄(CH₃)₂',sub:'2 methyl at o-position'},
+        {name:'meta-Xylene',formula:'C₆H₄(CH₃)₂',sub:'2 methyl at m-position'},
+        {name:'para-Xylene',formula:'C₆H₄(CH₃)₂',sub:'2 methyl at p-position'}
+      ].map(c=>`<div style="background:rgba(192,132,252,.07);border:1.5px solid rgba(192,132,252,.2);border-radius:10px;padding:.65rem;text-align:center"><div style="font-family:'Fredoka One',cursive;color:#c084fc;font-size:.9rem">${c.name}</div><div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#fde68a;margin:.2rem 0">${c.formula}</div><div style="font-size:.65rem;color:#6b7280">${c.sub}</div></div>`).join('')}
+    </div>
+  </div></div>
+
+  <div class="note-card"><div class="note-card-head" style="border-color:#818cf8"><span class="note-card-icon">📍</span><span class="note-card-title" style="color:#818cf8">ortho / meta / para Positions</span></div>
+  <div class="note-card-body">
+    When a second substituent is added to a monosubstituted benzene, it can go to positions <strong>ortho, meta or para</strong>:<br><br>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin:.5rem 0;text-align:center">
+      <div style="background:rgba(239,68,68,.08);border:2px solid #ef4444;border-radius:12px;padding:.8rem"><div style="font-family:'Fredoka One',cursive;color:#ef4444;font-size:1rem">ortho (o)</div><div style="font-size:.75rem;color:#94a3b8;margin-top:.3rem">Position <strong>2 or 6</strong><br>Means <em>"nearer"</em></div></div>
+      <div style="background:rgba(234,179,8,.08);border:2px solid #eab308;border-radius:12px;padding:.8rem"><div style="font-family:'Fredoka One',cursive;color:#eab308;font-size:1rem">meta (m)</div><div style="font-size:.75rem;color:#94a3b8;margin-top:.3rem">Position <strong>3 or 5</strong><br>Means <em>"alternate"</em></div></div>
+      <div style="background:rgba(34,197,94,.08);border:2px solid #22c55e;border-radius:12px;padding:.8rem"><div style="font-family:'Fredoka One',cursive;color:#22c55e;font-size:1rem">para (p)</div><div style="font-size:.75rem;color:#94a3b8;margin-top:.3rem">Position <strong>4</strong><br>Means <em>"far away"</em></div></div>
+    </div>
+    <strong>Result:</strong> Disubstituted benzene has <strong>3 isomers</strong>: ortho, meta and para compound.<br><br>
+    <strong>Example:</strong> Dichlorobenzene: 1,2-dichlorobenzene (ortho), 1,3-dichlorobenzene (meta), 1,4-dichlorobenzene (para)
+  </div></div>
+
+  <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">⛽</span><span class="note-card-title" style="color:#fbbf24">Source of Aromatic Compounds</span></div>
+  <div class="note-card-body">
+    <strong>Main sources:</strong> Coal tar and Petroleum<br><br>
+    <strong>Coal tar production:</strong> Destructive distillation of bituminous coal (10–12% moisture) in absence of air in a steel retort at <strong>900–1100°C</strong> → volatile organic products distil out as <strong>liquid coal-tar</strong><br><br>
+    <strong>Types of compounds in coal-tar:</strong> Acidic · Basic · Neutral<br><br>
+    <strong>Fractional distillation of coal-tar up to 400°C gives:</strong><br>
+    <table class="note-table">
+      <tr><th>Fraction</th><th>Temperature</th><th>Main compounds</th></tr>
+      <tr><td>Light oil</td><td>&lt;170°C</td><td>Benzene, toluene, xylene</td></tr>
+      <tr><td>Middle oil</td><td>170–230°C</td><td>Naphthalene, phenol, pyridine</td></tr>
+      <tr><td>Heavy oil</td><td>230–270°C</td><td>Naphthalene, cresols</td></tr>
+      <tr><td>Anthracene oil</td><td>270–360°C</td><td>Anthracene, carbazole</td></tr>
+      <tr><td>Pitch (residue)</td><td>&gt;360°C</td><td>Solid carbon residue</td></tr>
+    </table>
+  </div></div>
+
+  <div class="note-card"><div class="note-card-head" style="border-color:#4ade80"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:#4ade80">Identification Tests for Unsaturation (from PDF)</span></div>
+  <div class="note-card-body">
+    <strong>1. Bromine Solution Test:</strong><br>
+    Br₂ dissolved in CCl₄ → red/brown 5% Br₂ solution<br>
+    <div class="note-formula">CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br (colourless 1,2-dibromoethane)</div>
+    <strong>Result:</strong> Red-brown colour disappears → compound is <strong>unsaturated</strong> (alkene or alkyne)<br><br>
+    <strong>2. Bayer's KMnO₄ Test:</strong><br>
+    Pink KMnO₄ + KOH solution → turns <strong>colourless</strong> with alkene/alkyne<br>
+    Alkene is oxidised to glycol; alkyne to carboxylic acid<br><br>
+    <strong>⚠️ Alkanes give NO reaction</strong> with either test — confirms alkane is saturated!
+  </div></div>
+</div>`;
+
   // ─────────────────────────────────────────────
   //  6. RENDER ALL PANELS INTO DOM
   // ─────────────────────────────────────────────
-  const panelOrder = ['home','ka','ke','ky','al','ad','ac','ex','sy','mq','nm','fb','fc','mw','nt','rc','tq'];
+  const panelOrder = ['home','ka','ke','ky','al','ad','ac','ex','sy','mq','nm','fb','fc','mw','nt','rc','tq','th','fg','is','ar'];
   const mainEl = document.getElementById('main-content');
   panelOrder.forEach(id => {
     const div = document.createElement('div');
@@ -2122,7 +2533,40 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {t:"Mixed",q:"Which hydrocarbon has the formula C₆H₁₄?",o:["Hexene","Cyclohexane","Hexane","Hexyne"],a:2,e:"C₆H₁₄ fits the alkane formula CₙH₂ₙ₊₂ (n=6). Hexane is the 6-carbon straight-chain alkane."},
     {t:"Mixed",q:"Addition of water (hydration) to ethene gives?",o:["Ethane","Ethanal","Ethanol","Ethanoic acid"],a:2,e:"CH₂=CH₂ + H₂O → CH₃CH₂OH (Ethanol). Hydration of ethene with H₃PO₄ at 300°C, 60 atm."},
     {t:"Mixed",q:"Which process converts vegetable oils (liquid) to margarine (solid)?",o:["Cracking","Hydrogenation (adding H₂)","Dehydration","Fermentation"],a:1,e:"Hydrogenation of unsaturated C=C bonds in vegetable oils (Ni catalyst) converts liquid oils to solid fats like margarine."},
-    {t:"Mixed",q:"Cycloalkanes are?",o:["Open chain alkanes","Closed ring saturated hydrocarbons","Unsaturated ring compounds","Aromatic compounds"],a:1,e:"Cycloalkanes are CLOSED RING (cyclic) saturated hydrocarbons — single bonds only, formula CₙH₂ₙ."}
+    {t:"Mixed",q:"Cycloalkanes are?",o:["Open chain alkanes","Closed ring saturated hydrocarbons","Unsaturated ring compounds","Aromatic compounds"],a:1,e:"Cycloalkanes are CLOSED RING (cyclic) saturated hydrocarbons — single bonds only, formula CₙH₂ₙ."},
+
+    // ── NEW QUESTIONS FROM EV CHEMISTRY CH.2 ──
+    {t:"Theory",q:"Who is called the 'Father of Organic Chemistry'?",o:["Berzelius","Friedrich Wöhler","Dalton","Lavoisier"],a:1,e:"Friedrich Wöhler (1828) accidentally synthesised urea from ammonium cyanate — an inorganic compound — disproving vital force theory. He is called the Father of Organic Chemistry."},
+    {t:"Theory",q:"What did Berzelius propose in 1815?",o:["Atomic theory","Periodic table","Vital Force Theory — only living organisms make organic compounds","Electron theory"],a:2,e:"Berzelius proposed the Vital Force Theory in 1815 — that organic compounds could only be formed by living organisms through a mysterious vital force."},
+    {t:"Theory",q:"Wöhler prepared urea from which inorganic compound?",o:["NaCl","Ammonium cyanate (NH₄CNO)","CaCO₃","NH₄Cl only"],a:1,e:"Wöhler heated ammonium cyanate (NH₄CNO) and obtained urea CO(NH₂)₂ — an organic compound found in urine."},
+    {t:"Theory",q:"How many organic compounds are known today?",o:["About 1000","About 1 lakh","Over 80 lakh (8 million)","Exactly 268"],a:2,e:"Over 80 lakh (8 million) organic compounds are known, compared to only about 1 lakh inorganic compounds. Carbon's catenation makes this possible."},
+    {t:"Theory",q:"Catenation of carbon means?",o:["Carbon reacts with oxygen","Carbon forms bonds with itself to make chains and rings","Carbon has valency 2","Carbon dissolves in water"],a:1,e:"Catenation is the capacity of carbon to form carbon–carbon chains or rings by covalent bonds. Latin 'catena' = chain."},
+    {t:"Theory",q:"Fullerenes were discovered in which year?",o:["1928","1953","1985","2001"],a:2,e:"Fullerenes were discovered in 1985 by Kroto, Smalley and Walton. The most important is C₆₀ called Buckminsterfullerene."},
+    {t:"Theory",q:"C₆₀ fullerene is also called?",o:["Diamond ball","Bucky ball / Buckminsterfullerene","Carbon nanotube","Graphene"],a:1,e:"C₆₀ is called Buckminsterfullerene or 'Bucky Ball' — named after architect Buckminster Fuller who designed geodesic domes."},
+    {t:"Theory",q:"C₆₀ fullerene structure consists of?",o:["20 pentagons + 12 hexagons","12 pentagons + 20 hexagons","6 hexagons only","30 pentagons"],a:1,e:"C₆₀ consists of 12 pentagons and 20 hexagons — exactly like a football. All C atoms are sp² hybridised."},
+    {t:"Theory",q:"Fullerenes can be used as?",o:["Food additives","Semiconductors, superconductors and catalysts","Fuel gas","Fertilisers only"],a:1,e:"Fullerenes have commercial applications as semiconductors, superconductors, catalysts and in batteries."},
+    {t:"Theory",q:"Which is a hetero aromatic compound?",o:["Benzene","Cyclopropane","Ethylene oxide","Pyridine"],a:3,e:"Pyridine is a hetero aromatic compound — it has a 6-membered ring containing nitrogen (a heteroatom). Benzene has only carbon atoms."},
+    {t:"Theory",q:"Organic chemistry is the chemistry of?",o:["All compounds","Metals only","Carbon compounds (hydrocarbons and derivatives)","Noble gases"],a:2,e:"Organic chemistry deals with compounds formed by carbon chains and carbo-cyclic structures — hydrocarbons and their derivatives."},
+    {t:"Theory",q:"The 3 causes for the large number of organic compounds are?",o:["Combustion, ionisation, resonance","Catenation, isomerism, polymerisation","Hybridisation, aromaticity, distillation","Oxidation, reduction, substitution"],a:1,e:"The 3 causes are: (1) Catenation — carbon bonds with carbon, (2) Isomerism — same formula different structures, (3) Polymerisation — small units join into large molecules."},
+    {t:"Bonds",q:"According to EV Chemistry textbook, sigma bond is?",o:["Formed by sideways overlap","Formed by head-to-head axial overlap of two orbitals","Weaker than pi bond","Always in double bonds only"],a:1,e:"Sigma bond is formed by head-to-head (axial) overlap of two orbitals. It is the primary bond — all single bonds are sigma bonds."},
+    {t:"Bonds",q:"Which statement is TRUE about pi bonds?",o:["Pi bond forms first","Pi bond is stronger than sigma","Pi bond forms by sideways overlap of p-orbitals","Pi bond allows free rotation"],a:2,e:"Pi bond forms by sideways (lateral) overlap of two p-orbitals. It forms AFTER sigma bond. It is WEAK and atoms CANNOT rotate around it."},
+    {t:"Bonds",q:"Why do alkenes show cis-trans isomerism?",o:["Because of free rotation around C=C","Because of restricted rotation around C=C (no rotation in π bond)","Because of sp³ hybridisation","Because alkenes are cyclic"],a:1,e:"The π bond in C=C prevents free rotation. Groups are fixed in space — those on same side = cis, opposite sides = trans."},
+    {t:"Bonds",q:"In propene CH₃–CH=CH₂, how many σ bonds and π bonds?",o:["8σ + 0π","8σ + 1π","7σ + 2π","6σ + 1π"],a:1,e:"Propene has 8 σ bonds (7 C–H and 1 C–C) + 1 π bond (in C=C). Total = 8σ + 1π."},
+    {t:"Isomers",q:"Isomers are compounds with?",o:["Different molecular formula, same structure","Same molecular formula but different structural formulae","Same boiling point","Same physical properties"],a:1,e:"Isomers have the SAME molecular formula but DIFFERENT structural formulae — giving them different physical and/or chemical properties."},
+    {t:"Isomers",q:"C₂H₆O has which 2 structural isomers?",o:["Ethane and propane","Ethanol and dimethyl ether","Methanol and ethanol","Ethene and ethyne"],a:1,e:"C₂H₆O → Ethanol (CH₃CH₂OH — alcohol) and Dimethyl ether (CH₃OCH₃ — ether). Same formula, different functional groups."},
+    {t:"Isomers",q:"Number of optical isomers = ?",o:["n²","2n (where n = asymmetric carbons)","n+2","4n"],a:1,e:"Number of optical isomers = 2ⁿ where n is the number of asymmetric (chiral) carbon atoms. e.g. 1 asymmetric C → 2 optical isomers."},
+    {t:"Isomers",q:"A compound with 1 asymmetric carbon has how many optical isomers?",o:["1","2","4","8"],a:1,e:"2ⁿ = 2¹ = 2 optical isomers. e.g. Lactic acid has 1 asymmetric C → 2 enantiomers (D-lactic and L-lactic acid)."},
+    {t:"Isomers",q:"Disubstituted benzene has how many positional isomers?",o:["2","3","4","6"],a:1,e:"Disubstituted benzene has 3 isomers: ortho (position 1,2), meta (position 1,3) and para (position 1,4)."},
+    {t:"Arenes",q:"'Para' position in benzene ring means?",o:["Position 2 — nearest","Position 3 — alternate","Position 4 — farthest","Position 6"],a:2,e:"Para (p) = position 4 — the farthest position from the first substituent. Ortho = 2/6 (nearer), meta = 3/5 (alternate), para = 4 (far away)."},
+    {t:"Arenes",q:"'Ortho' position in benzene ring means?",o:["Position 4","Position 3 or 5","Position 2 or 6 — nearest","Position 1"],a:2,e:"Ortho (o) = positions 2 or 6 — nearest to the first substituent. 'Ortho' means nearer."},
+    {t:"Arenes",q:"Aromatic compounds are obtained mainly by destructive distillation of?",o:["Petroleum only","Bituminous coal (coal tar) and petroleum","Seawater","Plant oils"],a:1,e:"Coal tar — obtained by destructive distillation of bituminous coal at 900–1100°C in absence of air — and petroleum are the main sources of aromatic compounds."},
+    {t:"Arenes",q:"Destructive distillation of bituminous coal is carried out at?",o:["100°C","500°C","900–1100°C in absence of air","2000°C in presence of air"],a:2,e:"Destructive distillation of bituminous coal (10–12% moisture) in absence of air in a steel retort at 900–1100°C produces coal-tar and other volatile products."},
+    {t:"Arenes",q:"The Bromine solution test proves?",o:["Compound is acidic","Compound is saturated","Compound is unsaturated (alkene or alkyne)","Compound contains nitrogen"],a:2,e:"Bromine solution (Br₂ in CCl₄, red colour) decolourises with unsaturated compounds. Red → colourless proves C=C or C≡C is present."},
+    {t:"Arenes",q:"Bayer's KMnO₄ test — what colour change shows unsaturation?",o:["Blue to green","Colourless to pink","Pink to colourless","Yellow to red"],a:2,e:"Bayer's test: pink KMnO₄+KOH solution → turns COLOURLESS when mixed with unsaturated compound (alkene or alkyne). Alkanes give NO colour change."},
+    {t:"Theory",q:"Cyclopropane has what ring shape in skeletal formula?",o:["Square","Triangle","Pentagon","Hexagon"],a:1,e:"Cyclopropane (3 carbons) is drawn as a triangle. Cyclobutane=square, cyclopentane=pentagon, cyclohexane=hexagon."},
+    {t:"Theory",q:"Which first compound was prepared in the laboratory from an inorganic source?",o:["Methanol","Ethanol","Urea CO(NH₂)₂","Benzene"],a:2,e:"Urea — found in urine — was the first organic compound prepared in the lab by Wöhler (1828) from inorganic ammonium cyanate."},
+    {t:"Theory",q:"How many periods (classes) does the organic chemistry chapter have in total?",o:["20","28","40","50"],a:2,e:"Chapter 2 (Organic Chemistry) has 40 total periods: 28 theoretical lectures + 12 class activities."},
+    {t:"Theory",q:"Organic compound must always contain which element?",o:["Hydrogen","Oxygen","Carbon","Nitrogen"],a:2,e:"Organic compounds must always contain CARBON. Other elements like H, O, N, S, P, halogens may or may not be present."}
   ];
 
   let EQ2 = [], EA = {}, ET = null, ES = 0, EE = 0, ED = false;
