@@ -449,8 +449,28 @@ main{max-width:1060px;margin:0 auto;padding:0 1rem 5rem}
 .ra1{background:linear-gradient(135deg,#4ade80,#059669);color:#fff;box-shadow:0 4px 15px rgba(74,222,128,.32)}
 .ra2{background:linear-gradient(135deg,#818cf8,#6366f1);color:#fff;box-shadow:0 4px 15px rgba(99,102,241,.32)}
 footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;font-size:.75rem;font-weight:800;letter-spacing:.12em;color:#374151}
-.bmc-btn{display:inline-flex;align-items:center;gap:.5rem;margin-top:.8rem;padding:.55rem 1.3rem;background:linear-gradient(135deg,#FFDD00,#FF9900);color:#1a1a1a;border:none;border-radius:50px;font-family:'Fredoka One',cursive;font-size:.92rem;cursor:pointer;text-decoration:none;box-shadow:0 4px 14px rgba(255,180,0,.4);transition:all .22s cubic-bezier(.34,1.56,.64,1)}
-.bmc-btn:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 7px 22px rgba(255,180,0,.55)}
+.bmc-btn{display:inline-flex;align-items:center;gap:.5rem;margin-top:.8rem;padding:.55rem 1.3rem;background:linear-gradient(135deg,#e2136e,#c0006e);color:#fff;border:none;border-radius:50px;font-family:'Fredoka One',cursive;font-size:.92rem;cursor:pointer;text-decoration:none;box-shadow:0 4px 14px rgba(226,19,110,.4);transition:all .22s cubic-bezier(.34,1.56,.64,1)}
+.bmc-btn:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 7px 22px rgba(226,19,110,.55)}
+.bkash-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:9999;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(6px)}
+.bkash-overlay.open{display:flex;animation:fadeUp .3s ease}
+.bkash-modal{background:#131328;border:2px solid #e2136e;border-radius:22px;max-width:400px;width:100%;overflow:hidden;box-shadow:0 25px 60px rgba(226,19,110,.4)}
+.bkash-top{background:linear-gradient(135deg,#e2136e,#8b0047);padding:1.8rem 1.5rem 1.4rem;text-align:center}
+.bkash-logo{font-family:'Fredoka One',cursive;font-size:2.2rem;color:#fff;margin-bottom:.3rem}
+.bkash-sub{font-size:.82rem;color:rgba(255,255,255,.8);font-weight:600}
+.bkash-body{padding:1.4rem 1.5rem 1.2rem}
+.bkash-label{font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:#6b7280;margin-bottom:.45rem}
+.bkash-num{display:flex;align-items:center;justify-content:space-between;background:rgba(226,19,110,.08);border:2px solid rgba(226,19,110,.3);border-radius:14px;padding:.85rem 1.2rem;margin-bottom:1rem}
+.bkash-number{font-family:'Fredoka One',cursive;font-size:1.75rem;color:#fce7f3;letter-spacing:.05em}
+.bkash-copy{font-family:'Fredoka One',cursive;font-size:.78rem;padding:.4rem .9rem;background:linear-gradient(135deg,#e2136e,#c0006e);color:#fff;border:none;border-radius:50px;cursor:pointer;transition:all .2s;box-shadow:0 3px 10px rgba(226,19,110,.35)}
+.bkash-copy:hover{transform:scale(1.08)}
+.bkash-steps{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.2rem}
+.bkash-step{display:flex;align-items:flex-start;gap:.65rem;background:rgba(255,255,255,.03);border-radius:10px;padding:.6rem .85rem;border:1px solid rgba(255,255,255,.06)}
+.bkash-step-num{font-family:'Fredoka One',cursive;font-size:.95rem;color:#e2136e;min-width:20px}
+.bkash-step-txt{font-size:.82rem;color:#94a3b8;font-weight:600;line-height:1.45}
+.bkash-step-txt strong{color:#e2e8f0}
+.bkash-thank{text-align:center;font-size:.75rem;color:#6b7280;margin-bottom:1rem;font-style:italic}
+.bkash-close{width:100%;font-family:'Fredoka One',cursive;font-size:.92rem;padding:.7rem;background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);color:#94a3b8;border-radius:12px;cursor:pointer;transition:all .2s}
+.bkash-close:hover{background:rgba(255,255,255,.1);color:#e2e8f0}
 @media(max-width:640px){.nav-group{gap:.38rem;padding:.4rem .5rem}.btn{padding:.55rem .7rem;font-size:.78rem;min-width:72px;max-width:100px}.bs{font-size:.52rem}}
 `;
 
@@ -506,12 +526,38 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 <main id="main-content"></main>
 <footer>
   ⚗️ ORGANIC CHEMISTRY HUB · CLASS 9–10 · CHAPTER 11<br>
-  <a class="bmc-btn" href="https://www.buymeacoffee.com/ldsiam55" target="_blank" rel="noopener">
-    ☕ Buy Me a Coffee
-  </a>
+  <button class="bmc-btn" onclick="openBkash()">
+    💳 Support via bKash
+  </button>
   <div style="margin-top:.7rem;font-size:.68rem;color:#374151">Made with ❤️ for Class 9–10 Chemistry Students</div>
 </footer>
-`;
+
+<!-- bKash Payment Modal -->
+<div class="bkash-overlay" id="bkash-overlay" onclick="closeBkashOutside(event)">
+  <div class="bkash-modal">
+    <div class="bkash-top">
+      <div class="bkash-logo">🩷 bKash</div>
+      <div class="bkash-sub">Send Money · পাঠান টাকা</div>
+    </div>
+    <div class="bkash-body">
+      <div class="bkash-label">📱 bKash Personal Number</div>
+      <div class="bkash-num">
+        <div class="bkash-number" id="bkash-num-display">01882-808528</div>
+        <button class="bkash-copy" id="bkash-copy-btn" onclick="copyBkash()">📋 Copy</button>
+      </div>
+      <div class="bkash-label">📋 How to Send Money</div>
+      <div class="bkash-steps">
+        <div class="bkash-step"><span class="bkash-step-num">1</span><div class="bkash-step-txt">Open your <strong>bKash app</strong> on your phone</div></div>
+        <div class="bkash-step"><span class="bkash-step-num">2</span><div class="bkash-step-txt">Tap <strong>"Send Money"</strong> (পাঠান)</div></div>
+        <div class="bkash-step"><span class="bkash-step-num">3</span><div class="bkash-step-txt">Enter number: <strong>01882808528</strong></div></div>
+        <div class="bkash-step"><span class="bkash-step-num">4</span><div class="bkash-step-txt">Enter your amount and complete the payment</div></div>
+        <div class="bkash-step"><span class="bkash-step-num">5</span><div class="bkash-step-txt">Add reference: <strong>"Organic Chemistry Hub"</strong> 🙏</div></div>
+      </div>
+      <div class="bkash-thank">আপনার সাপোর্টের জন্য অনেক ধন্যবাদ! 💕<br>Thank you so much for your support!</div>
+      <button class="bkash-close" onclick="closeBkash()">✕ Close</button>
+    </div>
+  </div>
+</div>`;
 
   // ─────────────────────────────────────────────
   //  5. PANEL CONTENT DATA
@@ -2665,6 +2711,56 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     document.getElementById('mqres').style.display = 'none';
     document.getElementById('revs').innerHTML = '';
     document.getElementById('mq-start').style.display = 'block';
+  };
+
+  // ─────────────────────────────────────────────
+  //  bKash PAYMENT MODAL
+  // ─────────────────────────────────────────────
+  window.openBkash = function() {
+    const overlay = document.getElementById('bkash-overlay');
+    if (overlay) overlay.classList.add('open');
+  };
+
+  window.closeBkash = function() {
+    const overlay = document.getElementById('bkash-overlay');
+    if (overlay) overlay.classList.remove('open');
+  };
+
+  window.closeBkashOutside = function(e) {
+    if (e.target.id === 'bkash-overlay') window.closeBkash();
+  };
+
+  window.copyBkash = function() {
+    const num = '01882808528';
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(num).then(() => {
+        const btn = document.getElementById('bkash-copy-btn');
+        if (btn) {
+          btn.textContent = '✅ Copied!';
+          btn.style.background = 'linear-gradient(135deg,#059669,#047857)';
+          setTimeout(() => {
+            btn.textContent = '📋 Copy';
+            btn.style.background = '';
+          }, 2000);
+        }
+      });
+    } else {
+      // Fallback for older browsers
+      const el = document.getElementById('bkash-num-display');
+      if (el) {
+        const range = document.createRange();
+        range.selectNode(el);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        const btn = document.getElementById('bkash-copy-btn');
+        if (btn) {
+          btn.textContent = '✅ Copied!';
+          setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
+        }
+      }
+    }
   };
 
 })();
