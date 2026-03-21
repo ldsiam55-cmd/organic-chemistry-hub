@@ -1443,6 +1443,27 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {topic:'Arenes',q:'Source of aromatic compounds?',a:'Coal tar (destructive distillation of bituminous coal at 900–1100°C in absence of air) and petroleum',hint:'Coal → coal-tar → fractional distillation'},
     {topic:'Arenes',q:'Bromine solution test result?',a:'Red/brown Br₂ solution turns COLOURLESS with unsaturated compounds (alkene/alkyne)',hint:'CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br (colourless)'},
     {topic:'Arenes',q:'Bayer\'s KMnO₄ test result?',a:'Pink KMnO₄+KOH solution turns COLOURLESS with alkene/alkyne. Alkanes give NO reaction.',hint:'Both tests confirm unsaturation'},
+    // ── ISOMERISM FLASHCARDS (Pages 31–60) ──
+    {topic:'Isomers',q:'What is isomerism? (Greek origin)',a:'Same molecular formula, different structural formulae → different properties. Greek: isos=equal, meros=parts',hint:'2 types: Structural + Stereoisomerism'},
+    {topic:'Isomers',q:'5 types of structural isomerism?',a:'1. Chain  2. Position  3. Functional group  4. Metamerism  5. Tautomerism',hint:'Chain/Position = same series. Func group/Meta/Tauto = different series possible'},
+    {topic:'Isomers',q:'Chain isomerism example?',a:'C₄H₁₀ → n-Butane (CH₃CH₂CH₂CH₃, bp −0.5°C) vs Isobutane ((CH₃)₃CH, bp −10.2°C)',hint:'Branched isomers always have LOWER boiling point'},
+    {topic:'Isomers',q:'Position isomerism example?',a:'But-1-ene (CH₂=CHCH₂CH₃, bp −6.5°C) vs But-2-ene (CH₃CH=CHCH₃, bp 1.4°C)',hint:'Same chain, double bond at different position'},
+    {topic:'Isomers',q:'Functional group isomerism — C₂H₆O examples?',a:'Ethanol CH₃CH₂OH (liquid, bp 78.3°C, reacts with Na) vs Dimethyl ether CH₃OCH₃ (gas, bp −25°C, no reaction with Na)',hint:'Different homologous series → different physical AND chemical properties'},
+    {topic:'Isomers',q:'Metamerism is seen in which compound types?',a:'Ethers, ketones and secondary amines — compounds with DIVALENT functional groups',hint:'Different alkyl groups on the SAME functional group'},
+    {topic:'Isomers',q:'What is tautomerism?',a:'Spontaneous interconversion between two forms in dynamic equilibrium. e.g. Propanone (keto) ⇌ Prop-2-en-1-ol (enol)',hint:'Keto-enol tautomerism — a special functional group isomerism'},
+    {topic:'Isomers',q:'2 conditions for geometric (cis-trans) isomerism?',a:'1. Substituted alkene: abC=Cab or abC=Cad  2. Substituted cyclic alkane',hint:'Must have DIFFERENT groups on both carbons of C=C'},
+    {topic:'Isomers',q:'cis vs trans — which is more stable?',a:'trans isomer is MORE stable (lower internal energy, higher mp). cis has more internal energy → more heat of combustion.',hint:'trans is symmetric → molecules pack better'},
+    {topic:'Isomers',q:'Why does maleic acid form anhydride but fumaric acid does not?',a:'Maleic acid is cis — both –COOH groups on SAME side, close enough to react. Fumaric acid is trans — groups too far apart.',hint:'cis-butene-dioic acid (mp 135°C) → anhydride at 160°C'},
+    {topic:'Isomers',q:'Vision and geometric isomerism?',a:'Light converts cis-retinal → trans-retinal (breaks C11-C12 π bond), causing protein shape change → electrical signal to brain → vision!',hint:'Retinal is a 20-C aldehyde from Vitamin A'},
+    {topic:'Isomers',q:'3 conditions for optical isomerism?',a:'1. Asymmetric/chiral carbon (4 different groups, marked *)  2. Configurations are mirror images  3. Mirror images are non-superimposable',hint:'Like left and right hands — mirror images but cannot superimpose'},
+    {topic:'Isomers',q:'What are enantiomers?',a:'Non-superimposable mirror image optical isomers that rotate polarised light equally but in opposite directions. Also called enantiomorphs/antipodes.',hint:'d-lactic acid +2.24° and l-lactic acid −2.24° at 25°C'},
+    {topic:'Isomers',q:'What is a racemic mixture?',a:'Equimolar mixture of d and l isomers → optically INACTIVE (mutual cancellation). Also called racemates or dl-mixture or (±) mixture.',hint:'Process of forming racemic mixture = racemisation'},
+    {topic:'Isomers',q:'What are diastereoisomers?',a:'Two optical isomers with DISSIMILAR chiral centres — NOT mirror images. Differ in physical properties (mp, bp, solubility, density).',hint:'2-bromo-3-chloro butane has 4 optical isomers, 2 are diastereoisomers'},
+    {topic:'Isomers',q:'What is a meso isomer?',a:'Compound with TWO SIMILAR chiral centres that has a plane of symmetry → internally compensated → optically INACTIVE despite having chiral carbons',hint:'Tartaric acid: d-tartaric, l-tartaric, and meso-tartaric (3 forms)'},
+    {topic:'Isomers',q:'Formula: n dissimilar chiral centres → optical isomers?',a:'Total optical isomers = 2ⁿ. e.g. Lactic acid n=1 → 2¹=2; 2-bromo-3-chlorobutane n=2 → 2²=4',hint:'n = number of DISSIMILAR asymmetric carbon atoms'},
+    {topic:'Isomers',q:'Formula: n SIMILAR chiral centres?',a:'Optical isomers = 2ⁿ⁻¹ ; Meso isomers = 2^((n−2)/2) where n is even',hint:'Tartaric acid n=2: optical = 2¹=2; meso = 2⁰=1'},
+    {topic:'Naming',q:'Priority order: top 6 functional groups in IUPAC naming?',a:'1.–COOH  2.–SO₃H  3.–COX  4.–CONH₂  5.–CN  6.–CHO  (then: >C=O, –OH, –NH₂, C=C, C≡C, C–C)',hint:'IUPAC Table 2.8 — highest priority gets lowest locant and suffix'},
+    {topic:'Naming',q:'IUPAC naming strategy — what is the first step?',a:'Step 1: Select the LONGEST carbon chain. Step 2: Number from end nearest the principal functional group. Step 3: Name substituents alphabetically.',hint:'Lowest locant rule always applies'},
   ];
 
   panels['fc'] = `
@@ -2000,67 +2021,219 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   //  🔄  ISOMERISM PANEL
   // ══════════════════════════════════════════════
   panels['is'] = `
-<div class="ph" style="border-color:#0f766e;color:#0f766e"><div class="phi">🔄</div><div><div class="pht">Isomerism</div><div class="phb"><span class="badge">Structural isomers</span><span class="badge">Geometric (cis/trans)</span><span class="badge">Optical isomers</span></div><div class="phd">Complete isomerism from EV Chemistry Chapter 2 — types, examples and how to identify them.</div></div></div>
+<div class="ph" style="border-color:#0f766e;color:#0f766e"><div class="phi">🔄</div><div><div class="pht">Isomerism — Complete Guide</div><div class="phb"><span class="badge">5 types structural</span><span class="badge">Cis/Trans</span><span class="badge">Optical isomers</span><span class="badge">Meso compounds</span></div><div class="phd">Full isomerism from EV Chemistry Chapter 2 (Sections 2.6–2.6.6). The most important exam topic!</div></div></div>
 <div class="nt-wrap">
-  <div class="note-card"><div class="note-card-head" style="border-color:#2dd4bf"><span class="note-card-icon">🔄</span><span class="note-card-title" style="color:#2dd4bf">What is Isomerism?</span></div>
-  <div class="note-card-body">Organic compounds having the <strong>same molecular formula but different structural formulae</strong> are called <strong>isomers</strong> and this phenomenon is called <strong>isomerism</strong>.<br><br>
-  The larger the molecular formula (more C atoms), the more isomers are possible.<br><br>
-  <strong>Example:</strong> C₂H₆O has 2 isomers:<br>
-  <div class="note-formula">Ethanol: CH₃–CH₂–OH (alcohol)</div>
-  <div class="note-formula">Dimethyl ether: CH₃–O–CH₃ (ether)</div></div></div>
+  <div class="nt-tabs">
+    <button class="nt-tab on" style="color:#2dd4bf" onclick="ntTab(this,'is-def')">📌 Definition</button>
+    <button class="nt-tab" style="color:#34d399" onclick="ntTab(this,'is-struct')">🔗 Structural</button>
+    <button class="nt-tab" style="color:#60a5fa" onclick="ntTab(this,'is-geo')">📐 Geometric</button>
+    <button class="nt-tab" style="color:#a78bfa" onclick="ntTab(this,'is-opt')">💡 Optical</button>
+    <button class="nt-tab" style="color:#fbbf24" onclick="ntTab(this,'is-count')">🔢 Count</button>
+  </div>
 
-  <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">1️⃣</span><span class="note-card-title" style="color:#34d399">Structural Isomerism</span></div>
-  <div class="note-card-body">
-    Same molecular formula, different connectivity of atoms. Types:<br><br>
-    <strong>Chain isomerism:</strong> Different carbon chain arrangement<br>
-    <div class="note-formula">C₄H₁₀ → n-Butane: CH₃CH₂CH₂CH₃ | Isobutane: (CH₃)₃CH</div>
-    <strong>Position isomerism:</strong> Same chain, functional group at different position<br>
-    <div class="note-formula">C₃H₇OH → Propan-1-ol: CH₃CH₂CH₂OH | Propan-2-ol: CH₃CHOHCH₃</div>
-    <strong>Functional group isomerism:</strong> Same formula, different functional group<br>
-    <div class="note-formula">C₂H₆O → Ethanol (alcohol) | Dimethyl ether (ether)</div>
-    <strong>Metamerism:</strong> Same molecular formula, different alkyl groups on same functional group<br>
-    <div class="note-formula">C₄H₁₀O → Ethyl ether C₂H₅OC₂H₅ | Methyl propyl ether CH₃OC₃H₇</div>
-  </div></div>
-
-  <div class="note-card"><div class="note-card-head" style="border-color:#60a5fa"><span class="note-card-icon">2️⃣</span><span class="note-card-title" style="color:#60a5fa">Geometric (Cis-Trans) Isomerism</span></div>
-  <div class="note-card-body">
-    Occurs due to <strong>restricted rotation around C=C double bond</strong>. Both carbons of C=C must have <strong>different groups</strong>.<br><br>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:.5rem 0">
-      <div style="background:rgba(96,165,250,.07);border:1.5px solid rgba(96,165,250,.25);border-radius:10px;padding:.7rem;text-align:center">
-        <div style="font-family:'Fredoka One',cursive;color:#60a5fa;margin-bottom:.3rem">cis- isomer</div>
-        <div style="font-family:'JetBrains Mono',monospace;font-size:.8rem;color:#94a3b8">Similar groups on<br><strong>SAME side</strong></div>
+  <!-- DEFINITION TAB -->
+  <div id="is-def" class="nt-pane on">
+    <div class="note-card"><div class="note-card-head" style="border-color:#2dd4bf"><span class="note-card-icon">🔄</span><span class="note-card-title" style="color:#2dd4bf">What is Isomerism? (Section 2.6)</span></div>
+    <div class="note-card-body">
+      Organic compounds having the <strong>same molecular formula but different structural formulae</strong> that differ in physical and chemical properties are called <strong>isomers</strong> and this phenomenon is called <strong>isomerism</strong>.<br><br>
+      <strong>Word origin:</strong> Greek — isos = equal; meros = parts<br><br>
+      <strong>Example:</strong> C₂H₆O has 2 isomers with completely different properties:
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:.7rem 0">
+        <div style="background:rgba(56,189,248,.07);border:1.5px solid rgba(56,189,248,.25);border-radius:10px;padding:.8rem;text-align:center">
+          <div style="font-family:'Fredoka One',cursive;color:#38bdf8;font-size:.95rem">Ethanol</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#fde68a;margin:.3rem 0">CH₃–CH₂–OH</div>
+          <div style="font-size:.72rem;color:#6b7280">Liquid · bp 78.3°C<br>Reacts with Na → H₂</div>
+        </div>
+        <div style="background:rgba(192,132,252,.07);border:1.5px solid rgba(192,132,252,.25);border-radius:10px;padding:.8rem;text-align:center">
+          <div style="font-family:'Fredoka One',cursive;color:#c084fc;font-size:.95rem">Dimethyl Ether</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#fde68a;margin:.3rem 0">CH₃–O–CH₃</div>
+          <div style="font-size:.72rem;color:#6b7280">Gas · bp −25°C<br>Does NOT react with Na</div>
+        </div>
       </div>
-      <div style="background:rgba(244,114,182,.07);border:1.5px solid rgba(244,114,182,.25);border-radius:10px;padding:.7rem;text-align:center">
-        <div style="font-family:'Fredoka One',cursive;color:#f472b6;margin-bottom:.3rem">trans- isomer</div>
-        <div style="font-family:'JetBrains Mono',monospace;font-size:.8rem;color:#94a3b8">Similar groups on<br><strong>OPPOSITE sides</strong></div>
+      <strong>Broad classification of isomerism:</strong>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:.6rem">
+        <div style="background:rgba(52,211,153,.07);border:1.5px solid rgba(52,211,153,.25);border-radius:10px;padding:.7rem;text-align:center">
+          <div style="font-family:'Fredoka One',cursive;color:#34d399">A. Structural Isomerism</div>
+          <div style="font-size:.72rem;color:#6b7280;margin-top:.3rem">Chain · Position · Functional Group · Metamerism · Tautomerism</div>
+        </div>
+        <div style="background:rgba(167,139,250,.07);border:1.5px solid rgba(167,139,250,.25);border-radius:10px;padding:.7rem;text-align:center">
+          <div style="font-family:'Fredoka One',cursive;color:#a78bfa">B. Stereoisomerism</div>
+          <div style="font-size:.72rem;color:#6b7280;margin-top:.3rem">Geometric (cis/trans) · Optical isomerism</div>
+        </div>
       </div>
-    </div>
-    <strong>Example:</strong> But-2-ene CH₃–CH=CH–CH₃ (has both cis and trans forms)<br>
-    <strong>Does NOT show:</strong> But-1-ene CH₂=CH–CH₂–CH₃ (one C of C=C has 2 identical H atoms)
-  </div></div>
+    </div></div>
 
-  <div class="note-card"><div class="note-card-head" style="border-color:#a78bfa"><span class="note-card-icon">3️⃣</span><span class="note-card-title" style="color:#a78bfa">Optical Isomerism</span></div>
-  <div class="note-card-body">
-    Compounds that rotate plane-polarised light are called <strong>optically active compounds</strong>.<br><br>
-    A compound is optically active if it has a <strong>chiral carbon</strong> (asymmetric carbon) — a carbon with <strong>4 different groups</strong> attached.<br><br>
-    <strong>Enantiomers:</strong> Optical isomers that are non-superimposable mirror images of each other.<br>
-    <strong>Racemic mixture:</strong> Equal mixture of both enantiomers — optically inactive.<br>
-    <strong>Meso compound:</strong> Has chiral carbons but is internally compensated — optically inactive.<br><br>
-    <strong>Example:</strong> Lactic acid (2-hydroxypropanoic acid) — shows optical isomerism<br>
-    <strong>Number of optical isomers</strong> = 2ⁿ (where n = number of asymmetric carbon atoms)
-  </div></div>
+    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">📊</span><span class="note-card-title" style="color:#fbbf24">Chain Isomers Count (from EV Textbook)</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>Carbon atoms</th><th>Chain isomers (alkane)</th></tr>
+        <tr><td>4C</td><td>2 (n-butane, isobutane)</td></tr>
+        <tr><td>5C</td><td>3</td></tr>
+        <tr><td>6C</td><td>5</td></tr>
+        <tr><td>7C</td><td>9</td></tr>
+        <tr><td>8C</td><td>18</td></tr>
+        <tr><td>10C</td><td>75</td></tr>
+      </table>
+    </div></div>
+  </div>
 
-  <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">📊</span><span class="note-card-title" style="color:#fbbf24">Number of Isomers — Quick Table</span></div>
-  <div class="note-card-body">
-    <table class="note-table">
-      <tr><th>Formula</th><th>Compound class</th><th>Isomers</th><th>Note</th></tr>
-      <tr><td>C₄H₁₀</td><td>Alkane</td><td>2</td><td>n-butane + isobutane</td></tr>
-      <tr><td>C₄H₈</td><td>Alkene</td><td>6</td><td>includes cyclobutane</td></tr>
-      <tr><td>C₄H₉Br</td><td>Alkyl halide</td><td>4</td><td>chain + position isomers</td></tr>
-      <tr><td>C₂H₆O</td><td>–</td><td>2</td><td>ethanol + dimethyl ether</td></tr>
-      <tr><td>C₈H₁₀ (aromatic)</td><td>Arene</td><td>4</td><td>ethylbenzene + 3 xylenes</td></tr>
-    </table>
-  </div></div>
+  <!-- STRUCTURAL TAB -->
+  <div id="is-struct" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">🔗</span><span class="note-card-title" style="color:#34d399">Structural Isomerism — 5 Types</span></div>
+    <div class="note-card-body">Arises due to different arrangement of atoms/groups <strong>without referring to spatial positions</strong>. Members are usually from the same homologous series.</div></div>
+
+    ${[
+      {n:'1',col:'#ff7043',title:'Chain Isomerism',def:'Same molecular formula, different carbon chain structure.',ex:'C₄H₁₀ → n-Butane (CH₃CH₂CH₂CH₃, bp −0.5°C) vs Isobutane / 2-Methylpropane ((CH₃)₃CH, bp −10.2°C)',note:'Chain isomerism is seen mainly in alkanes. Branched isomers always have lower boiling points than straight-chain isomers.'},
+      {n:'2',col:'#60a5fa',title:'Position Isomerism',def:'Same molecular formula and chain, but functional group/double bond/substituent at different position.',ex:'But-1-ene (CH₂=CHCH₂CH₃, bp −6.5°C) vs But-2-ene (CH₃CH=CHCH₃, bp 1.4°C) — double bond at C1 vs C2',note:'Also: ortho-xylene (bp 142°C), meta-xylene (bp 139°C), para-xylene (bp 137°C) are position isomers.'},
+      {n:'3',col:'#f472b6',title:'Functional Group Isomerism',def:'Same molecular formula but different functional groups. Isomers belong to different homologous series — different physical AND chemical properties.',ex:'C₂H₆O → Ethanol CH₃CH₂OH (alcohol, liquid, bp 78.3°C) vs Dimethyl ether CH₃OCH₃ (gas, bp −25°C) | C₃H₆O → Propanal CH₃CH₂CHO (bp 48.8°C) vs Propanone CH₃COCH₃ (bp 56°C) vs Allyl alcohol CH₂=CHCH₂OH (bp 97°C)',note:'3 functional group isomers of C₃H₆O: propanal, propanone, and prop-2-en-1-ol'},
+      {n:'4',col:'#a78bfa',title:'Metamerism',def:'Same molecular formula, different alkyl groups on SAME functional group. Seen in ethers, ketones and secondary amines.',ex:'C₄H₁₀O → Diethyl ether C₂H₅OC₂H₅ (bp 34.5°C) vs Methyl propyl ether CH₃OC₃H₇ (bp 39°C) vs Methyl isopropyl ether (bp 32.5°C)',note:'Also: C₅H₁₀O → 2-pentanone (pentan-2-one), 3-pentanone (pentan-3-one), 3-methyl butan-2-one are metamers.'},
+      {n:'5',col:'#fbbf24',title:'Tautomerism',def:'A compound spontaneously converts between two forms with different functional groups and remains in dynamic equilibrium. The two forms are called tautomers.',ex:'Propanone (keto form: CH₃–CO–CH₃) ⇌ Prop-2-en-1-ol (enol form: CH₃–C=CH₂ + OH shift)',note:'This is keto-enol tautomerism. It is a special type of functional group isomerism. Compounds containing keto group (>C=O) in carbon chain show tautomerism.'}
+    ].map(t=>`<div class="note-card"><div class="note-card-head" style="border-color:${t.col}"><span class="note-card-icon">${t.n}️⃣</span><span class="note-card-title" style="color:${t.col}">${t.title}</span></div>
+    <div class="note-card-body">
+      <strong>Definition:</strong> ${t.def}<br><br>
+      <strong>Example:</strong><br><div class="note-formula">${t.ex}</div>
+      <div style="background:rgba(251,191,36,.07);border-left:3px solid #fbbf24;padding:.5rem .8rem;border-radius:0 8px 8px 0;font-size:.8rem;color:#94a3b8;margin-top:.5rem">💡 ${t.note}</div>
+    </div></div>`).join('')}
+  </div>
+
+  <!-- GEOMETRIC TAB -->
+  <div id="is-geo" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#60a5fa"><span class="note-card-icon">📐</span><span class="note-card-title" style="color:#60a5fa">Geometrical (Cis-Trans) Isomerism — Section 2.6.1</span></div>
+    <div class="note-card-body">
+      Compounds with the <strong>same structural formula but different relative arrangement of atoms or groups in space around C=C</strong> are called geometrical isomers.<br><br>
+      <strong>2 CONDITIONS for geometrical isomerism:</strong><br>
+      <div style="display:flex;flex-direction:column;gap:.4rem;margin:.5rem 0">
+        <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;padding:.5rem .8rem;border-radius:0 8px 8px 0;font-size:.85rem;color:#94a3b8">1️⃣ Substituted alkene with formula abC=Cab or abC=Cad</div>
+        <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;padding:.5rem .8rem;border-radius:0 8px 8px 0;font-size:.85rem;color:#94a3b8">2️⃣ Substituted cyclic alkane (e.g. 1,2-dimethylcyclopropane)</div>
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">⚖️</span><span class="note-card-title" style="color:#34d399">cis vs trans — Properties Compared</span></div>
+    <div class="note-card-body">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:.8rem">
+        <div style="background:rgba(96,165,250,.07);border:2px solid #60a5fa;border-radius:12px;padding:.9rem;text-align:center">
+          <div style="font-family:'Fredoka One',cursive;color:#60a5fa;font-size:1rem;margin-bottom:.3rem">cis isomer</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#fde68a">Similar groups SAME side</div>
+        </div>
+        <div style="background:rgba(244,114,182,.07);border:2px solid #f472b6;border-radius:12px;padding:.9rem;text-align:center">
+          <div style="font-family:'Fredoka One',cursive;color:#f472b6;font-size:1rem;margin-bottom:.3rem">trans isomer</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#fde68a">Similar groups OPPOSITE sides</div>
+        </div>
+      </div>
+      <table class="note-table">
+        <tr><th>Property</th><th style="color:#60a5fa">cis</th><th style="color:#f472b6">trans</th></tr>
+        <tr><td>Stability</td><td>Less stable (more internal energy)</td><td><strong>More stable</strong></td></tr>
+        <tr><td>Melting point</td><td>Lower mp</td><td><strong>Higher mp</strong></td></tr>
+        <tr><td>Heat of combustion</td><td>More (less stable)</td><td>Less</td></tr>
+        <tr><td>Solubility</td><td><strong>More soluble</strong></td><td>Less soluble</td></tr>
+        <tr><td>Refractive index</td><td><strong>Higher</strong></td><td>Lower</td></tr>
+        <tr><td>Anhydride formation</td><td>✅ Yes (heating)</td><td>❌ No</td></tr>
+      </table>
+      <div class="note-formula">Example: cis-but-2-ene (bp 4°C) vs trans-but-2-ene (bp 1°C)</div>
+      <div class="note-formula">Maleic acid (cis, mp 135°C) → anhydride at 160°C | Fumaric acid (trans, mp 287°C) → no anhydride</div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#f59e0b"><span class="note-card-icon">👁️</span><span class="note-card-title" style="color:#f59e0b">Fascinating Fact — Vision and Geometric Isomers!</span></div>
+    <div class="note-card-body">
+      Retinal (a 20-carbon aldehyde from Vitamin A) exists as two geometric isomers in the human eye:<br><br>
+      <strong>How we see:</strong> Light → breaks π bond at C11–C12 of cis-retinal → converts to trans-retinal → protein shape change → ion flow → electrical impulse to brain → we see!<br><br>
+      The photon energy (~250 kJ/mol) breaks the C=C π bond in a few trillionths of a second. This is how <strong>light energy converts to mechanical then electrical energy</strong> for vision.<br><br>
+      <div style="font-size:.75rem;color:#6b7280;font-style:italic">d-glucose produces energy in metabolic function, but l-glucose does not. l-alanine (amino acid) is used in protein synthesis, but d-alanine is not. Enzymes have chiral binding sites.</div>
+    </div></div>
+  </div>
+
+  <!-- OPTICAL TAB -->
+  <div id="is-opt" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#a78bfa"><span class="note-card-icon">💡</span><span class="note-card-title" style="color:#a78bfa">Optical Isomerism — Section 2.6.3</span></div>
+    <div class="note-card-body">
+      Isomers with the <strong>same molecular formula, same structural formula, same physical/chemical properties but differ by their action on plane-polarised light</strong> are called optical isomers.<br><br>
+      <strong>3 CONDITIONS for optical activity:</strong>
+      <div style="display:flex;flex-direction:column;gap:.35rem;margin:.5rem 0">
+        <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;padding:.45rem .8rem;border-radius:0 8px 8px 0;font-size:.85rem;color:#94a3b8">✳️ Must contain <strong>asymmetric carbon (chiral centre)</strong> — C with 4 DIFFERENT groups</div>
+        <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;padding:.45rem .8rem;border-radius:0 8px 8px 0;font-size:.85rem;color:#94a3b8">✳️ Two isomers must be <strong>mirror images</strong> of each other</div>
+        <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;padding:.45rem .8rem;border-radius:0 8px 8px 0;font-size:.85rem;color:#94a3b8">✳️ Mirror images must be <strong>non-superimposable</strong></div>
+      </div>
+      <strong>Chiral centre</strong> is denoted by asterisk (*). Example: Lactic acid CH₃–*C(OH)H–COOH
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#f472b6"><span class="note-card-icon">🔃</span><span class="note-card-title" style="color:#f472b6">Key Optical Isomer Types</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>Term</th><th>Definition</th><th>Example</th></tr>
+        <tr><td style="color:#fde68a">Dextrorotatory (d or +)</td><td>Rotates polarised light CLOCKWISE</td><td>d-lactic acid: +2.24°</td></tr>
+        <tr><td style="color:#6ee7b7">Levorotatory (l or −)</td><td>Rotates polarised light ANTICLOCKWISE</td><td>l-lactic acid: −2.24°</td></tr>
+        <tr><td style="color:#60a5fa">Enantiomers</td><td>Non-superimposable mirror images — rotate light equally but in opposite directions. Also called enantiomorphs, antimers, antipodes</td><td>d-lactic &amp; l-lactic acid</td></tr>
+        <tr><td style="color:#f472b6">Racemic mixture (dl or ±)</td><td>Equimolar mix of d+l isomers → optically INACTIVE (mutual cancellation). Also called racemates. Process = racemisation</td><td>dl-lactic acid</td></tr>
+        <tr><td style="color:#fb923c">Diastereoisomers</td><td>Two optical isomers with DISSIMILAR chiral centres — NOT mirror images. Differ in physical properties (mp, bp, solubility)</td><td>2-bromo-3-chloro butane (4 isomers)</td></tr>
+        <tr><td style="color:#c084fc">Meso isomer</td><td>TWO SIMILAR chiral centres with plane of symmetry — internally compensated → optically INACTIVE despite having chiral carbons</td><td>meso-tartaric acid</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">🍇</span><span class="note-card-title" style="color:#34d399">Tartaric Acid — Classic Meso Example</span></div>
+    <div class="note-card-body">
+      Tartaric acid (2,3-dihydroxybutanedioic acid) with <strong>2 similar chiral centres</strong> has THREE forms:
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:.6rem 0;text-align:center">
+        <div style="background:rgba(251,191,36,.08);border:1.5px solid #fbbf24;border-radius:10px;padding:.7rem"><div style="font-family:'Fredoka One',cursive;color:#fbbf24;font-size:.85rem">d(+) tartaric acid</div><div style="font-size:.7rem;color:#6b7280;margin-top:.2rem">Optically active<br>Dextrorotatory</div></div>
+        <div style="background:rgba(74,222,128,.08);border:1.5px solid #4ade80;border-radius:10px;padding:.7rem"><div style="font-family:'Fredoka One',cursive;color:#4ade80;font-size:.85rem">l(−) tartaric acid</div><div style="font-size:.7rem;color:#6b7280;margin-top:.2rem">Optically active<br>Levorotatory</div></div>
+        <div style="background:rgba(192,132,252,.08);border:1.5px solid #c084fc;border-radius:10px;padding:.7rem"><div style="font-family:'Fredoka One',cursive;color:#c084fc;font-size:.85rem">meso-tartaric acid</div><div style="font-size:.7rem;color:#6b7280;margin-top:.2rem">Optically INACTIVE<br>Has plane of symmetry</div></div>
+      </div>
+      <div style="font-size:.8rem;color:#94a3b8">💡 <strong>Biological note:</strong> Almost all carbohydrates and amino acids are optically active. d-glucose gives energy in metabolic function; l-alanine is used for protein synthesis. Only one isomer participates in biological reactions — enzymes have chiral binding sites!</div>
+    </div></div>
+  </div>
+
+  <!-- COUNT TAB -->
+  <div id="is-count" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">🔢</span><span class="note-card-title" style="color:#fbbf24">Formulae for Counting Optical Isomers</span></div>
+    <div class="note-card-body">
+      <div style="display:flex;flex-direction:column;gap:.7rem">
+        <div style="background:rgba(251,191,36,.08);border:2px solid rgba(251,191,36,.4);border-radius:12px;padding:.9rem 1.1rem">
+          <div style="font-family:'Fredoka One',cursive;color:#fbbf24;font-size:1rem;margin-bottom:.4rem">n DISSIMILAR chiral centres:</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:1.1rem;color:#fde68a">Total optical isomers = 2ⁿ</div>
+          <div style="font-size:.78rem;color:#94a3b8;margin-top:.3rem">Example: Lactic acid (n=1) → 2¹ = 2 optical isomers</div>
+          <div style="font-size:.78rem;color:#94a3b8">2-bromo-3-chloro butane (n=2) → 2² = 4 optical isomers, diastereoisomers = 2</div>
+        </div>
+        <div style="background:rgba(192,132,252,.08);border:2px solid rgba(192,132,252,.4);border-radius:12px;padding:.9rem 1.1rem">
+          <div style="font-family:'Fredoka One',cursive;color:#c084fc;font-size:1rem;margin-bottom:.4rem">n SIMILAR chiral centres (n = even number):</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:1rem;color:#fde68a">Optical isomers = 2ⁿ⁻¹</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:1rem;color:#6ee7b7;margin-top:.3rem">Meso isomers = 2^((n−2)/2)</div>
+          <div style="font-size:.78rem;color:#94a3b8;margin-top:.3rem">Example: Tartaric acid (n=2) → optical isomers = 2²⁻¹ = 2 (d and l) | meso = 2⁰ = 1</div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">📊</span><span class="note-card-title" style="color:#34d399">Optical Isomers Summary Table</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>Compound</th><th>Chiral centres</th><th>Optical isomers (2ⁿ)</th><th>Type</th></tr>
+        <tr><td>Lactic acid CH₃CHOHCOOH</td><td>1</td><td>2 (d and l)</td><td>Dissimilar → enantiomers</td></tr>
+        <tr><td>2-bromo-3-chloro butane</td><td>2 dissimilar</td><td>4 (2 pairs)</td><td>Diastereoisomers possible</td></tr>
+        <tr><td>2,3-dibromo butane</td><td>2 similar</td><td>2 (d, l) + 1 meso</td><td>Meso possible</td></tr>
+        <tr><td>Tartaric acid</td><td>2 similar</td><td>2 (d, l) + 1 meso</td><td>Classic meso example</td></tr>
+        <tr><td>Glucose (aldopentose type)</td><td>4</td><td>2⁴ = 16</td><td>Many diastereoisomers</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#60a5fa"><span class="note-card-icon">📋</span><span class="note-card-title" style="color:#60a5fa">Priority List of Functional Groups (Table 2.8)</span></div>
+    <div class="note-card-body">
+      When naming compounds with multiple functional groups, the <strong>highest priority group gets the lowest locant</strong> and is expressed as the secondary suffix. Lower priority groups become prefixes.
+      <table class="note-table">
+        <tr><th>Priority</th><th>Class</th><th>Group</th><th>Suffix</th><th>Prefix</th></tr>
+        <tr><td style="color:#ef4444">1 (Highest)</td><td>Carboxylic Acid</td><td>–COOH</td><td>–oic acid</td><td>–</td></tr>
+        <tr><td style="color:#f97316">2</td><td>Sulphonic Acid</td><td>–SO₃H</td><td>sulphonic acid</td><td>–</td></tr>
+        <tr><td style="color:#f97316">3</td><td>Acid Halide</td><td>–COX</td><td>–oyl halide</td><td>–</td></tr>
+        <tr><td style="color:#eab308">4</td><td>Amide</td><td>–CONH₂</td><td>–amide</td><td>Amido–</td></tr>
+        <tr><td style="color:#eab308">5</td><td>Nitrile</td><td>–CN</td><td>–nitrile</td><td>Cyano–</td></tr>
+        <tr><td style="color:#fbbf24">6 ⭐</td><td>Aldehyde</td><td>–CHO</td><td>–al</td><td>Alkanoyl–</td></tr>
+        <tr><td style="color:#fbbf24">7 ⭐</td><td>Ketone</td><td>–CO–</td><td>–one</td><td>Oxo–</td></tr>
+        <tr><td style="color:#4ade80">8 ⭐</td><td>Alcohol</td><td>–OH</td><td>–ol</td><td>Hydroxy–</td></tr>
+        <tr><td style="color:#34d399">9</td><td>Amine</td><td>–NH₂</td><td>–amine</td><td>Amino–</td></tr>
+        <tr><td style="color:#60a5fa">10 ⭐</td><td>Alkene</td><td>–C=C–</td><td>–ene</td><td>–</td></tr>
+        <tr><td style="color:#60a5fa">11 ⭐</td><td>Alkyne</td><td>–C≡C–</td><td>–yne</td><td>–</td></tr>
+        <tr><td style="color:#94a3b8">12 (Lowest)</td><td>Alkane</td><td>–C–C–</td><td>–ane</td><td>–</td></tr>
+      </table>
+      <div style="font-size:.78rem;color:#6b7280;margin-top:.5rem">⭐ = the 6 most important groups to memorise for exam (as noted in textbook)</div>
+    </div></div>
+  </div>
 </div>`;
 
   // ══════════════════════════════════════════════
@@ -2668,7 +2841,43 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {t:"Theory",q:"Cyclopropane has what ring shape in skeletal formula?",o:["Square","Triangle","Pentagon","Hexagon"],a:1,e:"Cyclopropane (3 carbons) is drawn as a triangle. Cyclobutane=square, cyclopentane=pentagon, cyclohexane=hexagon."},
     {t:"Theory",q:"Which first compound was prepared in the laboratory from an inorganic source?",o:["Methanol","Ethanol","Urea CO(NH₂)₂","Benzene"],a:2,e:"Urea — found in urine — was the first organic compound prepared in the lab by Wöhler (1828) from inorganic ammonium cyanate."},
     {t:"Theory",q:"How many periods (classes) does the organic chemistry chapter have in total?",o:["20","28","40","50"],a:2,e:"Chapter 2 (Organic Chemistry) has 40 total periods: 28 theoretical lectures + 12 class activities."},
-    {t:"Theory",q:"Organic compound must always contain which element?",o:["Hydrogen","Oxygen","Carbon","Nitrogen"],a:2,e:"Organic compounds must always contain CARBON. Other elements like H, O, N, S, P, halogens may or may not be present."}
+    {t:"Theory",q:"Organic compound must always contain which element?",o:["Hydrogen","Oxygen","Carbon","Nitrogen"],a:2,e:"Organic compounds must always contain CARBON. Other elements like H, O, N, S, P, halogens may or may not be present."},
+
+    // ── FROM PAGES 31–60 ──
+    {t:"Isomers",q:"Isomerism is broadly classified into how many types?",o:["1","2","3","5"],a:1,e:"Isomerism is broadly of 2 types: (A) Structural isomerism and (B) Stereoisomerism."},
+    {t:"Isomers",q:"Structural isomerism has how many subtypes?",o:["2","3","4","5"],a:3,e:"Structural isomerism has 5 subtypes: Chain, Position, Functional group, Metamerism, and Tautomerism."},
+    {t:"Isomers",q:"Chain isomerism is seen mainly in which compounds?",o:["Alkenes","Alkynes","Alkanes","Alcohols only"],a:2,e:"Chain isomerism is seen mainly in alkanes. e.g. C₄H₁₀ → n-butane (straight) and isobutane (branched)."},
+    {t:"Isomers",q:"Which has the higher boiling point — n-butane or isobutane?",o:["Isobutane (branched)","n-Butane (straight chain)","Both equal","Depends on pressure"],a:1,e:"n-Butane (bp −0.5°C) has higher bp than isobutane (bp −10.2°C). Branched isomers always have LOWER boiling points."},
+    {t:"Isomers",q:"But-1-ene and But-2-ene are examples of which type of isomerism?",o:["Chain isomerism","Position isomerism","Functional group isomerism","Metamerism"],a:1,e:"But-1-ene (C=C at position 1, bp −6.5°C) and But-2-ene (C=C at position 2, bp 1.4°C) show position isomerism — same chain, different position of double bond."},
+    {t:"Isomers",q:"Ethanol and dimethyl ether show which type of isomerism?",o:["Chain isomerism","Position isomerism","Functional group isomerism","Tautomerism"],a:2,e:"Both have formula C₂H₆O but different functional groups (–OH vs –O–). This is functional group isomerism. They belong to different homologous series."},
+    {t:"Isomers",q:"Metamerism is shown by which compounds?",o:["Alkanes only","Ethers, ketones and secondary amines","Alkenes and alkynes","Only alcohols"],a:1,e:"Metamerism = different alkyl groups on same functional group. Found in ethers, ketones and secondary amines which have divalent functional groups."},
+    {t:"Isomers",q:"Diethyl ether and methyl propyl ether have formula C₄H₁₀O — they are?",o:["Chain isomers","Position isomers","Metamers","Enantiomers"],a:2,e:"Same molecular formula C₄H₁₀O, same functional group (ether –O–), but different alkyl groups (ethyl-ethyl vs methyl-propyl). This is metamerism."},
+    {t:"Isomers",q:"Tautomerism involves compounds in?",o:["Static equilibrium","Dynamic equilibrium","No equilibrium","Racemic mixture"],a:1,e:"Tautomers remain in dynamic equilibrium — they spontaneously interconvert between two forms (e.g. keto and enol forms)."},
+    {t:"Isomers",q:"Propanone (keto) ⇌ Prop-2-en-1-ol (enol) is an example of?",o:["Chain isomerism","Geometrical isomerism","Keto-enol tautomerism","Optical isomerism"],a:2,e:"This is keto-enol tautomerism. A proton (H⁺) shifts from C to O of the keto group, forming the enol form with C=C bond."},
+    {t:"Isomers",q:"Stereoisomerism is caused by different?",o:["Molecular formulae","Connectivity of atoms","Spatial arrangement of atoms (configurations)","Number of carbons"],a:2,e:"Stereoisomers have the same structural formula but differ in the spatial arrangement of atoms or groups in space — they differ in configurations."},
+    {t:"Isomers",q:"Two conditions for geometric isomerism are: (1) substituted alkene and (2)?",o:["Chiral carbon present","Substituted cyclic alkane","Only ketone group","Triple bond present"],a:1,e:"Two conditions: (1) Substituted alkene with abC=Cab or abC=Cad formula (2) Substituted cyclic alkane (e.g. 1,2-dimethylcyclopropane)."},
+    {t:"Isomers",q:"cis-but-2-ene has boiling point 4°C and trans-but-2-ene has 1°C. Which is more stable?",o:["cis isomer","trans isomer","Both equal stability","Depends on temperature"],a:1,e:"trans-but-2-ene is MORE stable (lower heat of combustion). cis-but-2-ene has more internal energy → less stable → higher heat of combustion."},
+    {t:"Isomers",q:"Maleic acid (cis-butene-dioic acid) can form an anhydride. Fumaric acid (trans) cannot. Why?",o:["Different boiling points","cis has both COOH groups on same side so they can react together","trans has lower molecular mass","Different molecular formulae"],a:1,e:"In maleic acid (cis), both –COOH groups are on the SAME side of the double bond, so they are close enough to react and form maleic anhydride at 160°C. Trans (fumaric acid) cannot."},
+    {t:"Isomers",q:"Which isomer has higher melting point — cis or trans?",o:["cis isomer","trans isomer","Both equal","Impossible to determine"],a:1,e:"trans isomer has higher mp due to its symmetry — molecules pack more closely in crystal lattice. cis isomer has lower mp."},
+    {t:"Isomers",q:"Retinal is involved in human vision using which type of isomerism?",o:["Chain isomerism","Optical isomerism","cis-trans (geometric) isomerism","Tautomerism"],a:2,e:"Retinal (from Vitamin A) uses cis-trans isomerism for vision. Light converts cis-retinal → trans-retinal, generating electrical nerve impulses to the brain."},
+    {t:"Isomers",q:"3 conditions for optical activity: asymmetric C, mirror images, and?",o:["Same boiling point","Non-superimposable","Same melting point","Must have –OH group"],a:1,e:"Three conditions: (i) must have asymmetric/chiral carbon (4 different groups) (ii) configurations must be mirror images (iii) mirror images must be NON-SUPERIMPOSABLE."},
+    {t:"Isomers",q:"Chiral centre in a compound is denoted by which symbol?",o:["#","@","*","&"],a:2,e:"Chiral centre (asymmetric carbon) is denoted by an asterisk (*). It has 4 different atoms or groups attached."},
+    {t:"Isomers",q:"d-lactic acid has specific rotation +2.24° and l-lactic acid has −2.24°. They are?",o:["Diastereoisomers","Metamers","Enantiomers","Position isomers"],a:2,e:"Enantiomers rotate polarised light equally but in OPPOSITE directions. d-lactic acid (+2.24°) and l-lactic acid (−2.24°) are enantiomers."},
+    {t:"Isomers",q:"A racemic mixture (dl or ±) is optically?",o:["Active — dextrorotatory","Active — levorotatory","Inactive — mutual cancellation","Active in solid state only"],a:2,e:"Racemic mixture = equimolar d+l mixture → optically INACTIVE because the rotations of d and l forms cancel each other out mutually."},
+    {t:"Isomers",q:"Diastereoisomers have which chiral centres?",o:["Two SIMILAR chiral centres","Two DISSIMILAR chiral centres","No chiral centres","One chiral centre only"],a:1,e:"Diastereoisomers have two DISSIMILAR chiral centres — they are NOT mirror images of each other and differ in physical properties (mp, bp, solubility)."},
+    {t:"Isomers",q:"Meso isomer has two SIMILAR chiral centres but is optically?",o:["Active (dextrorotatory)","Active (levorotatory)","Inactive due to internal compensation","Active at high temperature"],a:2,e:"Meso isomer has a plane of symmetry — one half rotates light equal and opposite to the other half → internally compensated → optically INACTIVE despite having chiral carbons."},
+    {t:"Isomers",q:"Formula for optical isomers with n DISSIMILAR chiral centres?",o:["n²","2ⁿ","n+2","2n"],a:1,e:"Total optical isomers = 2ⁿ where n = number of DISSIMILAR asymmetric carbon atoms."},
+    {t:"Isomers",q:"Formula for optical isomers with n SIMILAR chiral centres?",o:["2ⁿ","2ⁿ⁻¹","n²","4n"],a:1,e:"For n SIMILAR chiral centres: optical isomers = 2ⁿ⁻¹ and meso isomers = 2^((n−2)/2), where n is even."},
+    {t:"Isomers",q:"Tartaric acid has 2 SIMILAR chiral centres. How many optical isomers?",o:["4","3","2","1"],a:2,e:"2ⁿ⁻¹ = 2²⁻¹ = 2¹ = 2 optical isomers (d-tartaric and l-tartaric). Plus 1 meso-tartaric acid. Total 3 forms."},
+    {t:"Isomers",q:"Which compound is the classic meso isomer example?",o:["Lactic acid","Ethanol","Tartaric acid","Glucose"],a:2,e:"Tartaric acid (2,3-dihydroxybutanedioic acid) has 2 similar chiral centres and exists as d-tartaric, l-tartaric, and meso-tartaric acid."},
+    {t:"Isomers",q:"Glucose (2,3,4,5,6-pentahydroxyhexanal) has 4 asymmetric C atoms. Optical isomers?",o:["4","8","16","32"],a:2,e:"2ⁿ = 2⁴ = 16 optical isomers for glucose. All 4 chiral centres are dissimilar."},
+    {t:"Isomers",q:"Almost all carbohydrates and amino acids are?",o:["Optically inactive","Optically active","Racemic mixtures","Meso compounds"],a:1,e:"Almost all carbohydrates and amino acids are optically active. Only ONE isomer participates in biological reactions — enzymes have chiral binding sites."},
+    {t:"Isomers",q:"The word 'isomerism' comes from Greek — isos means?",o:["Different","Equal","Parts","Carbon"],a:1,e:"Isomerism comes from Greek: isos = equal; meros = parts. Isomers are 'equal parts' compounds — same formula, different structure."},
+    {t:"Naming",q:"In IUPAC priority list, which functional group has highest priority?",o:["Aldehyde –CHO","Alcohol –OH","Carboxylic acid –COOH","Ketone >C=O"],a:2,e:"Carboxylic acid (–COOH) has the HIGHEST priority in naming. Priority order: –COOH > –SO₃H > –COX > –CONH₂ > –CN > –CHO > >C=O > –OH > –NH₂ > C=C > C≡C > C–C."},
+    {t:"Naming",q:"In IUPAC priority, aldehyde has priority number?",o:["1st","3rd","6th","8th"],a:2,e:"Aldehyde (–CHO) has priority 6 in the list: COOH(1) > SO₃H(2) > COX(3) > CONH₂(4) > CN(5) > CHO(6)."},
+    {t:"Naming",q:"IUPAC suffix for ketone group >C=O is?",o:["–al","–ol","–one","–oic acid"],a:2,e:"Ketone suffix = –one. The oxo– prefix is used when ketone is not the principal functional group."},
+    {t:"Naming",q:"Strategy for naming a compound in IUPAC system: what is done FIRST?",o:["Name all substituents","Select the LONGEST carbon chain","Count total H atoms","Identify double bonds only"],a:1,e:"Step 1: Select the longest carbon chain (parent chain). Step 2: Number from the end closest to the principal functional group. Step 3: Name substituents alphabetically as prefixes. Then apply IUPAC suffix."},
+    {t:"Naming",q:"Which compound is named 4,4-dimethyl pent-2-yne?",o:["5C chain, triple bond at C2, two methyls at C4","4C chain, single bonds only","5C chain, double bond at C2","3C chain with triple bond"],a:0,e:"4,4-dimethyl pent-2-yne: pent = 5C chain, -2-yne = triple bond between C2 and C3, 4,4-dimethyl = two –CH₃ groups at C4. Structure: CH₃–C≡C–C(CH₃)₂–CH₃."}
   ];
 
   let EQ2 = [], EA = {}, ET = null, ES = 0, EE = 0, ED = false;
