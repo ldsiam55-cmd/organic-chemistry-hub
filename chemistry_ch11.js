@@ -481,6 +481,51 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 .lang-opt{font-family:'Fredoka One',cursive;font-size:.88rem;padding:.62rem 1.1rem;background:transparent;color:#94a3b8;border:none;cursor:pointer;text-align:left;transition:all .18s;display:flex;align-items:center;gap:.5rem}
 .lang-opt:hover{background:rgba(255,255,255,.07);color:#e2e8f0}
 .lang-opt.on{color:#818cf8;background:rgba(129,140,248,.1);font-weight:700}
+/* AI TUTOR BUTTON */
+.b-ai{color:#fff;background:linear-gradient(135deg,#6366f1,#4f46e5);border-radius:50px;box-shadow:0 4px 18px rgba(99,102,241,.5);border:none;animation:aiPulse 2.5s ease-in-out infinite}
+.b-ai:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(99,102,241,.65);animation:none}
+.b-ai.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(99,102,241,.4);animation:none}
+@keyframes aiPulse{0%,100%{box-shadow:0 4px 18px rgba(99,102,241,.5)}50%{box-shadow:0 4px 28px rgba(99,102,241,.85),0 0 0 6px rgba(99,102,241,.15)}}
+.b-rh{color:#fff;background:linear-gradient(135deg,#0891b2,#0e7490);border-radius:50px;box-shadow:0 4px 18px rgba(8,145,178,.4);border:none}
+.b-rh:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(8,145,178,.55)}
+.b-rh.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(8,145,178,.35)}
+/* AI CHAT UI */
+.ai-wrap{max-width:760px;margin:0 auto}
+.ai-chat{min-height:320px;max-height:480px;overflow-y:auto;display:flex;flex-direction:column;gap:.85rem;padding:1rem;background:rgba(0,0,0,.25);border:1.5px solid rgba(99,102,241,.2);border-radius:16px;margin-bottom:1rem;scroll-behavior:smooth}
+.ai-msg{display:flex;gap:.7rem;align-items:flex-start;animation:fadeUp .3s ease}
+.ai-msg.user{flex-direction:row-reverse}
+.ai-avatar{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.ai-avatar.bot{background:linear-gradient(135deg,#6366f1,#4f46e5)}
+.ai-avatar.usr{background:linear-gradient(135deg,#059669,#047857)}
+.ai-bubble{max-width:82%;padding:.75rem 1rem;border-radius:14px;font-size:.9rem;font-weight:600;line-height:1.6;color:#e2e8f0}
+.ai-bubble.bot{background:rgba(99,102,241,.1);border:1.5px solid rgba(99,102,241,.25);border-top-left-radius:4px}
+.ai-bubble.usr{background:rgba(5,150,105,.1);border:1.5px solid rgba(5,150,105,.25);border-top-right-radius:4px;text-align:right}
+.ai-bubble.loading{color:#818cf8}.ai-dots span{display:inline-block;animation:dotBounce .9s infinite;font-size:1.4rem;line-height:1}
+.ai-dots span:nth-child(2){animation-delay:.2s}.ai-dots span:nth-child(3){animation-delay:.4s}
+@keyframes dotBounce{0%,80%,100%{transform:translateY(0)}40%{transform:translateY(-8px)}}
+.ai-input-row{display:flex;gap:.6rem}
+.ai-input{flex:1;font-family:'Nunito',sans-serif;font-size:.95rem;padding:.85rem 1.1rem;background:var(--sf);border:2px solid rgba(99,102,241,.3);border-radius:13px;color:#e2e8f0;outline:none;transition:border-color .2s;resize:none;min-height:48px;max-height:120px}
+.ai-input:focus{border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.15)}
+.ai-send{font-family:'Fredoka One',cursive;font-size:.95rem;padding:.85rem 1.4rem;border:none;border-radius:13px;cursor:pointer;background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;box-shadow:0 4px 16px rgba(99,102,241,.35);transition:all .22s cubic-bezier(.34,1.56,.64,1);white-space:nowrap}
+.ai-send:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 7px 22px rgba(99,102,241,.5)}
+.ai-send:disabled{opacity:.5;transform:none;cursor:not-allowed}
+.ai-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.8rem}
+.ai-chip{font-family:'Fredoka One',cursive;font-size:.72rem;padding:.28rem .8rem;background:rgba(99,102,241,.08);border:1.5px solid rgba(99,102,241,.25);border-radius:50px;color:#818cf8;cursor:pointer;transition:all .18s}
+.ai-chip:hover{background:rgba(99,102,241,.18);transform:scale(1.05)}
+/* REACTION HELPER */
+.rh-wrap{max-width:700px;margin:0 auto}
+.rh-form{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:1rem}
+.rh-input{font-family:'JetBrains Mono',monospace;font-size:.95rem;padding:.85rem 1.1rem;background:var(--sf);border:2px solid rgba(8,145,178,.3);border-radius:13px;color:#e2e8f0;outline:none;transition:border-color .2s}
+.rh-input:focus{border-color:#0891b2;box-shadow:0 0 0 3px rgba(8,145,178,.15)}
+.rh-btn{font-family:'Fredoka One',cursive;font-size:1rem;padding:.85rem 1.6rem;border:none;border-radius:13px;cursor:pointer;background:linear-gradient(135deg,#0891b2,#0e7490);color:#fff;box-shadow:0 4px 16px rgba(8,145,178,.35);transition:all .22s cubic-bezier(.34,1.56,.64,1);grid-column:1/-1}
+.rh-btn:hover{transform:translateY(-2px);box-shadow:0 7px 22px rgba(8,145,178,.5)}
+.rh-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.rh-result{background:var(--sf);border:2px solid rgba(8,145,178,.3);border-radius:16px;padding:1.2rem 1.4rem;margin-top:.8rem;font-size:.92rem;font-weight:600;line-height:1.7;color:#e2e8f0;animation:fadeUp .35s ease;white-space:pre-wrap}
+/* AI EXPLAIN IN MCQ */
+.ai-explain-btn{font-family:'Fredoka One',cursive;font-size:.75rem;padding:.3rem .85rem;background:rgba(99,102,241,.1);border:1.5px solid rgba(99,102,241,.3);border-radius:50px;color:#818cf8;cursor:pointer;transition:all .18s;margin-top:.5rem}
+.ai-explain-btn:hover{background:rgba(99,102,241,.22);transform:scale(1.04)}
+.ai-mcq-result{margin-top:.6rem;padding:.75rem 1rem;background:rgba(99,102,241,.08);border:1.5px solid rgba(99,102,241,.22);border-radius:10px;font-size:.85rem;color:#c4b5fd;line-height:1.6;display:none;animation:fadeUp .3s ease}
+.ai-mcq-result.on{display:block}
 @media(max-width:640px){.nav-group{gap:.38rem;padding:.4rem .5rem}.btn{padding:.55rem .7rem;font-size:.78rem;min-width:72px;max-width:100px}.bs{font-size:.52rem}}
 `;
 
@@ -532,6 +577,8 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   </div>
   <div class="nav-divider" data-i18n="div3">🧪 Study Tools</div>
   <div class="nav-group">
+    <button class="btn b-ai" onclick="chShow('ai',this)"><span data-i18n="nav_ai">🤖 AI Tutor</span><span class="bs" data-i18n="sub_ai">Ask Anything</span></button>
+    <button class="btn b-rh" onclick="chShow('rh',this)"><span data-i18n="nav_rh">🔬 AI Reactions</span><span class="bs" data-i18n="sub_rh">Predict & Explain</span></button>
     <button class="btn b-mq" onclick="chShow('mq',this)"><span data-i18n="nav_mq">📝 MCQ Exam</span><span class="bs" data-i18n="sub_mq">300+ Qs · 20 Min</span></button>
     <button class="btn b-tq" onclick="chShow('tq',this)"><span data-i18n="nav_tq">🎯 Topic Quiz</span><span class="bs" data-i18n="sub_tq">5 Qs / Topic</span></button>
     <button class="btn b-fc" onclick="chShow('fc',this)"><span data-i18n="nav_fc">⏱️ Flashcards</span><span class="bs" data-i18n="sub_fc">Flip & Revise</span></button>
@@ -2328,10 +2375,64 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   </div></div>
 </div>`;
 
+  // ══════════════════════════════════════════════
+  //  🤖  AI CHEMISTRY TUTOR PANEL
+  // ══════════════════════════════════════════════
+  panels['ai'] = `
+<div class="ph" style="border-color:#6366f1;color:#6366f1"><div class="phi">🤖</div><div><div class="pht">AI Chemistry Tutor</div><div class="phb"><span class="badge">Powered by Claude AI</span><span class="badge">EN / বাংলা / हिंदी</span><span class="badge">Ask anything</span></div><div class="phd">Ask any organic chemistry question — the AI will explain it simply and clearly in your language!</div></div></div>
+<div class="ai-wrap">
+  <div class="ai-chips" id="ai-chips">
+    <button class="ai-chip" onclick="aiChip(this)">What is catenation?</button>
+    <button class="ai-chip" onclick="aiChip(this)">Difference between alkane and alkene?</button>
+    <button class="ai-chip" onclick="aiChip(this)">What is a chiral carbon?</button>
+    <button class="ai-chip" onclick="aiChip(this)">Explain Markovnikov's rule</button>
+    <button class="ai-chip" onclick="aiChip(this)">What is tautomerism?</button>
+    <button class="ai-chip" onclick="aiChip(this)">Why is benzene aromatic?</button>
+    <button class="ai-chip" onclick="aiChip(this)">Explain optical isomerism</button>
+    <button class="ai-chip" onclick="aiChip(this)">What is a racemic mixture?</button>
+  </div>
+  <div class="ai-chat" id="ai-chat">
+    <div class="ai-msg">
+      <div class="ai-avatar bot">🤖</div>
+      <div class="ai-bubble bot">👋 Hello! I am your AI Chemistry Tutor. Ask me any question about organic chemistry — reactions, naming, isomerism, mechanisms, anything! I will answer in your chosen language (English / বাংলা / हिंदी).</div>
+    </div>
+  </div>
+  <div class="ai-input-row">
+    <textarea class="ai-input" id="ai-input" placeholder="Ask any chemistry question..." rows="2" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();aiSend()}"></textarea>
+    <button class="ai-send" id="ai-send-btn" onclick="aiSend()">Send ▶</button>
+  </div>
+</div>`;
+
+  // ══════════════════════════════════════════════
+  //  🔬  AI REACTION HELPER PANEL
+  // ══════════════════════════════════════════════
+  panels['rh'] = `
+<div class="ph" style="border-color:#0891b2;color:#0891b2"><div class="phi">🔬</div><div><div class="pht">AI Reaction Helper</div><div class="phb"><span class="badge">Predict products</span><span class="badge">Explain mechanism</span><span class="badge">All conditions</span></div><div class="phd">Enter a reactant and conditions — the AI will predict the product, explain the mechanism, and show the full reaction equation!</div></div></div>
+<div class="rh-wrap">
+  <div style="font-family:'Fredoka One',cursive;font-size:.95rem;color:#94a3b8;margin-bottom:.8rem">🧪 Enter reaction details:</div>
+  <div class="rh-form">
+    <input class="rh-input" id="rh-reactant" placeholder="Reactant (e.g. CH₂=CH₂)" />
+    <input class="rh-input" id="rh-reagent" placeholder="Reagent/Condition (e.g. H₂, Ni, 180°C)" />
+    <button class="rh-btn" id="rh-btn" onclick="rhAsk()">🔬 Predict Reaction & Explain</button>
+  </div>
+
+  <div style="font-family:'Fredoka One',cursive;font-size:.82rem;color:#6b7280;margin-bottom:.5rem">⚡ Quick examples:</div>
+  <div class="ai-chips">
+    <button class="ai-chip" style="color:#0891b2;border-color:rgba(8,145,178,.3)" onclick="rhQuick('CH₂=CH₂','Br₂, CCl₄')">Ethene + Br₂</button>
+    <button class="ai-chip" style="color:#0891b2;border-color:rgba(8,145,178,.3)" onclick="rhQuick('CH≡CH','H₂O, HgSO₄, 80°C')">Ethyne + H₂O</button>
+    <button class="ai-chip" style="color:#0891b2;border-color:rgba(8,145,178,.3)" onclick="rhQuick('CH₃CH₂OH','K₂Cr₂O₇/H₂SO₄ controlled')">Ethanol oxidation</button>
+    <button class="ai-chip" style="color:#0891b2;border-color:rgba(8,145,178,.3)" onclick="rhQuick('CH₃CHO','H₂, Ni, 180°C')">Ethanal reduction</button>
+    <button class="ai-chip" style="color:#0891b2;border-color:rgba(8,145,178,.3)" onclick="rhQuick('CH₃COOH','NaOH, CaO, heat')">Decarboxylation</button>
+    <button class="ai-chip" style="color:#0891b2;border-color:rgba(8,145,178,.3)" onclick="rhQuick('CH₄','Cl₂, UV light')">Methane halogenation</button>
+  </div>
+
+  <div id="rh-result" style="display:none"></div>
+</div>`;
+
   // ─────────────────────────────────────────────
   //  6. RENDER ALL PANELS INTO DOM
   // ─────────────────────────────────────────────
-  const panelOrder = ['home','ka','ke','ky','al','ad','ac','ex','sy','mq','nm','fb','fc','mw','nt','rc','tq','th','fg','is','ar'];
+  const panelOrder = ['home','ka','ke','ky','al','ad','ac','ex','sy','mq','nm','fb','fc','mw','nt','rc','tq','th','fg','is','ar','ai','rh'];
   const mainEl = document.getElementById('main-content');
   panelOrder.forEach(id => {
     const div = document.createElement('div');
@@ -2983,7 +3084,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
         let cl = 'opt rv'; if (oi === ca) cl += ' ca'; if (oi === ua && oi !== ca) cl += ' wa';
         return `<div class="${cl}"><span class="ol">${lt[oi]}</span><span class="otx">${o}</span></div>`;
       }).join('');
-      h += `<div class="qc" style="border-color:${bc};margin-bottom:1rem"><div class="qh"><span class="qnum" style="color:${bc};border-color:${bc};background:${bc}1a">Q ${i + 1}</span><span class="qtop">${q.t}</span><span class="qmk" style="color:${bc}">${stx}</span></div><div class="qtxt">${q.q}</div><div class="opts">${opts}</div><div class="expl on">💡 <strong>Explanation:</strong> ${q.e}</div></div>`;
+      h += `<div class="qc" style="border-color:${bc};margin-bottom:1rem"><div class="qh"><span class="qnum" style="color:${bc};border-color:${bc};background:${bc}1a">Q ${i + 1}</span><span class="qtop">${q.t}</span><span class="qmk" style="color:${bc}">${stx}</span></div><div class="qtxt">${q.q}</div><div class="opts">${opts}</div><div class="expl on">💡 <strong>Explanation:</strong> ${q.e}</div><button class="ai-explain-btn" onclick="aiExplainMCQ(this,'${q.q.replace(/'/g,"\\'")}','${q.o[q.a].replace(/'/g,"\\'")}','${q.e.replace(/'/g,"\\'")}')">🤖 AI — Explain Deeper</button><div class="ai-mcq-result" id="ai-mcq-${i}"></div></div>`;
     });
     sec.innerHTML = h; sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
@@ -3049,8 +3150,166 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   };
 
   // ═══════════════════════════════════════════════
-  //  🌐  LANGUAGE SYSTEM (English / বাংলা / हिंदी)
+  //  🤖  AI ENGINE
   // ═══════════════════════════════════════════════
+
+  const AI_SYSTEM = {
+    en: `You are an expert organic chemistry tutor for Class 9-12 students in Bangladesh.
+Rules:
+- Only answer organic chemistry questions. If asked anything else, politely redirect to chemistry.
+- Keep answers clear, simple and suitable for Class 9-12 level.
+- Use examples with chemical formulas when helpful (keep formulas in standard notation).
+- Structure answers with short paragraphs. Use ✅ ❌ 💡 ⚠️ emojis to highlight key points.
+- Maximum 250 words per answer.
+- Respond in English.`,
+    bn: `আপনি বাংলাদেশের শ্রেণী ৯-১২ শিক্ষার্থীদের জন্য একজন দক্ষ জৈব রসায়ন শিক্ষক।
+নিয়মাবলী:
+- শুধুমাত্র জৈব রসায়নের প্রশ্নের উত্তর দিন। অন্য বিষয়ে প্রশ্ন করলে বিনয়ের সাথে রসায়নে ফিরিয়ে আনুন।
+- উত্তর সহজ, স্পষ্ট এবং শ্রেণী ৯-১২ উপযোগী রাখুন।
+- রাসায়নিক সূত্র ইংরেজিতে রাখুন (যেমন CH₄, C₂H₅OH)। বাকি সব বাংলায় লিখুন।
+- ✅ ❌ 💡 ⚠️ ইমোজি ব্যবহার করুন গুরুত্বপূর্ণ পয়েন্ট হাইলাইট করতে।
+- সর্বোচ্চ ২৫০ শব্দের উত্তর দিন।
+- বাংলায় উত্তর দিন।`,
+    hi: `आप बांग्लादेश के कक्षा 9-12 के छात्रों के लिए एक विशेषज्ञ कार्बनिक रसायन शिक्षक हैं।
+नियम:
+- केवल कार्बनिक रसायन प्रश्नों का उत्तर दें। अन्य विषयों पर विनम्रतापूर्वक रसायन की ओर वापस लाएं।
+- उत्तर सरल, स्पष्ट और कक्षा 9-12 स्तर के लिए उपयुक्त रखें।
+- रासायनिक सूत्र अंग्रेजी में रखें (जैसे CH₄, C₂H₅OH)। बाकी सब हिंदी में लिखें।
+- ✅ ❌ 💡 ⚠️ इमोजी का उपयोग मुख्य बिंदुओं को हाइलाइट करने के लिए करें।
+- अधिकतम 250 शब्दों में उत्तर दें।
+- हिंदी में उत्तर दें।`
+  };
+
+  // Core AI caller
+  async function callClaude(userMsg, systemMsg, onChunk) {
+    try {
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 1000,
+          system: systemMsg,
+          messages: [{ role: 'user', content: userMsg }]
+        })
+      });
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.error?.message || 'API error ' + res.status);
+      }
+      const data = await res.json();
+      const text = (data.content || []).map(b => b.text || '').join('');
+      if (onChunk) onChunk(text);
+      return text;
+    } catch (e) {
+      const msg = '⚠️ AI error: ' + e.message;
+      if (onChunk) onChunk(msg);
+      return msg;
+    }
+  }
+
+  // ── AI TUTOR ──
+  let aiHistory = [];
+  let aiThinking = false;
+
+  function aiAddMsg(role, text, loading) {
+    const chat = document.getElementById('ai-chat');
+    if (!chat) return null;
+    const div = document.createElement('div');
+    div.className = 'ai-msg' + (role === 'user' ? ' user' : '');
+    div.innerHTML = `<div class="ai-avatar ${role === 'user' ? 'usr' : 'bot'}">${role === 'user' ? '👤' : '🤖'}</div>
+      <div class="ai-bubble ${role === 'user' ? 'usr' : loading ? 'bot loading' : 'bot'}">${loading ? '<span class="ai-dots"><span>●</span><span>●</span><span>●</span></span>' : text.replace(/\n/g,'<br>')}</div>`;
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
+    return div;
+  }
+
+  window.aiSend = async function() {
+    if (aiThinking) return;
+    const inp = document.getElementById('ai-input');
+    const btn = document.getElementById('ai-send-btn');
+    const msg = (inp ? inp.value : '').trim();
+    if (!msg) return;
+    aiThinking = true;
+    if (inp) inp.value = '';
+    if (btn) btn.disabled = true;
+    aiAddMsg('user', msg);
+    const loadDiv = aiAddMsg('bot', '', true);
+    const reply = await callClaude(msg, AI_SYSTEM[CLANG] || AI_SYSTEM.en);
+    if (loadDiv) loadDiv.querySelector('.ai-bubble').innerHTML = reply.replace(/\n/g, '<br>');
+    const chat = document.getElementById('ai-chat');
+    if (chat) chat.scrollTop = chat.scrollHeight;
+    aiThinking = false;
+    if (btn) btn.disabled = false;
+    if (inp) inp.focus();
+  };
+
+  window.aiChip = function(btn) {
+    const inp = document.getElementById('ai-input');
+    if (inp) { inp.value = btn.textContent; inp.focus(); }
+  };
+
+  // ── AI MCQ EXPLAIN ──
+  window.aiExplainMCQ = async function(btn, question, answer, explanation) {
+    const idx = btn.nextElementSibling;
+    if (!idx) return;
+    if (idx.classList.contains('on')) { idx.classList.remove('on'); btn.textContent = '🤖 AI — Explain Deeper'; return; }
+    btn.textContent = '⏳ AI thinking...';
+    btn.disabled = true;
+    idx.classList.add('on');
+    idx.textContent = '⏳ Loading AI explanation...';
+    const langNote = CLANG === 'bn' ? ' বাংলায় উত্তর দিন।' : CLANG === 'hi' ? ' हिंदी में उत्तर दें।' : ' Answer in English.';
+    const prompt = `MCQ Question: "${question}"\nCorrect Answer: "${answer}"\nBasic Explanation: "${explanation}"\n\nPlease give a DEEPER explanation of WHY this is correct. Use a simple analogy or real-life example. Explain any common misconceptions. Keep it under 150 words.${langNote}`;
+    const reply = await callClaude(prompt, AI_SYSTEM[CLANG] || AI_SYSTEM.en);
+    idx.innerHTML = '🤖 <strong>AI Deep Explanation:</strong><br><br>' + reply.replace(/\n/g,'<br>');
+    btn.textContent = '✅ AI Explained — click to hide';
+    btn.disabled = false;
+  };
+
+  // ── AI REACTION HELPER ──
+  window.rhAsk = async function() {
+    const rBtn = document.getElementById('rh-btn');
+    const reactant = (document.getElementById('rh-reactant')?.value || '').trim();
+    const reagent  = (document.getElementById('rh-reagent')?.value  || '').trim();
+    if (!reactant) { alert('Please enter a reactant!'); return; }
+    rBtn.disabled = true;
+    rBtn.textContent = '⏳ AI predicting...';
+    const res = document.getElementById('rh-result');
+    res.style.display = 'block';
+    res.className = 'rh-result';
+    res.textContent = '⏳ AI is predicting the reaction...';
+    const langNote = CLANG === 'bn' ? '\nবাংলায় উত্তর দিন। রাসায়নিক সূত্র ইংরেজিতে রাখুন।' : CLANG === 'hi' ? '\nहिंदी में उत्तर दें। रासायनिक सूत्र अंग्रेजी में रखें।' : '\nAnswer in English.';
+    const prompt = `Reactant: ${reactant}
+Reagent/Condition: ${reagent || 'not specified'}
+
+Please provide:
+1. ⚗️ REACTION EQUATION: Write the balanced equation with arrow
+2. 🏷️ REACTION TYPE: Name the type (addition, substitution, oxidation etc.)
+3. ✅ PRODUCT: Name and formula of main product
+4. 🔧 MECHANISM: Simple step-by-step explanation (2-3 steps)
+5. 💡 KEY POINT: One important thing to remember about this reaction
+Keep it concise and suitable for Class 9-12 students.${langNote}`;
+    const reply = await callClaude(prompt, AI_SYSTEM[CLANG] || AI_SYSTEM.en);
+    res.innerHTML = reply.replace(/\n/g,'<br>');
+    rBtn.disabled = false;
+    rBtn.textContent = '🔬 Predict Reaction & Explain';
+  };
+
+  window.rhQuick = function(reactant, reagent) {
+    const r1 = document.getElementById('rh-reactant');
+    const r2 = document.getElementById('rh-reagent');
+    if (r1) r1.value = reactant;
+    if (r2) r2.value = reagent;
+    rhAsk();
+  };
+
+  // Update TRANS with AI labels
+  TRANS.en.nav_ai='🤖 AI Tutor'; TRANS.en.sub_ai='Ask Anything';
+  TRANS.en.nav_rh='🔬 AI Reactions'; TRANS.en.sub_rh='Predict & Explain';
+  TRANS.bn.nav_ai='🤖 AI শিক্ষক'; TRANS.bn.sub_ai='যেকোনো প্রশ্ন করুন';
+  TRANS.bn.nav_rh='🔬 AI বিক্রিয়া'; TRANS.bn.sub_rh='পূর্বানুমান করুন';
+  TRANS.hi.nav_ai='🤖 AI शिक्षक'; TRANS.hi.sub_ai='कुछ भी पूछें';
+  TRANS.hi.nav_rh='🔬 AI अभिक्रिया'; TRANS.hi.sub_rh='भविष्यवाणी करें';
   const TRANS = {
     en: {
       div1:'📚 Organic Compounds', div2:'📖 Theory & Reference', div3:'🧪 Study Tools',
