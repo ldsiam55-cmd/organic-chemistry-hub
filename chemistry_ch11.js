@@ -473,6 +473,14 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 .bkash-thank{text-align:center;font-size:.75rem;color:#6b7280;margin-bottom:1rem;font-style:italic}
 .bkash-close{width:100%;font-family:'Fredoka One',cursive;font-size:.92rem;padding:.7rem;background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);color:#94a3b8;border-radius:12px;cursor:pointer;transition:all .2s}
 .bkash-close:hover{background:rgba(255,255,255,.1);color:#e2e8f0}
+.lang-wrap{position:absolute;top:1rem;left:1rem;z-index:200}
+.lang-toggle{font-family:'Fredoka One',cursive;font-size:.8rem;padding:.42rem .95rem;background:rgba(255,255,255,.07);color:#e2e8f0;border:1.5px solid rgba(255,255,255,.15);border-radius:50px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:.35rem;white-space:nowrap}
+.lang-toggle:hover{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.3)}
+.lang-dd{position:absolute;top:calc(100% + .55rem);left:0;background:#1a1a3e;border:2px solid rgba(255,255,255,.13);border-radius:14px;overflow:hidden;display:none;flex-direction:column;min-width:140px;box-shadow:0 10px 32px rgba(0,0,0,.6);z-index:300}
+.lang-dd.open{display:flex;animation:fadeUp .2s ease}
+.lang-opt{font-family:'Fredoka One',cursive;font-size:.88rem;padding:.62rem 1.1rem;background:transparent;color:#94a3b8;border:none;cursor:pointer;text-align:left;transition:all .18s;display:flex;align-items:center;gap:.5rem}
+.lang-opt:hover{background:rgba(255,255,255,.07);color:#e2e8f0}
+.lang-opt.on{color:#818cf8;background:rgba(129,140,248,.1);font-weight:700}
 @media(max-width:640px){.nav-group{gap:.38rem;padding:.4rem .5rem}.btn{padding:.55rem .7rem;font-size:.78rem;min-width:72px;max-width:100px}.bs{font-size:.52rem}}
 `;
 
@@ -491,45 +499,53 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   document.body.innerHTML = `
 <header>
   <button class="bkash-top-btn" onclick="openBkash()">💳 bKash Support</button>
-  <div class="hl">⚗️ Organic Chemistry · For Class 9–12 Students</div>
+  <div class="lang-wrap">
+    <button class="lang-toggle" id="lang-toggle-btn" onclick="toggleLangDD()">🌐 EN ▾</button>
+    <div class="lang-dd" id="lang-dd">
+      <button class="lang-opt on" data-lang="en" onclick="setLang('en')">🇬🇧 English</button>
+      <button class="lang-opt" data-lang="bn" onclick="setLang('bn')">🇧🇩 বাংলা</button>
+      <button class="lang-opt" data-lang="hi" onclick="setLang('hi')">🇮🇳 हिंदी</button>
+    </div>
+  </div>
+  <div class="hl" data-i18n="hl">⚗️ Organic Chemistry · For Class 9–12 Students</div>
   <h1 onclick="goHome()" style="cursor:pointer" title="Go to Home">Organic Chemistry Hub</h1>
-  <div class="hd">🔬 Reactions · Isomerism · Synthesis · Formula Lookup · MCQ Exam</div>
+  <div class="hd" data-i18n="hd">🔬 Reactions · Isomerism · Synthesis · Formula Lookup · MCQ Exam</div>
 </header>
 <nav>
-  <div class="nav-divider">📚 Organic Compounds</div>
+  <div class="nav-divider" data-i18n="div1">📚 Organic Compounds</div>
   <div class="nav-group">
-    <button class="btn b-ka" onclick="chShow('ka',this)">🔥 Alkane<span class="bs">CₙH₂ₙ₊₂</span></button>
-    <button class="btn b-ke" onclick="chShow('ke',this)">🌿 Alkene<span class="bs">CₙH₂ₙ</span></button>
-    <button class="btn b-ky" onclick="chShow('ky',this)">⚡ Alkyne<span class="bs">CₙH₂ₙ₋₂</span></button>
-    <button class="btn b-al" onclick="chShow('al',this)">🧪 Alcohol<span class="bs">–OH group</span></button>
-    <button class="btn b-ad" onclick="chShow('ad',this)">✨ Aldehyde<span class="bs">–CHO group</span></button>
-    <button class="btn b-ac" onclick="chShow('ac',this)">🧬 Fatty Acid<span class="bs">–COOH group</span></button>
-    <button class="btn b-ex" onclick="chShow('ex',this)">⇄ Exchange<span class="bs">Any → Any</span></button>
-    <button class="btn b-sy" onclick="chShow('sy',this)">🔬 How Made<span class="bs">Synthesis</span></button>
+    <button class="btn b-ka" onclick="chShow('ka',this)"><span data-i18n="nav_ka">🔥 Alkane</span><span class="bs">CₙH₂ₙ₊₂</span></button>
+    <button class="btn b-ke" onclick="chShow('ke',this)"><span data-i18n="nav_ke">🌿 Alkene</span><span class="bs">CₙH₂ₙ</span></button>
+    <button class="btn b-ky" onclick="chShow('ky',this)"><span data-i18n="nav_ky">⚡ Alkyne</span><span class="bs">CₙH₂ₙ₋₂</span></button>
+    <button class="btn b-al" onclick="chShow('al',this)"><span data-i18n="nav_al">🧪 Alcohol</span><span class="bs" data-i18n="sub_al">–OH group</span></button>
+    <button class="btn b-ad" onclick="chShow('ad',this)"><span data-i18n="nav_ad">✨ Aldehyde</span><span class="bs" data-i18n="sub_ad">–CHO group</span></button>
+    <button class="btn b-ac" onclick="chShow('ac',this)"><span data-i18n="nav_ac">🧬 Fatty Acid</span><span class="bs" data-i18n="sub_ac">–COOH group</span></button>
+    <button class="btn b-ex" onclick="chShow('ex',this)"><span data-i18n="nav_ex">⇄ Exchange</span><span class="bs" data-i18n="sub_ex">Any → Any</span></button>
+    <button class="btn b-sy" onclick="chShow('sy',this)"><span data-i18n="nav_sy">🔬 How Made</span><span class="bs" data-i18n="sub_sy">Synthesis</span></button>
   </div>
-  <div class="nav-divider">📖 Theory & Reference</div>
+  <div class="nav-divider" data-i18n="div2">📖 Theory & Reference</div>
   <div class="nav-group">
-    <button class="btn b-th" onclick="chShow('th',this)">📖 Theory<span class="bs">EV Textbook</span></button>
-    <button class="btn b-fg" onclick="chShow('fg',this)">🏷️ Func. Groups<span class="bs">11 Types</span></button>
-    <button class="btn b-is" onclick="chShow('is',this)">🔄 Isomerism<span class="bs">Structural/Geo</span></button>
-    <button class="btn b-ar" onclick="chShow('ar',this)">💎 Arenes<span class="bs">Benzene Ring</span></button>
+    <button class="btn b-th" onclick="chShow('th',this)"><span data-i18n="nav_th">📖 Theory</span><span class="bs" data-i18n="sub_th">EV Textbook</span></button>
+    <button class="btn b-fg" onclick="chShow('fg',this)"><span data-i18n="nav_fg">🏷️ Func. Groups</span><span class="bs">11 Types</span></button>
+    <button class="btn b-is" onclick="chShow('is',this)"><span data-i18n="nav_is">🔄 Isomerism</span><span class="bs" data-i18n="sub_is">Structural/Geo</span></button>
+    <button class="btn b-ar" onclick="chShow('ar',this)"><span data-i18n="nav_ar">💎 Arenes</span><span class="bs" data-i18n="sub_ar">Benzene Ring</span></button>
   </div>
-  <div class="nav-divider">🧪 Study Tools</div>
+  <div class="nav-divider" data-i18n="div3">🧪 Study Tools</div>
   <div class="nav-group">
-    <button class="btn b-mq" onclick="chShow('mq',this)">📝 MCQ Exam<span class="bs">300+ Qs · 20 Min</span></button>
-    <button class="btn b-tq" onclick="chShow('tq',this)">🎯 Topic Quiz<span class="bs">5 Qs / Topic</span></button>
-    <button class="btn b-fc" onclick="chShow('fc',this)">⏱️ Flashcards<span class="bs">Flip & Revise</span></button>
-    <button class="btn b-nm" onclick="chShow('nm',this)">🔍 Name Lookup<span class="bs">150+ Compounds</span></button>
-    <button class="btn b-fb" onclick="chShow('fb',this)">🧩 Formula Builder<span class="bs">Type Structure</span></button>
-    <button class="btn b-mw" onclick="chShow('mw',this)">🧮 Mol. Weight<span class="bs">Calculator</span></button>
-    <button class="btn b-nt" onclick="chShow('nt',this)">📝 Notes<span class="bs">Summary Cards</span></button>
-    <button class="btn b-rc" onclick="chShow('rc',this)">📊 Reaction Chart<span class="bs">Visual Map</span></button>
+    <button class="btn b-mq" onclick="chShow('mq',this)"><span data-i18n="nav_mq">📝 MCQ Exam</span><span class="bs" data-i18n="sub_mq">300+ Qs · 20 Min</span></button>
+    <button class="btn b-tq" onclick="chShow('tq',this)"><span data-i18n="nav_tq">🎯 Topic Quiz</span><span class="bs" data-i18n="sub_tq">5 Qs / Topic</span></button>
+    <button class="btn b-fc" onclick="chShow('fc',this)"><span data-i18n="nav_fc">⏱️ Flashcards</span><span class="bs" data-i18n="sub_fc">Flip & Revise</span></button>
+    <button class="btn b-nm" onclick="chShow('nm',this)"><span data-i18n="nav_nm">🔍 Name Lookup</span><span class="bs" data-i18n="sub_nm">150+ Compounds</span></button>
+    <button class="btn b-fb" onclick="chShow('fb',this)"><span data-i18n="nav_fb">🧩 Formula Builder</span><span class="bs" data-i18n="sub_fb">Type Structure</span></button>
+    <button class="btn b-mw" onclick="chShow('mw',this)"><span data-i18n="nav_mw">🧮 Mol. Weight</span><span class="bs" data-i18n="sub_mw">Calculator</span></button>
+    <button class="btn b-nt" onclick="chShow('nt',this)"><span data-i18n="nav_nt">📝 Notes</span><span class="bs" data-i18n="sub_nt">Summary Cards</span></button>
+    <button class="btn b-rc" onclick="chShow('rc',this)"><span data-i18n="nav_rc">📊 Reaction Chart</span><span class="bs" data-i18n="sub_rc">Visual Map</span></button>
   </div>
 </nav>
 <main id="main-content"></main>
 <footer>
-  ⚗️ ORGANIC CHEMISTRY HUB · FOR CLASS 9–12 STUDENTS
-  <div style="margin-top:.5rem;font-size:.68rem;color:#374151">Made with ❤️ for Class 9–12 Chemistry Students</div>
+  <span data-i18n="footer_main">⚗️ ORGANIC CHEMISTRY HUB · FOR CLASS 9–12 STUDENTS</span>
+  <div style="margin-top:.5rem;font-size:.68rem;color:#374151" data-i18n="footer_tag">Made with ❤️ for Class 9–12 Chemistry Students</div>
 </footer>
 
 <!-- bKash Payment Modal -->
@@ -591,7 +607,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   const panels = {};
 
   // HOME
-  panels['home'] = `<div class="empty"><span class="ei">⚗️</span><div class="et">Choose a Section!</div><div class="es">Click any button above to explore reactions, exchange conversions, synthesis or MCQ exam 🚀</div></div>`;
+  panels['home'] = `<div class="empty"><span class="ei">⚗️</span><div class="et" data-i18n="home_title">Choose a Section!</div><div class="es" data-i18n="home_desc">Click any button above to explore reactions, exchange conversions, synthesis or MCQ exam 🚀</div></div>`;
 
   // ── ALKANE ──
   panels['ka'] = `
@@ -817,9 +833,9 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 
   // ── MCQ ──
   panels['mq'] = `
-<div id="mq-start"><div class="mcqs"><span class="mcqsi">📝</span><div class="mcqst">Chemistry MCQ Exam</div><div class="mcqss">Organic Chemistry · Class 9–12</div>
+<div id="mq-start"><div class="mcqs"><span class="mcqsi">📝</span><div class="mcqst" data-i18n="mq_title">Chemistry MCQ Exam</div><div class="mcqss" data-i18n="mq_sub">Organic Chemistry · Class 9–12</div>
 <div class="irow"><div class="ic"><span class="ici">❓</span><span class="icv">30</span><span class="icl">Questions</span></div><div class="ic"><span class="ici">⏱️</span><span class="icv">20</span><span class="icl">Minutes</span></div><div class="ic"><span class="ici">🏆</span><span class="icv">30</span><span class="icl">Marks</span></div><div class="ic"><span class="ici">📚</span><span class="icv">268</span><span class="icl">Bank</span></div></div>
-<button class="stbtn" onclick="startExam()">🚀 Start Exam</button></div></div>
+<button class="stbtn" data-i18n="mq_start" onclick="startExam()">🚀 Start Exam</button></div></div>
 <div id="mqexam">
   <div class="exbar"><span class="epl" id="epl">0 / 30</span><div class="epw"><div class="epf" id="epf" style="width:0%"></div></div><div id="timer">20:00</div><button class="fnbtn" onclick="finishExam()">✔ Finish</button></div>
   <div id="ql" class="ql"></div>
@@ -828,7 +844,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 <div id="mqres">
   <div class="rher"><span class="ri" id="ri">🎉</span><div class="sring" id="sr"><span class="sn" id="sn">0</span><span class="sof">/ 30</span></div><div class="rg" id="rg">—</div><div class="rm" id="rm">—</div>
   <div class="rchips"><span class="chip c1" id="ch1">✓ 0</span><span class="chip c2" id="ch2">✗ 0</span><span class="chip c3" id="ch3">— 0</span><span class="chip c4" id="ch4">⏱ 0:00</span></div>
-  <div class="ract"><button class="ra ra1" onclick="showRev()">📖 See Answers &amp; Explanations</button><button class="ra ra2" onclick="retake()">🔄 Retake</button></div></div>
+  <div class="ract"><button class="ra ra1" data-i18n="mq_review" onclick="showRev()">📖 See Answers &amp; Explanations</button><button class="ra ra2" data-i18n="mq_retake" onclick="retake()">🔄 Retake</button></div></div>
   <div id="revs"></div>
 </div>`;
 
@@ -1487,15 +1503,15 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   <div class="fc-progress"><div class="fc-bar"><div class="fc-fill" id="fc-fill" style="width:0%"></div></div><div class="fc-count" id="fc-count">1 / ${FC_CARDS.length}</div></div>
   <div class="fc-card" id="fc-card" onclick="fcFlip()">
     <div class="fc-inner" id="fc-inner">
-      <div class="fc-front"><div class="fc-label" style="color:#f59e0b">Question — click to flip</div><div class="fc-question" id="fc-q">Loading...</div><div class="fc-hint" id="fc-hint"></div></div>
-      <div class="fc-back"><div class="fc-label" style="color:#818cf8">Answer</div><div class="fc-answer" id="fc-a">Loading...</div></div>
+      <div class="fc-front"><div class="fc-label" style="color:#f59e0b" data-i18n="fc_front">Question — click to flip</div><div class="fc-question" id="fc-q">Loading...</div><div class="fc-hint" id="fc-hint"></div></div>
+      <div class="fc-back"><div class="fc-label" style="color:#818cf8" data-i18n="fc_back">Answer</div><div class="fc-answer" id="fc-a">Loading...</div></div>
     </div>
   </div>
   <div class="fc-actions">
-    <button class="fc-btn fc-prev" onclick="fcNav(-1)">◀ Prev</button>
-    <button class="fc-btn fc-flip" onclick="fcFlip()">🔄 Flip</button>
-    <button class="fc-btn fc-next" onclick="fcNav(1)">Next ▶</button>
-    <button class="fc-btn fc-shuffle" onclick="fcShuffle()">🔀 Shuffle</button>
+    <button class="fc-btn fc-prev" data-i18n="fc_prev" onclick="fcNav(-1)">◀ Prev</button>
+    <button class="fc-btn fc-flip" data-i18n="fc_flip" onclick="fcFlip()">🔄 Flip</button>
+    <button class="fc-btn fc-next" data-i18n="fc_next" onclick="fcNav(1)">Next ▶</button>
+    <button class="fc-btn fc-shuffle" data-i18n="fc_shuffle" onclick="fcShuffle()">🔀 Shuffle</button>
   </div>
 </div>`;
 
@@ -3031,5 +3047,125 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     if (home) home.classList.add('on');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // ═══════════════════════════════════════════════
+  //  🌐  LANGUAGE SYSTEM (English / বাংলা / हिंदी)
+  // ═══════════════════════════════════════════════
+  const TRANS = {
+    en: {
+      div1:'📚 Organic Compounds', div2:'📖 Theory & Reference', div3:'🧪 Study Tools',
+      nav_ka:'🔥 Alkane', nav_ke:'🌿 Alkene', nav_ky:'⚡ Alkyne',
+      nav_al:'🧪 Alcohol', nav_ad:'✨ Aldehyde', nav_ac:'🧬 Fatty Acid',
+      nav_ex:'⇄ Exchange', nav_sy:'🔬 How Made',
+      nav_th:'📖 Theory', nav_fg:'🏷️ Func. Groups', nav_is:'🔄 Isomerism', nav_ar:'💎 Arenes',
+      nav_mq:'📝 MCQ Exam', nav_tq:'🎯 Topic Quiz', nav_fc:'⏱️ Flashcards',
+      nav_nm:'🔍 Name Lookup', nav_fb:'🧩 Formula Builder', nav_mw:'🧮 Mol. Weight',
+      nav_nt:'📝 Notes', nav_rc:'📊 Reaction Chart',
+      sub_al:'–OH group', sub_ad:'–CHO group', sub_ac:'–COOH group',
+      sub_ex:'Any → Any', sub_sy:'Synthesis', sub_th:'EV Textbook',
+      sub_is:'Structural/Geo', sub_ar:'Benzene Ring',
+      sub_mq:'300+ Qs · 20 Min', sub_tq:'5 Qs / Topic', sub_fc:'Flip & Revise',
+      sub_nm:'150+ Compounds', sub_fb:'Type Structure', sub_mw:'Calculator',
+      sub_nt:'Summary Cards', sub_rc:'Visual Map',
+      hl:'⚗️ Organic Chemistry · For Class 9–12 Students',
+      hd:'🔬 Reactions · Isomerism · Synthesis · Formula Lookup · MCQ Exam',
+      footer_main:'⚗️ ORGANIC CHEMISTRY HUB · FOR CLASS 9–12 STUDENTS',
+      footer_tag:'Made with ❤️ for Class 9–12 Chemistry Students',
+      home_title:'Choose a Section!',
+      home_desc:'Click any button above to explore reactions, exchange conversions, synthesis or MCQ exam 🚀',
+      mq_title:'Chemistry MCQ Exam', mq_sub:'Organic Chemistry · Class 9–12',
+      mq_start:'🚀 Start Exam', mq_review:'📖 See Answers & Explanations', mq_retake:'🔄 Retake',
+      fc_front:'Question — click to flip', fc_back:'Answer',
+      fc_prev:'◀ Prev', fc_flip:'🔄 Flip', fc_next:'Next ▶', fc_shuffle:'🔀 Shuffle',
+    },
+    bn: {
+      div1:'📚 জৈব যৌগ', div2:'📖 তত্ত্ব ও রেফারেন্স', div3:'🧪 অধ্যয়ন সরঞ্জাম',
+      nav_ka:'🔥 অ্যালকেন', nav_ke:'🌿 অ্যালকিন', nav_ky:'⚡ অ্যালকাইন',
+      nav_al:'🧪 অ্যালকোহল', nav_ad:'✨ অ্যালডিহাইড', nav_ac:'🧬 ফ্যাটি এসিড',
+      nav_ex:'⇄ রূপান্তর', nav_sy:'🔬 প্রস্তুতি',
+      nav_th:'📖 তত্ত্ব', nav_fg:'🏷️ কার্যকরী মূলক', nav_is:'🔄 সমাবয়বতা', nav_ar:'💎 অ্যারিন',
+      nav_mq:'📝 MCQ পরীক্ষা', nav_tq:'🎯 বিষয় কুইজ', nav_fc:'⏱️ ফ্ল্যাশকার্ড',
+      nav_nm:'🔍 নাম খোঁজ', nav_fb:'🧩 সূত্র নির্মাতা', nav_mw:'🧮 আণবিক ভর',
+      nav_nt:'📝 নোট', nav_rc:'📊 বিক্রিয়া চার্ট',
+      sub_al:'–OH মূলক', sub_ad:'–CHO মূলক', sub_ac:'–COOH মূলক',
+      sub_ex:'যেকোনো → যেকোনো', sub_sy:'সংশ্লেষণ', sub_th:'EV পাঠ্যবই',
+      sub_is:'কাঠামো/জ্যামিতিক', sub_ar:'বেনজিন বলয়',
+      sub_mq:'৩০০+ প্রশ্ন · ২০ মিনিট', sub_tq:'বিষয়প্রতি ৫টি', sub_fc:'উল্টান ও পড়ুন',
+      sub_nm:'১৫০+ যৌগ', sub_fb:'কাঠামো লিখুন', sub_mw:'ক্যালকুলেটর',
+      sub_nt:'সারসংক্ষেপ', sub_rc:'ভিজ্যুয়াল ম্যাপ',
+      hl:'⚗️ জৈব রসায়ন · শ্রেণী ৯–১২ শিক্ষার্থীদের জন্য',
+      hd:'🔬 বিক্রিয়া · সমাবয়বতা · সংশ্লেষণ · সূত্র খোঁজ · MCQ পরীক্ষা',
+      footer_main:'⚗️ অর্গানিক কেমিস্ট্রি হাব · শ্রেণী ৯–১২',
+      footer_tag:'❤️ শ্রেণী ৯–১২ রসায়ন শিক্ষার্থীদের জন্য তৈরি',
+      home_title:'একটি বিভাগ বেছে নিন!',
+      home_desc:'বিক্রিয়া, রূপান্তর, সংশ্লেষণ বা MCQ পরীক্ষা দেখতে উপরের যেকোনো বোতামে ক্লিক করুন 🚀',
+      mq_title:'রসায়ন MCQ পরীক্ষা', mq_sub:'জৈব রসায়ন · শ্রেণী ৯–১২',
+      mq_start:'🚀 পরীক্ষা শুরু করুন', mq_review:'📖 উত্তর ও ব্যাখ্যা দেখুন', mq_retake:'🔄 আবার দিন',
+      fc_front:'প্রশ্ন — উল্টাতে ক্লিক করুন', fc_back:'উত্তর',
+      fc_prev:'◀ আগের', fc_flip:'🔄 উল্টান', fc_next:'পরের ▶', fc_shuffle:'🔀 মিশিয়ে দিন',
+    },
+    hi: {
+      div1:'📚 कार्बनिक यौगिक', div2:'📖 सिद्धांत एवं संदर्भ', div3:'🧪 अध्ययन उपकरण',
+      nav_ka:'🔥 ऐल्केन', nav_ke:'🌿 ऐल्कीन', nav_ky:'⚡ ऐल्काइन',
+      nav_al:'🧪 अल्कोहल', nav_ad:'✨ एल्डिहाइड', nav_ac:'🧬 वसा अम्ल',
+      nav_ex:'⇄ रूपांतरण', nav_sy:'🔬 बनाने की विधि',
+      nav_th:'📖 सिद्धांत', nav_fg:'🏷️ क्रियात्मक समूह', nav_is:'🔄 समावयवता', nav_ar:'💎 ऐरीन',
+      nav_mq:'📝 MCQ परीक्षा', nav_tq:'🎯 विषय प्रश्नोत्तरी', nav_fc:'⏱️ फ्लैशकार्ड',
+      nav_nm:'🔍 नाम खोज', nav_fb:'🧩 सूत्र निर्माता', nav_mw:'🧮 आणविक भार',
+      nav_nt:'📝 नोट्स', nav_rc:'📊 अभिक्रिया चार्ट',
+      sub_al:'–OH समूह', sub_ad:'–CHO समूह', sub_ac:'–COOH समूह',
+      sub_ex:'कोई भी → कोई भी', sub_sy:'संश्लेषण', sub_th:'EV पाठ्यपुस्तक',
+      sub_is:'संरचनात्मक/ज्यामितीय', sub_ar:'बेंजीन वलय',
+      sub_mq:'३०० से अधिक · २० मिनट', sub_tq:'प्रति विषय ५ प्रश्न', sub_fc:'पलटें और पढ़ें',
+      sub_nm:'१५०+ यौगिक', sub_fb:'संरचना टाइप करें', sub_mw:'कैलकुलेटर',
+      sub_nt:'सारांश कार्ड', sub_rc:'विजुअल मैप',
+      hl:'⚗️ कार्बनिक रसायन · कक्षा 9–12 छात्रों के लिए',
+      hd:'🔬 अभिक्रियाएं · समावयवता · संश्लेषण · सूत्र खोज · MCQ परीक्षा',
+      footer_main:'⚗️ ऑर्गेनिक केमिस्ट्री हब · कक्षा 9–12',
+      footer_tag:'❤️ कक्षा 9–12 रसायन छात्रों के लिए बनाया गया',
+      home_title:'एक अनुभाग चुनें!',
+      home_desc:'प्रतिक्रियाओं, रूपांतरण, संश्लेषण या MCQ परीक्षा देखने के लिए ऊपर कोई बटन क्लिक करें 🚀',
+      mq_title:'रसायन MCQ परीक्षा', mq_sub:'कार्बनिक रसायन · कक्षा 9–12',
+      mq_start:'🚀 परीक्षा शुरू करें', mq_review:'📖 उत्तर और व्याख्या देखें', mq_retake:'🔄 दोबारा दें',
+      fc_front:'प्रश्न — पलटने के लिए क्लिक करें', fc_back:'उत्तर',
+      fc_prev:'◀ पिछला', fc_flip:'🔄 पलटें', fc_next:'अगला ▶', fc_shuffle:'🔀 फेरबदल',
+    }
+  };
+
+  let CLANG = 'en';
+
+  window.setLang = function(code) {
+    CLANG = code;
+    const T = TRANS[code];
+    if (!T) return;
+    // Update every data-i18n element
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const k = el.getAttribute('data-i18n');
+      if (T[k] !== undefined) el.textContent = T[k];
+    });
+    // Update toggle button label
+    const tb = document.getElementById('lang-toggle-btn');
+    if (tb) tb.textContent = code==='bn' ? '🌐 বাং ▾' : code==='hi' ? '🌐 हिं ▾' : '🌐 EN ▾';
+    // Highlight active option
+    document.querySelectorAll('.lang-opt').forEach(b => b.classList.toggle('on', b.getAttribute('data-lang')===code));
+    // Close dropdown
+    const dd = document.getElementById('lang-dd');
+    if (dd) dd.classList.remove('open');
+    // Update page title
+    document.title = code==='bn' ? 'অর্গানিক কেমিস্ট্রি হাব — শ্রেণী ৯–১২' : code==='hi' ? 'ऑर्गेनिक केमिस्ट्री हब — कक्षा 9–12' : 'Organic Chemistry Hub — For Class 9–12 Students';
+  };
+
+  window.toggleLangDD = function() {
+    const dd = document.getElementById('lang-dd');
+    if (dd) dd.classList.toggle('open');
+  };
+
+  // Close lang dropdown on outside click
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.lang-wrap')) {
+      const dd = document.getElementById('lang-dd');
+      if (dd) dd.classList.remove('open');
+    }
+  });
 
 })();
