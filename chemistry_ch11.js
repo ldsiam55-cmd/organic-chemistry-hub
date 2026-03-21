@@ -25,6 +25,8 @@ html{scroll-behavior:smooth}
 body{font-family:'Nunito',sans-serif;background:#07071a;color:#e2e8f0;min-height:100vh;background-image:radial-gradient(ellipse 80% 50% at 20% 0%,rgba(99,102,241,.07),transparent),radial-gradient(ellipse 60% 60% at 80% 100%,rgba(192,132,252,.06),transparent)}
 :root{--ka:#ff7043;--ke:#00e5a0;--ky:#c084fc;--al:#38bdf8;--ad:#fbbf24;--ac:#f472b6;--cy:#fb923c;--sf:#131328;--bd:#1e1e42}
 header{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid #1e1e42;position:relative}
+.bkash-top-btn{position:absolute;top:1rem;right:1rem;font-family:'Fredoka One',cursive;font-size:.8rem;padding:.45rem 1rem;background:linear-gradient(135deg,#e2136e,#c0006e);color:#fff;border:none;border-radius:50px;cursor:pointer;box-shadow:0 3px 12px rgba(226,19,110,.4);transition:all .22s cubic-bezier(.34,1.56,.64,1);display:flex;align-items:center;gap:.35rem;z-index:10}
+.bkash-top-btn:hover{transform:translateY(-2px) scale(1.06);box-shadow:0 6px 18px rgba(226,19,110,.55)}
 .hl{font-size:.78rem;letter-spacing:.25em;color:#6366f1;text-transform:uppercase;font-weight:800;margin-bottom:.5rem}
 h1{font-family:'Fredoka One',cursive;font-size:clamp(2.2rem,5vw,3.8rem);background:linear-gradient(135deg,#818cf8 0%,#c084fc 50%,#f472b6 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.1;margin-bottom:.4rem}
 .hd{color:#6366f1;font-size:1rem;font-weight:700}
@@ -488,8 +490,9 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   // ─────────────────────────────────────────────
   document.body.innerHTML = `
 <header>
+  <button class="bkash-top-btn" onclick="openBkash()">💳 bKash Support</button>
   <div class="hl">⚗️ Organic Chemistry · Class 9–10 · Chapter 11</div>
-  <h1>Organic Chemistry Hub</h1>
+  <h1 onclick="goHome()" style="cursor:pointer" title="Go to Home">Organic Chemistry Hub</h1>
   <div class="hd">🔬 Reactions · Exchange · Synthesis · Formula Lookup · MCQ Exam</div>
 </header>
 <nav>
@@ -525,11 +528,8 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 </nav>
 <main id="main-content"></main>
 <footer>
-  ⚗️ ORGANIC CHEMISTRY HUB · CLASS 9–10 · CHAPTER 11<br>
-  <button class="bmc-btn" onclick="openBkash()">
-    💳 Support via bKash
-  </button>
-  <div style="margin-top:.7rem;font-size:.68rem;color:#374151">Made with ❤️ for Class 9–10 Chemistry Students</div>
+  ⚗️ ORGANIC CHEMISTRY HUB · CLASS 9–10 · CHAPTER 11
+  <div style="margin-top:.5rem;font-size:.68rem;color:#374151">Made with ❤️ for Class 9–10 Chemistry Students</div>
 </footer>
 
 <!-- bKash Payment Modal -->
@@ -2738,14 +2738,10 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
         if (btn) {
           btn.textContent = '✅ Copied!';
           btn.style.background = 'linear-gradient(135deg,#059669,#047857)';
-          setTimeout(() => {
-            btn.textContent = '📋 Copy';
-            btn.style.background = '';
-          }, 2000);
+          setTimeout(() => { btn.textContent = '📋 Copy'; btn.style.background = ''; }, 2000);
         }
       });
     } else {
-      // Fallback for older browsers
       const el = document.getElementById('bkash-num-display');
       if (el) {
         const range = document.createRange();
@@ -2755,12 +2751,20 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
         const btn = document.getElementById('bkash-copy-btn');
-        if (btn) {
-          btn.textContent = '✅ Copied!';
-          setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
-        }
+        if (btn) { btn.textContent = '✅ Copied!'; setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000); }
       }
     }
+  };
+
+  // ─────────────────────────────────────────────
+  //  HOME BUTTON (click on site title)
+  // ─────────────────────────────────────────────
+  window.goHome = function() {
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('on'));
+    document.querySelectorAll('.btn').forEach(b => b.classList.remove('on'));
+    const home = document.getElementById('panel-home');
+    if (home) home.classList.add('on');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
 })();
