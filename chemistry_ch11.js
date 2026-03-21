@@ -28,8 +28,10 @@ header{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid #1e1e42;
 .hl{font-size:.78rem;letter-spacing:.25em;color:#6366f1;text-transform:uppercase;font-weight:800;margin-bottom:.5rem}
 h1{font-family:'Fredoka One',cursive;font-size:clamp(2.2rem,5vw,3.8rem);background:linear-gradient(135deg,#818cf8 0%,#c084fc 50%,#f472b6 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.1;margin-bottom:.4rem}
 .hd{color:#6366f1;font-size:1rem;font-weight:700}
-nav{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;padding:1.8rem 1rem;max-width:1080px;margin:0 auto}
-.btn{font-family:'Fredoka One',cursive;cursor:pointer;border:none;outline:none;display:inline-flex;flex-direction:column;align-items:center;gap:.18rem;padding:.8rem 1.5rem;border-radius:12px;font-size:1rem;transition:all .22s cubic-bezier(.34,1.56,.64,1);position:relative;overflow:hidden;min-width:108px}
+nav{padding:1rem 0;max-width:1200px;margin:0 auto;border-bottom:1px solid #1e1e42}
+.nav-group{display:flex;flex-wrap:wrap;gap:.55rem;justify-content:center;padding:.5rem 1rem}
+.nav-divider{text-align:center;font-family:'Fredoka One',cursive;font-size:.62rem;letter-spacing:.18em;color:#374151;text-transform:uppercase;padding:.15rem 0}
+.btn{font-family:'Fredoka One',cursive;cursor:pointer;border:none;outline:none;display:inline-flex;flex-direction:column;align-items:center;gap:.15rem;padding:.65rem 1.1rem;border-radius:12px;font-size:.88rem;transition:all .22s cubic-bezier(.34,1.56,.64,1);position:relative;overflow:hidden;min-width:88px;max-width:120px}
 .bs{font-family:'JetBrains Mono',monospace;font-size:.6rem;opacity:.7;font-weight:400;letter-spacing:.03em}
 .btn:active{transform:scale(.96)!important}
 .b-ka{color:#fff;background:linear-gradient(180deg,#ff8a65 0%,#d84315 100%);box-shadow:0 5px 0 #8d2309,0 8px 18px rgba(255,83,26,.35)}
@@ -66,6 +68,108 @@ nav{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;padding:1.8rem 
 .b-fb{color:#fff;background:linear-gradient(135deg,#14b8a6,#0284c7);border-radius:50px;box-shadow:0 4px 18px rgba(20,184,166,.4);border:none}
 .b-fb:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(20,184,166,.55)}
 .b-fb.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(20,184,166,.35)}
+.b-fc{color:#fff;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:50px;box-shadow:0 4px 18px rgba(245,158,11,.4);border:none}
+.b-fc:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(245,158,11,.55)}
+.b-fc.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(245,158,11,.35)}
+.b-mw{color:#fff;background:linear-gradient(135deg,#8b5cf6,#6d28d9);border-radius:50px;box-shadow:0 4px 18px rgba(139,92,246,.4);border:none}
+.b-mw:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(139,92,246,.55)}
+.b-mw.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(139,92,246,.35)}
+.b-nt{color:#fff;background:linear-gradient(135deg,#0891b2,#0e7490);border-radius:50px;box-shadow:0 4px 18px rgba(8,145,178,.4);border:none}
+.b-nt:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(8,145,178,.55)}
+.b-nt.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(8,145,178,.35)}
+.b-rc{color:#fff;background:linear-gradient(135deg,#be185d,#9f1239);border-radius:50px;box-shadow:0 4px 18px rgba(190,24,93,.4);border:none}
+.b-rc:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(190,24,93,.55)}
+.b-rc.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(190,24,93,.35)}
+.b-tq{color:#fff;background:linear-gradient(135deg,#059669,#065f46);border-radius:50px;box-shadow:0 4px 18px rgba(5,150,105,.4);border:none}
+.b-tq:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 7px 28px rgba(5,150,105,.55)}
+.b-tq.on{transform:translateY(1px);box-shadow:0 2px 14px rgba(5,150,105,.35)}
+/* FLASHCARD */
+.fc-wrap{max-width:700px;margin:0 auto}
+.fc-progress{display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem}
+.fc-bar{flex:1;height:8px;background:rgba(255,255,255,.07);border-radius:10px;overflow:hidden}
+.fc-fill{height:100%;background:linear-gradient(90deg,#f59e0b,#d97706);border-radius:10px;transition:width .4s ease}
+.fc-count{font-family:'Fredoka One',cursive;font-size:.9rem;color:#fbbf24}
+.fc-filters{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.fc-filter{font-family:'Fredoka One',cursive;font-size:.78rem;padding:.3rem .9rem;border:2px solid rgba(255,255,255,.12);border-radius:50px;background:transparent;color:#94a3b8;cursor:pointer;transition:all .18s}
+.fc-filter.on{background:rgba(245,158,11,.15);border-color:#f59e0b;color:#fbbf24}
+.fc-card{perspective:1000px;height:240px;cursor:pointer;margin-bottom:1.2rem}
+.fc-inner{position:relative;width:100%;height:100%;transition:transform .55s cubic-bezier(.4,0,.2,1);transform-style:preserve-3d}
+.fc-card.flipped .fc-inner{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;inset:0;border-radius:20px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.8rem;text-align:center}
+.fc-front{background:linear-gradient(135deg,#1e1e42,#131328);border:2px solid #fbbf24;box-shadow:0 8px 32px rgba(251,191,36,.2)}
+.fc-back{background:linear-gradient(135deg,#1a0a2e,#0a1628);border:2px solid #818cf8;box-shadow:0 8px 32px rgba(129,140,248,.2);transform:rotateY(180deg)}
+.fc-label{font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem;opacity:.6}
+.fc-question{font-family:'Fredoka One',cursive;font-size:1.5rem;color:#fde68a;line-height:1.3}
+.fc-answer{font-family:'JetBrains Mono',monospace;font-size:1.3rem;color:#6ee7b7;line-height:1.4}
+.fc-hint{font-size:.8rem;color:#6b7280;margin-top:.5rem;font-style:italic}
+.fc-actions{display:flex;gap:.7rem;justify-content:center}
+.fc-btn{font-family:'Fredoka One',cursive;font-size:1rem;padding:.65rem 1.5rem;border:none;border-radius:50px;cursor:pointer;transition:all .22s cubic-bezier(.34,1.56,.64,1)}
+.fc-btn:hover{transform:scale(1.06) translateY(-2px)}
+.fc-prev{background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.15);color:#94a3b8}
+.fc-flip{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;box-shadow:0 4px 14px rgba(245,158,11,.35)}
+.fc-next{background:linear-gradient(135deg,#818cf8,#6366f1);color:#fff;box-shadow:0 4px 14px rgba(99,102,241,.35)}
+.fc-shuffle{background:rgba(74,222,128,.1);border:2px solid rgba(74,222,128,.3);color:#4ade80;font-size:.85rem}
+.fc-done{text-align:center;padding:3rem 1rem;animation:fadeUp .4s ease}
+/* MOLECULAR WEIGHT CALC */
+.mw-wrap{max-width:580px;margin:0 auto}
+.mw-input-row{display:flex;gap:.7rem;margin-bottom:.8rem;flex-wrap:wrap}
+.mw-input{flex:1;min-width:200px;font-family:'JetBrains Mono',monospace;font-size:1.15rem;padding:.9rem 1.3rem;background:var(--sf);border:2px solid var(--bd);border-radius:13px;color:#e2e8f0;outline:none;transition:border-color .2s;letter-spacing:.04em}
+.mw-input:focus{border-color:#8b5cf6;box-shadow:0 0 0 3px rgba(139,92,246,.15)}
+.mw-btn{font-family:'Fredoka One',cursive;font-size:1rem;padding:.9rem 1.8rem;border:none;border-radius:13px;cursor:pointer;background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;box-shadow:0 4px 16px rgba(139,92,246,.35);transition:all .22s cubic-bezier(.34,1.56,.64,1)}
+.mw-btn:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 7px 22px rgba(139,92,246,.5)}
+.mw-result{background:var(--sf);border:2px solid #8b5cf6;border-radius:16px;padding:1.5rem;margin-bottom:1rem;animation:fadeUp .35s ease}
+.mw-big{font-family:'Fredoka One',cursive;font-size:3rem;color:#c4b5fd;text-align:center;line-height:1}
+.mw-unit{font-size:1rem;color:#6b7280;margin-top:.2rem;text-align:center}
+.mw-breakdown{margin-top:1rem;display:flex;flex-direction:column;gap:.3rem}
+.mw-row{display:flex;justify-content:space-between;align-items:center;padding:.4rem .7rem;background:rgba(255,255,255,.03);border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:.85rem}
+.mw-atom{color:#fde68a}.mw-mass{color:#6ee7b7}.mw-sub{color:#c4b5fd}
+.mw-presets{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem}
+.mw-preset{font-family:'JetBrains Mono',monospace;font-size:.78rem;padding:.3rem .8rem;background:rgba(139,92,246,.1);border:1.5px solid rgba(139,92,246,.3);border-radius:8px;color:#a78bfa;cursor:pointer;transition:all .18s}
+.mw-preset:hover{background:rgba(139,92,246,.2);transform:scale(1.05)}
+/* NOTES */
+.nt-wrap{max-width:900px;margin:0 auto}
+.nt-tabs{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1.4rem;border-bottom:2px solid var(--bd)}
+.nt-tab{font-family:'Fredoka One',cursive;font-size:.9rem;padding:.5rem 1.1rem;background:transparent;border:none;color:#6366f1;cursor:pointer;border-bottom:3px solid transparent;position:relative;top:2px;border-radius:8px 8px 0 0;transition:all .18s}
+.nt-tab:hover{color:#a5b4fc;background:rgba(255,255,255,.04)}
+.nt-tab.on{color:#fff;border-bottom-color:currentColor;background:rgba(255,255,255,.05)}
+.nt-pane{display:none}.nt-pane.on{display:block;animation:fadeUp .3s ease}
+.note-card{background:var(--sf);border:2px solid var(--bd);border-radius:16px;overflow:hidden;margin-bottom:1.1rem}
+.note-card-head{display:flex;align-items:center;gap:.8rem;padding:.85rem 1.2rem;background:rgba(0,0,0,.3);border-bottom:1px solid var(--bd)}
+.note-card-icon{font-size:1.6rem}
+.note-card-title{font-family:'Fredoka One',cursive;font-size:1.15rem}
+.note-card-body{padding:1.1rem 1.3rem;font-size:.93rem;color:#94a3b8;font-weight:600;line-height:1.7}
+.note-card-body strong{color:#e2e8f0;filter:brightness(1.3)}
+.note-table{width:100%;border-collapse:collapse;font-size:.85rem;margin:.6rem 0}
+.note-table th{background:rgba(255,255,255,.06);color:#c4b5fd;padding:.5rem .8rem;text-align:left;font-family:'Fredoka One',cursive;font-size:.82rem}
+.note-table td{padding:.45rem .8rem;border-bottom:1px solid var(--bd);color:#94a3b8}
+.note-table tr:last-child td{border-bottom:none}
+.note-table td:first-child{color:#fde68a;font-family:'JetBrains Mono',monospace}
+.note-formula{font-family:'JetBrains Mono',monospace;font-size:.88rem;background:rgba(0,0,0,.3);padding:.6rem 1rem;border-radius:9px;border:1px solid rgba(255,255,255,.07);margin:.4rem 0;color:#6ee7b7}
+/* REACTION CHART */
+.rc-wrap{max-width:1000px;margin:0 auto}
+.rc-grid{display:grid;gap:1rem}
+.rc-row{display:grid;grid-template-columns:1fr auto 1fr;gap:.5rem;align-items:center;background:var(--sf);border:1.5px solid var(--bd);border-radius:14px;padding:.9rem 1.1rem}
+.rc-compound{text-align:center}
+.rc-name{font-family:'Fredoka One',cursive;font-size:1rem}
+.rc-form{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#94a3b8;margin-top:.15rem}
+.rc-arrow-box{display:flex;flex-direction:column;align-items:center;gap:.2rem;padding:0 .5rem;min-width:130px}
+.rc-reagent{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:#7dd3fc;background:rgba(125,211,252,.07);padding:.1rem .45rem;border-radius:5px;border:1px solid rgba(125,211,252,.18);white-space:nowrap}
+.rc-arrow{font-size:1.6rem;color:#f1f5f9;text-shadow:0 0 8px rgba(241,245,249,.4)}
+.rc-product{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:#fbbf24;background:rgba(251,191,36,.07);padding:.1rem .45rem;border-radius:5px;border:1px solid rgba(251,191,36,.18);white-space:nowrap}
+.rc-section-title{font-family:'Fredoka One',cursive;font-size:1.1rem;padding:.5rem 1rem;border-radius:10px;margin-bottom:.7rem;margin-top:1.2rem;display:inline-block}
+/* TOPIC QUIZ */
+.tq-wrap{max-width:700px;margin:0 auto}
+.tq-picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.7rem;margin-bottom:1.4rem}
+.tq-pick{border:2px solid;border-radius:14px;background:var(--sf);cursor:pointer;padding:.9rem .7rem;text-align:center;transition:all .25s cubic-bezier(.34,1.56,.64,1)}
+.tq-pick:hover{transform:translateY(-4px) scale(1.04)}
+.tq-pick.on{box-shadow:0 0 22px currentColor}
+.tq-pick-icon{font-size:2rem;display:block;margin-bottom:.3rem}
+.tq-pick-name{font-family:'Fredoka One',cursive;font-size:.95rem;display:block}
+.tq-pick-count{font-family:'JetBrains Mono',monospace;font-size:.62rem;opacity:.55;display:block;margin-top:.15rem}
+.tq-start-btn{font-family:'Fredoka One',cursive;font-size:1.1rem;padding:.85rem 2.8rem;border:none;border-radius:50px;cursor:pointer;background:linear-gradient(135deg,#059669,#065f46);color:#fff;box-shadow:0 4px 22px rgba(5,150,105,.38);transition:all .28s cubic-bezier(.34,1.56,.64,1);display:block;margin:0 auto}
+.tq-start-btn:hover{transform:scale(1.06) translateY(-2px)}
+.tq-exam{display:none}
+.tq-result{display:none;text-align:center;padding:2rem 1rem;animation:fadeUp .4s ease}
 .fb-wrap{max-width:640px;margin:0 auto}
 .fb-screen{font-family:'JetBrains Mono',monospace;font-size:1.5rem;min-height:70px;background:linear-gradient(160deg,#070720,#0a0a2a);border:2px solid #1e3a5f;border-radius:14px;padding:1rem 1.4rem;color:#7dd3fc;margin-bottom:.3rem;word-break:break-all;letter-spacing:.06em;display:flex;align-items:center;flex-wrap:wrap;gap:.1rem}
 .fb-screen .fb-atom{color:#fde68a}
@@ -332,8 +436,10 @@ main{max-width:1060px;margin:0 auto;padding:0 1rem 5rem}
 .ra:hover{transform:scale(1.06) translateY(-2px)}
 .ra1{background:linear-gradient(135deg,#4ade80,#059669);color:#fff;box-shadow:0 4px 15px rgba(74,222,128,.32)}
 .ra2{background:linear-gradient(135deg,#818cf8,#6366f1);color:#fff;box-shadow:0 4px 15px rgba(99,102,241,.32)}
-footer{border-top:1px solid #1e1e42;padding:1.4rem;text-align:center;font-size:.75rem;font-weight:800;letter-spacing:.12em;color:#374151}
-@media(max-width:600px){.ph{flex-direction:column;gap:.6rem;padding:1.1rem}nav{gap:.5rem;padding:1.2rem .7rem}.btn{padding:.65rem 1rem;font-size:.88rem;min-width:85px}}
+footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;font-size:.75rem;font-weight:800;letter-spacing:.12em;color:#374151}
+.bmc-btn{display:inline-flex;align-items:center;gap:.5rem;margin-top:.8rem;padding:.55rem 1.3rem;background:linear-gradient(135deg,#FFDD00,#FF9900);color:#1a1a1a;border:none;border-radius:50px;font-family:'Fredoka One',cursive;font-size:.92rem;cursor:pointer;text-decoration:none;box-shadow:0 4px 14px rgba(255,180,0,.4);transition:all .22s cubic-bezier(.34,1.56,.64,1)}
+.bmc-btn:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 7px 22px rgba(255,180,0,.55)}
+@media(max-width:640px){.nav-group{gap:.38rem;padding:.4rem .5rem}.btn{padding:.55rem .7rem;font-size:.78rem;min-width:72px;max-width:100px}.bs{font-size:.52rem}}
 `;
 
   const styleEl = document.createElement('style');
@@ -355,20 +461,37 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem;text-align:center;font-size:.
   <div class="hd">🔬 Reactions · Exchange · Synthesis · Formula Lookup · MCQ Exam</div>
 </header>
 <nav>
-  <button class="btn b-ka" onclick="chShow('ka',this)">🔥 Alkane<span class="bs">CₙH₂ₙ₊₂</span></button>
-  <button class="btn b-ke" onclick="chShow('ke',this)">🌿 Alkene<span class="bs">CₙH₂ₙ</span></button>
-  <button class="btn b-ky" onclick="chShow('ky',this)">⚡ Alkyne<span class="bs">CₙH₂ₙ₋₂</span></button>
-  <button class="btn b-al" onclick="chShow('al',this)">🧪 Alcohol<span class="bs">CₙH₂ₙ₊₁OH</span></button>
-  <button class="btn b-ad" onclick="chShow('ad',this)">✨ Aldehyde<span class="bs">CₙH₂ₙ₊₁CHO</span></button>
-  <button class="btn b-ac" onclick="chShow('ac',this)">🧬 Fatty Acid<span class="bs">CₙH₂ₙ₊₁COOH</span></button>
-  <button class="btn b-ex" onclick="chShow('ex',this)">⇄ Exchange<span class="bs">Any → Any</span></button>
-  <button class="btn b-sy" onclick="chShow('sy',this)">🔬 How Made<span class="bs">Synthesis</span></button>
-  <button class="btn b-mq" onclick="chShow('mq',this)">📝 MCQ Exam<span class="bs">30 Qs · 20 Min</span></button>
-  <button class="btn b-nm" onclick="chShow('nm',this)">🔍 Name Lookup<span class="bs">Formula Finder</span></button>
-  <button class="btn b-fb" onclick="chShow('fb',this)">🧩 Formula Builder<span class="bs">Type Structure</span></button>
+  <div class="nav-divider">📚 Organic Compounds</div>
+  <div class="nav-group">
+    <button class="btn b-ka" onclick="chShow('ka',this)">🔥 Alkane<span class="bs">CₙH₂ₙ₊₂</span></button>
+    <button class="btn b-ke" onclick="chShow('ke',this)">🌿 Alkene<span class="bs">CₙH₂ₙ</span></button>
+    <button class="btn b-ky" onclick="chShow('ky',this)">⚡ Alkyne<span class="bs">CₙH₂ₙ₋₂</span></button>
+    <button class="btn b-al" onclick="chShow('al',this)">🧪 Alcohol<span class="bs">–OH group</span></button>
+    <button class="btn b-ad" onclick="chShow('ad',this)">✨ Aldehyde<span class="bs">–CHO group</span></button>
+    <button class="btn b-ac" onclick="chShow('ac',this)">🧬 Fatty Acid<span class="bs">–COOH group</span></button>
+    <button class="btn b-ex" onclick="chShow('ex',this)">⇄ Exchange<span class="bs">Any → Any</span></button>
+    <button class="btn b-sy" onclick="chShow('sy',this)">🔬 How Made<span class="bs">Synthesis</span></button>
+  </div>
+  <div class="nav-divider">🧪 Study Tools</div>
+  <div class="nav-group">
+    <button class="btn b-mq" onclick="chShow('mq',this)">📝 MCQ Exam<span class="bs">268 Qs · 20 Min</span></button>
+    <button class="btn b-tq" onclick="chShow('tq',this)">🎯 Topic Quiz<span class="bs">5 Qs / Topic</span></button>
+    <button class="btn b-fc" onclick="chShow('fc',this)">⏱️ Flashcards<span class="bs">Flip & Revise</span></button>
+    <button class="btn b-nm" onclick="chShow('nm',this)">🔍 Name Lookup<span class="bs">150+ Compounds</span></button>
+    <button class="btn b-fb" onclick="chShow('fb',this)">🧩 Formula Builder<span class="bs">Type Structure</span></button>
+    <button class="btn b-mw" onclick="chShow('mw',this)">🧮 Mol. Weight<span class="bs">Calculator</span></button>
+    <button class="btn b-nt" onclick="chShow('nt',this)">📝 Notes<span class="bs">Summary Cards</span></button>
+    <button class="btn b-rc" onclick="chShow('rc',this)">📊 Reaction Chart<span class="bs">Visual Map</span></button>
+  </div>
 </nav>
 <main id="main-content"></main>
-<footer>⚗️ ORGANIC CHEMISTRY HUB · CLASS 9–10 · CHAPTER 11 · MINERAL RESOURCES: FOSSILS</footer>
+<footer>
+  ⚗️ ORGANIC CHEMISTRY HUB · CLASS 9–10 · CHAPTER 11<br>
+  <a class="bmc-btn" href="https://www.buymeacoffee.com/ldsiam55" target="_blank" rel="noopener">
+    ☕ Buy Me a Coffee
+  </a>
+  <div style="margin-top:.7rem;font-size:.68rem;color:#374151">Made with ❤️ for Class 9–10 Chemistry Students</div>
+</footer>
 `;
 
   // ─────────────────────────────────────────────
@@ -630,7 +753,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem;text-align:center;font-size:.
   // ── MCQ ──
   panels['mq'] = `
 <div id="mq-start"><div class="mcqs"><span class="mcqsi">📝</span><div class="mcqst">Chemistry MCQ Exam</div><div class="mcqss">Chapter 11 · Class 9–10 · Mineral Resources: Fossils</div>
-<div class="irow"><div class="ic"><span class="ici">❓</span><span class="icv">30</span><span class="icl">Questions</span></div><div class="ic"><span class="ici">⏱️</span><span class="icv">20</span><span class="icl">Minutes</span></div><div class="ic"><span class="ici">🏆</span><span class="icv">30</span><span class="icl">Marks</span></div><div class="ic"><span class="ici">📚</span><span class="icv">300+</span><span class="icl">Bank</span></div></div>
+<div class="irow"><div class="ic"><span class="ici">❓</span><span class="icv">30</span><span class="icl">Questions</span></div><div class="ic"><span class="ici">⏱️</span><span class="icv">20</span><span class="icl">Minutes</span></div><div class="ic"><span class="ici">🏆</span><span class="icv">30</span><span class="icl">Marks</span></div><div class="ic"><span class="ici">📚</span><span class="icv">268</span><span class="icl">Bank</span></div></div>
 <button class="stbtn" onclick="startExam()">🚀 Start Exam</button></div></div>
 <div id="mqexam">
   <div class="exbar"><span class="epl" id="epl">0 / 30</span><div class="epw"><div class="epf" id="epf" style="width:0%"></div></div><div id="timer">20:00</div><button class="fnbtn" onclick="finishExam()">✔ Finish</button></div>
@@ -1180,10 +1303,387 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem;text-align:center;font-size:.
     html += '</div></div>';
     r.innerHTML = html;
   };
+  // ══════════════════════════════════════════════
+  //  ⏱️  FLASHCARD PANEL
+  // ══════════════════════════════════════════════
+  const FC_CARDS = [
+    {topic:'Alkane',q:'General formula of Alkane?',a:'CₙH₂ₙ₊₂',hint:'Saturated — only C–C single bonds'},
+    {topic:'Alkane',q:'What is Methane?',a:'CH₄ — 1-carbon alkane, main component of natural gas',hint:'Simplest organic compound'},
+    {topic:'Alkane',q:'What is Ethane?',a:'C₂H₆ — CH₃–CH₃',hint:'2 carbons, all single bonds'},
+    {topic:'Alkane',q:'What is Propane?',a:'C₃H₈ — CH₃–CH₂–CH₃',hint:'LPG component'},
+    {topic:'Alkane',q:'What is Butane?',a:'C₄H₁₀ — CH₃CH₂CH₂CH₃',hint:'Lighter fuel gas'},
+    {topic:'Alkane',q:'What is Octane?',a:'C₈H₁₈ — CH₃(CH₂)₆CH₃',hint:'Petrol — octane rating'},
+    {topic:'Alkane',q:'Decarboxylation rule?',a:'Product alkane = salt carbons − 1',hint:'NaOH + CaO + heat'},
+    {topic:'Alkane',q:'Catalyst for CO₂ + H₂ → Methane?',a:'Ni at 250°C',hint:'CO₂ always gives 1C = Methane only'},
+    {topic:'Alkene',q:'General formula of Alkene?',a:'CₙH₂ₙ',hint:'One C=C double bond — unsaturated'},
+    {topic:'Alkene',q:'What is Ethene?',a:'C₂H₄ — CH₂=CH₂',hint:'Ethylene — monomer of Polythene'},
+    {topic:'Alkene',q:'What is Propene?',a:'C₃H₆ — CH₂=CH–CH₃',hint:'Propylene — 3 carbons with C=C'},
+    {topic:'Alkene',q:'Dehydration of Ethanol gives?',a:'CH₂=CH₂ (Ethene) + H₂O',hint:'Conc. H₂SO₄, heat'},
+    {topic:'Alkene',q:'Bromine water + Alkene gives?',a:'Decolourisation — red-brown → colourless',hint:'Addition across C=C'},
+    {topic:'Alkene',q:'Polythene conditions?',a:'1000 atm, 200°C, trace O₂',hint:'Addition polymerisation of ethene'},
+    {topic:'Alkyne',q:'General formula of Alkyne?',a:'CₙH₂ₙ₋₂',hint:'One C≡C triple bond'},
+    {topic:'Alkyne',q:'What is Ethyne?',a:'C₂H₂ — CH≡CH',hint:'Acetylene — welding gas'},
+    {topic:'Alkyne',q:'CaC₂ + 2H₂O gives?',a:'CH≡CH (Ethyne) + Ca(OH)₂',hint:'Room temperature — no heat needed'},
+    {topic:'Alkyne',q:'Ethyne + H₂O (HgSO₄, 80°C) gives?',a:'CH₃–CHO (Ethanal)',hint:'Hydration of alkyne → aldehyde'},
+    {topic:'Alkyne',q:'How many mol H₂ to convert alkyne → alkane?',a:'2 mol H₂ (Ni, 180–200°C)',hint:'Triple bond has 2 weak π bonds'},
+    {topic:'Alkyne',q:'What is But-2-yne?',a:'CH₃–C≡C–CH₃',hint:'Triple bond between C2 and C3'},
+    {topic:'Alcohol',q:'Functional group of Alcohol?',a:'–OH (hydroxyl group)',hint:'CₙH₂ₙ₊₁OH'},
+    {topic:'Alcohol',q:'What is Ethanol?',a:'CH₃–CH₂–OH (C₂H₅OH)',hint:'Rectified spirit = 96% aqueous ethanol'},
+    {topic:'Alcohol',q:'Alcohol + mild oxidation gives?',a:'Aldehyde (K₂Cr₂O₇/H₂SO₄ controlled)',hint:'Must stop here — excess gives acid!'},
+    {topic:'Alcohol',q:'Alcohol + strong oxidation (excess) gives?',a:'Fatty acid (carboxylic acid)',hint:'Goes all the way: Alcohol → Aldehyde → Acid'},
+    {topic:'Alcohol',q:'Alkene + H₂O (H₃PO₄, 300°C, 60 atm) gives?',a:'Alcohol (hydration)',hint:'Adding water across C=C'},
+    {topic:'Aldehyde',q:'Functional group of Aldehyde?',a:'–CHO (terminal carbonyl group)',hint:'CₙH₂ₙ₊₁CHO'},
+    {topic:'Aldehyde',q:'What is Methanal?',a:'HCHO — Formaldehyde',hint:'Formalin = 40% aqueous solution'},
+    {topic:'Aldehyde',q:'What is Ethanal?',a:'CH₃CHO — Acetaldehyde',hint:'2-carbon aldehyde'},
+    {topic:'Aldehyde',q:'Aldehyde + H₂ (Ni, 180°C) gives?',a:'Alcohol (reduction)',hint:'Adding H₂ across C=O'},
+    {topic:'Aldehyde',q:'Aldehyde + [O] gives?',a:'Fatty acid (oxidation)',hint:'K₂Cr₂O₇/H₂SO₄'},
+    {topic:'Fatty Acid',q:'Functional group of Fatty Acid?',a:'–COOH (carboxyl group)',hint:'CₙH₂ₙ₊₁COOH'},
+    {topic:'Fatty Acid',q:'What is Ethanoic acid?',a:'CH₃COOH — Acetic acid',hint:'Vinegar = 4–10% aqueous solution'},
+    {topic:'Fatty Acid',q:'Fatty acids are strong or weak acids?',a:'Weak acids — partially dissociate',hint:'Turns blue litmus red'},
+    {topic:'Fatty Acid',q:'What is Methanoic acid?',a:'HCOOH — Formic acid',hint:'Found in red ant sting (formicus)'},
+    {topic:'Fatty Acid',q:'Strong reduction of fatty acid with LiAlH₄ gives?',a:'Alcohol',hint:'CH₃COOH + 4[H] → CH₃CH₂OH + H₂O'},
+    {topic:'Polymer',q:'What is polymerisation?',a:'Joining many monomers to form a large polymer',hint:'Mono = one, poly = many'},
+    {topic:'Polymer',q:'Monomer of Polythene?',a:'Ethene (CH₂=CH₂)',hint:'Addition polymerisation'},
+    {topic:'Polymer',q:'Monomer of PVC?',a:'Vinyl chloride (CH₂=CHCl)',hint:'1-chloroethene'},
+    {topic:'Polymer',q:'Nylon 6:6 monomers?',a:'Adipic acid + Hexamethylenediamine',hint:'Condensation polymerisation'},
+    {topic:'Polymer',q:'Monomer of natural rubber?',a:'Isoprene (2-methylbuta-1,3-diene)',hint:'Natural addition polymer from latex'},
+    {topic:'Polymer',q:'Protein is a polymer of?',a:'Amino acids (condensation polymer)',hint:'Peptide bonds join the amino acids'},
+    {topic:'Mixed',q:'What is Vinegar?',a:'4–10% aqueous solution of Ethanoic acid',hint:'Used as food preservative'},
+    {topic:'Mixed',q:'What is Formalin?',a:'40% aqueous solution of Methanal',hint:'Used to preserve biological specimens'},
+    {topic:'Mixed',q:'What is Rectified Spirit?',a:'96% aqueous Ethanol solution',hint:'From fermentation of starch/sugar'},
+    {topic:'Mixed',q:'Catenation means?',a:'Carbon bonding with other carbon atoms',hint:'Allows chains, rings and branches — millions of compounds'},
+    {topic:'Mixed',q:'Homologous series members differ by?',a:'–CH₂– unit (mass difference = 14)',hint:'Same functional group, same chemical properties'},
+    {topic:'Mixed',q:'What is Acetylene?',a:'Common name for Ethyne (CH≡CH)',hint:'Used in welding — burns at ~3000°C'},
+    {topic:'Mixed',q:'Lactic acid is found in?',a:'Curd (yoghurt)',hint:'2-hydroxypropanoic acid'},
+    {topic:'Mixed',q:'Citric acid is found in?',a:'Lemon juice',hint:'Gives lemons their sour taste'},
+    {topic:'Mixed',q:'KMnO₄ decolourises when added to?',a:'Unsaturated compounds (alkene/alkyne)',hint:'Pink → colourless proves C=C or C≡C'},
+  ];
+
+  panels['fc'] = `
+<div class="ph" style="border-color:#f59e0b;color:#f59e0b"><div class="phi">⏱️</div><div><div class="pht">Flashcard Revision</div><div class="phb"><span class="badge">${FC_CARDS.length} Cards</span><span class="badge">Flip to reveal</span><span class="badge">Filter by topic</span></div><div class="phd">Click a card to flip and reveal the answer. Use the topic filters to focus your revision!</div></div></div>
+<div class="fc-wrap">
+  <div class="fc-filters" id="fc-filters">
+    <button class="fc-filter on" onclick="fcFilter('All',this)">All Topics</button>
+    <button class="fc-filter" onclick="fcFilter('Alkane',this)" style="color:var(--ka)">🔥 Alkane</button>
+    <button class="fc-filter" onclick="fcFilter('Alkene',this)" style="color:var(--ke)">🌿 Alkene</button>
+    <button class="fc-filter" onclick="fcFilter('Alkyne',this)" style="color:var(--ky)">⚡ Alkyne</button>
+    <button class="fc-filter" onclick="fcFilter('Alcohol',this)" style="color:var(--al)">🧪 Alcohol</button>
+    <button class="fc-filter" onclick="fcFilter('Aldehyde',this)" style="color:var(--ad)">✨ Aldehyde</button>
+    <button class="fc-filter" onclick="fcFilter('Fatty Acid',this)" style="color:var(--ac)">🧬 Fatty Acid</button>
+    <button class="fc-filter" onclick="fcFilter('Polymer',this)" style="color:#a78bfa">🔗 Polymer</button>
+    <button class="fc-filter" onclick="fcFilter('Mixed',this)" style="color:#94a3b8">🔬 Mixed</button>
+  </div>
+  <div class="fc-progress"><div class="fc-bar"><div class="fc-fill" id="fc-fill" style="width:0%"></div></div><div class="fc-count" id="fc-count">1 / ${FC_CARDS.length}</div></div>
+  <div class="fc-card" id="fc-card" onclick="fcFlip()">
+    <div class="fc-inner" id="fc-inner">
+      <div class="fc-front"><div class="fc-label" style="color:#f59e0b">Question — click to flip</div><div class="fc-question" id="fc-q">Loading...</div><div class="fc-hint" id="fc-hint"></div></div>
+      <div class="fc-back"><div class="fc-label" style="color:#818cf8">Answer</div><div class="fc-answer" id="fc-a">Loading...</div></div>
+    </div>
+  </div>
+  <div class="fc-actions">
+    <button class="fc-btn fc-prev" onclick="fcNav(-1)">◀ Prev</button>
+    <button class="fc-btn fc-flip" onclick="fcFlip()">🔄 Flip</button>
+    <button class="fc-btn fc-next" onclick="fcNav(1)">Next ▶</button>
+    <button class="fc-btn fc-shuffle" onclick="fcShuffle()">🔀 Shuffle</button>
+  </div>
+</div>`;
+
+  // ══════════════════════════════════════════════
+  //  🧮  MOLECULAR WEIGHT CALCULATOR PANEL
+  // ══════════════════════════════════════════════
+  panels['mw'] = `
+<div class="ph" style="border-color:#8b5cf6;color:#8b5cf6"><div class="phi">🧮</div><div><div class="pht">Molecular Weight Calculator</div><div class="phb"><span class="badge">Type any formula</span><span class="badge">Instant result</span><span class="badge">Full breakdown</span></div><div class="phd">Type a chemical formula like <strong>C₂H₅OH</strong> or <strong>CH3COOH</strong> to instantly calculate the molecular weight with a full atom-by-atom breakdown.</div></div></div>
+<div class="mw-wrap">
+  <div style="font-size:.78rem;color:#6b7280;margin-bottom:.6rem;font-weight:700">QUICK EXAMPLES:</div>
+  <div class="mw-presets">
+    ${['CH4','C2H6','C3H8','C2H4','C2H2','CH3OH','C2H5OH','CH3COOH','C6H6','C6H12O6'].map(f=>`<button class="mw-preset" onclick="mwSetFormula('${f}')">${f}</button>`).join('')}
+  </div>
+  <div class="mw-input-row">
+    <input class="mw-input" id="mw-input" type="text" placeholder="e.g. C2H5OH or CH3COOH or C6H12O6" autocomplete="off" onkeydown="if(event.key==='Enter')mwCalc()"/>
+    <button class="mw-btn" onclick="mwCalc()">Calculate</button>
+  </div>
+  <div id="mw-result"></div>
+</div>`;
+
+  // ══════════════════════════════════════════════
+  //  📝  CHAPTER NOTES PANEL
+  // ══════════════════════════════════════════════
+  panels['nt'] = `
+<div class="ph" style="border-color:#0891b2;color:#0891b2"><div class="phi">📝</div><div><div class="pht">Chapter Notes & Summary Cards</div><div class="phb"><span class="badge">Key Definitions</span><span class="badge">All Formulas</span><span class="badge">Exam Tips</span></div><div class="phd">Complete chapter summary — everything you need to know for your exam in one place.</div></div></div>
+<div class="nt-wrap">
+  <div class="nt-tabs">
+    <button class="nt-tab on" style="color:var(--ka)" onclick="ntTab(this,'nt-general')">📌 Key Facts</button>
+    <button class="nt-tab" style="color:var(--ke)" onclick="ntTab(this,'nt-formulas')">📐 Formulas</button>
+    <button class="nt-tab" style="color:var(--ky)" onclick="ntTab(this,'nt-reactions')">⚗️ Reactions</button>
+    <button class="nt-tab" style="color:#fb923c" onclick="ntTab(this,'nt-petroleum')">⛽ Petroleum</button>
+    <button class="nt-tab" style="color:#a78bfa" onclick="ntTab(this,'nt-polymers')">🔗 Polymers</button>
+    <button class="nt-tab" style="color:#f87171" onclick="ntTab(this,'nt-tips')">🏆 Exam Tips</button>
+  </div>
+
+  <!-- KEY FACTS -->
+  <div id="nt-general" class="nt-pane on">
+    <div class="note-card"><div class="note-card-head" style="border-color:var(--ka)"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:var(--ka)">What is Organic Chemistry?</span></div><div class="note-card-body">Organic chemistry studies <strong>hydrocarbons and their derivatives</strong>. A hydrocarbon contains <strong>only C and H</strong>. Carbon has valency 4 and shows <strong>catenation</strong> — bonding with other carbons to form chains, rings and branches.</div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">🔗</span><span class="note-card-title" style="color:#818cf8">Types of Hydrocarbons</span></div><div class="note-card-body"><table class="note-table"><tr><th>Type</th><th>Bond</th><th>Formula</th><th>Example</th></tr><tr><td>Alkane</td><td>C–C only</td><td>CₙH₂ₙ₊₂</td><td>Methane CH₄</td></tr><tr><td>Alkene</td><td>C=C</td><td>CₙH₂ₙ</td><td>Ethene C₂H₄</td></tr><tr><td>Alkyne</td><td>C≡C</td><td>CₙH₂ₙ₋₂</td><td>Ethyne C₂H₂</td></tr><tr><td>Cycloalkane</td><td>C–C ring</td><td>CₙH₂ₙ</td><td>Cyclohexane</td></tr></table></div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">🏷️</span><span class="note-card-title" style="color:#fbbf24">Functional Groups</span></div><div class="note-card-body"><table class="note-table"><tr><th>Compound</th><th>Group</th><th>Formula</th></tr><tr><td>Alcohol</td><td>–OH</td><td>CₙH₂ₙ₊₁OH</td></tr><tr><td>Aldehyde</td><td>–CHO</td><td>CₙH₂ₙ₊₁CHO</td></tr><tr><td>Fatty Acid</td><td>–COOH</td><td>CₙH₂ₙ₊₁COOH</td></tr></table></div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">⭐</span><span class="note-card-title" style="color:#f472b6">Important Concentrations</span></div><div class="note-card-body"><strong>Formalin</strong> = 40% aqueous Methanal (formaldehyde) — preserves specimens<br><strong>Vinegar</strong> = 4–10% aqueous Ethanoic acid — food preservative<br><strong>Rectified Spirit</strong> = 96% aqueous Ethanol — from fermentation<br><strong>Acetylene</strong> = Common name for Ethyne — welding gas</div></div>
+  </div>
+
+  <!-- FORMULAS -->
+  <div id="nt-formulas" class="nt-pane">
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">📐</span><span class="note-card-title" style="color:#818cf8">IUPAC Naming — SPWPS Rule</span></div><div class="note-card-body"><strong>S</strong>econdary Prefix + <strong>P</strong>rimary Prefix (cyclo) + <strong>W</strong>ord Root + <strong>P</strong>rimary Suffix (-ane/-ene/-yne) + <strong>S</strong>econdary Suffix (-ol/-al/-oic acid)<br><br><strong>Word Roots:</strong> meth(1), eth(2), prop(3), but(4), pent(5), hex(6), hept(7), oct(8), non(9), dec(10)</div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">🔢</span><span class="note-card-title" style="color:#fde68a">Alkane Names & Formulas</span></div><div class="note-card-body"><table class="note-table"><tr><th>Name</th><th>Formula</th><th>Carbons</th></tr><tr><td>Methane</td><td>CH₄</td><td>1</td></tr><tr><td>Ethane</td><td>C₂H₆</td><td>2</td></tr><tr><td>Propane</td><td>C₃H₈</td><td>3</td></tr><tr><td>Butane</td><td>C₄H₁₀</td><td>4</td></tr><tr><td>Pentane</td><td>C₅H₁₂</td><td>5</td></tr><tr><td>Hexane</td><td>C₆H₁₄</td><td>6</td></tr><tr><td>Heptane</td><td>C₇H₁₆</td><td>7</td></tr><tr><td>Octane</td><td>C₈H₁₈</td><td>8</td></tr><tr><td>Nonane</td><td>C₉H₂₀</td><td>9</td></tr><tr><td>Decane</td><td>C₁₀H₂₂</td><td>10</td></tr></table></div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#6ee7b7">Common Acids Found in Nature</span></div><div class="note-card-body"><table class="note-table"><tr><th>Acid</th><th>Source</th><th>IUPAC Name</th></tr><tr><td>Formic acid</td><td>Red ant</td><td>Methanoic acid</td></tr><tr><td>Acetic acid</td><td>Vinegar</td><td>Ethanoic acid</td></tr><tr><td>Lactic acid</td><td>Curd</td><td>2-Hydroxypropanoic acid</td></tr><tr><td>Citric acid</td><td>Lemon</td><td>2-Hydroxypropane-1,2,3-tricarboxylic acid</td></tr><tr><td>Tartaric acid</td><td>Tamarind</td><td>2,3-Dihydroxybutanedioic acid</td></tr><tr><td>Malic acid</td><td>Apple</td><td>2-Hydroxybutanedioic acid</td></tr><tr><td>Butyric acid</td><td>Rancid butter</td><td>Butanoic acid</td></tr></table></div></div>
+  </div>
+
+  <!-- REACTIONS -->
+  <div id="nt-reactions" class="nt-pane">
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">⚡</span><span class="note-card-title" style="color:#c084fc">Making Alkyne — 2 Methods</span></div><div class="note-card-body"><strong>Method 1 (Lab):</strong> CaC₂ + 2H₂O → CH≡CH + Ca(OH)₂ — room temperature, always gives Ethyne only<br><strong>Method 2:</strong> Vicinal dihalide + 2NaOH (alcoholic, heat) → Alkyne + 2NaBr + 2H₂O</div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">🌿</span><span class="note-card-title" style="color:var(--ke)">Making Alkene — 2 Methods</span></div><div class="note-card-body"><strong>Method 1:</strong> Alkyl chloride + NaOH (aq., heat) → Alkene + NaCl + H₂O<br><strong>Method 2 (Dehydration):</strong> Alcohol + conc. H₂SO₄ + heat → Alkene + H₂O</div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:var(--al)">Making Alcohol — 2 Methods</span></div><div class="note-card-body"><strong>Method 1:</strong> Alkyl bromide + NaOH (aq., heat) → Alcohol + NaBr<br><strong>Method 2 (Hydration):</strong> Alkene + H₂O → Alcohol (H₃PO₄, 300°C, 60 atm)</div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">✨</span><span class="note-card-title" style="color:var(--ad)">Making Aldehyde — 2 Methods</span></div><div class="note-card-body"><strong>Method 1:</strong> Alkyne + H₂O → Aldehyde (20% H₂SO₄, 2% HgSO₄, 80°C)<br><strong>Method 2 (Mild oxidation):</strong> Alcohol + [O] → Aldehyde (K₂Cr₂O₇/H₂SO₄, controlled) ⚠️ Stop here!</div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">🧬</span><span class="note-card-title" style="color:var(--ac)">Making Fatty Acid — 2 Methods</span></div><div class="note-card-body"><strong>Method 1:</strong> Aldehyde + [O] → Fatty acid (K₂Cr₂O₇ + H₂SO₄)<br><strong>Method 2 (Strong oxidation):</strong> Alcohol + 2[O] → Fatty acid (K₂Cr₂O₇/H₂SO₄ excess) — goes all the way</div></div>
+  </div>
+
+  <!-- PETROLEUM -->
+  <div id="nt-petroleum" class="nt-pane">
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">⛽</span><span class="note-card-title" style="color:#fb923c">Petroleum Fractions</span></div><div class="note-card-body"><table class="note-table"><tr><th>Fraction</th><th>Carbons</th><th>Boiling Pt</th><th>Use</th></tr><tr><td>Refinery gas / LPG</td><td>1–4</td><td>0–20°C</td><td>Cooking fuel</td></tr><tr><td>Petrol (gasoline)</td><td>5–10</td><td>21–70°C</td><td>Car fuel</td></tr><tr><td>Naphtha</td><td>5–10</td><td>71–120°C</td><td>Solvents</td></tr><tr><td>Kerosene</td><td>11–16</td><td>121–170°C</td><td>Jet fuel</td></tr><tr><td>Diesel</td><td>17–20</td><td>171–270°C</td><td>Diesel engines</td></tr><tr><td>Lubricating oil</td><td>20–30</td><td>270–340°C</td><td>Engine lubricant</td></tr><tr><td>Bitumen (pitch)</td><td>>30</td><td>>340°C</td><td>Road construction</td></tr></table></div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">🌍</span><span class="note-card-title" style="color:#fbbf24">Fossil Fuels</span></div><div class="note-card-body"><strong>Three fossil fuels:</strong> Coal (from land plants), Petroleum (from marine organisms), Natural Gas (mainly methane 93–98%)<br><br><strong>Bangladesh natural gas:</strong> 93–98% Methane (CH₄)<br><strong>Combustion products:</strong> CO₂ + H₂O + heat (complete) or CO + H₂O (incomplete)</div></div>
+  </div>
+
+  <!-- POLYMERS -->
+  <div id="nt-polymers" class="nt-pane">
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">🔗</span><span class="note-card-title" style="color:#a78bfa">Types of Polymerisation</span></div><div class="note-card-body"><strong>Addition polymerisation:</strong> Monomers with C=C join — no atoms lost. e.g. Polythene, PVC, Polypropene<br><strong>Condensation polymerisation:</strong> Monomers join + small molecule (H₂O) released. e.g. Nylon 6:6, Proteins, Starch</div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">📋</span><span class="note-card-title" style="color:#6ee7b7">Important Polymers</span></div><div class="note-card-body"><table class="note-table"><tr><th>Polymer</th><th>Monomer</th><th>Type</th><th>Use</th></tr><tr><td>Polythene</td><td>Ethene</td><td>Addition</td><td>Plastic bags, bottles</td></tr><tr><td>PVC</td><td>Vinyl chloride</td><td>Addition</td><td>Pipes, flooring</td></tr><tr><td>Polypropene</td><td>Propene</td><td>Addition</td><td>Ropes, containers</td></tr><tr><td>Nylon 6:6</td><td>Adipic acid + Diamine</td><td>Condensation</td><td>Fibres, clothing</td></tr><tr><td>Natural rubber</td><td>Isoprene</td><td>Natural addition</td><td>Tyres, gloves</td></tr><tr><td>Starch</td><td>Glucose</td><td>Natural condensation</td><td>Food energy</td></tr><tr><td>Protein</td><td>Amino acids</td><td>Natural condensation</td><td>Body structure</td></tr></table></div></div>
+  </div>
+
+  <!-- EXAM TIPS -->
+  <div id="nt-tips" class="nt-pane">
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">🏆</span><span class="note-card-title" style="color:#f87171">Top 10 Exam Tips</span></div><div class="note-card-body">
+      <strong>1.</strong> CaC₂ + H₂O always gives <strong>Ethyne only</strong> (2C) — never propyne or butyne<br>
+      <strong>2.</strong> Decarboxylation: product alkane = salt carbons <strong>minus 1</strong><br>
+      <strong>3.</strong> Bromine water decolourises with <strong>unsaturated</strong> (alkene/alkyne) — not alkanes<br>
+      <strong>4.</strong> KMnO₄ (pink) decolourises with <strong>unsaturated</strong> compounds<br>
+      <strong>5.</strong> <strong>Mild</strong> oxidation: Alcohol → Aldehyde. <strong>Strong/excess</strong>: Alcohol → Fatty acid<br>
+      <strong>6.</strong> Alkyne needs <strong>2 mol H₂</strong> to become alkane (triple bond has 2 π bonds)<br>
+      <strong>7.</strong> Vinegar = <strong>4–10%</strong> ethanoic acid. Formalin = <strong>40%</strong> methanal<br>
+      <strong>8.</strong> Polythene conditions: <strong>1000 atm, 200°C, trace O₂</strong><br>
+      <strong>9.</strong> Nylon 6:6 = <strong>condensation</strong> polymerisation (releases H₂O)<br>
+      <strong>10.</strong> General formulas: Alkane CₙH₂ₙ₊₂ | Alkene CₙH₂ₙ | Alkyne CₙH₂ₙ₋₂
+    </div></div>
+    <div class="note-card"><div class="note-card-head"><span class="note-card-icon">⚠️</span><span class="note-card-title" style="color:#fbbf24">Common Mistakes to Avoid</span></div><div class="note-card-body">
+      ❌ Confusing <strong>Aldehyde (–CHO)</strong> with <strong>Ketone (>C=O)</strong> — aldehyde is terminal!<br>
+      ❌ Thinking CaC₂ can give propyne — it <strong>only gives Ethyne</strong><br>
+      ❌ Forgetting that fatty acids are <strong>weak</strong> (not strong) acids<br>
+      ❌ Mixing up <strong>Formalin (40% methanal)</strong> and <strong>Rectified spirit (96% ethanol)</strong><br>
+      ❌ Forgetting that <strong>Polythene = addition</strong> but <strong>Nylon = condensation</strong>
+    </div></div>
+  </div>
+</div>`;
+
+  // ══════════════════════════════════════════════
+  //  📊  REACTION CHART PANEL
+  // ══════════════════════════════════════════════
+  panels['rc'] = `
+<div class="ph" style="border-color:#be185d;color:#be185d"><div class="phi">📊</div><div><div class="pht">Organic Reaction Chart</div><div class="phb"><span class="badge">All key reactions</span><span class="badge">Conditions shown</span><span class="badge">Visual pathway</span></div><div class="phd">A complete visual map of all organic reactions — compounds, reagents and conditions at a glance.</div></div></div>
+<div class="rc-wrap">
+  <div style="background:var(--sf);border:2px solid #be185d;border-radius:16px;padding:1.3rem;margin-bottom:1.4rem;text-align:center">
+    <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:#f9a8d4;margin-bottom:.8rem">🗺️ MASTER REACTION PATHWAY</div>
+    <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.4rem;font-family:'Fredoka One',cursive;font-size:.95rem">
+      <span style="padding:.4rem .9rem;background:rgba(255,112,67,.15);border:2px solid var(--ka);border-radius:10px;color:var(--ka)">🔥 Alkane</span>
+      <span style="color:#374151">⟷</span>
+      <span style="padding:.4rem .9rem;background:rgba(0,229,160,.1);border:2px solid var(--ke);border-radius:10px;color:var(--ke)">🌿 Alkene</span>
+      <span style="color:#374151">⟷</span>
+      <span style="padding:.4rem .9rem;background:rgba(192,132,252,.1);border:2px solid var(--ky);border-radius:10px;color:var(--ky)">⚡ Alkyne</span>
+      <span style="color:#374151">⟷</span>
+      <span style="padding:.4rem .9rem;background:rgba(56,189,248,.1);border:2px solid var(--al);border-radius:10px;color:var(--al)">🧪 Alcohol</span>
+      <span style="color:#374151">→</span>
+      <span style="padding:.4rem .9rem;background:rgba(251,191,36,.1);border:2px solid var(--ad);border-radius:10px;color:var(--ad)">✨ Aldehyde</span>
+      <span style="color:#374151">→</span>
+      <span style="padding:.4rem .9rem;background:rgba(244,114,182,.1);border:2px solid var(--ac);border-radius:10px;color:var(--ac)">🧬 Fatty Acid</span>
+    </div>
+  </div>
+
+  <div class="rc-section-title" style="background:rgba(255,112,67,.1);color:var(--ka);border:1.5px solid var(--ka)">🔥 Alkane Reactions</div>
+  <div class="rc-grid">
+    <div class="rc-row" style="border-color:rgba(255,112,67,.3)"><div class="rc-compound"><div class="rc-name" style="color:var(--ka)">Alkene</div><div class="rc-form">CₙH₂ₙ</div></div><div class="rc-arrow-box"><span class="rc-reagent">Ni, 180–200°C</span><span class="rc-arrow">→</span><span class="rc-product">+ H₂</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ka)">Alkane</div><div class="rc-form">CₙH₂ₙ₊₂</div></div></div>
+    <div class="rc-row" style="border-color:rgba(255,112,67,.3)"><div class="rc-compound"><div class="rc-name" style="color:var(--ka)">Alkyne</div><div class="rc-form">CₙH₂ₙ₋₂</div></div><div class="rc-arrow-box"><span class="rc-reagent">Ni, 180–200°C</span><span class="rc-arrow">→</span><span class="rc-product">+ 2H₂</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ka)">Alkane</div><div class="rc-form">CₙH₂ₙ₊₂</div></div></div>
+    <div class="rc-row" style="border-color:rgba(255,112,67,.3)"><div class="rc-compound"><div class="rc-name" style="color:var(--ka)">Na Salt + NaOH</div><div class="rc-form">RCOONa</div></div><div class="rc-arrow-box"><span class="rc-reagent">CaO (soda lime)</span><span class="rc-arrow">→</span><span class="rc-product">heat</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ka)">Alkane (−1C)</div><div class="rc-form">Decarboxylation</div></div></div>
+  </div>
+
+  <div class="rc-section-title" style="background:rgba(0,229,160,.08);color:var(--ke);border:1.5px solid var(--ke)">🌿 Alkene Reactions</div>
+  <div class="rc-grid">
+    <div class="rc-row" style="border-color:rgba(0,229,160,.25)"><div class="rc-compound"><div class="rc-name" style="color:var(--ke)">Alkyl Chloride</div><div class="rc-form">R–Cl</div></div><div class="rc-arrow-box"><span class="rc-reagent">NaOH (aq.)</span><span class="rc-arrow">→</span><span class="rc-product">heat</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ke)">Alkene + NaCl</div><div class="rc-form">Elimination</div></div></div>
+    <div class="rc-row" style="border-color:rgba(0,229,160,.25)"><div class="rc-compound"><div class="rc-name" style="color:var(--ke)">Alcohol</div><div class="rc-form">R–OH</div></div><div class="rc-arrow-box"><span class="rc-reagent">conc. H₂SO₄</span><span class="rc-arrow">→</span><span class="rc-product">heat</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ke)">Alkene + H₂O</div><div class="rc-form">Dehydration</div></div></div>
+  </div>
+
+  <div class="rc-section-title" style="background:rgba(192,132,252,.08);color:var(--ky);border:1.5px solid var(--ky)">⚡ Alkyne Reactions</div>
+  <div class="rc-grid">
+    <div class="rc-row" style="border-color:rgba(192,132,252,.25)"><div class="rc-compound"><div class="rc-name" style="color:var(--ky)">CaC₂ + 2H₂O</div><div class="rc-form">Room temp</div></div><div class="rc-arrow-box"><span class="rc-reagent">No heat needed</span><span class="rc-arrow">→</span><span class="rc-product">Lab method</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ky)">Ethyne only</div><div class="rc-form">CH≡CH + Ca(OH)₂</div></div></div>
+    <div class="rc-row" style="border-color:rgba(192,132,252,.25)"><div class="rc-compound"><div class="rc-name" style="color:var(--ky)">Dihalide</div><div class="rc-form">R–CHBr–CHBr–R</div></div><div class="rc-arrow-box"><span class="rc-reagent">2NaOH alcoholic</span><span class="rc-arrow">→</span><span class="rc-product">heat</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ky)">Alkyne + 2NaBr</div><div class="rc-form">Double elimination</div></div></div>
+  </div>
+
+  <div class="rc-section-title" style="background:rgba(56,189,248,.08);color:var(--al);border:1.5px solid var(--al)">🧪 Alcohol → Aldehyde → Fatty Acid</div>
+  <div class="rc-grid">
+    <div class="rc-row" style="border-color:rgba(56,189,248,.25)"><div class="rc-compound"><div class="rc-name" style="color:var(--al)">Alcohol</div><div class="rc-form">R–CH₂–OH</div></div><div class="rc-arrow-box"><span class="rc-reagent">K₂Cr₂O₇/H₂SO₄</span><span class="rc-arrow">→</span><span class="rc-product">controlled (mild)</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ad)">Aldehyde ⚠️ stop!</div><div class="rc-form">R–CHO</div></div></div>
+    <div class="rc-row" style="border-color:rgba(244,114,182,.25)"><div class="rc-compound"><div class="rc-name" style="color:var(--ad)">Aldehyde</div><div class="rc-form">R–CHO</div></div><div class="rc-arrow-box"><span class="rc-reagent">K₂Cr₂O₇/H₂SO₄</span><span class="rc-arrow">→</span><span class="rc-product">oxidation</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ac)">Fatty Acid</div><div class="rc-form">R–COOH</div></div></div>
+    <div class="rc-row" style="border-color:rgba(56,189,248,.25)"><div class="rc-compound"><div class="rc-name" style="color:var(--al)">Alcohol</div><div class="rc-form">R–CH₂–OH</div></div><div class="rc-arrow-box"><span class="rc-reagent">K₂Cr₂O₇/H₂SO₄</span><span class="rc-arrow">→</span><span class="rc-product">EXCESS oxidant</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ac)">Fatty Acid direct</div><div class="rc-form">Strong oxidation</div></div></div>
+    <div class="rc-row" style="border-color:rgba(56,189,248,.25)"><div class="rc-compound"><div class="rc-name" style="color:var(--al)">Alkene + H₂O</div><div class="rc-form">C=C + H₂O</div></div><div class="rc-arrow-box"><span class="rc-reagent">H₃PO₄, 300°C</span><span class="rc-arrow">→</span><span class="rc-product">60 atm</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--al)">Alcohol</div><div class="rc-form">Hydration</div></div></div>
+    <div class="rc-row" style="border-color:rgba(251,191,36,.25)"><div class="rc-compound"><div class="rc-name" style="color:var(--ky)">Alkyne + H₂O</div><div class="rc-form">C≡C + H₂O</div></div><div class="rc-arrow-box"><span class="rc-reagent">H₂SO₄, HgSO₄</span><span class="rc-arrow">→</span><span class="rc-product">80°C</span></div><div class="rc-compound"><div class="rc-name" style="color:var(--ad)">Aldehyde</div><div class="rc-form">Hydration of alkyne</div></div></div>
+  </div>
+</div>`;
+
+  // ══════════════════════════════════════════════
+  //  🎯  TOPIC QUIZ PANEL
+  // ══════════════════════════════════════════════
+  panels['tq'] = `
+<div class="ph" style="border-color:#059669;color:#059669"><div class="phi">🎯</div><div><div class="pht">Topic-wise Mini Quiz</div><div class="phb"><span class="badge">5 Qs per topic</span><span class="badge">Instant feedback</span><span class="badge">All topics covered</span></div><div class="phd">Pick a topic and get 5 focused questions. Perfect for targeted revision before exams!</div></div></div>
+<div class="tq-wrap">
+  <div id="tq-home">
+    <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:#94a3b8;margin-bottom:.9rem">Choose a topic to quiz yourself:</div>
+    <div class="tq-picks">
+      ${[['ka','🔥','Alkane','CₙH₂ₙ₊₂'],['ke','🌿','Alkene','CₙH₂ₙ'],['ky','⚡','Alkyne','CₙH₂ₙ₋₂'],['al','🧪','Alcohol','–OH group'],['ad','✨','Aldehyde','–CHO group'],['ac','🧬','Fatty Acid','–COOH group'],['Petroleum','⛽','Petroleum','Fossil fuels'],['Polymer','🔗','Polymer','Polymerisation'],['Bonds','🔗','Bonds','σ and π'],['Naming','🏷️','IUPAC Naming','SPWPS rule'],['Isomers','🔄','Isomers','Cis/Trans'],['Reactions','⚗️','Reactions','Mechanisms'],['Mixed','🔬','Mixed','General']].map(([id,icon,name,sub])=>`<div class="tq-pick" style="color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'});border-color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'})" onclick="tqStart('${id}','${name}')"><span class="tq-pick-icon">${icon}</span><span class="tq-pick-name">${name}</span><span class="tq-pick-count">${sub}</span></div>`).join('')}
+    </div>
+  </div>
+  <div class="tq-exam" id="tq-exam">
+    <div style="display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem;flex-wrap:wrap">
+      <div style="font-family:'Fredoka One',cursive;font-size:1.1rem;color:#4ade80" id="tq-title"></div>
+      <div style="margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#6b7280" id="tq-progress"></div>
+    </div>
+    <div id="tq-questions" class="ql"></div>
+    <div style="text-align:center;margin-top:1.2rem">
+      <button class="stbtn" style="font-size:1rem;padding:.7rem 2rem" onclick="tqSubmit()">✔ Submit Quiz</button>
+    </div>
+  </div>
+  <div class="tq-result" id="tq-result"></div>
+</div>`;
+
+  // ─────────────────────────────────────────────
+  //  FLASHCARD ENGINE
+  // ─────────────────────────────────────────────
+  let fcDeck = [...FC_CARDS], fcIdx = 0;
+  function fcRender() {
+    const c = fcDeck[fcIdx];
+    if (!c) return;
+    const card = document.getElementById('fc-card');
+    const inner = document.getElementById('fc-inner');
+    if (card) card.classList.remove('flipped');
+    document.getElementById('fc-q').textContent = c.q;
+    document.getElementById('fc-a').textContent = c.a;
+    document.getElementById('fc-hint').textContent = c.hint ? '💡 ' + c.hint : '';
+    document.getElementById('fc-count').textContent = (fcIdx+1) + ' / ' + fcDeck.length;
+    const pct = ((fcIdx+1)/fcDeck.length*100).toFixed(0);
+    const fill = document.getElementById('fc-fill');
+    if (fill) fill.style.width = pct + '%';
+  }
+  window.fcFlip = function() { const c = document.getElementById('fc-card'); if(c) c.classList.toggle('flipped'); };
+  window.fcNav = function(d) { fcIdx = (fcIdx + d + fcDeck.length) % fcDeck.length; fcRender(); };
+  window.fcShuffle = function() { for(let i=fcDeck.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[fcDeck[i],fcDeck[j]]=[fcDeck[j],fcDeck[i]];} fcIdx=0; fcRender(); };
+  window.fcFilter = function(topic, btn) {
+    document.querySelectorAll('.fc-filter').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    fcDeck = topic === 'All' ? [...FC_CARDS] : FC_CARDS.filter(c=>c.topic===topic);
+    fcIdx = 0; fcRender();
+  };
+  setTimeout(fcRender, 100);
+
+  // ─────────────────────────────────────────────
+  //  MOLECULAR WEIGHT ENGINE
+  // ─────────────────────────────────────────────
+  const ATOMIC_MASS = {H:1.008,C:12.011,O:15.999,N:14.007,Cl:35.45,Br:79.904,F:18.998,I:126.90,S:32.06,P:30.974,Na:22.990,K:39.098,Ca:40.078,Mg:24.305};
+  window.mwSetFormula = function(f) { const el=document.getElementById('mw-input'); if(el){el.value=f; mwCalc();} };
+  window.mwCalc = function() {
+    const raw = (document.getElementById('mw-input').value||'').trim();
+    const r = document.getElementById('mw-result');
+    if (!raw) { r.innerHTML=''; return; }
+    // Normalise subscript digits
+    const norm = raw.replace(/₀/g,'0').replace(/₁/g,'1').replace(/₂/g,'2').replace(/₃/g,'3').replace(/₄/g,'4').replace(/₅/g,'5').replace(/₆/g,'6').replace(/₇/g,'7').replace(/₈/g,'8').replace(/₉/g,'9');
+    const counts = {};
+    const re = /([A-Z][a-z]?)(\d*)/g;
+    let m, total = 0, valid = true, breakdown = [];
+    while ((m = re.exec(norm)) !== null) {
+      if (!m[1]) continue;
+      const atom = m[1], cnt = m[2] ? parseInt(m[2]) : 1;
+      if (!ATOMIC_MASS[atom]) { valid = false; break; }
+      counts[atom] = (counts[atom]||0) + cnt;
+    }
+    if (!valid) { r.innerHTML=`<div class="fb-notfound"><span class="nm-nfi">⚠️</span><div class="nm-nft">Unknown element in formula</div><div class="fb-hint">Use standard symbols: C, H, O, N, Cl, Br, Na, etc.</div></div>`; return; }
+    Object.entries(counts).forEach(([atom,cnt])=>{ const mass=ATOMIC_MASS[atom]*cnt; total+=mass; breakdown.push({atom,cnt,mass:mass.toFixed(3)}); });
+    r.innerHTML = `<div class="mw-result">
+      <div class="mw-big">${total.toFixed(3)}</div>
+      <div class="mw-unit">g/mol — Molecular Weight of ${raw}</div>
+      <div class="mw-breakdown">
+        ${breakdown.map(b=>`<div class="mw-row"><span class="mw-atom">${b.atom}</span><span>×</span><span class="mw-sub">${b.cnt}</span><span>=</span><span class="mw-mass">${b.mass} g/mol</span></div>`).join('')}
+        <div class="mw-row" style="border-top:1px solid var(--bd);margin-top:.2rem;padding-top:.4rem"><span style="color:#e2e8f0;font-weight:700">Total</span><span></span><span></span><span>=</span><span style="color:#c4b5fd;font-weight:700">${total.toFixed(3)} g/mol</span></div>
+      </div>
+    </div>`;
+  };
+
+  // ─────────────────────────────────────────────
+  //  NOTES ENGINE
+  // ─────────────────────────────────────────────
+  window.ntTab = function(btn, paneId) {
+    const wrap = btn.closest('.nt-wrap');
+    wrap.querySelectorAll('.nt-tab').forEach(t=>t.classList.remove('on'));
+    wrap.querySelectorAll('.nt-pane').forEach(p=>p.classList.remove('on'));
+    btn.classList.add('on');
+    const pane = document.getElementById(paneId);
+    if (pane) pane.classList.add('on');
+  };
+
+  // ─────────────────────────────────────────────
+  //  TOPIC QUIZ ENGINE
+  // ─────────────────────────────────────────────
+  let TQ = { topic:'', questions:[], answers:{} };
+  window.tqStart = function(topicId, topicName) {
+    const topicKey = ['ka','ke','ky','al','ad','ac'].includes(topicId) ? {'ka':'Alkane','ke':'Alkene','ky':'Alkyne','al':'Alcohol','ad':'Aldehyde','ac':'Fatty Acid'}[topicId] : topicId;
+    const pool = QB.filter(q => q.t === topicKey || q.t === topicName);
+    if (pool.length < 3) { alert('Not enough questions for this topic yet!'); return; }
+    const shuffled = [...pool].sort(()=>Math.random()-.5).slice(0,5);
+    TQ = { topic: topicName, questions: shuffled, answers: {} };
+    document.getElementById('tq-home').style.display = 'none';
+    document.getElementById('tq-result').style.display = 'none';
+    const exam = document.getElementById('tq-exam');
+    exam.style.display = 'block';
+    document.getElementById('tq-title').textContent = '🎯 ' + topicName + ' Quiz — 5 Questions';
+    document.getElementById('tq-progress').textContent = '0 / ' + shuffled.length + ' answered';
+    const ql = document.getElementById('tq-questions');
+    const lt = ['A','B','C','D'];
+    ql.innerHTML = shuffled.map((q,i)=>`<div class="qc" id="tqc${i}"><div class="qh"><span class="qnum">Q ${i+1}</span><span class="qtop">${q.t}</span><span class="qmk">1 Mark</span></div><div class="qtxt">${q.q}</div><div class="opts">${q.o.map((o,oi)=>`<div class="opt" onclick="tqSel(${i},${oi},this)"><span class="ol">${lt[oi]}</span><span class="otx">${o}</span></div>`).join('')}</div></div>`).join('');
+  };
+  window.tqSel = function(qi,oi,el) {
+    const c = document.getElementById('tqc'+qi);
+    c.querySelectorAll('.opt').forEach(o=>o.classList.remove('on'));
+    el.classList.add('on'); TQ.answers[qi]=oi; c.classList.add('answered');
+    const n = Object.keys(TQ.answers).length;
+    const prog = document.getElementById('tq-progress');
+    if (prog) prog.textContent = n + ' / ' + TQ.questions.length + ' answered';
+  };
+  window.tqSubmit = function() {
+    let co=0,wr=0,sk=0;
+    TQ.questions.forEach((q,i)=>{ const a=TQ.answers[i]; if(a===undefined)sk++; else if(a===q.a)co++; else wr++; });
+    const pct = Math.round(co/TQ.questions.length*100);
+    const grade = pct===100?'Perfect! 🏆':pct>=80?'Excellent! 🎉':pct>=60?'Good job! 👍':'Keep practising! 💪';
+    document.getElementById('tq-exam').style.display='none';
+    const res = document.getElementById('tq-result');
+    res.style.display='block';
+    let revHtml = '';
+    const lt=['A','B','C','D'];
+    TQ.questions.forEach((q,i)=>{
+      const ua=TQ.answers[i],ca=q.a,ok=ua===ca,sk2=ua===undefined;
+      const bc=sk2?'#fbbf24':ok?'#4ade80':'#f87171';
+      const st=sk2?'⬜ Skipped':ok?'✅ Correct':'❌ Wrong';
+      const opts=q.o.map((o,oi)=>{let cl='opt rv';if(oi===ca)cl+=' ca';if(oi===ua&&oi!==ca)cl+=' wa';return`<div class="${cl}"><span class="ol">${lt[oi]}</span><span class="otx">${o}</span></div>`;}).join('');
+      revHtml+=`<div class="qc" style="border-color:${bc};margin-bottom:.9rem"><div class="qh"><span class="qnum" style="color:${bc};border-color:${bc}">Q ${i+1}</span><span class="qtop">${q.t}</span><span class="qmk" style="color:${bc}">${st}</span></div><div class="qtxt">${q.q}</div><div class="opts">${opts}</div><div class="expl on">💡 ${q.e}</div></div>`;
+    });
+    res.innerHTML = `<div style="background:var(--sf);border:2px solid #059669;border-radius:18px;padding:1.5rem;margin-bottom:1.2rem;text-align:center"><div style="font-size:3rem;margin-bottom:.5rem">${pct===100?'🏆':pct>=80?'🎉':pct>=60?'👍':'📚'}</div><div style="font-family:'Fredoka One',cursive;font-size:2rem;color:#4ade80">${co} / ${TQ.questions.length}</div><div style="font-family:'Fredoka One',cursive;font-size:1.2rem;color:#94a3b8;margin:.3rem 0">${TQ.topic} Quiz — ${pct}%</div><div style="font-size:1rem;color:#6b7280">${grade}</div><div style="display:flex;gap:.7rem;justify-content:center;margin-top:1rem"><button class="ra ra1" onclick="tqBack()">🎯 Try Another Topic</button></div></div><div style="font-family:'Fredoka One',cursive;font-size:1rem;color:#4ade80;margin:.8rem 0">📖 Review Answers</div>${revHtml}`;
+  };
+  window.tqBack = function() {
+    document.getElementById('tq-result').style.display='none';
+    document.getElementById('tq-home').style.display='block';
+  };
+
   // ─────────────────────────────────────────────
   //  6. RENDER ALL PANELS INTO DOM
-  // ─────────────────────────────────────────────
-  const panelOrder = ['home','ka','ke','ky','al','ad','ac','ex','sy','mq','nm','fb'];
   const mainEl = document.getElementById('main-content');
   panelOrder.forEach(id => {
     const div = document.createElement('div');
@@ -1401,7 +1901,226 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem;text-align:center;font-size:.
     {t:"Polymer",q:"When 2 monomers join it is called?",o:["Monomer","Dimer","Trimer","Polymer"],a:1,e:"2 monomers = dimer. 3 = trimer. Many = polymer."},
     {t:"Mixed",q:"Formula of Ethanol?",o:["CH₃–OH","CH₃–CH₂–OH","CH₃CH₂CH₂OH","HCOOH"],a:1,e:"Ethanol = CH₃–CH₂–OH (C₂H₅OH)."},
     {t:"Alkane",q:"8-carbon alkane is?",o:["Heptane","Octane","Nonane","Decane"],a:1,e:"8-carbon alkane = Octane (C₈H₁₈)."},
-    {t:"Alkene",q:"KMnO₄ test: pink colour disappears means?",o:["Saturated","Unsaturated compound","Nitrogen present","Sulphur present"],a:1,e:"KMnO₄ (pink) decolourises with unsaturated compounds, proving C=C or C≡C bonds."}
+    {t:"Mixed",q:"KMnO₄ test: pink colour disappears means?",o:["Saturated","Unsaturated compound","Nitrogen present","Sulphur present"],a:1,e:"KMnO₄ (pink) decolourises with unsaturated compounds, proving C=C or C≡C bonds."},
+
+    // ── 100 NEW ORIGINAL QUESTIONS ──
+
+    // ALKANE / ALKENE / ALKYNE
+    {t:"Alkane",q:"Which gas is produced when CaC₂ is treated with water?",o:["Methane","Ethane","Ethyne","Propyne"],a:2,e:"CaC₂ + 2H₂O → CH≡CH (Ethyne) + Ca(OH)₂. This is the standard lab preparation."},
+    {t:"Alkane",q:"Alkanes are also called paraffins because they are?",o:["Very reactive","Low in affinity (chemically inactive)","High boiling","Unsaturated"],a:1,e:"Paraffin comes from Latin 'parum affinis' meaning low affinity — alkanes are chemically very inactive."},
+    {t:"Alkane",q:"What is the general formula of alkanes?",o:["CₙH₂ₙ","CₙH₂ₙ₋₂","CₙH₂ₙ₊₂","CₙH₂ₙ₊₁OH"],a:2,e:"Alkane general formula = CₙH₂ₙ₊₂ (saturated, only single bonds)."},
+    {t:"Alkane",q:"In decarboxylation, sodium ethanoate gives which alkane?",o:["Ethane","Methane","Propane","Butane"],a:1,e:"Sodium ethanoate (2C) → Methane (1C). Product alkane = salt carbons − 1."},
+    {t:"Alkane",q:"Catalyst used in hydrogenation of alkene to alkane?",o:["HgSO₄","H₃PO₄","Ni","KMnO₄"],a:2,e:"Nickel (Ni) at 180–200°C is the catalyst for hydrogenation: alkene + H₂ → alkane."},
+    {t:"Alkane",q:"How many mol H₂ are needed to convert alkyne to alkane?",o:["0","1","2","3"],a:2,e:"Alkyne has 2 weak π bonds. Needs 2 mol H₂: alkyne → alkene → alkane."},
+    {t:"Alkane",q:"Which alkane is the main component of natural gas?",o:["Ethane","Propane","Methane","Butane"],a:2,e:"Methane (CH₄) makes up 93–98% of natural gas in Bangladesh."},
+    {t:"Alkane",q:"UV light is used in which reaction of alkanes?",o:["Hydrogenation","Halogenation","Hydration","Dehydration"],a:1,e:"UV light initiates halogenation of alkanes: CH₄ + Cl₂ → CH₃Cl + HCl (UV)."},
+    {t:"Alkane",q:"7-carbon alkane is named?",o:["Hexane","Heptane","Octane","Pentane"],a:1,e:"7-carbon alkane = Heptane (C₇H₁₆)."},
+    {t:"Alkane",q:"Complete combustion of methane produces?",o:["CO only","CO₂ + H₂O + heat","CH₂O + H₂","C + H₂O"],a:1,e:"CH₄ + 2O₂ → CO₂ + 2H₂O + heat. Complete combustion gives CO₂ and H₂O."},
+    {t:"Alkene",q:"The π bond in alkene is which type of bond?",o:["Strong σ bond","Weak π bond","Ionic bond","Coordinate bond"],a:1,e:"The C=C in alkene has 1 strong σ bond + 1 weak π bond. The π bond breaks easily in addition reactions."},
+    {t:"Alkene",q:"Ethene + HBr gives?",o:["CH₃–CH₂Br","CH₂Br–CH₂Br","CH₃–CHBr₂","CH₂=CHBr"],a:0,e:"CH₂=CH₂ + HBr → CH₃–CH₂Br (bromoethane). Addition of HBr across double bond."},
+    {t:"Alkene",q:"Conditions for polythene manufacture from ethene?",o:["Ni, 180°C","H₂SO₄, 300°C","1000 atm, 200°C, trace O₂","KMnO₄, room temp"],a:2,e:"Polythene: n(CH₂=CH₂) → (–CH₂–CH₂–)ₙ at 1000 atm, 200°C with trace O₂."},
+    {t:"Alkene",q:"Dehydrogenation of ethane gives?",o:["Ethyne","Methane","Ethene","Propene"],a:2,e:"CH₃–CH₃ → CH₂=CH₂ + H₂ (dehydrogenation with Ni/Al₂O₃ at 400–600°C)."},
+    {t:"Alkene",q:"Alkenes are called olefins because they form?",o:["Oily products with HCl","Oily products with halogens","Salts with acids","Polymers"],a:1,e:"Alkenes are called olefins (oil-forming) because they form oily products when reacted with halogens like Cl₂."},
+    {t:"Alkene",q:"Propene has how many carbons?",o:["2","3","4","5"],a:1,e:"Propene = CH₃–CH=CH₂ = prop (3C) + ene. 3 carbon atoms."},
+    {t:"Alkene",q:"What is the product when propene reacts with H₂O (H₃PO₄, 300°C)?",o:["Propane","Propanal","Propan-1-ol","Propanoic acid"],a:2,e:"Propene + H₂O → Propan-1-ol (CH₃CH₂CH₂OH) by hydration with H₃PO₄."},
+    {t:"Alkene",q:"The double bond C=C consists of how many bonds total?",o:["1 only","2 (1σ + 1π)","3 (1σ + 2π)","2 ionic bonds"],a:1,e:"C=C = 1 strong σ bond + 1 weak π bond = 2 bonds total."},
+    {t:"Alkyne",q:"Ethyne is produced in the lab from?",o:["Ethane + Cl₂","CaC₂ + H₂O","CH₄ + UV","NaOH + C"],a:1,e:"CaC₂ + 2H₂O → CH≡CH + Ca(OH)₂. Standard lab method for ethyne."},
+    {t:"Alkyne",q:"Triple bond C≡C consists of?",o:["3σ bonds","1σ + 2π bonds","2σ + 1π bonds","3π bonds"],a:1,e:"C≡C = 1 strong σ bond + 2 weak π bonds = 3 bonds total."},
+    {t:"Alkyne",q:"Ethyne + H₂O (HgSO₄, 80°C) gives?",o:["Ethanol","Ethene","Ethanal","Ethanoic acid"],a:2,e:"CH≡CH + H₂O → CH₃CHO (Ethanal/Acetaldehyde). Hydration of alkyne with HgSO₄ catalyst."},
+    {t:"Alkyne",q:"Which reagent converts dibromoalkane to alkyne?",o:["NaOH (aq.)","2NaOH (alcoholic)","H₂SO₄","KMnO₄"],a:1,e:"Vicinal dihalide + 2NaOH (alcoholic) → alkyne. Two HBr molecules are removed (double elimination)."},
+    {t:"Alkyne",q:"But-2-yne structural formula is?",o:["CH≡C–CH₂–CH₃","CH₃–C≡C–CH₃","CH₂=CH–CH₂–CH₃","CH₃–CH=CH–CH₃"],a:1,e:"But-2-yne = CH₃–C≡C–CH₃. Triple bond between C2 and C3."},
+    {t:"Alkyne",q:"Selective hydrogenation of alkyne to alkene uses which catalyst?",o:["Ni","Pd/C","Lindlar catalyst","H₃PO₄"],a:2,e:"Lindlar catalyst (Pd/CaCO₃/quinoline) converts alkyne → alkene by selective hydrogenation, stopping at the alkene stage."},
+    {t:"Alkyne",q:"General formula of alkynes is?",o:["CₙH₂ₙ₊₂","CₙH₂ₙ","CₙH₂ₙ₋₂","CₙH₂ₙ₊₁OH"],a:2,e:"Alkynes: CₙH₂ₙ₋₂ (two fewer H than alkane, due to triple bond)."},
+
+    // ALCOHOL / ALDEHYDE / FATTY ACID
+    {t:"Alcohol",q:"Alcohol is oxidised mildly to give?",o:["Alkane","Alkene","Aldehyde","Fatty acid"],a:2,e:"Mild/controlled oxidation (K₂Cr₂O₇/H₂SO₄): Alcohol → Aldehyde. Must stop here or it goes to acid."},
+    {t:"Alcohol",q:"Alcohol is oxidised strongly (excess oxidant) to give?",o:["Alkane","Alkene","Aldehyde","Fatty acid (carboxylic acid)"],a:3,e:"Strong oxidation (excess K₂Cr₂O₇/H₂SO₄): Alcohol → Aldehyde → Fatty acid in one step."},
+    {t:"Alcohol",q:"Ethanol is produced industrially by fermentation of?",o:["Fats","Starch/sugar","Proteins","Coal"],a:1,e:"Ethanol is produced by fermentation of starch or sugar by yeast enzymes."},
+    {t:"Alcohol",q:"Functional group of alcohol is?",o:["–COOH","–CHO",">C=O","–OH"],a:3,e:"Alcohols contain the hydroxyl (–OH) functional group attached to a carbon."},
+    {t:"Alcohol",q:"Dehydration of alcohol with conc. H₂SO₄ produces?",o:["Alkane","Alkene","Aldehyde","Ester"],a:1,e:"Alcohol + conc. H₂SO₄ (heat) → Alkene + H₂O. H₂SO₄ acts as a dehydrating agent."},
+    {t:"Alcohol",q:"Ethanol + NaOH (aq.) gives what?",o:["Ethene","Ethanal","No reaction (NaOH acts differently)","Ethanoic acid"],a:2,e:"Ethanol does not react with NaOH directly in this way. NaOH(aq.) is used for substitution reactions of halides, not alcohols."},
+    {t:"Alcohol",q:"Primary alcohol has –OH attached to a carbon bonded to how many other carbons?",o:["0 or 1","2","3","4"],a:0,e:"Primary (1°) alcohol: –OH is on a carbon attached to 0 or 1 other carbon. e.g. CH₃–CH₂–OH."},
+    {t:"Alcohol",q:"Methanol is toxic because it is converted in the body to?",o:["CO₂","Ethanol","Methanal (formaldehyde)","Methane"],a:2,e:"Methanol → Methanal (formaldehyde) in the body, which damages the optic nerve causing blindness and death."},
+    {t:"Alcohol",q:"Propan-2-ol is a type of?",o:["Primary alcohol","Secondary alcohol","Tertiary alcohol","Ether"],a:1,e:"Propan-2-ol: –OH at C2 which is bonded to 2 other carbons → secondary (2°) alcohol."},
+    {t:"Alcohol",q:"Which alcohol is called rectified spirit?",o:["100% methanol","96% ethanol","100% ethanol","40% formaldehyde"],a:1,e:"Rectified spirit = 96% aqueous ethanol solution obtained by distillation of fermented liquid."},
+    {t:"Aldehyde",q:"Aldehyde functional group is?",o:["–OH","–COOH","–CHO",">C=O (internal)"],a:2,e:"Aldehydes have –CHO group (terminal carbonyl with H). Formula: R–CHO."},
+    {t:"Aldehyde",q:"Formalin is used to?",o:["Preserve biological specimens","Make vinegar","Produce alcohol","Flavour food"],a:0,e:"Formalin (40% aqueous formaldehyde/methanal) is used to preserve biological specimens."},
+    {t:"Aldehyde",q:"Ethanal is produced from ethyne by?",o:["Hydrogenation","Hydration (H₂SO₄, HgSO₄, 80°C)","Dehydration","Halogenation"],a:1,e:"CH≡CH + H₂O → CH₃CHO (Ethanal). Hydration of ethyne with HgSO₄ catalyst at 80°C."},
+    {t:"Aldehyde",q:"Reduction of aldehyde gives?",o:["Alkene","Alcohol","Fatty acid","Ether"],a:1,e:"Aldehyde + H₂ (Ni, 180–200°C) → Alcohol. Reduction adds H₂ across the C=O bond."},
+    {t:"Aldehyde",q:"Oxidation of aldehyde gives?",o:["Alkene","Alcohol","Fatty acid (carboxylic acid)","Ester"],a:2,e:"Aldehyde + [O] (K₂Cr₂O₇/H₂SO₄) → Carboxylic (fatty) acid."},
+    {t:"Aldehyde",q:"What is the simplest aldehyde?",o:["Ethanal","Propanal","Methanal","Butanal"],a:2,e:"Methanal (HCHO) = formaldehyde is the simplest aldehyde (1 carbon)."},
+    {t:"Aldehyde",q:"Aldehyde → Alkene requires how many steps?",o:["1 step","2 steps (reduce then dehydrate)","3 steps","Direct conversion"],a:1,e:"Aldehyde → Alcohol (reduction) → Alkene (dehydration). Two steps minimum."},
+    {t:"Fatty Acid",q:"Fatty acids are chemically classified as?",o:["Strong acids","Weak acids","Neutral compounds","Bases"],a:1,e:"All fatty acids (carboxylic acids) are weak acids — they partially dissociate in water."},
+    {t:"Fatty Acid",q:"Vinegar is a dilute solution of?",o:["Methanoic acid","Propanoic acid","Ethanoic acid","Butanoic acid"],a:2,e:"Vinegar = 4–10% aqueous solution of ethanoic acid (CH₃COOH). Used as food preservative."},
+    {t:"Fatty Acid",q:"Functional group of carboxylic acid is?",o:["–OH","–CHO","–COOH",">C=O"],a:2,e:"Carboxylic (fatty) acids contain the –COOH group (carboxyl group)."},
+    {t:"Fatty Acid",q:"Strong reduction of ethanoic acid with LiAlH₄ gives?",o:["Ethanal","Ethene","Ethanol","Methane"],a:2,e:"CH₃COOH + 4[H] (LiAlH₄) → CH₃CH₂OH (Ethanol) + H₂O. Strong reduction."},
+    {t:"Fatty Acid",q:"Ethanoic acid turns blue litmus?",o:["Blue","Red","Green","No change"],a:1,e:"Fatty acids are acids — they turn blue litmus red, showing acidic nature."},
+    {t:"Fatty Acid",q:"Butanoic acid smells like?",o:["Fresh apples","Rancid butter","Vinegar","Roses"],a:1,e:"Butanoic acid (butyric acid) has the characteristic smell of rancid butter."},
+    {t:"Fatty Acid",q:"General formula of fatty acids is?",o:["CₙH₂ₙ₊₁OH","CₙH₂ₙ₊₁CHO","CₙH₂ₙ₊₁COOH","CₙH₂ₙ₊₂"],a:2,e:"Fatty acid general formula = CₙH₂ₙ₊₁COOH (carboxylic acid group)."},
+    {t:"Fatty Acid",q:"Decarboxylation of sodium propanoate gives?",o:["Propane","Ethane","Methane","Butane"],a:1,e:"Sodium propanoate (3C) + NaOH + CaO → Ethane (2C) + Na₂CO₃. Product = salt C − 1."},
+    {t:"Fatty Acid",q:"Partial reduction of fatty acid to aldehyde uses which reagent?",o:["Ni, 180°C","LiAlH₄","DIBAL-H at −78°C","K₂Cr₂O₇"],a:2,e:"DIBAL-H (diisobutylaluminium hydride) at −78°C reduces fatty acid → aldehyde and stops there."},
+
+    // PETROLEUM & FOSSIL FUELS
+    {t:"Petroleum",q:"Crude oil is separated into fractions based on differences in?",o:["Colour","Density","Boiling point","Solubility"],a:2,e:"Fractional distillation separates crude oil fractions by their different boiling points."},
+    {t:"Petroleum",q:"LPG carbon atom range is?",o:["1–4","5–10","11–16","17–20"],a:0,e:"LPG = Liquefied Petroleum Gas, contains 1–4 carbon atoms, boiling point 0–20°C."},
+    {t:"Petroleum",q:"Petrol (gasoline) boiling point range is approximately?",o:["0–20°C","21–70°C","71–120°C","121–170°C"],a:2,e:"Petrol boils at 71–120°C and contains 5–10 carbon atoms."},
+    {t:"Petroleum",q:"Kerosene carbon number range is?",o:["1–4","5–10","11–16","17–20"],a:2,e:"Kerosene has 11–16 carbons, boiling point 121–170°C. Used as jet fuel."},
+    {t:"Petroleum",q:"Bitumen is used mainly for?",o:["Cooking fuel","Jet fuel","Road construction","Lubrication"],a:2,e:"Bitumen (pitch) has >30 carbons, boiling >340°C. Used for road construction (tarmac)."},
+    {t:"Petroleum",q:"Which fraction of petroleum is used as lubricating oil?",o:["LPG","Petrol","Kerosene","Lubricating oil (20–30 carbons)"],a:3,e:"Lubricating oil fraction has 20–30 carbons, boiling 270–340°C. Used to lubricate engines."},
+    {t:"Petroleum",q:"Coal is formed from ancient?",o:["Marine animals","Gigantic land plants","Sea water","Volcanic ash"],a:1,e:"Coal forms from gigantic land plants buried under heat and pressure over millions of years."},
+    {t:"Petroleum",q:"Petroleum is separated by which method?",o:["Simple distillation","Fractional distillation","Filtration","Crystallisation"],a:1,e:"Fractional distillation separates petroleum into fractions in a fractionating column."},
+    {t:"Petroleum",q:"Natural gas is mainly used for?",o:["Road construction","Cooking and electricity generation","Making plastic","Lubricating engines"],a:1,e:"Natural gas (mainly methane) is used for cooking, heating and electricity generation."},
+    {t:"Petroleum",q:"Fossil fuels are called 'fossil' because they formed from?",o:["Rocks","Ancient buried organisms (fossils)","Chemical reactions in sea","Volcanic lava"],a:1,e:"Fossil fuels formed from remains of ancient plants and animals buried and transformed over millions of years."},
+    {t:"Petroleum",q:"Which is NOT a fossil fuel?",o:["Coal","Petroleum","Natural gas","Wood (biomass)"],a:3,e:"Wood is biomass/renewable energy, not a fossil fuel. The three fossil fuels are coal, petroleum and natural gas."},
+    {t:"Petroleum",q:"Burning fossil fuels releases which harmful gas causing global warming?",o:["O₂","N₂","CO₂","H₂"],a:2,e:"Combustion of fossil fuels releases CO₂ (carbon dioxide), a greenhouse gas that causes global warming."},
+    {t:"Petroleum",q:"LPG full form is?",o:["Light Petroleum Gas","Liquefied Petroleum Gas","Low Pressure Gas","Liquid Propane Gas"],a:1,e:"LPG = Liquefied Petroleum Gas — used for cooking in homes."},
+    {t:"Petroleum",q:"Petrochemicals are chemicals derived from?",o:["Plants","Animals","Petroleum/natural gas","Seawater"],a:2,e:"Petrochemicals are chemical products derived from petroleum and natural gas, used to make plastics, fertilisers, medicines."},
+    {t:"Petroleum",q:"The fraction with the highest boiling point in fractional distillation is?",o:["LPG","Petrol","Kerosene","Bitumen/Residue"],a:3,e:"Bitumen (residue) has the highest boiling point (>340°C) and does not vaporise in the fractionating column."},
+    {t:"Petroleum",q:"Refinery gas from petroleum contains mainly?",o:["Methane and ethane","Petrol vapour","Kerosene","Diesel"],a:0,e:"Refinery gas (1–4 carbons, bp <20°C) contains mainly methane, ethane, propane and butane."},
+    {t:"Petroleum",q:"Crude oil was formed over how many years?",o:["Hundreds","Thousands","Millions","Billions of trillions"],a:2,e:"Crude oil formed over millions of years from marine organisms buried under heat and pressure."},
+    {t:"Petroleum",q:"Incomplete combustion of fossil fuels produces?",o:["CO₂ only","CO (carbon monoxide) — toxic","O₂","N₂"],a:1,e:"Incomplete combustion (limited O₂) produces CO (carbon monoxide), a colourless odourless toxic gas."},
+
+    // POLYMERS & POLYMERISATION
+    {t:"Polymer",q:"The process of joining many monomers to form a polymer is called?",o:["Distillation","Fermentation","Polymerisation","Halogenation"],a:2,e:"Polymerisation = process of joining many small monomer units into a large polymer chain."},
+    {t:"Polymer",q:"Addition polymerisation involves?",o:["Loss of small molecules","Monomers joining without losing any atoms","Acid–base reactions","Oxidation only"],a:1,e:"In addition polymerisation, monomers (with C=C) simply add together — no atoms are lost."},
+    {t:"Polymer",q:"Condensation polymerisation involves?",o:["No loss of atoms","Loss of small molecules like H₂O","Addition only","UV light"],a:1,e:"In condensation polymerisation, monomers join and a small molecule (usually H₂O) is released each time."},
+    {t:"Polymer",q:"Nylon 6:6 is made from which two monomers?",o:["Ethene + propene","Adipic acid + hexamethylenediamine","Vinyl chloride + styrene","Glucose + fructose"],a:1,e:"Nylon 6:6 is made by condensation polymerisation of adipic acid (6C diacid) and hexamethylenediamine (6C diamine)."},
+    {t:"Polymer",q:"PVC monomer is?",o:["Ethene","Propene","Vinyl chloride (CH₂=CHCl)","Styrene"],a:2,e:"PVC = poly(vinyl chloride). Monomer = vinyl chloride (CH₂=CHCl = 1-chloroethene)."},
+    {t:"Polymer",q:"Polypropene is made from which monomer?",o:["Ethene","Propene","Butene","Styrene"],a:1,e:"Polypropene monomer = propene (CH₂=CH–CH₃). Catalyst: titanium chloride (Ziegler-Natta)."},
+    {t:"Polymer",q:"Natural rubber is a polymer of?",o:["Glucose","Isoprene (2-methylbuta-1,3-diene)","Styrene","Ethene"],a:1,e:"Natural rubber is a polymer of isoprene (2-methylbuta-1,3-diene). It is a natural addition polymer."},
+    {t:"Polymer",q:"Starch is a natural polymer of?",o:["Amino acids","Fatty acids","Glucose","Nucleotides"],a:2,e:"Starch is a natural polymer (polysaccharide) made of many glucose monomer units joined together."},
+    {t:"Polymer",q:"DNA is a polymer of?",o:["Amino acids","Glucose","Nucleotides","Fatty acids"],a:2,e:"DNA is a natural polymer made of nucleotide monomers — it stores genetic information."},
+    {t:"Polymer",q:"Bakelite is an example of which type of polymer?",o:["Addition polymer","Natural polymer","Thermosetting polymer","Biodegradable polymer"],a:2,e:"Bakelite is a thermosetting polymer — once set, it cannot be re-melted or reshaped."},
+    {t:"Polymer",q:"Polythene is an example of which type of polymerisation?",o:["Condensation","Addition","Ionic","Radical only"],a:1,e:"Polythene is made by addition polymerisation of ethene: n(CH₂=CH₂) → (–CH₂–CH₂–)ₙ."},
+    {t:"Polymer",q:"Teflon (PTFE) is a polymer of?",o:["Ethene","Tetrafluoroethene (CF₂=CF₂)","Styrene","Vinyl chloride"],a:1,e:"Teflon = poly(tetrafluoroethene). Monomer = CF₂=CF₂. Non-stick coating on cookware."},
+    {t:"Polymer",q:"A thermoplastic polymer can be?",o:["Never re-melted","Re-melted and reshaped","Only used as rubber","Dissolved in water"],a:1,e:"Thermoplastic polymers (like polythene, PVC) can be re-melted and reshaped. Contrast with thermosetting polymers."},
+    {t:"Polymer",q:"Which polymer is used to make plastic bottles and packaging?",o:["Bakelite","Polythene (HDPE/LDPE)","Nylon","Teflon"],a:1,e:"Polythene (polyethylene) — HDPE and LDPE — is widely used for plastic bottles, bags and packaging."},
+    {t:"Polymer",q:"Polypropene catalyst conditions are?",o:["Ni, 250°C","Titanium chloride, 140 atm, 120°C","H₃PO₄, 300°C","UV, room temp"],a:1,e:"Polypropene uses titanium chloride (Ziegler-Natta catalyst) at 140 atm and 120°C."},
+    {t:"Polymer",q:"The unit that repeats in a polymer chain is called the?",o:["Monomer","Repeat unit","Polymer chain","Cross-link"],a:1,e:"The repeat unit is the smallest structural unit that repeats throughout the polymer chain."},
+    {t:"Polymer",q:"Silk and wool are examples of which natural polymer?",o:["Polysaccharide","Protein","Nucleic acid","Rubber"],a:1,e:"Silk and wool are natural proteins — polymers of amino acids joined by peptide bonds."},
+
+    // MIXED / GENERAL
+    {t:"Mixed",q:"Which acid is found in tamarind?",o:["Citric acid","Lactic acid","Tartaric acid","Ethanoic acid"],a:2,e:"Tartaric acid is found in tamarind. Citric acid is in lemon, lactic acid in curd."},
+    {t:"Mixed",q:"Oxalic acid is found in which plant?",o:["Lemon","Sugarcane","Oxalis (wood sorrel)","Apple"],a:2,e:"Oxalic acid (ethanedioic acid) is found in the oxalis plant and also in spinach."},
+    {t:"Mixed",q:"Malic acid is found in?",o:["Lemon","Apples","Curd","Tamarind"],a:1,e:"Malic acid is found in apples (and other fruits). It gives the slightly tart taste."},
+    {t:"Mixed",q:"Which reaction is used to test for unsaturation?",o:["Add NaOH","Add bromine water — decolourisation","Add HCl","Add water"],a:1,e:"Bromine water (red-brown) decolourises when added to unsaturated compounds (alkene/alkyne). Saturated compounds show no change."},
+    {t:"Mixed",q:"Hydrocarbons contain which elements only?",o:["C and O","C and N","C and H only","C, H and O"],a:2,e:"Hydrocarbons contain ONLY Carbon and Hydrogen atoms — no other elements."},
+    {t:"Mixed",q:"Aliphatic compounds are?",o:["Ring-shaped aromatic","Open-chain (or non-aromatic cyclic)","Only inorganic","Only ionic"],a:1,e:"Aliphatic = open-chain or non-aromatic cyclic organic compounds. From Greek 'aleiphar' meaning fat."},
+    {t:"Mixed",q:"Aromatic compounds contain?",o:["Only double bonds","Only single bonds","Benzene ring (delocalized π electrons)","Triple bonds only"],a:2,e:"Aromatic compounds contain a benzene ring with delocalized π electrons following Hückel's rule."},
+    {t:"Mixed",q:"Urea was the first organic compound synthesised in the lab by?",o:["Lavoisier","Berzelius","Friedrich Wöhler","Dalton"],a:2,e:"Friedrich Wöhler synthesised urea in 1828 by heating ammonium cyanate, disproving the vital force theory."},
+    {t:"Mixed",q:"Vital force theory stated that organic compounds could only be made by?",o:["Chemists","Living organisms","Heating inorganic salts","UV radiation"],a:1,e:"Vital force theory (Berzelius) wrongly stated that only living organisms could produce organic compounds."},
+    {t:"Mixed",q:"Carbon shows which property that allows very long chain molecules?",o:["Ionisation","Catenation","Resonance","Hybridisation only"],a:1,e:"Catenation = carbon's unique ability to bond with other carbon atoms to form long chains, rings and branched structures."},
+    {t:"Mixed",q:"Valency of carbon in organic compounds is usually?",o:["2","3","4","6"],a:2,e:"Carbon shows valency 4 in organic compounds — it forms 4 covalent bonds."},
+    {t:"Mixed",q:"Which compound is used as a welding gas?",o:["Methane","Ethane","Ethyne (acetylene)","Propane"],a:2,e:"Ethyne (acetylene) burns at very high temperature (~3000°C) and is used in oxy-acetylene welding torches."},
+    {t:"Mixed",q:"Homologous series members differ by which unit?",o:["CH₄","CH₂","C₂H₄","CH₃"],a:1,e:"Consecutive members of a homologous series differ by –CH₂– (molecular mass difference = 14)."},
+    {t:"Mixed",q:"Isomers have the same?",o:["Structure but different formula","Molecular formula but different structure","Boiling point","Physical properties"],a:1,e:"Isomers have the same molecular formula but different structural arrangements, giving different properties."},
+    {t:"Mixed",q:"CH₄ molecular weight is approximately?",o:["12","16","14","18"],a:1,e:"CH₄: C=12, H×4=4. Molecular weight = 12 + 4 = 16 g/mol."},
+    {t:"Mixed",q:"Ethanoic acid + NaOH gives?",o:["Ethanol + NaCl","Sodium ethanoate + H₂O","Ethene + NaCl","Ethanal + NaOH"],a:1,e:"CH₃COOH + NaOH → CH₃COONa (sodium ethanoate) + H₂O. Acid–base neutralisation."},
+    {t:"Mixed",q:"Which functional group makes a compound an ester?",o:["–OH","–COOH","–COO– (–C(=O)–O–)","–CHO"],a:2,e:"Esters contain the –COO– group (ester linkage). Formed by alcohol + carboxylic acid."},
+    {t:"Mixed",q:"Ethanol + ethanoic acid gives?",o:["Ethanal","Ethyl ethanoate (ester) + H₂O","Ethene + water","Diethyl ether"],a:1,e:"CH₃CH₂OH + CH₃COOH → CH₃COOC₂H₅ (ethyl ethanoate) + H₂O. Esterification reaction."},
+    {t:"Mixed",q:"The process by which large hydrocarbon molecules are broken into smaller ones is?",o:["Polymerisation","Cracking","Fermentation","Distillation"],a:1,e:"Cracking breaks large hydrocarbon molecules (from petroleum) into smaller, more useful ones like petrol and alkenes."},
+    {t:"Mixed",q:"Which organic compound is used as an antifreeze in car radiators?",o:["Methanol","Glycerol","Ethylene glycol (ethane-1,2-diol)","Ethanol"],a:2,e:"Ethylene glycol (ethane-1,2-diol) is mixed with water in car radiators to lower the freezing point (antifreeze)."},
+    {t:"Mixed",q:"Saponification is the process of making?",o:["Plastic","Soap from fats + NaOH","Nylon","Alcohol"],a:1,e:"Saponification = hydrolysis of fats/oils with NaOH to produce soap (sodium salt of fatty acid) + glycerol."},
+    {t:"Mixed",q:"Which gas is responsible for the smell of rotten eggs?",o:["CO₂","H₂S (hydrogen sulphide)","CH₄","NH₃"],a:1,e:"H₂S (hydrogen sulphide) has the characteristic smell of rotten eggs. It is a toxic gas."},
+    {t:"Mixed",q:"Aspirin is chemically known as?",o:["Ethyl ethanoate","Acetylsalicylic acid","Methyl salicylate","Ethanoic acid"],a:1,e:"Aspirin = acetylsalicylic acid. It is made from salicylic acid (2-hydroxybenzoic acid) and ethanoic anhydride."},
+    {t:"Mixed",q:"The monomer of natural rubber is?",o:["Styrene","Isoprene","Ethene","Propene"],a:1,e:"Natural rubber = poly(isoprene). Monomer = isoprene (2-methylbuta-1,3-diene). Found in latex from rubber trees."},
+    {t:"Mixed",q:"Which compound gives the smell of fruits and perfumes?",o:["Alcohols","Carboxylic acids","Esters","Aldehydes"],a:2,e:"Esters have pleasant fruity and flowery smells — they are used as food flavourings and in perfumes."},
+
+    // ── NEW QUESTIONS: BONDS, HYBRIDISATION, ISOMERS, REACTIONS, NAMING ──
+    {t:"Bonds",q:"A C–C single bond is which type of bond?",o:["π bond only","σ bond only","Both σ and π","Ionic bond"],a:1,e:"A C–C single bond is purely a σ (sigma) bond, formed by axial (head-on) overlap of orbitals."},
+    {t:"Bonds",q:"A C=C double bond consists of?",o:["2 σ bonds","1 σ + 1 π bond","2 π bonds","1 ionic + 1 covalent"],a:1,e:"C=C = 1 strong σ bond + 1 weak π bond. The weak π bond breaks easily in addition reactions."},
+    {t:"Bonds",q:"A C≡C triple bond consists of?",o:["3 σ bonds","1 σ + 2 π bonds","3 π bonds","2 σ + 1 π bond"],a:1,e:"C≡C = 1 σ bond + 2 π bonds. Alkynes are very reactive because π bonds break readily."},
+    {t:"Bonds",q:"The first bond between any two atoms is always?",o:["π bond","Ionic bond","σ bond","Coordinate bond"],a:2,e:"The first bond is always a σ (sigma) bond — formed by axial/head-on orbital overlap."},
+    {t:"Bonds",q:"π bonds are formed by which type of orbital overlap?",o:["Head-on (axial) overlap","Sideways (lateral) overlap","No overlap","Random collision"],a:1,e:"π bonds form by sideways (lateral) overlap of p orbitals. They are weaker than σ bonds."},
+    {t:"Bonds",q:"Which bond is stronger — σ or π?",o:["π bond","σ bond","Both equal","Depends on temperature"],a:1,e:"σ bonds are stronger than π bonds. π bonds break more easily, making alkenes/alkynes reactive."},
+    {t:"Bonds",q:"In ethyne CH≡CH, how many σ bonds are present?",o:["2","3","4","5"],a:1,e:"CH≡CH: C–H (σ) + C–H (σ) + C≡C has 1σ + 2π = total 3 σ bonds in ethyne."},
+    {t:"Bonds",q:"In ethene CH₂=CH₂, how many π bonds are present?",o:["0","1","2","3"],a:1,e:"CH₂=CH₂ has one C=C double bond containing exactly 1 π bond."},
+    {t:"Bonds",q:"The bond angle in methane CH₄ is?",o:["90°","109.5°","120°","180°"],a:1,e:"CH₄ is tetrahedral with sp³ hybridisation. All H–C–H bond angles = 109.5°."},
+    {t:"Bonds",q:"The H–C–H bond angle in ethene is?",o:["90°","109.5°","120°","180°"],a:2,e:"Ethene is planar with sp² hybridisation on each carbon. Bond angle = 120°."},
+    {t:"Bonds",q:"The bond angle in ethyne HC≡CH is?",o:["90°","109.5°","120°","180°"],a:3,e:"Ethyne is linear with sp hybridisation. Bond angle = 180°."},
+    {t:"Bonds",q:"Which C–C bond is the shortest?",o:["C–C single bond","C=C double bond","C≡C triple bond","All equal"],a:2,e:"C≡C (1.20 Å) < C=C (1.34 Å) < C–C (1.54 Å). More bonds = shorter and stronger."},
+    {t:"Bonds",q:"Which C–C bond is the longest?",o:["C–C single bond","C=C double bond","C≡C triple bond","All equal"],a:0,e:"C–C single bond (1.54 Å) is the longest. Fewer bonds = longer and weaker."},
+    {t:"Bonds",q:"Carbon in CH₄ uses which hybridisation?",o:["sp","sp²","sp³","p only"],a:2,e:"Carbon in CH₄ is sp³ hybridised — 4 equivalent hybrid orbitals pointing to corners of a tetrahedron."},
+    {t:"Bonds",q:"Carbon in ethene CH₂=CH₂ uses which hybridisation?",o:["sp","sp²","sp³","dsp²"],a:1,e:"Carbons in ethene are sp² hybridised — 3 planar orbitals (120° apart) plus one p orbital for the π bond."},
+    {t:"Bonds",q:"Carbon in ethyne CH≡CH uses which hybridisation?",o:["sp","sp²","sp³","d²sp³"],a:0,e:"Carbons in ethyne are sp hybridised — 2 linear orbitals (180° apart) plus two p orbitals for 2 π bonds."},
+
+    // ISOMERISM
+    {t:"Isomers",q:"Compounds with the same molecular formula but different structural formulas are?",o:["Allotropes","Isotopes","Isomers","Polymers"],a:2,e:"Isomers share the same molecular formula but have different structural arrangements — giving different properties."},
+    {t:"Isomers",q:"How many structural isomers does butane C₄H₁₀ have?",o:["1","2","3","4"],a:1,e:"C₄H₁₀ has 2 structural isomers: n-butane (straight chain) and 2-methylpropane (isobutane, branched)."},
+    {t:"Isomers",q:"Geometrical (cis-trans) isomerism occurs in alkenes because of?",o:["Free rotation around C=C","Restricted rotation around C=C","Ionic bonding","Triple bonds"],a:1,e:"C=C double bond prevents free rotation, so groups are fixed in space — giving cis and trans arrangements."},
+    {t:"Isomers",q:"Which compound can show cis-trans isomerism?",o:["Ethene CH₂=CH₂","But-1-ene","But-2-ene CH₃CH=CHCH₃","Propene CH₂=CHCH₃"],a:2,e:"But-2-ene has different groups on BOTH carbons of C=C, so cis and trans forms exist. But-1-ene has CH₂= at one end (no cis/trans)."},
+    {t:"Isomers",q:"In cis isomer, identical groups are on which side?",o:["Opposite sides","Same side","Alternate sides","Above and below"],a:1,e:"Cis isomer: identical (or similar priority) groups are on the SAME side of the double bond."},
+    {t:"Isomers",q:"In trans isomer, identical groups are on which side?",o:["Same side","Opposite sides","No fixed position","Diagonal"],a:1,e:"Trans isomer: identical groups are on OPPOSITE sides of the double bond."},
+    {t:"Isomers",q:"Ethanol (CH₃CH₂OH) and dimethyl ether (CH₃OCH₃) are?",o:["Identical","Structural isomers","Enantiomers","Allotropes"],a:1,e:"Both have molecular formula C₂H₆O but different structural formulas — they are structural isomers."},
+    {t:"Isomers",q:"Structural isomers have the same?",o:["Structural formula","Molecular formula","Boiling point","Melting point"],a:1,e:"Structural isomers share the same molecular formula but differ in how atoms are connected."},
+
+    // ELECTROPHILES & NUCLEOPHILES
+    {t:"Reactions",q:"An electrophile is a species that?",o:["Donates electrons","Accepts electrons (electron-loving)","Donates protons","Has no charge"],a:1,e:"Electrophile = electron-loving. It accepts electrons from electron-rich (nucleophilic) centres. Examples: H⁺, Br⁺."},
+    {t:"Reactions",q:"A nucleophile is a species that?",o:["Accepts electrons","Donates electrons (has lone pair)","Has positive charge","Has no lone pairs"],a:1,e:"Nucleophile = nucleus-loving. It donates electrons to electrophilic centres. Examples: OH⁻, CN⁻, NH₃."},
+    {t:"Reactions",q:"Which of these is an electrophile?",o:["NH₃","OH⁻","H⁺ (proton)","CN⁻"],a:2,e:"H⁺ is an electrophile — it has an empty orbital and accepts electrons from nucleophiles."},
+    {t:"Reactions",q:"Which of these is a nucleophile?",o:["H⁺","AlCl₃","Br⁺","OH⁻"],a:3,e:"OH⁻ is a nucleophile — it has lone pairs of electrons and donates them to electrophilic centres."},
+    {t:"Reactions",q:"Homolytic bond breaking produces?",o:["Two ions","Two free radicals","One cation + one anion","No products"],a:1,e:"Homolytic fission: each atom gets ONE electron → two free radicals with unpaired electrons."},
+    {t:"Reactions",q:"Heterolytic bond breaking produces?",o:["Two free radicals","Two neutral atoms","A cation and an anion","Only electrons"],a:2,e:"Heterolytic fission: both electrons go to one atom → a cation (+) and an anion (−)."},
+    {t:"Reactions",q:"Free radicals are produced by which bond breaking?",o:["Heterolytic","Homolytic","Ionic","Coordinate"],a:1,e:"Free radicals form from homolytic fission — each fragment gets one unpaired electron."},
+    {t:"Reactions",q:"Stability order of carbocations is?",o:["Primary > Secondary > Tertiary","Tertiary > Secondary > Primary","Secondary > Primary > Tertiary","All equal"],a:1,e:"Tertiary > Secondary > Primary carbocation. More alkyl groups stabilise the positive charge by donating electrons."},
+    {t:"Reactions",q:"Most stable alkyl free radical is?",o:["Methyl","Primary","Secondary","Tertiary"],a:3,e:"Tertiary free radicals are most stable due to hyperconjugation and electron-donating alkyl groups."},
+    {t:"Reactions",q:"Addition reactions are characteristic of which compounds?",o:["Alkanes","Cycloalkanes","Unsaturated compounds (alkenes/alkynes)","Salts"],a:2,e:"Addition reactions occur across C=C or C≡C bonds in unsaturated compounds — the π bond breaks and new atoms add."},
+    {t:"Reactions",q:"Substitution reactions are characteristic of which compounds?",o:["Alkenes","Alkynes","Alkanes","Alcohols only"],a:2,e:"Alkanes undergo free radical substitution (e.g. halogenation in UV light) — one H is replaced by another atom."},
+    {t:"Reactions",q:"Elimination reactions produce?",o:["Alkane","Alkene (C=C double bond)","Alcohol","Ester"],a:1,e:"Elimination: atoms/groups are removed from adjacent carbons to form a C=C double bond (alkene)."},
+    {t:"Reactions",q:"UV light initiates which reaction in alkanes?",o:["Combustion","Hydrogenation","Free radical halogenation","Decarboxylation"],a:2,e:"UV light provides energy to initiate free radical halogenation: CH₄ + Cl₂ → CH₃Cl + HCl."},
+
+    // IUPAC NAMING
+    {t:"Naming",q:"IUPAC stands for?",o:["International Union of Pure and Applied Chemistry","Indian Union of Pure and Applied Chemistry","International Union of Petroleum and Carbon","International University of Pure Analytical Chemistry"],a:0,e:"IUPAC = International Union of Pure and Applied Chemistry — the global authority for chemical nomenclature."},
+    {t:"Naming",q:"Word root 'prop' indicates how many carbons?",o:["2","3","4","5"],a:1,e:"meth=1, eth=2, prop=3, but=4, pent=5. 'prop' = 3 carbons in the main chain."},
+    {t:"Naming",q:"IUPAC suffix '-ane' indicates?",o:["A double bond","A triple bond","Only single bonds (saturated)","An aldehyde"],a:2,e:"'-ane' = saturated hydrocarbon with only C–C single bonds. e.g. propane, butane, hexane."},
+    {t:"Naming",q:"IUPAC suffix '-ene' indicates?",o:["Only single bonds","A C=C double bond","A C≡C triple bond","An alcohol"],a:1,e:"'-ene' = hydrocarbon with a C=C double bond. e.g. ethene, propene, but-1-ene."},
+    {t:"Naming",q:"IUPAC suffix '-yne' indicates?",o:["Only single bonds","A double bond","A C≡C triple bond","A ketone"],a:2,e:"'-yne' = hydrocarbon with a C≡C triple bond. e.g. ethyne, propyne, but-2-yne."},
+    {t:"Naming",q:"IUPAC name for CH₃–CH₂–OH is?",o:["Methanol","Ethanol","Propanol","Ethanoic acid"],a:1,e:"CH₃–CH₂–OH: eth (2C) + an + ol = Ethanol. The –OH suffix is '-ol'."},
+    {t:"Naming",q:"IUPAC name for CH₃–CHO is?",o:["Methanal","Propanal","Ethanal","Ethanoic acid"],a:2,e:"CH₃–CHO: eth (2C) + an + al = Ethanal. The –CHO suffix is '-al'."},
+    {t:"Naming",q:"IUPAC name for CH₃–COOH is?",o:["Methanoic acid","Propanoic acid","Ethanoic acid","Butanoic acid"],a:2,e:"CH₃–COOH: eth (2C) + an + oic acid = Ethanoic acid. The –COOH suffix is '-oic acid'."},
+    {t:"Naming",q:"IUPAC name for CH₃–CO–CH₃ (acetone) is?",o:["Propanal","Propan-2-one","Propan-1-ol","Butanone"],a:1,e:"CH₃–CO–CH₃: prop (3C) + an + 2-one = Propan-2-one. The ketone C=O suffix is '-one'."},
+    {t:"Naming",q:"Primary prefix 'cyclo' in IUPAC naming indicates?",o:["A triple bond","An open chain","A closed ring structure","A branched chain"],a:2,e:"'Cyclo' prefix = closed ring structure. e.g. cyclopropane (3-membered ring), cyclohexane (6-membered ring)."},
+    {t:"Naming",q:"Word root 'but' = how many carbons?",o:["2","3","4","5"],a:2,e:"but = 4 carbons. meth=1, eth=2, prop=3, but=4, pent=5, hex=6, hept=7, oct=8, non=9, dec=10."},
+    {t:"Naming",q:"IUPAC name for CH₄ is?",o:["Ethane","Propane","Methane","Butane"],a:2,e:"CH₄: meth (1C) + ane = Methane. The simplest organic compound."},
+    {t:"Naming",q:"IUPAC name for C₂H₂ is?",o:["Ethane","Ethene","Ethyne","Propyne"],a:2,e:"C₂H₂ = CH≡CH: eth (2C) + yne = Ethyne. Common name: Acetylene."},
+    {t:"Naming",q:"Secondary suffix '-ol' indicates which functional group?",o:["–CHO","–COOH","–OH (alcohol)","–NH₂"],a:2,e:"'-ol' indicates the hydroxyl (–OH) group. e.g. methanol, ethanol, propan-2-ol."},
+    {t:"Naming",q:"IUPAC numbering of the chain follows which rule?",o:["Highest locant rule","Lowest locant rule","Alphabetical rule","Random numbering"],a:1,e:"Lowest locant rule: number the chain so substituents/functional groups get the LOWEST possible position numbers."},
+    {t:"Naming",q:"Word root 'hex' indicates how many carbons?",o:["4","5","6","7"],a:2,e:"hex = 6 carbons. pent=5, hex=6, hept=7, oct=8."},
+    {t:"Naming",q:"IUPAC name for cyclopentane is?",o:["Pentane","Cyclopentane","Pent-1-ene","Methylbutane"],a:1,e:"cyclo + pent (5C) + ane = Cyclopentane. A 5-membered saturated ring."},
+
+    // MORE REACTIONS & PROPERTIES
+    {t:"Reactions",q:"Saponification produces soap from fats reacted with?",o:["HCl","H₂SO₄","NaOH","Na₂CO₃"],a:2,e:"Saponification = hydrolysis of fats with NaOH → soap (sodium salt of fatty acid) + glycerol."},
+    {t:"Reactions",q:"Esterification is the reaction between?",o:["Two alcohols","Alcohol + carboxylic acid → ester + H₂O","Two acids","Aldehyde + acid"],a:1,e:"Esterification: alcohol + carboxylic acid → ester + water. e.g. ethanol + ethanoic acid → ethyl ethanoate + H₂O."},
+    {t:"Reactions",q:"Fermentation of glucose gives?",o:["Methanol + CO₂","Ethanol + CO₂","Ethanoic acid + H₂O","Propanol + N₂"],a:1,e:"C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (by yeast). Fermentation produces ethanol and carbon dioxide."},
+    {t:"Reactions",q:"Cracking of large petroleum molecules produces?",o:["Longer alkanes only","Shorter alkanes + alkenes","Only hydrogen","Only CO₂"],a:1,e:"Cracking breaks large hydrocarbons into shorter, more useful alkanes and alkenes."},
+    {t:"Reactions",q:"Dehydrogenation of ethane gives?",o:["Ethyne","Methane","Ethene + H₂","Ethanoic acid"],a:2,e:"CH₃–CH₃ → CH₂=CH₂ + H₂ (dehydrogenation, Ni, 400–600°C)."},
+    {t:"Reactions",q:"Hydrogenation adds H₂ across which bond?",o:["C–C single bond","C=O bond","C=C or C≡C bond","O–H bond"],a:2,e:"Hydrogenation adds H₂ across double or triple bonds: alkene/alkyne + H₂ → alkane."},
+    {t:"Reactions",q:"Oxidation of a primary alcohol first gives?",o:["Ketone","Fatty acid","Alkene","Aldehyde"],a:3,e:"Primary alcohol → Aldehyde (mild/controlled oxidation). Further oxidation gives carboxylic acid."},
+    {t:"Reactions",q:"Oxidation of a secondary alcohol gives?",o:["Aldehyde","Ketone","Fatty acid","Ether"],a:1,e:"Secondary alcohol → Ketone. Cannot be oxidised further to an acid (no H on the carbonyl carbon)."},
+    {t:"Reactions",q:"Complete combustion of hydrocarbons in excess O₂ gives?",o:["CO only","CO₂ + H₂O + heat","H₂O only","C + H₂"],a:1,e:"Complete combustion of any hydrocarbon: CₙHₘ + O₂ → CO₂ + H₂O + heat."},
+    {t:"Reactions",q:"Bromine water is decolourised by which compounds?",o:["Alkanes only","Cycloalkanes only","Alkenes and alkynes","All hydrocarbons"],a:2,e:"Alkenes and alkynes (unsaturated) decolourise bromine water via addition. Alkanes do not."},
+
+    // MIXED GENERAL
+    {t:"Mixed",q:"Alkenes and cycloalkanes share which general formula?",o:["CₙH₂ₙ₊₂","CₙH₂ₙ","CₙH₂ₙ₋₂","CₙH₂ₙ₊₁OH"],a:1,e:"Both alkenes and cycloalkanes have the formula CₙH₂ₙ — they are structural isomers of each other."},
+    {t:"Mixed",q:"Organic compounds generally have which type of bonds?",o:["Ionic bonds","Covalent bonds","Metallic bonds","Hydrogen bonds only"],a:1,e:"Organic compounds are held by covalent bonds — this makes them non-conductors with lower melting points than ionic compounds."},
+    {t:"Mixed",q:"The boiling point of alkanes increases as carbon chain length?",o:["Decreases","Increases","Stays the same","Becomes zero"],a:1,e:"Longer chain = more surface area = stronger van der Waals forces = higher boiling point."},
+    {t:"Mixed",q:"The first member of the alkyne series is?",o:["Propyne","Methyne","Ethyne","Butyne"],a:2,e:"Ethyne (CH≡CH, 2C) is the first stable alkyne. Methyne (1C) cannot form a triple bond."},
+    {t:"Mixed",q:"Hydration of alkyne with HgSO₄ gives?",o:["Alkane","Alkene","Aldehyde","Fatty acid"],a:2,e:"Hydration of alkyne (HgSO₄/H₂SO₄, 80°C) → aldehyde. e.g. ethyne + H₂O → ethanal."},
+    {t:"Mixed",q:"Systematic name for glycerol is?",o:["Propan-1-ol","Propane-1,2-diol","Propane-1,2,3-triol","Propanoic acid"],a:2,e:"Glycerol = propane-1,2,3-triol: three –OH groups at C1, C2 and C3 of propane."},
+    {t:"Mixed",q:"Nylon is which type of polymer?",o:["Addition polymer","Condensation polymer","Natural polymer","Inorganic polymer"],a:1,e:"Nylon is a synthetic condensation polymer — monomers join by releasing small molecules (H₂O) each time."},
+    {t:"Mixed",q:"The molecular formula of benzene is?",o:["C₆H₁₂","C₆H₁₄","C₆H₆","C₆H₁₀"],a:2,e:"Benzene = C₆H₆. Planar cyclic aromatic ring with 6 carbons and delocalised π electrons."},
+    {t:"Mixed",q:"Phenol is benzene with which substituent?",o:["–NH₂","–CH₃","–COOH","–OH"],a:3,e:"Phenol = C₆H₅–OH. Benzene ring with a hydroxyl (–OH) group directly on the ring."},
+    {t:"Mixed",q:"Calcium carbide reacts with water at which temperature?",o:["200°C","100°C","Room temperature","−100°C"],a:2,e:"CaC₂ + 2H₂O → CH≡CH + Ca(OH)₂ occurs vigorously at ROOM TEMPERATURE — no heating needed."},
+    {t:"Mixed",q:"Ethylene glycol (ethane-1,2-diol) is used as?",o:["Perfume","Antifreeze in cars","Cooking fuel","Food flavour"],a:1,e:"Ethylene glycol (HOCH₂CH₂OH) is used as antifreeze in car radiators — lowers the freezing point of water."},
+    {t:"Mixed",q:"Organic compounds are generally soluble in?",o:["Water only","Organic solvents (benzene, ether, alcohol)","Acids only","Bases only"],a:1,e:"Organic compounds are generally soluble in organic solvents (like-dissolves-like) but mostly insoluble or slightly soluble in water."},
+    {t:"Mixed",q:"Which property of carbon allows it to form millions of compounds?",o:["It is a metal","Catenation — bonding with other carbons","It has 8 electrons","It forms ionic bonds"],a:1,e:"Catenation: carbon's ability to form stable bonds with other carbon atoms creates chains, rings and branched structures — giving millions of organic compounds."},
+    {t:"Mixed",q:"Biodegradable polymers are broken down by?",o:["Heat only","UV light only","Microorganisms in the environment","Strong acids only"],a:2,e:"Biodegradable polymers are broken down by microorganisms (bacteria, fungi) into harmless natural substances."},
+    {t:"Mixed",q:"Which organic reaction involves replacement of one atom by another?",o:["Addition","Elimination","Substitution","Polymerisation"],a:2,e:"Substitution: one atom/group replaces another. e.g. CH₄ + Cl₂ → CH₃Cl + HCl (UV light)."},
+    {t:"Mixed",q:"Aspirin is made from which starting material?",o:["Ethanoic acid alone","Salicylic acid + ethanoic anhydride","Methanol + HCl","Benzene + H₂SO₄"],a:1,e:"Aspirin (acetylsalicylic acid) is synthesised by reacting salicylic acid with ethanoic anhydride."},
+    {t:"Mixed",q:"Which hydrocarbon has the formula C₆H₁₄?",o:["Hexene","Cyclohexane","Hexane","Hexyne"],a:2,e:"C₆H₁₄ fits the alkane formula CₙH₂ₙ₊₂ (n=6). Hexane is the 6-carbon straight-chain alkane."},
+    {t:"Mixed",q:"Addition of water (hydration) to ethene gives?",o:["Ethane","Ethanal","Ethanol","Ethanoic acid"],a:2,e:"CH₂=CH₂ + H₂O → CH₃CH₂OH (Ethanol). Hydration of ethene with H₃PO₄ at 300°C, 60 atm."},
+    {t:"Mixed",q:"Which process converts vegetable oils (liquid) to margarine (solid)?",o:["Cracking","Hydrogenation (adding H₂)","Dehydration","Fermentation"],a:1,e:"Hydrogenation of unsaturated C=C bonds in vegetable oils (Ni catalyst) converts liquid oils to solid fats like margarine."},
+    {t:"Mixed",q:"Cycloalkanes are?",o:["Open chain alkanes","Closed ring saturated hydrocarbons","Unsaturated ring compounds","Aromatic compounds"],a:1,e:"Cycloalkanes are CLOSED RING (cyclic) saturated hydrocarbons — single bonds only, formula CₙH₂ₙ."}
   ];
 
   let EQ2 = [], EA = {}, ET = null, ES = 0, EE = 0, ED = false;
