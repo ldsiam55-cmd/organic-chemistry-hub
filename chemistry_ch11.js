@@ -1684,6 +1684,8 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 
   // ─────────────────────────────────────────────
   //  6. RENDER ALL PANELS INTO DOM
+  // ─────────────────────────────────────────────
+  const panelOrder = ['home','ka','ke','ky','al','ad','ac','ex','sy','mq','nm','fb','fc','mw','nt','rc','tq'];
   const mainEl = document.getElementById('main-content');
   panelOrder.forEach(id => {
     const div = document.createElement('div');
