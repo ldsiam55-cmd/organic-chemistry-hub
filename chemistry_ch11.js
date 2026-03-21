@@ -334,9 +334,9 @@ main{max-width:1060px;margin:0 auto;padding:0 1rem 5rem}
 .pm{font-size:1.6rem;color:#374151}
 .sbadge{font-family:'JetBrains Mono',monospace;font-size:.7rem;padding:.28rem .9rem;border:2px solid currentColor;border-radius:10px;margin-left:auto;background:rgba(255,255,255,.04)}
 .pnote{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#f59e0b;width:100%;margin-top:.2rem}
-.stcard{background:var(--sf);border:2px solid var(--bd);border-radius:13px;overflow:hidden;margin-bottom:.9rem}
-.stt{display:flex;align-items:center;gap:.7rem;padding:.7rem 1.2rem;background:rgba(0,0,0,.28);border-bottom:1px solid var(--bd)}
-.stn{font-family:'Fredoka One',cursive;font-size:.8rem;padding:.18rem .7rem;border-radius:8px;background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.12)}
+.stcard{border:2px solid;border-radius:14px;overflow:hidden;margin-bottom:1rem}
+.stt{display:flex;align-items:center;gap:.7rem;padding:.65rem 1.1rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.stn{font-family:'Fredoka One',cursive;font-size:.82rem;padding:.2rem .75rem;border-radius:8px;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.22);color:#fff}
 .sttt{font-family:'Fredoka One',cursive;font-size:1.05rem}
 .stb{padding:1.1rem 1.3rem}
 .etabs{display:flex;gap:.4rem;margin-bottom:1rem;border-bottom:2px solid var(--bd)}
@@ -2247,29 +2247,85 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     const k = FC + '→' + TC, d = EX[k];
     if (!d) { r.innerHTML = '<div class="exmt"><div class="exi">⚠️</div><div class="ext">Pathway not available</div></div>'; return; }
     const fc = CL[FC], tc = CL[TC], fn = NM[FC], tn = NM[TC];
+
+    // Name → structural formula lookup
+    const STRUCT = {
+      'Ethane':'CH₃–CH₃','Ethene':'CH₂=CH₂','Ethyne':'CH≡CH',
+      'Ethanol':'CH₃–CH₂–OH','Ethanal':'CH₃–CHO','Ethanoic acid':'CH₃–COOH',
+      'Propane':'CH₃–CH₂–CH₃','Propene':'CH₃–CH=CH₂','Propyne':'CH₃–C≡CH',
+      'Propanol':'CH₃–CH₂–CH₂OH','Propan-1-ol':'CH₃CH₂CH₂OH',
+      'Propanal':'CH₃–CH₂–CHO','Propanoic Acid':'CH₃–CH₂–COOH',
+      'Propanoic acid':'CH₃–CH₂–COOH',
+      'Butane':'CH₃–(CH₂)₂–CH₃','But-1-ene':'CH₃–CH₂–CH=CH₂',
+      'But-1-yne':'CH₃–CH₂–C≡CH',
+      'Butanol':'CH₃–CH₂–CH₂–CH₂OH','Butan-1-ol':'CH₃CH₂CH₂CH₂OH',
+      'Butanal':'CH₃–CH₂–CH₂–CHO','Butanoic Acid':'CH₃–CH₂–CH₂–COOH',
+      'Butanoic acid':'CH₃–CH₂–CH₂–COOH',
+      'Methane':'CH₄','Methanol':'CH₃–OH','Methanal':'H–CHO',
+      '1-Chloropropane':'CH₃CH₂CH₂Cl','1-Chlorobutane':'CH₃CH₂CH₂CH₂Cl',
+      '1,2-Dibromopropane':'CH₃CHBr–CH₂Br','1,2-Dibromobutane':'CH₃CH₂CHBr–CH₂Br',
+      'Propene+H₂O':'CH₃CH=CH₂ + H₂O','But-1-ene+H₂O':'CH₂=CHCH₂CH₃ + H₂O',
+    };
+
+    // Resolve a formula string — replace known names with structures
+    function resolve(s) {
+      if (!s) return '';
+      // Already has structural chars — return as is
+      if (/[=≡–]/.test(s)) return s;
+      // Try direct lookup
+      const trimmed = s.trim();
+      if (STRUCT[trimmed]) return STRUCT[trimmed];
+      // Try to resolve parts separated by + or spaces
+      return s.replace(/([A-Za-z][A-Za-z0-9\s\-]*?)(?=\s*[\+]|$)/g, part => {
+        const p = part.trim();
+        return STRUCT[p] || p;
+      });
+    }
+
     let h = `<div class="phd2" style="color:${fc}"><span class="pf2">${fn}</span><span class="pm">⟶</span><span class="pf2" style="color:${tc}">${tn}</span><span class="sbadge" style="color:${fc};border-color:${fc}">${d.s} STEP${d.s > 1 ? 'S' : ''}</span>${d.nt ? `<span class="pnote">⚠️ ${d.nt}</span>` : ''}</div>`;
     const cns = Object.keys(d.c);
     const gid = 'ex_' + k.replace(/[^a-z0-9]/g, '_');
-    h += `<div style="background:var(--sf);border:2px solid var(--bd);border-radius:14px;overflow:hidden">`;
-    h += `<div class="etabs">`;
-    cns.forEach((cn, i) => h += `<button class="etab${i === 0 ? ' on' : ''}" onclick="etab(this,'${gid}',${cn})">${cn}C</button>`);
+
+    // Tab strip wrapper
+    h += `<div style="border:2px solid ${fc}40;border-radius:14px;overflow:hidden">`;
+    h += `<div class="etabs" style="border-bottom-color:${fc}30">`;
+    cns.forEach((cn, i) => h += `<button class="etab${i === 0 ? ' on' : ''}" onclick="etab(this,'${gid}',${cn})" style="color:${fc}">${cn}C</button>`);
     h += `</div>`;
+
     cns.forEach((cn, i) => {
       const steps = d.c[cn];
-      h += `<div id="${gid}_${cn}" class="ecbl${i === 0 ? ' on' : ''}">`;
+      const totalSteps = steps.length;
+      h += `<div id="${gid}_${cn}" class="ecbl${i === 0 ? ' on' : ''}" style="padding:.8rem">`;
       steps.forEach((st2, si) => {
-        const sc = si === 0 ? fc : tc;
-        h += `<div class="stcard" style="margin:.7rem 1rem;border-color:${sc}33"><div class="stt"><span class="stn" style="color:${sc}">${st2.m}</span></div><div class="stb" style="color:${sc}">`;
+        // Each step gets its own accent color — first step = from color, last step = to color, middle = blend
+        const ratio = totalSteps === 1 ? 1 : si / (totalSteps - 1);
+        const stepCol = si === totalSteps - 1 ? tc : si === 0 ? fc : '#818cf8';
+        const bgAlpha = '18'; // ~10% opacity hex
+
+        h += `<div class="stcard" style="border-color:${stepCol};background:${stepCol}${bgAlpha}">`;
+        // Header bar with step name
+        h += `<div class="stt" style="background:${stepCol}25">`;
+        h += `<span class="stn">${si + 1 === totalSteps && totalSteps > 1 ? '✅ ' : si === 0 && totalSteps > 1 ? '▶ ' : ''}${st2.m}</span>`;
+        h += `</div>`;
+        // Body with equation
+        h += `<div class="stb">`;
         if (st2.e) {
-          h += `<div class="eq" style="color:${fc}"><span class="r">${st2.e}</span>`;
-          if (st2.c) h += `<div class="ab"><span class="ct">${st2.c}</span><span class="arr">⟶</span></div>`;
+          const reactant = resolve(st2.e);
+          const product  = resolve(st2.p);
+          h += `<div class="eq">`;
+          h += `<span class="r" style="color:${si === 0 ? fc : '#e2e8f0'};font-size:.95rem">${reactant}</span>`;
+          if (st2.c) h += `<div class="ab"><span class="ct" style="color:#7dd3fc">${st2.c}</span><span class="arr">⟶</span></div>`;
           else h += `<div class="ab"><span class="arr">⟶</span></div>`;
-          h += `<span class="hi" style="color:${tc}">${st2.p}</span></div>`;
-        } else { h += `<div class="note" style="border-color:${sc}">${st2.p}</div>`; }
+          h += `<span class="hi" style="color:${tc};font-size:1rem;font-weight:900;text-shadow:0 0 12px ${tc}88">${product}</span>`;
+          h += `</div>`;
+        } else {
+          h += `<div class="note" style="border-color:${stepCol};color:#e2e8f0">${resolve(st2.p)}</div>`;
+        }
         h += `</div></div>`;
       });
       h += `</div>`;
     });
+
     h += `</div>`;
     r.innerHTML = h;
   }
