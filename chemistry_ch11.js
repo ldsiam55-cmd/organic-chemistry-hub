@@ -1,5 +1,5 @@
 /*!
- * Organic Chemistry Lab – Chapter 11
+ * Organic Chemistry Hub
  * Standalone JavaScript version
  * Usage: <script src="chemistry_ch11.js"></script>  (in an otherwise empty HTML page)
  *        OR load directly in a browser via a minimal loader (see bottom of this file).
@@ -483,7 +483,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   // ─────────────────────────────────────────────
   //  3. SET PAGE TITLE
   // ─────────────────────────────────────────────
-  document.title = 'Organic Chemistry Hub \u2014 Class 9\u201310 · Chapter 11';
+  document.title = 'Organic Chemistry Hub — For Class 9–12 Students';
 
   // ─────────────────────────────────────────────
   //  4. BUILD HTML SKELETON
@@ -491,9 +491,9 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   document.body.innerHTML = `
 <header>
   <button class="bkash-top-btn" onclick="openBkash()">💳 bKash Support</button>
-  <div class="hl">⚗️ Organic Chemistry · Class 9–10 · Chapter 11</div>
+  <div class="hl">⚗️ Organic Chemistry · For Class 9–12 Students</div>
   <h1 onclick="goHome()" style="cursor:pointer" title="Go to Home">Organic Chemistry Hub</h1>
-  <div class="hd">🔬 Reactions · Exchange · Synthesis · Formula Lookup · MCQ Exam</div>
+  <div class="hd">🔬 Reactions · Isomerism · Synthesis · Formula Lookup · MCQ Exam</div>
 </header>
 <nav>
   <div class="nav-divider">📚 Organic Compounds</div>
@@ -528,8 +528,8 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 </nav>
 <main id="main-content"></main>
 <footer>
-  ⚗️ ORGANIC CHEMISTRY HUB · CLASS 9–10 · CHAPTER 11
-  <div style="margin-top:.5rem;font-size:.68rem;color:#374151">Made with ❤️ for Class 9–10 Chemistry Students</div>
+  ⚗️ ORGANIC CHEMISTRY HUB · FOR CLASS 9–12 STUDENTS
+  <div style="margin-top:.5rem;font-size:.68rem;color:#374151">Made with ❤️ for Class 9–12 Chemistry Students</div>
 </footer>
 
 <!-- bKash Payment Modal -->
@@ -817,7 +817,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 
   // ── MCQ ──
   panels['mq'] = `
-<div id="mq-start"><div class="mcqs"><span class="mcqsi">📝</span><div class="mcqst">Chemistry MCQ Exam</div><div class="mcqss">Chapter 11 · Class 9–10 · Mineral Resources: Fossils</div>
+<div id="mq-start"><div class="mcqs"><span class="mcqsi">📝</span><div class="mcqst">Chemistry MCQ Exam</div><div class="mcqss">Organic Chemistry · Class 9–12</div>
 <div class="irow"><div class="ic"><span class="ici">❓</span><span class="icv">30</span><span class="icl">Questions</span></div><div class="ic"><span class="ici">⏱️</span><span class="icv">20</span><span class="icl">Minutes</span></div><div class="ic"><span class="ici">🏆</span><span class="icv">30</span><span class="icl">Marks</span></div><div class="ic"><span class="ici">📚</span><span class="icv">268</span><span class="icl">Bank</span></div></div>
 <button class="stbtn" onclick="startExam()">🚀 Start Exam</button></div></div>
 <div id="mqexam">
