@@ -3317,31 +3317,36 @@ Rules:
   };
 
 
-  // ── GEMINI API KEY — paste your key from aistudio.google.com ──
+  // ── GEMINI API KEY ──
   const GEMINI_KEY = 'AIzaSyBrLjqE557u6rsuWH5V5kXV6Gug-W-7NJ8';
 
-  // Core AI caller — Google Gemini (free tier, 60 req/min)
+  // Core AI caller — Google Gemini free API
   async function callClaude(userMsg, systemMsg) {
     try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`;
+      const fullPrompt = systemMsg + '\n\nQuestion: ' + userMsg;
       const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          system_instruction: { parts: [{ text: systemMsg }] },
-          contents: [{ parts: [{ text: userMsg }] }],
-          generationConfig: { maxOutputTokens: 1000, temperature: 0.7 }
+          contents: [{ parts: [{ text: fullPrompt }] }],
+          generationConfig: {
+            maxOutputTokens: 800,
+            temperature: 0.7
+          }
         })
       });
       if (!res.ok) {
         const err = await res.json().catch(() => ({}));
-        throw new Error(err.error?.message || 'API error ' + res.status);
+        const msg = err?.error?.message || ('HTTP ' + res.status);
+        return '⚠️ API Error: ' + msg;
       }
       const data = await res.json();
-      const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '⚠️ No response from AI.';
+      const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (!text) return '⚠️ No response received. Please try again.';
       return text;
     } catch (e) {
-      return '⚠️ AI error: ' + e.message + '. Please check your Gemini API key.';
+      return '⚠️ Connection error: ' + e.message + '. Check your internet connection.';
     }
   }
 
