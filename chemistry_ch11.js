@@ -3316,17 +3316,21 @@ Rules:
 - हिंदी में उत्तर दें।`
   };
 
-  // Core AI caller
-  async function callClaude(userMsg, systemMsg, onChunk) {
+
+  // ── GEMINI API KEY — paste your key from aistudio.google.com ──
+  const GEMINI_KEY = 'AIzaSyBrLjqE557u6rsuWH5V5kXV6Gug-W-7NJ8';
+
+  // Core AI caller — Google Gemini (free tier, 60 req/min)
+  async function callClaude(userMsg, systemMsg) {
     try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`;
+      const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
-          max_tokens: 1000,
-          system: systemMsg,
-          messages: [{ role: 'user', content: userMsg }]
+          system_instruction: { parts: [{ text: systemMsg }] },
+          contents: [{ parts: [{ text: userMsg }] }],
+          generationConfig: { maxOutputTokens: 1000, temperature: 0.7 }
         })
       });
       if (!res.ok) {
@@ -3334,13 +3338,10 @@ Rules:
         throw new Error(err.error?.message || 'API error ' + res.status);
       }
       const data = await res.json();
-      const text = (data.content || []).map(b => b.text || '').join('');
-      if (onChunk) onChunk(text);
+      const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '⚠️ No response from AI.';
       return text;
     } catch (e) {
-      const msg = '⚠️ AI error: ' + e.message;
-      if (onChunk) onChunk(msg);
-      return msg;
+      return '⚠️ AI error: ' + e.message + '. Please check your Gemini API key.';
     }
   }
 
