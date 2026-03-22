@@ -3323,7 +3323,7 @@ Rules:
   // Core AI caller — Google Gemini free API
   async function callClaude(userMsg, systemMsg) {
     try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`;
       const fullPrompt = systemMsg + '\n\nQuestion: ' + userMsg;
       const res = await fetch(url, {
         method: 'POST',
