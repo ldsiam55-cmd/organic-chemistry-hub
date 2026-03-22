@@ -922,7 +922,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   <!-- SEARCH TAB -->
   <div id="nm-search-tab" class="ecbl on">
     <div class="nm-search">
-      <input class="nm-input" id="nm-input" type="text" placeholder="e.g. acetone · chloroform · propan-2-ol · aniline · oxalic acid" autocomplete="off" onkeydown="if(event.key==='Enter')nmLookup()"/>
+      <input class="nm-input" id="nm-input" type="text" placeholder="IUPAC name, commercial name or trivial name — e.g. acetone · vinegar · aspirin · formalin · TNT · glycerol" autocomplete="off" onkeydown="if(event.key==='Enter')nmLookup()"/>
       <button class="nm-btn" onclick="nmLookup()">🔍 Search</button>
     </div>
     <div id="nm-result"></div>
@@ -1116,6 +1116,17 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {names:['2-methylphenol','o-cresol'],iupac:'2-Methylphenol',class:'Aromatic',formula:'CH₃C₆H₄OH',mol:'C₇H₈O',struct:'C₆H₄(CH₃)(OH) — ortho',line:'2-CH₃C₆H₄OH',mw:'108.14',bp:'191.1°C',state:'Liquid',aka:'o-Cresol (ortho-cresol)',icon:'💎',color:'#818cf8',spwps:{s:'2-methyl',p:'—',w:'phen',ps:'-ol',ss:'—'}},
     {names:['2-hydroxybenzoic acid','salicylic acid'],iupac:'2-Hydroxybenzoic Acid',class:'Aromatic',formula:'HOC₆H₄COOH',mol:'C₇H₆O₃',struct:'C₆H₄(OH)(COOH) — ortho',line:'2-HOC₆H₄COOH',mw:'138.12',bp:'211°C',state:'Solid',aka:'Salicylic acid — aspirin precursor',icon:'💎',color:'#818cf8',spwps:{s:'2-hydroxy',p:'—',w:'benz',ps:'-ene',ss:'carboxylic acid'}},
     {names:['1,2,4,6-tetranitromethylbenzene','tnt','2,4,6-trinitrotoluene','trinitrotoluene'],iupac:'1-Methyl-2,4,6-trinitrobenzene',class:'Aromatic',formula:'C₇H₅N₃O₆',mol:'C₇H₅N₃O₆',struct:'Toluene with –NO₂ at positions 2, 4, 6',line:'2,4,6-(NO₂)₃C₆H₂CH₃',mw:'227.13',bp:'300°C (detonates)',state:'Solid',aka:'TNT — explosive! 2,4,6-trinitrotoluene',icon:'💎',color:'#818cf8',spwps:{s:'2,4,6-trinitro',p:'—',w:'tolu',ps:'-ene',ss:'—'}},
+    // ── COMMERCIAL NAME ALIASES ──
+    {names:['vinegar','acetic acid','ethanoic acid','glacial acetic acid'],iupac:'Ethanoic Acid',class:'Carboxylic Acid',formula:'CH₃COOH',mol:'C₂H₄O₂',struct:'CH₃–COOH',line:'CH₃COOH',mw:'60.05',bp:'118.1°C',state:'Liquid',aka:'Vinegar (4–10% aq.) · Acetic acid · Glacial acetic acid (pure)',icon:'🧬',color:'#f472b6',spwps:{s:'—',p:'—',w:'eth',ps:'-an',ss:'-oic acid'}},
+    {names:['formalin','formaldehyde','methanal','formic aldehyde'],iupac:'Methanal',class:'Aldehyde',formula:'HCHO',mol:'CH₂O',struct:'H–CHO',line:'HCHO',mw:'30.03',bp:'−19°C',state:'Gas',aka:'Formaldehyde (gas) · Formalin (40% aq. solution) — preservative, disinfectant',icon:'✨',color:'#fbbf24',spwps:{s:'—',p:'—',w:'meth',ps:'-an',ss:'-al'}},
+    {names:['acetone','propanone','dimethyl ketone','nail polish remover'],iupac:'Propan-2-one',class:'Ketone',formula:'CH₃COCH₃',mol:'C₃H₆O',struct:'CH₃–CO–CH₃',line:'(CH₃)₂CO',mw:'58.08',bp:'56.2°C',state:'Liquid',aka:'Acetone · Dimethyl ketone · Nail polish remover · Propanone',icon:'🧪',color:'#38bdf8',spwps:{s:'—',p:'—',w:'prop',ps:'-an',ss:'-2-one'}},
+    {names:['glycerine','glycerin','glycerol','propane-1,2,3-triol','propanetriol'],iupac:'Propane-1,2,3-triol',class:'Alcohol',formula:'C₃H₅(OH)₃',mol:'C₃H₈O₃',struct:'HO–CH₂–CH(OH)–CH₂–OH',line:'HOCH₂CH(OH)CH₂OH',mw:'92.09',bp:'290°C',state:'Liquid',aka:'Glycerol · Glycerine · Glycerin — used in soap, cosmetics, medicine',icon:'🧪',color:'#38bdf8',spwps:{s:'1,2,3-tri',p:'—',w:'prop',ps:'-an',ss:'-ol'}},
+    {names:['wood spirit','wood alcohol','methyl alcohol','methanol','wood naphtha'],iupac:'Methanol',class:'Alcohol',formula:'CH₃OH',mol:'CH₄O',struct:'CH₃–OH',line:'CH₃OH',mw:'32.04',bp:'64.7°C',state:'Liquid',aka:'Wood spirit · Wood alcohol · Methyl alcohol — toxic, used as solvent/fuel',icon:'🧪',color:'#38bdf8',spwps:{s:'—',p:'—',w:'meth',ps:'-an',ss:'-ol'}},
+    {names:['grain alcohol','drinking alcohol','spirit','ethanol','ethyl alcohol','rectified spirit'],iupac:'Ethanol',class:'Alcohol',formula:'C₂H₅OH',mol:'C₂H₆O',struct:'CH₃–CH₂–OH',line:'C₂H₅OH',mw:'46.07',bp:'78.4°C',state:'Liquid',aka:'Grain alcohol · Ethyl alcohol · Rectified spirit (96% aq.) · Absolute alcohol (100%)',icon:'🧪',color:'#38bdf8',spwps:{s:'—',p:'—',w:'eth',ps:'-an',ss:'-ol'}},
+    {names:['aspirin','acetylsalicylic acid','2-acetoxybenzoic acid'],iupac:'2-Acetoxybenzoic Acid',class:'Aromatic',formula:'C₉H₈O₄',mol:'C₉H₈O₄',struct:'C₆H₄(OCOCH₃)(COOH)',line:'CH₃COO–C₆H₄–COOH',mw:'180.16',bp:'140°C (dec.)',state:'Solid',aka:'Aspirin — pain reliever, fever reducer, anti-inflammatory drug',icon:'💎',color:'#818cf8',spwps:{s:'2-acetoxy',p:'—',w:'benz',ps:'-ene',ss:'carboxylic acid'}},
+    {names:['dry ice','solid carbon dioxide','carbon dioxide'],iupac:'Carbon Dioxide',class:'Inorganic',formula:'CO₂',mol:'CO₂',struct:'O=C=O',line:'CO₂',mw:'44.01',bp:'−78.5°C (sublimes)',state:'Gas',aka:'Dry ice (solid form) — refrigerant, fire extinguisher, carbonation',icon:'🧪',color:'#94a3b8',spwps:{s:'—',p:'—',w:'—',ps:'—',ss:'—'}},
+    {names:['marsh gas','fire damp','natural gas main','methane','ch4'],iupac:'Methane',class:'Alkane',formula:'CH₄',mol:'CH₄',struct:'CH₄ (tetrahedral)',line:'CH₄',mw:'16.04',bp:'−161.5°C',state:'Gas',aka:'Marsh gas · Fire damp (in coal mines) · Main component of natural gas (CNG)',icon:'🔥',color:'#ff7043',spwps:{s:'—',p:'—',w:'meth',ps:'-ane',ss:'—'}},
+    {names:['lime water','calcium hydroxide','slaked lime'],iupac:'Calcium Hydroxide',class:'Inorganic',formula:'Ca(OH)₂',mol:'Ca(OH)₂',struct:'Ca(OH)₂',line:'Ca(OH)₂',mw:'74.09',bp:'580°C (dec.)',state:'Solid',aka:'Slaked lime · Lime water (aq.) — used to test CO₂ (turns milky)',icon:'🪨',color:'#94a3b8',spwps:{s:'—',p:'—',w:'—',ps:'—',ss:'—'}},
   ];
 
   function nmLookup() {
@@ -1123,9 +1134,17 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     const raw  = raw2.replace(/\s+/g,'-');
     const r = document.getElementById('nm-result');
 
-    const match = COMPOUNDS.find(c =>
-      c.names.some(n => n === raw2 || n === raw || n.replace(/-/g,' ') === raw2 || n.replace(/\s/g,'-') === raw)
-    );
+    // Search names array + also search inside aka (commercial/trivial names)
+    const match = COMPOUNDS.find(c => {
+      // 1. Search in names array
+      if (c.names.some(n => n === raw2 || n === raw || n.replace(/-/g,' ') === raw2 || n.replace(/\s/g,'-') === raw)) return true;
+      // 2. Search in aka field (commercial/trade names)
+      if (c.aka) {
+        const akaLower = c.aka.toLowerCase();
+        if (akaLower.includes(raw2) && raw2.length >= 3) return true;
+      }
+      return false;
+    });
 
     if (match) {
       const spwpsHTML = match.spwps ? `
@@ -1190,6 +1209,46 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   }
   window.nmLookup = nmLookup;
 
+  // fb type-in search — convert typed formula to nm lookup or fb token search
+  window.fbTypeSearch = function() {
+    const raw = (document.getElementById('fb-type-input')?.value || '').trim();
+    if (!raw) return;
+    const r = document.getElementById('fb-result');
+    if (!r) return;
+
+    // Normalise: lowercase, replace hyphens/spaces
+    const q = raw.toLowerCase().replace(/\s+/g,'-');
+    const q2 = raw.toLowerCase();
+
+    // Try direct compound match first (by formula, structural, or name)
+    const match = COMPOUNDS.find(c =>
+      c.names.some(n => n === q || n === q2 || n.replace(/-/g,' ') === q2) ||
+      c.formula?.toLowerCase().replace(/\s/g,'') === raw.toLowerCase().replace(/\s/g,'') ||
+      c.struct?.toLowerCase().replace(/[-\s]/g,'') === raw.toLowerCase().replace(/[-\s]/g,'') ||
+      c.line?.toLowerCase().replace(/\s/g,'') === raw.toLowerCase().replace(/\s/g,'')
+    );
+
+    if (match) {
+      // Use existing nmLookup rendering
+      document.getElementById('nm-input') && (document.getElementById('nm-input').value = match.names[0]);
+      nmLookup();
+      // Also show in fb-result
+      r.innerHTML = `<div style="background:rgba(20,184,166,.08);border:2px solid rgba(20,184,166,.3);border-radius:12px;padding:1rem 1.2rem;margin-top:.5rem">
+        <div style="font-family:'Fredoka One',cursive;color:#2dd4bf;font-size:1rem;margin-bottom:.4rem">✅ Found: ${match.iupac}</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:.85rem;color:#fde68a">${match.formula}</div>
+        <div style="font-size:.8rem;color:#94a3b8;margin-top:.3rem">${match.struct}</div>
+        <div style="font-size:.75rem;color:#6b7280;margin-top:.2rem">Also known as: ${match.aka}</div>
+        <button onclick="chShow('nm',document.querySelector('.b-nm'))" style="font-family:'Fredoka One',cursive;font-size:.78rem;margin-top:.6rem;padding:.35rem .9rem;background:rgba(20,184,166,.15);border:1.5px solid rgba(20,184,166,.4);border-radius:8px;color:#2dd4bf;cursor:pointer">📋 Full details in Name Lookup →</button>
+      </div>`;
+    } else {
+      r.innerHTML = `<div style="background:rgba(248,113,113,.07);border:1.5px solid rgba(248,113,113,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:.5rem;text-align:center">
+        <div style="font-size:1.3rem">🔬</div>
+        <div style="font-family:'Fredoka One',cursive;color:#f87171;margin:.3rem 0">Formula not found in database</div>
+        <div style="font-size:.82rem;color:#6b7280">Try: CH₃-CH₂-OH · CH₂=CH₂ · CH₃COOH · C₆H₆ · acetone · chloroform</div>
+      </div>`;
+    }
+  };
+
   window.nmTab = function(btn, tabId) {
     const wrap = btn.closest('.nm-wrap');
     wrap.querySelectorAll('.etab').forEach(t => t.classList.remove('on'));
@@ -1200,8 +1259,20 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
 
   // ── FORMULA BUILDER ──
   panels['fb'] = `
-<div class="ph" style="border-color:#14b8a6;color:#14b8a6"><div class="phi">🧩</div><div><div class="pht">Formula Builder</div><div class="phb"><span class="badge">Click atoms + bonds</span><span class="badge">Builds structural formula</span><span class="badge">Auto-identifies compound</span></div><div class="phd">Click the atom and bond buttons below to build any structural formula. Then press <strong>Search</strong> to find the compound name!</div></div></div>
+<div class="ph" style="border-color:#14b8a6;color:#14b8a6"><div class="phi">🧩</div><div><div class="pht">Formula Builder</div><div class="phb"><span class="badge">Click buttons OR type directly</span><span class="badge">Builds structural formula</span><span class="badge">Auto-identifies compound</span></div><div class="phd">Click the atom/bond buttons <strong>OR type the formula directly</strong> in the text box, then press <strong>Search</strong>!</div></div></div>
 <div class="fb-wrap">
+  <!-- Direct type-in input -->
+  <div style="display:flex;gap:.6rem;margin-bottom:.9rem;align-items:center">
+    <div style="flex:1">
+      <input id="fb-type-input" type="text" placeholder="Type formula directly e.g. CH3-CH2-OH or CH2=CH2 or C2H5OH…"
+        style="width:100%;font-family:'JetBrains Mono',monospace;font-size:.95rem;padding:.8rem 1.1rem;background:var(--sf);border:2px solid rgba(20,184,166,.4);border-radius:12px;color:#e2e8f0;outline:none;box-sizing:border-box;transition:border-color .2s"
+        onfocus="this.style.borderColor='#14b8a6'" onblur="this.style.borderColor='rgba(20,184,166,.4)'"
+        onkeydown="if(event.key==='Enter')fbTypeSearch()"
+      />
+    </div>
+    <button onclick="fbTypeSearch()" style="font-family:'Fredoka One',cursive;font-size:.95rem;padding:.8rem 1.3rem;background:linear-gradient(135deg,#14b8a6,#0d9488);color:#fff;border:none;border-radius:12px;cursor:pointer;white-space:nowrap;box-shadow:0 4px 14px rgba(20,184,166,.35);transition:all .22s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">🔍 Search</button>
+  </div>
+  <div style="text-align:center;font-family:'Fredoka One',cursive;font-size:.78rem;color:#374151;margin-bottom:.7rem;letter-spacing:.05em">── OR use the keyboard builder below ──</div>
   <!-- Legend -->
   <div class="fb-legend">
     <span class="fb-leg"><span style="color:#fde68a;font-family:'JetBrains Mono',monospace">CH₃</span> Atom</span>
