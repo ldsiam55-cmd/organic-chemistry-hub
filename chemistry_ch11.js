@@ -3317,36 +3317,39 @@ Rules:
   };
 
 
-  // ── GEMINI API KEY ──
-  const GEMINI_KEY = 'AIzaSyBrLjqE557u6rsuWH5V5kXV6Gug-W-7NJ8';
+  // ── GROQ FREE API KEY ──
+  // Get your free key at: console.groq.com (sign up → API Keys → Create)
+  const GROQ_KEY = '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';
 
-  // Core AI caller — Google Gemini free API
+  // Core AI caller — Groq (completely free, very fast)
   async function callClaude(userMsg, systemMsg) {
     try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`;
-      const fullPrompt = systemMsg + '\n\nQuestion: ' + userMsg;
-      const res = await fetch(url, {
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + GROQ_KEY
+        },
         body: JSON.stringify({
-          contents: [{ parts: [{ text: fullPrompt }] }],
-          generationConfig: {
-            maxOutputTokens: 800,
-            temperature: 0.7
-          }
+          model: 'llama-3.1-8b-instant',
+          max_tokens: 800,
+          temperature: 0.7,
+          messages: [
+            { role: 'system', content: systemMsg },
+            { role: 'user', content: userMsg }
+          ]
         })
       });
       if (!res.ok) {
         const err = await res.json().catch(() => ({}));
-        const msg = err?.error?.message || ('HTTP ' + res.status);
-        return '⚠️ API Error: ' + msg;
+        return '⚠️ Error ' + res.status + ': ' + (err?.error?.message || 'Unknown error');
       }
       const data = await res.json();
-      const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (!text) return '⚠️ No response received. Please try again.';
+      const text = data?.choices?.[0]?.message?.content;
+      if (!text) return '⚠️ No response. Please try again.';
       return text;
     } catch (e) {
-      return '⚠️ Connection error: ' + e.message + '. Check your internet connection.';
+      return '⚠️ Network error: ' + e.message;
     }
   }
 
