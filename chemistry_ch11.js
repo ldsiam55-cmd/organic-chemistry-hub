@@ -1494,6 +1494,23 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {topic:'Arenes',q:'How is chemically pure benzene obtained from light oil?',a:'1. Remove basic compounds (conc. H₂SO₄)\n2. Remove acidic phenols (10% NaOH)\n3. Distil 70–110°C → 90% benzol\n4. Distil 80–82°C → 99% pure benzene\n5. Cool at 5.4°C + cold conc. H₂SO₄ (removes thiophene) → distil 80.4°C → pure benzene',hint:'90% benzol = 84% benzene + 13% toluene + 3% xylene'},
     {topic:'Isomers',q:'C₃H₈O isomers (alcohol/ether types)?',a:'3 isomers: propan-1-ol (CH₃CH₂CH₂OH), propan-2-ol (CH₃CHOHCH₃), methoxy ethane (CH₃OCH₂CH₃)',hint:'CₙH₂ₙ₊₂O formula = alcohol or ether'},
     {topic:'Isomers',q:'C₃H₆O isomers (aldehyde/ketone/alkenol)?',a:'3 isomers: propanal CH₃CH₂CHO (bp 48.8°C), propanone CH₃COCH₃ (bp 56°C), allyl alcohol CH₂=CHCH₂OH (bp 97°C)',hint:'CₙH₂ₙO formula = aldehyde, ketone, or alken-ol'},
+    // ── REACTIONS FLASHCARDS (Pages 61–90) ──
+    {topic:'Reactions',q:'3 classes of attacking reagents?',a:'1. Free radical (•R) — homolysis, unpaired electron, heat/hν\n2. Electrophile (E⁺ or E) — electron-poor, attacks π electrons\n3. Nucleophile (:Nu⁻ or :Nu) — electron-rich, attacks δ+ carbon',hint:'Homolysis → radical; Heterolysis → electrophile + nucleophile'},
+    {topic:'Reactions',q:'Carbocation vs Carbanion stability?',a:'Carbocation: 3° > 2° > 1° > ⁺CH₃ (more alkyl = more stable)\nCarbanion: :CH₃ > 1° > 2° > 3° (OPPOSITE — more alkyl = less stable)',hint:'Carbocations are electrophiles; carbanions are nucleophiles'},
+    {topic:'Reactions',q:'Markovnikov\'s Rule — state it clearly?',a:'In unsymmetrical alkene + unsymmetrical reagent:\nH⁺ (positive part) adds to C with MORE H atoms\nNegative part adds to C with LESS H atoms\nReason: more stable 2°/3° carbocation forms preferentially',hint:'Propene + HBr → 90% 2-bromopropane (Markovnikov product)'},
+    {topic:'Reactions',q:'Anti-Markovnikov (Kharasch) effect?',a:'In presence of organic peroxide (R-O-O-R), HBr adds OPPOSITE to Markovnikov:\nBr adds to C with MORE H (free radical mechanism)\nOnly works with HBr — NOT HCl or HI!\nPropene + HBr + peroxide → 99.1% 1-bromopropane',hint:'Kharasch discovered this in 1933'},
+    {topic:'Reactions',q:'Ozonolysis — purpose and what Zn dust does?',a:'Purpose: determine POSITION of C=C or C≡C in carbon chain\nWith Zn dust → aldehyde/ketone products\nWithout Zn dust → aldehydes oxidised further to carboxylic acids\nButene-1 → propanal + methanal | Butene-2 → 2 ethanal',hint:'O₃ in CCl₄ → ozonide → H₂O/Zn → carbonyl products'},
+    {topic:'Reactions',q:'Nucleophilic addition to C=O — why nucleophilic?',a:'O is more electronegative (3.5) than C (2.5). π electrons shift to O → C becomes δ+. Nucleophile (:CN⁻, :OH⁻, :NH₃, RMgX) attacks the δ+ carbon.',hint:'Aldehyde and ketone both undergo nucleophilic addition'},
+    {topic:'Reactions',q:'Grignard reagent rule for alcohols?',a:'Methanal (HCHO) + RMgX → 1° alcohol\nOther aldehydes (RCHO) + RMgX → 2° alcohol\nKetone (RCOR) + RMgX → 3° alcohol\nHydrolysis with H₂O needed to get final product',hint:'RMgX = alkyl magnesium halide = Grignard reagent'},
+    {topic:'Reactions',q:'Aldol condensation vs Cannizzaro — when does each occur?',a:'Aldol: aldehyde/ketone WITH α-H + dil. NaOH (20-30°C) → β-hydroxy carbonyl (aldol)\nCannizzaro: aldehyde WITHOUT α-H + 50% conc. NaOH → disproportionation (one oxidised, one reduced)',hint:'HCHO and C₆H₅CHO → Cannizzaro (no α-H). CH₃CHO → Aldol (has α-H)'},
+    {topic:'Reactions',q:'SN1 vs SN2 — key differences?',a:'SN1: 2 steps, 3° alkyl halide, weak nucleophile, polar solvent, 1st order, no transition complex\nSN2: 1 step, 1° alkyl halide, strong nucleophile, non-polar solvent, 2nd order, transition complex forms',hint:'S = substitution, N = nucleophilic, 1 = uni, 2 = bi'},
+    {topic:'Reactions',q:'KOH(aq) vs KOH(alc.) with propyl chloride?',a:'KOH(aq) → weak nucleophile (solvated OH⁻) → SUBSTITUTION → propanol\nKOH(alc.) → strong nucleophile (unsolvated OH⁻) → ELIMINATION → propene + KCl + H₂O',hint:'Same RX, different conditions → different products!'},
+    {topic:'Reactions',q:'Saytzeff\'s rule?',a:'When elimination can give more than one alkene, the MORE substituted/branched alkene is the MAJOR product.\n2-butanol → 80% but-2-ene (more substituted) + 20% but-1-ene',hint:'Applies to E2 elimination from secondary/tertiary alkyl halides'},
+    {topic:'Reactions',q:'Inductive effect (+I and −I)?',a:'+I (positive): alkyl groups (–CH₃, –C₂H₅) donate electrons toward ring → activating\n−I (negative): electronegative groups (F, Cl, Br, NO₂) withdraw electrons → deactivating\nExample: toluene has +I from –CH₃ → more reactive than benzene',hint:'Sigma bond polarisation along C chain'},
+    {topic:'Reactions',q:'Ortho-para directing vs meta directing groups?',a:'Ortho-para (activating): groups with +I or +M effect: –CH₃, –NH₂, –OH, –OCH₃, –Cl\nMeta (deactivating): groups with –M effect: –NO₂, –CHO, –COOH, –CN, –SO₃H\nKey: lone pair donors = ortho-para; C=O or C≡N attached = meta',hint:'Activating groups increase electron density at ortho+para positions'},
+    {topic:'Reactions',q:'Toluene reactions — ring vs side chain?',a:'Ring (no light, AlCl₃): Cl₂ → ortho+para chlorotoluene\nRing (30°C): HNO₃+H₂SO₄ → ortho+para nitrotoluene\nSide chain (sunlight/111°C): Cl₂ → benzyl chloride → benzal chloride → benzo chloride\nSide chain (KMnO₄): oxidation → benzoic acid',hint:'AlCl₃/no light = ring. Sunlight/UV = side chain'},
+    {topic:'Reactions',q:'Reactivity order of aldehydes and ketones?',a:'Methanal > Ethanal > Propanone\nMore alkyl groups on C=O carbon → more electron density donated → C less δ+ → LESS reactive\nAldehydes more reactive than ketones',hint:'Steric effect also reduces reactivity of ketones'},
+    {topic:'Reactions',q:'Aliphatic vs Aromatic — 3 key differences?',a:'1. Br₂/KMnO₄: Aliphatic unsaturated ✅ decolourises; Benzene ❌ does not\n2. Halide: R–X easily hydrolysed; Ar–X needs 300°C, 200 atm\n3. Hydroxy: R–OH neutral (alcohol); Ar–OH acidic (phenol, turns litmus red)',hint:'Sections 2.9 of EV textbook — 7 total differences'},
   ];
 
   panels['fc'] = `
@@ -1512,6 +1529,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     <button class="fc-filter" onclick="fcFilter('Bonds',this)" style="color:#c084fc">🔗 Bonds</button>
     <button class="fc-filter" onclick="fcFilter('Isomers',this)" style="color:#2dd4bf">🔄 Isomers</button>
     <button class="fc-filter" onclick="fcFilter('Arenes',this)" style="color:#a78bfa">💎 Arenes</button>
+    <button class="fc-filter" onclick="fcFilter('Reactions',this)" style="color:#22d3ee">⚗️ Reactions</button>
     <button class="fc-filter" onclick="fcFilter('Mixed',this)" style="color:#94a3b8">🔬 Mixed</button>
   </div>
   <div class="fc-progress"><div class="fc-bar"><div class="fc-fill" id="fc-fill" style="width:0%"></div></div><div class="fc-count" id="fc-count">1 / ${FC_CARDS.length}</div></div>
@@ -1836,6 +1854,9 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     <button class="nt-tab" style="color:#c084fc" onclick="ntTab(this,'th-bond')">🔗 σ & π Bonds</button>
     <button class="nt-tab" style="color:#f472b6" onclick="ntTab(this,'th-hybrid')">🔭 Hybridisation</button>
     <button class="nt-tab" style="color:#fb923c" onclick="ntTab(this,'th-homo')">📊 Homologous Series</button>
+    <button class="nt-tab" style="color:#f43f5e" onclick="ntTab(this,'th-aliaro')">⚖️ Ali vs Aro</button>
+    <button class="nt-tab" style="color:#22d3ee" onclick="ntTab(this,'th-react')">⚗️ Reactions</button>
+    <button class="nt-tab" style="color:#a3e635" onclick="ntTab(this,'th-mech')">🔧 Mechanisms</button>
   </div>
 
   <div id="th-intro" class="nt-pane on">
@@ -2045,6 +2066,147 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     <strong>Double or triple bond (C=C, C≡C):</strong> Undergo <span style="color:#fbbf24">addition</span> reactions<br><br>
     <strong>Both single + double bond (–COOH, –COO–):</strong> Undergo <span style="color:#f472b6">substitution</span> reactions
   </div></div>
+</div>
+
+  <!-- ALIPHATIC vs AROMATIC -->
+  <div id="th-aliaro" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#f43f5e"><span class="note-card-icon">⚖️</span><span class="note-card-title" style="color:#f43f5e">Aliphatic vs Aromatic — 7 Differences (Section 2.9)</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>#</th><th>Point</th><th style="color:#60a5fa">Aliphatic</th><th style="color:#a78bfa">Aromatic</th></tr>
+        <tr><td>1</td><td>Structure</td><td>Open chain (some closed like cyclohexane)</td><td>Closed, planar, stable ring with (4n+2) π electrons</td></tr>
+        <tr><td>2</td><td>Carbon %</td><td>CH₄: C=75%, H=25%</td><td>C₆H₆: C=92.3%, H=7.7% (more carbon!)</td></tr>
+        <tr><td>3</td><td>Unsaturation</td><td>May be saturated or unsaturated</td><td>Special stable unsaturation — (4n+2) π electrons only</td></tr>
+        <tr><td>4</td><td>Br₂/KMnO₄ test</td><td>✅ Unsaturated aliphatic decolourises both</td><td>❌ Benzene does NOT decolourise either test</td></tr>
+        <tr><td>5</td><td>Halide reactivity</td><td>R–X easily hydrolysed by aq. KOH → alcohol</td><td>Ar–X barely hydrolysed — needs 300°C, 200 atm with KOH!</td></tr>
+        <tr><td>6</td><td>Hydroxy compound</td><td>Alcohol (–OH) — litmus neutral, reacts with Na → H₂</td><td>Phenol (C₆H₅OH) — turns litmus RED (acidic), reacts with NaOH → phenate</td></tr>
+        <tr><td>7</td><td>Reactions</td><td>Electrophilic addition + nucleophilic substitution + elimination</td><td>Mainly electrophilic substitution (halogenation, nitration, Friedel-Craft) + some addition (H₂, Cl₂, O₃)</td></tr>
+      </table>
+      <div style="margin-top:.7rem;font-size:.82rem;color:#6b7280">💡 Key memory: Aromatic = MORE stable, MORE carbon %, LESS reactive halide, ACIDIC hydroxy compound, SUBSTITUTION reactions</div>
+    </div></div>
+  </div>
+
+  <!-- REACTIONS OVERVIEW -->
+  <div id="th-react" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#22d3ee"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#22d3ee">Types of Organic Reactions (Section 2.10)</span></div>
+    <div class="note-card-body">
+      5 types of organic reactions:
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.6rem">
+        ${[
+          {n:'1',col:'#22d3ee',t:'Addition',d:'Two molecules combine to form one product. Occurs in π-bond compounds (C=C, C≡C, C=O). π-bond breaks and two new σ-bonds form.'},
+          {n:'2',col:'#f472b6',t:'Substitution',d:'One atom/group replaced by another. Occurs in saturated C (alkane, alkyl halide) and benzene ring.'},
+          {n:'3',col:'#fb923c',t:'Elimination',d:'Two atoms/groups removed from adjacent C atoms forming new π-bond (alkene). Opposite of addition.'},
+          {n:'4',col:'#a3e635',t:'Rearrangement (Isomerisation)',d:'Atoms reorganise to form isomer. e.g. Butane → 2-methylpropane with AlCl₃/HCl at 300°C.'},
+          {n:'5',col:'#fbbf24',t:'Multiple Substitution (Orientation)',d:'Multiple H atoms of benzene replaced. Direction controlled by existing substituent (ortho-para or meta directing).'}
+        ].map(r=>`<div style="background:rgba(0,0,0,.2);border-left:4px solid ${r.col};border-radius:0 10px 10px 0;padding:.6rem 1rem">
+          <span style="font-family:'Fredoka One',cursive;color:${r.col}">${r.n}. ${r.t}: </span><span style="font-size:.85rem;color:#94a3b8">${r.d}</span>
+        </div>`).join('')}
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#f472b6"><span class="note-card-icon">⚡</span><span class="note-card-title" style="color:#f472b6">Attacking Reagents — 3 Types</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>Type</th><th>How formed</th><th>Examples</th><th>Attacks</th></tr>
+        <tr><td style="color:#fbbf24">Free Radical (R•)</td><td>Homolysis — bond breaks symmetrically (hν or heat)</td><td>•Cl, •Br, •CH₃, •CH₂CH₃</td><td>π-bonds of alkene</td></tr>
+        <tr><td style="color:#f87171">Electrophile (E⁺ or E)</td><td>Heterolysis — electron-POOR species</td><td>H⁺, H₃O⁺, NO₂⁺, Cl⁺, Br⁺, SO₃, AlCl₃, FeCl₃</td><td>π electrons / electron-rich sites</td></tr>
+        <tr><td style="color:#60a5fa">Nucleophile (:Nu⁻ or :Nu)</td><td>Heterolysis — electron-RICH species</td><td>HO⁻, CN⁻, Cl⁻, Br⁻, I⁻, NH₃, H₂O, ROH</td><td>Electron-deficient C (δ+)</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">🏆</span><span class="note-card-title" style="color:#fbbf24">Markovnikov's Rule (1869)</span></div>
+    <div class="note-card-body">
+      <strong>Rule:</strong> When an unsymmetrical alkene reacts with an unsymmetrical reagent (HBr, HCl, HOBr), the <strong>negative part adds to the carbon with LESS hydrogen atoms</strong>.<br><br>
+      Alternatively: <strong>positive part (H⁺) adds to carbon with MORE H atoms</strong>.<br><br>
+      <strong>Why?</strong> H⁺ attacks to form more stable <strong>secondary (2°) carbocation</strong> preferentially over less stable primary (1°) carbocation.<br><br>
+      <div class="note-formula">Propene + HBr → 90% 2-bromopropane (Markovnikov) + 10% 1-bromopropane</div>
+      <strong>Carbocation stability order: 3° &gt; 2° &gt; 1° &gt; ⁺CH₃</strong><br><br>
+      <div style="background:rgba(248,113,113,.08);border-left:3px solid #f87171;padding:.5rem .8rem;border-radius:0 8px 8px 0;font-size:.85rem;margin-top:.5rem">
+        ⚠️ <strong>Anti-Markovnikov / Kharasch Effect (1933):</strong> In presence of <strong>organic peroxide (R–O–O–R)</strong>, HBr adds OPPOSITE to Markovnikov. Negative part (Br⁻) adds to C with MORE H. Free radical mechanism. <strong>Only works with HBr — NOT HCl or HI!</strong><br>
+        Propene + HBr + peroxide → 99.1% 1-bromopropane (anti-Markovnikov)
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#a3e635"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:#a3e635">Aldol Condensation & Cannizzaro's Reaction</span></div>
+    <div class="note-card-body">
+      <strong>Aldol Condensation:</strong> Aldehydes/ketones WITH α-H + dil. NaOH (20–30°C) → β-hydroxy aldehyde/ketone (aldol)<br>
+      <div class="note-formula">CH₃CHO + CH₃CHO → dil. NaOH → CH₃CH(OH)CH₂CHO (3-hydroxybutanal / aldol)</div>
+      "Aldol" = aldehyde (ald) + alcohol (ol). Mechanism: α-H acidic → carbanion → attacks another C=O → C–C bond forms.<br><br>
+      <strong>Cannizzaro's Reaction:</strong> Aldehydes WITHOUT α-H (HCHO, C₆H₅CHO) + 50% conc. NaOH → disproportionation (one oxidised → acid, one reduced → alcohol)<br>
+      <div class="note-formula">2 HCHO + 50%NaOH → CH₃OH (methanol) + HCOONa (sodium formate)</div>
+      <div class="note-formula">2 C₆H₅CHO + 50%NaOH → C₆H₅CH₂OH (benzyl alcohol) + C₆H₅COONa (sodium benzoate)</div>
+      <strong>Reactivity order:</strong> Methanal &gt; Ethanal &gt; Propanone (more alkyl groups = less reactive)
+    </div></div>
+  </div>
+
+  <!-- MECHANISMS -->
+  <div id="th-mech" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#a3e635"><span class="note-card-icon">🔧</span><span class="note-card-title" style="color:#a3e635">SN1 vs SN2 Nucleophilic Substitution</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>Characteristics</th><th style="color:#60a5fa">S_N1 (Unimolecular)</th><th style="color:#f472b6">S_N2 (Bimolecular)</th></tr>
+        <tr><td>Steps</td><td>2 steps — carbonium ion forms first, then nucleophile attacks</td><td>1 step — transition complex forms</td></tr>
+        <tr><td>Best alkyl halide</td><td>3° alkyl halide (most stable carbocation)</td><td>1° alkyl halide (least steric hindrance)</td></tr>
+        <tr><td>Nucleophile needed</td><td>Weak nucleophile</td><td>Strong nucleophile</td></tr>
+        <tr><td>Reactivity of RX</td><td>3° &gt; 2° &gt; 1°</td><td>1° &gt; 2° &gt; 3°</td></tr>
+        <tr><td>Rate depends on</td><td>[RX] only — 1st order reaction</td><td>[RX] and [Nu] both — 2nd order</td></tr>
+        <tr><td>Solvent</td><td>Polar solvent (favours carbocation)</td><td>Non-polar solvent</td></tr>
+        <tr><td>Molecularity</td><td>Unimolecular</td><td>Bimolecular</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fb923c"><span class="note-card-icon">🚪</span><span class="note-card-title" style="color:#fb923c">Elimination Reactions (E1 and E2)</span></div>
+    <div class="note-card-body">
+      Removal of two atoms/groups from adjacent C atoms forming new C=C (π-bond). Opposite of addition.<br><br>
+      <strong>Electrophilic elimination (E1):</strong> Like S_N1 — 2 steps. R–CH₂CH₂OH + conc. H₂SO₄ → alkene (via carbonium ion)<br>
+      <strong>Nucleophilic elimination (E2):</strong> Like S_N2 — 1 step. R–CH₂CH₂X + KOH(alc.) → alkene + HX + KX<br><br>
+      <div class="note-formula">Propyl chloride + KOH(aq) → propanol [substitution]</div>
+      <div class="note-formula">Propyl chloride + KOH(alc.) → propene + KCl + H₂O [elimination]</div>
+      <strong>Saytzeff's Rule:</strong> When more than one alkene can form from elimination, the <strong>more branched (more substituted) alkene is the major product</strong>.<br>
+      Example: 2-butanol → 80% but-2-ene (more branched) + 20% but-1-ene<br><br>
+      <table class="note-table">
+        <tr><th>Condition</th><th>Reaction favoured</th></tr>
+        <tr><td>Aq. KOH (weak nucleophile)</td><td>S_N2 substitution</td></tr>
+        <tr><td>Alc. KOH (strong nucleophile)</td><td>E2 elimination</td></tr>
+        <tr><td>3° alkyl halide</td><td>E1 elimination</td></tr>
+        <tr><td>1° alkyl halide</td><td>S_N2 substitution</td></tr>
+        <tr><td>Polar solvent</td><td>S_N1</td></tr>
+        <tr><td>Non-polar solvent + strong alkali</td><td>E2</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">🧲</span><span class="note-card-title" style="color:#c084fc">Inductive Effect & Mesomeric Effect — Orientation</span></div>
+    <div class="note-card-body">
+      <strong>Inductive Effect (I):</strong> Polarisation of C–X sigma bond<br>
+      <span style="color:#f87171">Negative –I</span>: X more electronegative than C (F, Cl, Br, NO₂) → withdraws electrons<br>
+      <span style="color:#4ade80">Positive +I</span>: Alkyl groups (–CH₃, –C₂H₅) → donate electrons<br><br>
+      <strong>Mesomeric Effect (M):</strong> Delocalisation of π electrons<br>
+      <span style="color:#4ade80">Positive +M</span>: Lone pair donated to ring (–OH, –NH₂, –Cl) → activates ring<br>
+      <span style="color:#f87171">Negative –M</span>: π electrons withdrawn from ring (–NO₂, –CHO, –COOH, –CN) → deactivates ring<br><br>
+      <table class="note-table">
+        <tr><th>Group type</th><th>Effect</th><th>Directs to</th><th>Examples</th></tr>
+        <tr><td style="color:#4ade80">Activating</td><td>+I or +M</td><td><strong>ortho + para</strong></td><td>–CH₃, –C₂H₅, –NH₂, –OH, –OCH₃, –Cl</td></tr>
+        <tr><td style="color:#f87171">Deactivating</td><td>–M</td><td><strong>meta</strong></td><td>–NO₂, –CHO, –COOH, –CN, –SO₃H</td></tr>
+      </table>
+      <div style="margin-top:.6rem;font-size:.82rem;color:#94a3b8">
+        💡 <strong>Toluene reacts faster than benzene</strong> because –CH₃ group has +I effect.<br>
+        Nitration: benzene at 60°C vs toluene at 30°C. Sulphonation of toluene at 5°C (below room temp!)
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">⚠️</span><span class="note-card-title" style="color:#fbbf24">Toluene Reactions — Side Chain vs Ring</span></div>
+    <div class="note-card-body">
+      <strong>–CH₃ group in toluene:</strong> Can react at RING (electrophilic substitution) or SIDE CHAIN depending on conditions.<br><br>
+      <table class="note-table">
+        <tr><th>Condition</th><th>Where reaction occurs</th><th>Product</th></tr>
+        <tr><td>Cl₂ + AlCl₃, 20°C, no light</td><td>Ring</td><td>ortho + para-chlorotoluene</td></tr>
+        <tr><td>Cl₂ + sunlight / 111°C</td><td>Side chain (–CH₃)</td><td>Benzyl chloride → Benzal chloride → Benzo chloride</td></tr>
+        <tr><td>+ 3[O] (KMnO₄/KOH)</td><td>Side chain oxidation</td><td>Benzoic acid (C₆H₅COOH)</td></tr>
+        <tr><td>+ CH₃COCl + AlCl₃, 40–50°C</td><td>Ring (acylation)</td><td>4-methyl phenyl ethanone (mainly para)</td></tr>
+        <tr><td>Fuming H₂SO₄, 5°C</td><td>Ring (sulphonation)</td><td>ortho + para-toluene sulphonic acid</td></tr>
+      </table>
+    </div></div>
+  </div>
 </div>`;
 
   // ══════════════════════════════════════════════
@@ -3215,7 +3377,35 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {t:"Arenes",q:"In 5-membered heterocyclic compounds like furan, which contributes to (4n+2) π electron count?",o:["The C–H bonds","Lone pair of the heteroatom (O, N, S)","The sigma bonds","The molecular weight"],a:1,e:"In 5-membered heterocyclic aromatics (furan, pyrrole, thiophene), the lone pair of the heteroatom (O, N, or S) participates in the delocalised π electron count to satisfy the (4n+2) Hückel rule."},
     {t:"Arenes",q:"Ozonolysis of benzene (+ 3O₃ in CCl₄, then H₂O/Zn) gives?",o:["3 glyoxal + 3ZnO","Cyclohexane","Nitrobenzene","Benzene sulphonic acid"],a:0,e:"C₆H₆ + 3O₃ → CCl₄ → benzene triozonide → H₂O/Zn, Δ → 3 glyoxal (OHC–CHO) + 3ZnO. This proves benzene has 3 double bonds (takes exactly 3 moles ozone)."},
     {t:"Arenes",q:"C₃H₆O has how many isomers including aldehyde, ketone and alkenol?",o:["2","3","4","5"],a:1,e:"C₃H₆O has 3 functional group isomers: propanal CH₃CH₂CHO (bp 48.8°C), propanone CH₃COCH₃ (bp 56°C), and 2-propen-1-ol/allyl alcohol CH₂=CHCH₂OH (bp 97°C)."},
-    {t:"Arenes",q:"C₃H₈O has how many isomers (alcohol and ether types)?",o:["2","3","4","5"],a:1,e:"C₃H₈O (CₙH₂ₙ₊₂O) has 3 isomers: propan-1-ol (CH₃CH₂CH₂OH), propan-2-ol (CH₃CHOHCH₃), and methoxy ethane/methyl ethyl ether (CH₃OCH₂CH₃)."}
+    {t:"Arenes",q:"C₃H₈O has how many isomers (alcohol and ether types)?",o:["2","3","4","5"],a:1,e:"C₃H₈O (CₙH₂ₙ₊₂O) has 3 isomers: propan-1-ol (CH₃CH₂CH₂OH), propan-2-ol (CH₃CHOHCH₃), and methoxy ethane/methyl ethyl ether (CH₃OCH₂CH₃)."},
+
+    // ── FROM PAGES 61–90 ──
+    {t:"Reactions",q:"Carbon % in benzene C₆H₆ is approximately?",o:["75%","82%","92.3%","50%"],a:2,e:"Benzene C₆H₆: C = 72÷78 × 100 = 92.3%. Compare methane CH₄: C = 12÷16 × 100 = 75%. Aromatic compounds always have higher carbon % than aliphatic ones."},
+    {t:"Reactions",q:"Aromatic halide (Ar–X) compared to aliphatic (R–X) is?",o:["More reactive","Less reactive — needs 300°C, 200 atm for hydrolysis","Same reactivity","Only reacts with acids"],a:1,e:"Aryl halide (Ar–X) is LESS reactive. Barely hydrolysed even at high temp/pressure. Needs 300°C and 200 atm KOH(aq) to form phenol. Aliphatic R–X is easily hydrolysed by aq. KOH at room temperature."},
+    {t:"Reactions",q:"Phenol (C₆H₅OH) turns litmus?",o:["Blue (basic)","Red (acidic)","Neutral","Purple"],a:1,e:"Phenol is ACIDIC — turns blue litmus RED. Aliphatic alcohols are neutral (no effect on litmus). Phenol reacts with NaOH → sodium phenate (C₆H₅ONa) + H₂O."},
+    {t:"Reactions",q:"How many classes of attacking reagents are there?",o:["2","3","4","5"],a:1,e:"3 classes: (1) Free radical (2) Electrophile (3) Nucleophile. All organic reactions involve one of these three types attacking a substrate."},
+    {t:"Reactions",q:"Free radicals are formed by which bond-breaking process?",o:["Heterolysis (unequal break)","Homolysis (equal/symmetric break)","Ionic dissociation","No bond breaking"],a:1,e:"Free radicals form by HOMOLYSIS — covalent bond breaks symmetrically, each atom gets one electron. Requires heat or light (hν). Cl–Cl → hν → •Cl + •Cl. Bond dissociation energy of Cl₂ = 243 J/mol."},
+    {t:"Reactions",q:"Electrophiles are electron-___ species?",o:["Rich (donate electrons)","Poor (accept electron pairs)","Neutral always","Radical"],a:1,e:"Electrophiles are ELECTRON-POOR (electron-loving) species that accept electron pairs. Examples: H⁺, H₃O⁺, NO₂⁺, Cl⁺, SO₃, AlCl₃, FeCl₃, BF₃. They attack electron-rich sites."},
+    {t:"Reactions",q:"Nucleophiles are electron-___ species?",o:["Poor (accept electrons)","Rich (donate electron pairs)","Always positive","Free radicals"],a:1,e:"Nucleophiles are ELECTRON-RICH (nucleus-loving) species with lone pairs to donate. Examples: HO⁻, CN⁻, Cl⁻, Br⁻, I⁻, NH₃, H₂O, ROH. They attack electron-deficient (δ+) carbon atoms."},
+    {t:"Reactions",q:"Carbocation (carbonium ion) stability order?",o:["1° > 2° > 3°","3° > 2° > 1° > ⁺CH₃","Methyl > 1° > 2° > 3°","All equal"],a:1,e:"3° > 2° > 1° > ⁺CH₃ (methyl). More alkyl groups = more electron donation to positive C = more stable carbocation. Stability controls Markovnikov's rule."},
+    {t:"Reactions",q:"Carbanion (carban ion) stability order?",o:["3° > 2° > 1°","1° methyl most stable > 1° > 2° > 3°","All equal","Methyl least stable"],a:1,e:"Carbanion stability is OPPOSITE to carbocation: methyl (:CH₃) most stable, 3° least stable. More alkyl groups increase negative charge concentration = LESS stable. Carbanions act as nucleophiles."},
+    {t:"Reactions",q:"Markovnikov's Rule: in HBr + propene, the H⁺ adds to?",o:["C2 (less H)","C1 (more H) → gives 2-bromopropane","C3","Equally to both"],a:1,e:"H⁺ adds to C1 (which has more H atoms = 2H). This forms more stable 2° carbocation at C2. Then Br⁻ adds to C2. Result: 2-bromopropane (90%) as major product. This is Markovnikov's rule."},
+    {t:"Reactions",q:"Anti-Markovnikov/Kharasch effect: in presence of organic peroxide, HBr + propene gives mainly?",o:["2-bromopropane (Markovnikov)","1-bromopropane (99.1%) — anti-Markovnikov","Equal mixture","No reaction"],a:1,e:"Kharasch (1933): Organic peroxide (R-O-O-R) → free radical mechanism → Br• attacks C1 to form more stable 2° free radical → then H• adds → 1-bromopropane (99.1%) as major product."},
+    {t:"Reactions",q:"Kharasch peroxide effect (Anti-Markovnikov) works with?",o:["HCl only","HI only","HBr ONLY — not HCl or HI","All hydrogen halides"],a:2,e:"Kharasch effect works ONLY with HBr. Not with HCl (too strong bond to break homolytically) or HI (less stable iodine radical). This is an important exam distinction."},
+    {t:"Reactions",q:"Ozonolysis determines the position of which bond?",o:["C–C single bond","C=O carbonyl bond","C=C double bond or C≡C triple bond","C–H bond"],a:2,e:"Ozonolysis determines the POSITION of C=C (double bond) in alkene chain, or C≡C (triple bond) in alkyne chain. The aldehyde/ketone/acid products reveal exactly where the π-bond was."},
+    {t:"Reactions",q:"Why is Zn dust used in ozonolysis?",o:["To speed up ozone addition","To prevent oxidation of aldehyde to carboxylic acid by [O]","To remove ozone","As catalyst"],a:1,e:"Without Zn: aldehyde + nascent [O] → carboxylic acid. Adding Zn dust converts H₂O₂ → ZnO, preventing oxidation. So with Zn → aldehyde product; without Zn → carboxylic acid product."},
+    {t:"Reactions",q:"Why does carbonyl group (C=O) undergo nucleophilic addition?",o:["C is more electronegative than O","O is more electronegative than C (3.5 vs 2.5), making C δ+","No polarity in C=O","Free radical mechanism"],a:1,e:"O (EN=3.5) > C (EN=2.5). π electrons shift toward O → C becomes δ+. Nucleophile attacks the electron-deficient δ+ carbon. This is why aldehydes and ketones undergo nucleophilic addition."},
+    {t:"Reactions",q:"Grignard reagent (CH₃MgBr) + methanal HCHO + H₂O gives?",o:["Methanol (1° alcohol)","Ethanol (1° alcohol)","Propanol-2 (2° alcohol)","Tertiary alcohol"],a:1,e:"Methanal (1C) + CH₃MgBr adds one CH₃ → 2C product → hydrolysis → ethanol (1° alcohol). Rule: Methanal → 1° alcohol, other aldehydes → 2° alcohol, ketones → 3° alcohol."},
+    {t:"Reactions",q:"Aldol condensation condition: aldehyde MUST have?",o:["No α-hydrogen","α-hydrogen (acidic H on C adjacent to C=O)","Only ketone groups","Conc. NaOH"],a:1,e:"Aldol needs α-H. The α-H is acidic → dil. NaOH removes it → carbanion forms → attacks C=O of another molecule → β-hydroxy carbonyl compound (aldol). Word 'aldol' = aldehyde + alcohol."},
+    {t:"Reactions",q:"Cannizzaro's reaction: methanal HCHO + 50% NaOH gives?",o:["Ethanol","CH₃OH (methanol) + HCOONa (sodium formate)","CO₂ + H₂O","Formaldehyde polymer"],a:1,e:"Cannizzaro's disproportionation: 2HCHO + 50%NaOH → CH₃OH (methanol, reduced) + HCOONa (sodium formate, oxidised). Occurs only with aldehydes having NO α-H."},
+    {t:"Reactions",q:"SN1 nucleophilic substitution occurs in how many steps?",o:["1 step","2 steps (slow ionisation → fast nucleophile attack)","3 steps","4 steps"],a:1,e:"SN1 = 2 steps: Step 1 (SLOW) — RX → R⁺ (carbocation) + X⁻. Step 2 (FAST) — R⁺ + :Nu → R–Nu. Rate depends only on [RX]. Favoured by 3° alkyl halide and polar solvents."},
+    {t:"Reactions",q:"SN2 nucleophilic substitution occurs in how many steps?",o:["2 steps","1 step — transition complex","3 steps","4 steps"],a:1,e:"SN2 = 1 step. Nucleophile attacks C from the back while halide leaves simultaneously — transition complex forms. Rate depends on both [RX] and [Nu]. Favoured by 1° alkyl halide, strong nucleophile, non-polar solvent."},
+    {t:"Reactions",q:"Propyl chloride + KOH(aq) gives substitution product?",o:["Propene","Propanol","Propane","Isopropanol"],a:1,e:"Propyl chloride + KOH(aq) → propanol + KCl. Aqueous KOH → OH⁻ is WEAK nucleophile (solvated by water) → substitution (SN2). Compare: KOH(alc.) → strong nucleophile → elimination → propene."},
+    {t:"Reactions",q:"Saytzeff's rule predicts which alkene is major product in elimination?",o:["Less substituted (terminal)","More substituted/branched alkene","Always but-1-ene","Depends on temperature only"],a:1,e:"Saytzeff's rule: MORE substituted/branched alkene is MAJOR product. Example: 2-butanol elimination → 80% but-2-ene (more substituted) + 20% but-1-ene."},
+    {t:"Reactions",q:"–CH₃ group in benzene has which electronic effect?",o:["–I (negative inductive)","–M (negative mesomeric)","+ I (positive inductive) → ortho-para directing","No effect"],a:2,e:"–CH₃ has positive inductive (+I) effect — donates electrons toward the ring. Increases electron density at ortho and para positions. So toluene is more reactive than benzene and gives ortho+para products."},
+    {t:"Reactions",q:"–NO₂ group in benzene ring is?",o:["Ortho-para directing (activating)","Meta directing (deactivating)","No directing effect","Positive inductive"],a:1,e:"–NO₂ group has negative mesomeric (–M) effect — withdraws electron density from ring. Deactivates ring, decreases electron density at ortho and para positions. Electrophile attacks remaining META positions. Nitrobenzene is less reactive than benzene."},
+    {t:"Reactions",q:"Chlorination of toluene with Cl₂ + AlCl₃, no light, gives?",o:["Benzyl chloride (side chain)","Ortho + para chlorotoluene (ring substitution)","Benzene hexachloride","Only meta product"],a:1,e:"Cl₂ + AlCl₃ (no light) → electrophilic substitution at RING → ortho-chlorotoluene + para-chlorotoluene. But Cl₂ + sunlight/111°C → free radical → side chain attacked → benzyl chloride → benzal chloride → benzo chloride."},
+    {t:"Reactions",q:"Side chain oxidation of toluene (–CH₃) with KMnO₄/KOH gives?",o:["Benzaldehyde","Phenol","Benzoic acid C₆H₅COOH","Cresol"],a:2,e:"Toluene + 3[O] → KMnO₄/KOH → benzoic acid (C₆H₅COOH) + H₂O. Strong oxidising agents oxidise the entire methyl side chain to –COOH. Benzene ring is not broken under these conditions."}
   ];
 
   let EQ2 = [], EA = {}, ET = null, ES = 0, EE = 0, ED = false;
