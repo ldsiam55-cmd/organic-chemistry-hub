@@ -1480,6 +1480,20 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {topic:'Isomers',q:'Formula: n SIMILAR chiral centres?',a:'Optical isomers = 2ⁿ⁻¹ ; Meso isomers = 2^((n−2)/2) where n is even',hint:'Tartaric acid n=2: optical = 2¹=2; meso = 2⁰=1'},
     {topic:'Naming',q:'Priority order: top 6 functional groups in IUPAC naming?',a:'1.–COOH  2.–SO₃H  3.–COX  4.–CONH₂  5.–CN  6.–CHO  (then: >C=O, –OH, –NH₂, C=C, C≡C, C–C)',hint:'IUPAC Table 2.8 — highest priority gets lowest locant and suffix'},
     {topic:'Naming',q:'IUPAC naming strategy — what is the first step?',a:'Step 1: Select the LONGEST carbon chain. Step 2: Number from end nearest the principal functional group. Step 3: Name substituents alphabetically.',hint:'Lowest locant rule always applies'},
+    // ── ARENES FLASHCARDS (Pages 48–60) ──
+    {topic:'Arenes',q:'What does "aromatic" mean and where does the word come from?',a:'Greek "aroma" = sweet smell. Early chemists found sweet-smelling compounds had different properties from aliphatic ones. Benzene is the prime aromatic compound.',hint:'Benzene derivatives and (4n+2) π electron cyclic compounds'},
+    {topic:'Arenes',q:'Benzene C–C bond length = 0.139 nm. Why is it unique?',a:'It is between single bond (0.154 nm) and double bond (0.134 nm). Due to resonance — 6 delocalised π electrons spread equally over all 6 C–C bonds.',hint:'sp² hybridised, flat hexagonal ring'},
+    {topic:'Arenes',q:'How many π electrons does benzene have and what is n in Hückel rule?',a:'Benzene has 6 π electrons. In (4n+2): n=1, so (4×1)+2=6 ✅. This satisfies Hückel aromaticity rule.',hint:'3 double bonds × 2e each = 6 π electrons'},
+    {topic:'Arenes',q:'3 Hückel rules for aromaticity?',a:'1. Flat (coplanar) cyclic structure (5 or 6 membered)\n2. Every ring atom has p-orbital, must have (4n+2) π electrons\n3. In 5-membered heterocycles, lone pair of N/O/S counts toward π electrons',hint:'Eric Hückel proposed this in 1931'},
+    {topic:'Arenes',q:'Why does benzene NOT decolourise Br₂/CCl₄ or KMnO₄?',a:'Benzene\'s delocalised π electrons are too stable (resonance energy) to be attacked by ordinary reagents. Benzene undergoes substitution, not addition like alkenes.',hint:'Benzene unsaturation ≠ alkene/alkyne unsaturation'},
+    {topic:'Arenes',q:'4 electrophilic substitution reactions of benzene?',a:'1. Halogenation (AlCl₃, no light) → chlorobenzene\n2. Nitration (conc. HNO₃ + conc. H₂SO₄, 60°C) → nitrobenzene\n3. Sulphonation (fuming H₂SO₄, 100°C) → benzene sulphonic acid\n4. Friedel-Craft (anhydrous AlCl₃) → toluene/acetophenone',hint:'All are electrophilic substitution — electrophile attacks π cloud'},
+    {topic:'Arenes',q:'Friedel-Craft alkylation vs acylation?',a:'Alkylation: C₆H₆ + CH₃Cl + AlCl₃ → toluene + HCl (electrophile = ⁺CH₃)\nAcylation: C₆H₆ + CH₃COCl + AlCl₃ → acetophenone + HCl (electrophile = CH₃C⁺=O)',hint:'Why DRY AlCl₃? Moisture destroys it: AlCl₃+3H₂O→Al(OH)₃+3HCl'},
+    {topic:'Arenes',q:'5 methods to prepare benzene?',a:'1. Sodium benzoate + sodalime (decarboxylation)\n2. Phenol + Zn (reduction)\n3. 3 HC≡CH, Fe, 450°C (trimerisation — benzene is polymer of ethyne!)\n4. Grignard reagent + H₂O\n5. Benzene diazonium chloride + H₃PO₂ (Cu⁺)',hint:'Method 3 is most important: 3HC≡CH→C₆H₆'},
+    {topic:'Arenes',q:'Wurtz-Fitting reaction for toluene?',a:'C₆H₅Cl + 2Na + CH₃Cl → dry ether, Δ → C₆H₅CH₃ (toluene) + 2NaCl\nAryl halide + alkyl halide + Na metal in dry ether → alkyl arene',hint:'Extends Wurtz reaction to aryl halides'},
+    {topic:'Arenes',q:'Coal tar distillates — 5 fractions with temperature?',a:'1. Light oil (≤170°C, 5%) — benzene, toluene\n2. Middle oil (171–230°C, 7.5%) — phenol, naphthalene\n3. Heavy oil (231–270°C, 10%) — cresols, naphthalene\n4. Anthracene oil (271–400°C, 20%) — anthracene\n5. Pitch (residue, 57.5%) — coke carbons',hint:'Destructive distillation at 900–1100°C, no air'},
+    {topic:'Arenes',q:'How is chemically pure benzene obtained from light oil?',a:'1. Remove basic compounds (conc. H₂SO₄)\n2. Remove acidic phenols (10% NaOH)\n3. Distil 70–110°C → 90% benzol\n4. Distil 80–82°C → 99% pure benzene\n5. Cool at 5.4°C + cold conc. H₂SO₄ (removes thiophene) → distil 80.4°C → pure benzene',hint:'90% benzol = 84% benzene + 13% toluene + 3% xylene'},
+    {topic:'Isomers',q:'C₃H₈O isomers (alcohol/ether types)?',a:'3 isomers: propan-1-ol (CH₃CH₂CH₂OH), propan-2-ol (CH₃CHOHCH₃), methoxy ethane (CH₃OCH₂CH₃)',hint:'CₙH₂ₙ₊₂O formula = alcohol or ether'},
+    {topic:'Isomers',q:'C₃H₆O isomers (aldehyde/ketone/alkenol)?',a:'3 isomers: propanal CH₃CH₂CHO (bp 48.8°C), propanone CH₃COCH₃ (bp 56°C), allyl alcohol CH₂=CHCH₂OH (bp 97°C)',hint:'CₙH₂ₙO formula = aldehyde, ketone, or alken-ol'},
   ];
 
   panels['fc'] = `
@@ -2256,76 +2270,213 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   //  💎  ARENES PANEL
   // ══════════════════════════════════════════════
   panels['ar'] = `
-<div class="ph" style="border-color:#7e22ce;color:#7e22ce"><div class="phi">💎</div><div><div class="pht">Arenes — Aromatic Compounds</div><div class="phb"><span class="badge">Benzene ring</span><span class="badge">ortho/meta/para</span><span class="badge">Coal tar source</span><span class="badge">Aromaticity rules</span></div><div class="phd">Complete aromatic chemistry from EV Chemistry Chapter 2 — benzene, arenes, substituent positions and identification.</div></div></div>
+<div class="ph" style="border-color:#7e22ce;color:#7e22ce"><div class="phi">💎</div><div><div class="pht">Arenes — Aromatic Compounds</div><div class="phb"><span class="badge">Benzene structure</span><span class="badge">4 substitution reactions</span><span class="badge">Hückel rules</span><span class="badge">5 prep methods</span></div><div class="phd">Complete aromatic chemistry from EV Chemistry Ch.2 — benzene structure, reactions, Friedel-Craft, aromaticity.</div></div></div>
 <div class="nt-wrap">
-  <div class="note-card"><div class="note-card-head" style="border-color:#a78bfa"><span class="note-card-icon">💎</span><span class="note-card-title" style="color:#a78bfa">What are Arenes?</span></div>
-  <div class="note-card-body">
-    <strong>Aromatic hydrocarbons</strong> are also called <strong>arenes</strong>. They have one or more <strong>six-membered benzenoid rings</strong> with delocalised π electrons.<br><br>
-    <strong>Aromaticity rule (Hückel's rule):</strong> A compound is aromatic if it has <strong>(4n+2) π electrons</strong> where n = 0,1,2,3...<br>
-    Benzene has 6 π electrons (n=1): <strong>4(1)+2 = 6</strong> ✅<br><br>
-    <table class="note-table">
-      <tr><th>Compound</th><th>Formula</th><th>π electrons</th><th>Aromatic?</th></tr>
-      <tr><td>Benzene</td><td>C₆H₆</td><td>6</td><td>✅ Yes</td></tr>
-      <tr><td>Naphthalene</td><td>C₁₀H₈</td><td>10</td><td>✅ Yes</td></tr>
-      <tr><td>Anthracene</td><td>C₁₄H₁₀</td><td>14</td><td>✅ Yes</td></tr>
-      <tr><td>Cyclobutadiene</td><td>C₄H₄</td><td>4</td><td>❌ Anti-aromatic</td></tr>
-    </table>
-  </div></div>
+  <div class="nt-tabs">
+    <button class="nt-tab on" style="color:#a78bfa" onclick="ntTab(this,'ar-def')">💎 Definition</button>
+    <button class="nt-tab" style="color:#c084fc" onclick="ntTab(this,'ar-struct')">⬡ Structure</button>
+    <button class="nt-tab" style="color:#818cf8" onclick="ntTab(this,'ar-prep')">⚗️ Preparation</button>
+    <button class="nt-tab" style="color:#60a5fa" onclick="ntTab(this,'ar-react')">🔬 Reactions</button>
+    <button class="nt-tab" style="color:#fbbf24" onclick="ntTab(this,'ar-huckel')">📐 Hückel Rules</button>
+    <button class="nt-tab" style="color:#fb923c" onclick="ntTab(this,'ar-coaltab')">⛽ Coal Tar</button>
+  </div>
 
-  <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">⬡</span><span class="note-card-title" style="color:#c084fc">Benzene Homologues</span></div>
-  <div class="note-card-body">
-    When one or more H atoms of benzene are replaced by alkyl groups, the resulting compounds are called <strong>benzene homologues</strong>.<br><br>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.7rem;margin:.5rem 0">
+  <!-- DEFINITION -->
+  <div id="ar-def" class="nt-pane on">
+    <div class="note-card"><div class="note-card-head" style="border-color:#a78bfa"><span class="note-card-icon">💎</span><span class="note-card-title" style="color:#a78bfa">What are Aromatic Compounds?</span></div>
+    <div class="note-card-body">
+      The word <strong>'aromatic'</strong> comes from the Greek word <em>'aroma'</em> meaning <strong>sweet smell</strong>. Early chemists found that sweet-smelling compounds had different properties from aliphatic ones — they were called aromatic.<br><br>
+      <strong>Definition:</strong> Benzene, benzene derivatives and benzene-like unsaturated cyclic organic compounds which contain <strong>Hückel rule based (4n+2) resonating π-electrons</strong> are called aromatic compounds.<br><br>
+      <strong>Benzene is the prime compound</strong> of the aromatic class. Aromatic hydrocarbons are also called <strong>arenes</strong>.<br><br>
+      <table class="note-table">
+        <tr><th>Compound</th><th>Formula</th><th>π electrons</th><th>n value</th><th>Aromatic?</th></tr>
+        <tr><td>Benzene</td><td>C₆H₆</td><td>6</td><td>n=1</td><td>✅ Yes</td></tr>
+        <tr><td>Naphthalene</td><td>C₁₀H₈</td><td>10</td><td>n=2</td><td>✅ Yes</td></tr>
+        <tr><td>Anthracene</td><td>C₁₄H₁₀</td><td>14</td><td>n=3</td><td>✅ Yes</td></tr>
+        <tr><td>Cyclobutadiene</td><td>C₄H₄</td><td>4</td><td>—</td><td>❌ Anti-aromatic</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#60a5fa"><span class="note-card-icon">📍</span><span class="note-card-title" style="color:#60a5fa">ortho / meta / para Positions</span></div>
+    <div class="note-card-body">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;text-align:center;margin:.5rem 0">
+        <div style="background:rgba(239,68,68,.08);border:2px solid #ef4444;border-radius:12px;padding:.8rem"><div style="font-family:'Fredoka One',cursive;color:#ef4444">ortho (o)</div><div style="font-size:.72rem;color:#94a3b8;margin-top:.3rem">Position <strong>2 or 6</strong><br><em>"nearer"</em></div></div>
+        <div style="background:rgba(234,179,8,.08);border:2px solid #eab308;border-radius:12px;padding:.8rem"><div style="font-family:'Fredoka One',cursive;color:#eab308">meta (m)</div><div style="font-size:.72rem;color:#94a3b8;margin-top:.3rem">Position <strong>3 or 5</strong><br><em>"alternate"</em></div></div>
+        <div style="background:rgba(34,197,94,.08);border:2px solid #22c55e;border-radius:12px;padding:.8rem"><div style="font-family:'Fredoka One',cursive;color:#22c55e">para (p)</div><div style="font-size:.72rem;color:#94a3b8;margin-top:.3rem">Position <strong>4</strong><br><em>"far away"</em></div></div>
+      </div>
+      Disubstituted benzene has <strong>3 positional isomers</strong>: ortho, meta and para.<br>
+      Example — Xylene (dimethylbenzene): ortho-xylene (bp 142°C), meta-xylene (bp 139°C), para-xylene (bp 137°C)
+    </div></div>
+  </div>
+
+  <!-- STRUCTURE -->
+  <div id="ar-struct" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">⬡</span><span class="note-card-title" style="color:#c084fc">Molecular Orbital Structure of Benzene (Section 2.8.3)</span></div>
+    <div class="note-card-body">
+      <strong>Key structural facts from X-ray diffraction:</strong><br><br>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:.5rem 0">
+        <div style="background:rgba(192,132,252,.07);border:1.5px solid rgba(192,132,252,.25);border-radius:10px;padding:.75rem">
+          <div style="font-family:'Fredoka One',cursive;color:#c084fc;font-size:.9rem;margin-bottom:.3rem">Hybridisation</div>
+          <div style="font-size:.82rem;color:#94a3b8">All 6 C atoms are <strong>sp² hybridised</strong></div>
+        </div>
+        <div style="background:rgba(192,132,252,.07);border:1.5px solid rgba(192,132,252,.25);border-radius:10px;padding:.75rem">
+          <div style="font-family:'Fredoka One',cursive;color:#c084fc;font-size:.9rem;margin-bottom:.3rem">Shape</div>
+          <div style="font-size:.82rem;color:#94a3b8"><strong>Flat, hexagonal, symmetrical</strong> planar molecule</div>
+        </div>
+      </div>
+      <strong>Bond length in benzene = 0.139 nm</strong> — in between:<br>
+      <div style="display:flex;justify-content:space-around;flex-wrap:wrap;gap:.5rem;margin:.6rem 0">
+        <div style="text-align:center;background:rgba(74,222,128,.07);border:1.5px solid #4ade80;border-radius:10px;padding:.6rem 1rem"><div style="font-family:'JetBrains Mono',monospace;color:#4ade80">C–C</div><div style="font-size:.7rem;color:#6b7280">0.154 nm</div></div>
+        <div style="align-self:center;font-size:1.2rem;color:#374151">&lt;</div>
+        <div style="text-align:center;background:rgba(192,132,252,.1);border:2px solid #c084fc;border-radius:10px;padding:.6rem 1rem"><div style="font-family:'JetBrains Mono',monospace;color:#c084fc">benzene C–C</div><div style="font-size:.7rem;color:#fbbf24">0.139 nm ← unique!</div></div>
+        <div style="align-self:center;font-size:1.2rem;color:#374151">&lt;</div>
+        <div style="text-align:center;background:rgba(244,114,182,.07);border:1.5px solid #f472b6;border-radius:10px;padding:.6rem 1rem"><div style="font-family:'JetBrains Mono',monospace;color:#f472b6">C=C</div><div style="font-size:.7rem;color:#6b7280">0.134 nm</div></div>
+      </div>
+      <strong>Why this unique bond length?</strong> Each C atom has one unhybridised <strong>2p_z orbital</strong> perpendicular to the ring. Six 2p_z orbitals overlap sideways to form a <strong>symmetrical molecular π-orbital — delocalised cloud of 6 π-electrons</strong> above and below the ring.<br><br>
+      <strong>Resonance (Kekulé, 1865):</strong> C–C and C=C bonds constantly interchange positions → benzene is a <strong>resonance hybrid</strong> of structures with 6 resonating π electrons. This gives benzene extra stability.
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">⚠️</span><span class="note-card-title" style="color:#fbbf24">Benzene Unsaturation ≠ Alkene/Alkyne Unsaturation</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>Property</th><th>Alkene/Alkyne</th><th>Benzene</th></tr>
+        <tr><td>Bromine test (Br₂/CCl₄)</td><td>✅ Decolourises</td><td>❌ No reaction</td></tr>
+        <tr><td>Bayer's KMnO₄ test</td><td>✅ Decolourises</td><td>❌ No reaction</td></tr>
+        <tr><td>Addition of HX, HOX</td><td>✅ Yes</td><td>❌ No</td></tr>
+        <tr><td>Main reaction type</td><td>Addition</td><td><strong>Electrophilic substitution</strong></td></tr>
+      </table>
+      <div style="margin-top:.6rem;font-size:.82rem;color:#94a3b8">💡 Benzene is stable because delocalised π electrons resist addition. Strong oxidising agent (acidic K₂Cr₂O₇ on heating) breaks benzene structure.</div>
+    </div></div>
+  </div>
+
+  <!-- PREPARATION -->
+  <div id="ar-prep" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#818cf8"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#818cf8">5 Methods to Prepare Benzene (Section 2.8.2)</span></div>
+    <div class="note-card-body">
       ${[
-        {name:'Benzene',formula:'C₆H₆',sub:'No substituent'},
-        {name:'Toluene',formula:'C₆H₅CH₃',sub:'1 methyl group'},
-        {name:'Ethylbenzene',formula:'C₆H₅C₂H₅',sub:'1 ethyl group'},
-        {name:'ortho-Xylene',formula:'C₆H₄(CH₃)₂',sub:'2 methyl at o-position'},
-        {name:'meta-Xylene',formula:'C₆H₄(CH₃)₂',sub:'2 methyl at m-position'},
-        {name:'para-Xylene',formula:'C₆H₄(CH₃)₂',sub:'2 methyl at p-position'}
-      ].map(c=>`<div style="background:rgba(192,132,252,.07);border:1.5px solid rgba(192,132,252,.2);border-radius:10px;padding:.65rem;text-align:center"><div style="font-family:'Fredoka One',cursive;color:#c084fc;font-size:.9rem">${c.name}</div><div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#fde68a;margin:.2rem 0">${c.formula}</div><div style="font-size:.65rem;color:#6b7280">${c.sub}</div></div>`).join('')}
-    </div>
-  </div></div>
+        {n:'1',col:'#ff7043',title:'From Sodium Benzoate + Sodalime (Decarboxylation)',eq:'C₆H₅COONa + NaOH (CaO) → Δ → C₆H₆ + Na₂CO₃',note:'Sodium benzoate (salt of benzoic acid) + sodalime on heating → benzene vapour (bp 80.4°C)'},
+        {n:'2',col:'#34d399',title:'From Phenol + Zinc Powder',eq:'C₆H₅OH + Zn → Δ → C₆H₆ + ZnO',note:'Phenol is reduced by zinc powder on heating → benzene vapour → cool → liquid benzene'},
+        {n:'3',col:'#c084fc',title:'From Ethyne — Trimerisation (Benzene is polymer of ethyne!)',eq:'3 HC≡CH → Fe, 450°C → C₆H₆',note:'When ethyne gas is passed through an iron tube at 450°C, 3 molecules polymerise to form one molecule of benzene'},
+        {n:'4',col:'#60a5fa',title:'From Grignard Reagent',eq:'C₆H₅MgCl + H–OH → C₆H₆ + Mg(OH)Cl',note:'Phenyl magnesium chloride (Grignard reagent) hydrolyses with water to form benzene'},
+        {n:'5',col:'#fbbf24',title:'From Benzene Diazonium Chloride',eq:'C₆H₅N₂Cl + H₃PO₂ + H₂O → Cu⁺ → C₆H₆ + H₃PO₃ + N₂ + HCl',note:'Diazonium chloride reduced with phosphinic acid (H₃PO₂) in presence of cuprous ion catalyst'}
+      ].map(m=>`<div style="background:rgba(0,0,0,.18);border-left:4px solid ${m.col};border-radius:0 10px 10px 0;padding:.75rem 1rem;margin-bottom:.7rem">
+        <div style="font-family:'Fredoka One',cursive;font-size:.9rem;color:${m.col};margin-bottom:.3rem">${m.n}. ${m.title}</div>
+        <div class="note-formula" style="margin:.3rem 0">${m.eq}</div>
+        <div style="font-size:.78rem;color:#6b7280">${m.note}</div>
+      </div>`).join('')}
+    </div></div>
 
-  <div class="note-card"><div class="note-card-head" style="border-color:#818cf8"><span class="note-card-icon">📍</span><span class="note-card-title" style="color:#818cf8">ortho / meta / para Positions</span></div>
-  <div class="note-card-body">
-    When a second substituent is added to a monosubstituted benzene, it can go to positions <strong>ortho, meta or para</strong>:<br><br>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin:.5rem 0;text-align:center">
-      <div style="background:rgba(239,68,68,.08);border:2px solid #ef4444;border-radius:12px;padding:.8rem"><div style="font-family:'Fredoka One',cursive;color:#ef4444;font-size:1rem">ortho (o)</div><div style="font-size:.75rem;color:#94a3b8;margin-top:.3rem">Position <strong>2 or 6</strong><br>Means <em>"nearer"</em></div></div>
-      <div style="background:rgba(234,179,8,.08);border:2px solid #eab308;border-radius:12px;padding:.8rem"><div style="font-family:'Fredoka One',cursive;color:#eab308;font-size:1rem">meta (m)</div><div style="font-size:.75rem;color:#94a3b8;margin-top:.3rem">Position <strong>3 or 5</strong><br>Means <em>"alternate"</em></div></div>
-      <div style="background:rgba(34,197,94,.08);border:2px solid #22c55e;border-radius:12px;padding:.8rem"><div style="font-family:'Fredoka One',cursive;color:#22c55e;font-size:1rem">para (p)</div><div style="font-size:.75rem;color:#94a3b8;margin-top:.3rem">Position <strong>4</strong><br>Means <em>"far away"</em></div></div>
-    </div>
-    <strong>Result:</strong> Disubstituted benzene has <strong>3 isomers</strong>: ortho, meta and para compound.<br><br>
-    <strong>Example:</strong> Dichlorobenzene: 1,2-dichlorobenzene (ortho), 1,3-dichlorobenzene (meta), 1,4-dichlorobenzene (para)
-  </div></div>
+    <div class="note-card"><div class="note-card-head" style="border-color:#fb923c"><span class="note-card-icon">🔶</span><span class="note-card-title" style="color:#fb923c">Toluene Preparation (2 Methods)</span></div>
+    <div class="note-card-body">
+      <strong>1. Wurtz-Fitting Reaction:</strong><br>
+      <div class="note-formula">C₆H₅Cl + 2Na + CH₃Cl → dry ether, Δ → C₆H₅CH₃ (toluene) + 2NaCl</div>
+      Aryl halide + alkyl halide + Na metal in dry ether → alkyl arene. Can prepare any alkyl benzene this way.<br><br>
+      <strong>2. Friedel-Craft Alkylation:</strong><br>
+      <div class="note-formula">C₆H₆ + CH₃Cl → dry AlCl₃ → C₆H₅CH₃ (toluene) + HCl</div>
+    </div></div>
+  </div>
 
-  <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">⛽</span><span class="note-card-title" style="color:#fbbf24">Source of Aromatic Compounds</span></div>
-  <div class="note-card-body">
-    <strong>Main sources:</strong> Coal tar and Petroleum<br><br>
-    <strong>Coal tar production:</strong> Destructive distillation of bituminous coal (10–12% moisture) in absence of air in a steel retort at <strong>900–1100°C</strong> → volatile organic products distil out as <strong>liquid coal-tar</strong><br><br>
-    <strong>Types of compounds in coal-tar:</strong> Acidic · Basic · Neutral<br><br>
-    <strong>Fractional distillation of coal-tar up to 400°C gives:</strong><br>
-    <table class="note-table">
-      <tr><th>Fraction</th><th>Temperature</th><th>Main compounds</th></tr>
-      <tr><td>Light oil</td><td>&lt;170°C</td><td>Benzene, toluene, xylene</td></tr>
-      <tr><td>Middle oil</td><td>170–230°C</td><td>Naphthalene, phenol, pyridine</td></tr>
-      <tr><td>Heavy oil</td><td>230–270°C</td><td>Naphthalene, cresols</td></tr>
-      <tr><td>Anthracene oil</td><td>270–360°C</td><td>Anthracene, carbazole</td></tr>
-      <tr><td>Pitch (residue)</td><td>&gt;360°C</td><td>Solid carbon residue</td></tr>
-    </table>
-  </div></div>
+  <!-- REACTIONS -->
+  <div id="ar-react" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#60a5fa"><span class="note-card-icon">A</span><span class="note-card-title" style="color:#60a5fa">A. Electrophilic Addition Reactions</span></div>
+    <div class="note-card-body">
+      <strong>1. Addition of H₂ (Hydrogenation):</strong>
+      <div class="note-formula">C₆H₆ + 3H₂ → Ni, 200°C → C₆H₁₂ (cyclohexane)</div>
+      Free-radical type. One mole benzene adds 3 moles H₂ (three C=C bonds).<br><br>
+      <strong>2. Addition of Cl₂ (Halogenation — UV/sunlight):</strong>
+      <div class="note-formula">C₆H₆ + 3Cl₂ → UV/sunlight → C₆H₆Cl₆ (benzene hexachloride / gammexane)</div>
+      Free-radical type. Used as insecticide (BHC/gammexane).<br><br>
+      <strong>3. Addition of O₃ (Ozonolysis):</strong>
+      <div class="note-formula">C₆H₆ + 3O₃ → CCl₄ → benzene triozonide → H₂O/Zn, Δ → 3 glyoxal + 3ZnO</div>
+      Proves benzene has 3 double bonds (takes 3 moles of O₃).
+    </div></div>
 
-  <div class="note-card"><div class="note-card-head" style="border-color:#4ade80"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:#4ade80">Identification Tests for Unsaturation (from PDF)</span></div>
-  <div class="note-card-body">
-    <strong>1. Bromine Solution Test:</strong><br>
-    Br₂ dissolved in CCl₄ → red/brown 5% Br₂ solution<br>
-    <div class="note-formula">CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br (colourless 1,2-dibromoethane)</div>
-    <strong>Result:</strong> Red-brown colour disappears → compound is <strong>unsaturated</strong> (alkene or alkyne)<br><br>
-    <strong>2. Bayer's KMnO₄ Test:</strong><br>
-    Pink KMnO₄ + KOH solution → turns <strong>colourless</strong> with alkene/alkyne<br>
-    Alkene is oxidised to glycol; alkyne to carboxylic acid<br><br>
-    <strong>⚠️ Alkanes give NO reaction</strong> with either test — confirms alkane is saturated!
-  </div></div>
+    <div class="note-card"><div class="note-card-head" style="border-color:#f472b6"><span class="note-card-icon">B</span><span class="note-card-title" style="color:#f472b6">B. Electrophilic Substitution Reactions</span></div>
+    <div class="note-card-body">
+      ${[
+        {n:'1',col:'#ef4444',title:'Halogenation (AlCl₃/FeCl₃/FeBr₃ — no light!)',eq:'C₆H₆ + Cl₂ → anhydrous AlCl₃ → C₆H₅Cl (chlorobenzene) + HCl',mech:'AlCl₃ + Cl₂ → AlCl₄⁻ (nucleophile) + Cl⁺ (electrophile) → σ-complex → chlorobenzene + HCl + AlCl₃ (regenerated)',note:'⚠️ Halogen carrier (AlCl₃) needed. Without it (in sunlight) addition occurs instead giving C₆H₆Cl₆'},
+        {n:'2',col:'#f59e0b',title:'Nitration (conc. HNO₃ + conc. H₂SO₄, 60°C)',eq:'C₆H₆ + HO–NO₂ → conc. H₂SO₄, 60°C → C₆H₅NO₂ (nitrobenzene) + H₂O',mech:'H₂SO₄ donates H⁺ to HNO₃ → NO₂⁺ (nitronium ion, electrophile) → attacks π electrons → σ-complex → nitrobenzene',note:'NO₂⁺ is the electrophile. Used to make explosives like TNT.'},
+        {n:'3',col:'#06b6d4',title:'Sulphonation (fuming H₂SO₄ or H₂SO₄+SO₃, 100°C)',eq:'C₆H₆ + HO–SO₃H → SO₃, Δ → C₆H₅SO₃H (benzene sulphonic acid) + H₂O',mech:'SO₃ acts as electrophile → attacks π electrons → σ-complex → bisulphate ion (HSO₄⁻) removes H⁺ → benzene sulphonic acid',note:'Water formed is absorbed by SO₃ → forms H₂SO₄ → favours forward reaction.'},
+        {n:'4',col:'#a78bfa',title:'Friedel-Craft\'s Reaction (anhydrous AlCl₃)',eq:'Alkylation: C₆H₆ + CH₃Cl → dry AlCl₃ → C₆H₅CH₃ (toluene) + HCl\nAcylation: C₆H₆ + CH₃COCl → dry AlCl₃ → C₆H₅COCH₃ (acetophenone) + HCl',mech:'Alkylation: CH₃Cl + AlCl₃ → ⁺CH₃ (electrophile) + AlCl₄⁻ → toluene\nAcylation: CH₃COCl + AlCl₃ → CH₃C⁺=O (acetyl carbonium) → acetophenone',note:'⚠️ WHY DRY AlCl₃? If water present: AlCl₃ + 3H₂O → Al(OH)₃ + 3HCl → AlCl₃ destroyed → cannot form electrophile!'}
+      ].map(r=>`<div style="background:rgba(0,0,0,.18);border-left:4px solid ${r.col};border-radius:0 10px 10px 0;padding:.8rem 1rem;margin-bottom:.8rem">
+        <div style="font-family:'Fredoka One',cursive;font-size:.9rem;color:${r.col};margin-bottom:.35rem">${r.n}. ${r.title}</div>
+        <div class="note-formula" style="margin:.3rem 0;white-space:pre-line">${r.eq}</div>
+        <div style="font-size:.78rem;color:#7dd3fc;margin:.25rem 0;white-space:pre-line">⚙️ Mechanism: ${r.mech}</div>
+        <div style="font-size:.76rem;color:#6b7280">${r.note}</div>
+      </div>`).join('')}
+    </div></div>
+  </div>
+
+  <!-- HÜCKEL -->
+  <div id="ar-huckel" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">📐</span><span class="note-card-title" style="color:#fbbf24">Hückel Rules for Aromaticity (Section 2.8.5)</span></div>
+    <div class="note-card-body">
+      <strong>Eric Hückel (1931)</strong> extended aromaticity to cyclic ions and heterocyclic compounds.<br>
+      The concept: <strong>cyclic compounds with (4n+2) delocalised π-electrons have special stability = aromaticity</strong><br><br>
+      <div style="display:flex;flex-direction:column;gap:.6rem">
+        ${[
+          {n:'Rule 1',col:'#ff7043',text:'Structure must be <strong>flat (coplanar) cyclic</strong> with 5 or 6 atoms in the ring. Bonding orbitals in the conjugated ring system must be completely filled.'},
+          {n:'Rule 2',col:'#fbbf24',text:'Every ring atom must have a <strong>p-orbital</strong>. The p-orbitals must overlap sideways. Must contain <strong>(4n+2) π-electrons</strong> where n = 0, 1, 2, 3...'},
+          {n:'Rule 3',col:'#a78bfa',text:'In 5-membered heterocyclic compounds (furan, pyrrole, thiophene), the <strong>lone pair of the heteroatom (N, O, S)</strong> participates in the π-electron count to satisfy (4n+2).'}
+        ].map(r=>`<div style="background:rgba(0,0,0,.18);border-left:4px solid ${r.col};border-radius:0 10px 10px 0;padding:.65rem 1rem">
+          <span style="font-family:'Fredoka One',cursive;color:${r.col}">${r.n}:</span> <span style="font-size:.87rem;color:#94a3b8">${r.text}</span>
+        </div>`).join('')}
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">🔢</span><span class="note-card-title" style="color:#34d399">(4n+2) π-electrons — Values of n</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>n value</th><th>(4n+2) π-electrons</th><th>Aromatic compounds</th></tr>
+        <tr><td style="color:#fde68a">n = 0</td><td>2</td><td>Cyclopropenyl cation (3-membered ring)</td></tr>
+        <tr><td style="color:#4ade80">n = 1 ⭐</td><td><strong>6</strong></td><td><strong>Benzene, furan, thiophene, pyridine</strong></td></tr>
+        <tr><td style="color:#60a5fa">n = 2</td><td>10</td><td>Naphthalene (2 rings)</td></tr>
+        <tr><td style="color:#c084fc">n = 3</td><td>14</td><td>Anthracene (3 rings)</td></tr>
+      </table>
+      <div style="margin-top:.5rem;font-size:.78rem;color:#6b7280">⭐ n=1 (6 π electrons) is the most important — covers benzene and all common 5/6-membered heteroaromatics</div>
+    </div></div>
+  </div>
+
+  <!-- COAL TAR -->
+  <div id="ar-coaltab" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#fb923c"><span class="note-card-icon">⛽</span><span class="note-card-title" style="color:#fb923c">Coal Tar Distillates — Table 2.9</span></div>
+    <div class="note-card-body">
+      <strong>Source:</strong> Destructive distillation of bituminous coal (10–12% moisture) in absence of air at <strong>900–1100°C</strong> → volatile products → coal-tar<br><br>
+      <table class="note-table">
+        <tr><th>#</th><th>Distillate</th><th>Temp. Range</th><th>% by vol</th><th>Main Compounds</th></tr>
+        <tr><td>1</td><td style="color:#fde68a">Light oil (sp.gr. 0.97)</td><td>up to 170°C</td><td>5%</td><td>Benzene, toluene, xylene, phenol, pyridine, thiophene</td></tr>
+        <tr><td>2</td><td style="color:#6ee7b7">Middle oil (sp.gr. 1.005)</td><td>171–230°C</td><td>7.5%</td><td>Phenol, cresols, naphthalene</td></tr>
+        <tr><td>3</td><td style="color:#60a5fa">Heavy oil/Creosote (sp.gr. 1.03)</td><td>231–270°C</td><td>10%</td><td>Cresols, naphthalene, quinoline</td></tr>
+        <tr><td>4</td><td style="color:#c084fc">Anthracene/green oil (sp.gr. 1.09)</td><td>271–400°C</td><td>20%</td><td>Anthracene, phenanthrene</td></tr>
+        <tr><td>5</td><td style="color:#94a3b8">Pitch (residue)</td><td>residue</td><td>57.5%</td><td>Mainly coke carbons</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fde68a"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:#fde68a">Purification of Benzene from Light Oil</span></div>
+    <div class="note-card-body">
+      Light oil contains: (a) neutral benzene/toluene/xylene (b) basic aniline/pyridine (c) acidic phenols<br><br>
+      <strong>Step 1 — Remove basic compounds:</strong>
+      <div class="note-formula">2C₆H₅NH₂ + H₂SO₄ → (C₆H₅NH₃)₂SO₄ (washed out)</div>
+      <strong>Step 2 — Remove acidic phenols:</strong>
+      <div class="note-formula">C₆H₅OH + NaOH → C₆H₅ONa (sodium phenate) + H₂O (washed out)</div>
+      <strong>Step 3 — Fractional distillation:</strong><br>
+      70–110°C → <strong>90% benzol</strong> (84% benzene + 13% toluene + 3% xylene)<br>
+      80–82°C → <strong>99% pure benzene</strong><br>
+      108–110°C → <strong>almost pure toluene</strong><br><br>
+      <strong>Step 4 — Further purification:</strong><br>
+      Cool at 5.4°C with freezing mixture → crystals → treat with cold conc. H₂SO₄ (removes thiophene) → distil at 80.4°C → <strong>chemically pure benzene</strong>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#4ade80"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:#4ade80">Identification Tests for Unsaturation</span></div>
+    <div class="note-card-body">
+      <strong>1. Bromine Solution Test (Br₂/CCl₄):</strong><br>
+      <div class="note-formula">CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br (colourless)</div>
+      Red-brown → colourless = unsaturated (alkene/alkyne). <strong>Benzene gives NO reaction.</strong><br><br>
+      <strong>2. Bayer's KMnO₄ Test:</strong><br>
+      Pink KMnO₄+KOH → colourless with alkene/alkyne. <strong>Benzene gives NO reaction.</strong><br><br>
+      ⚠️ <strong>Benzene's unsaturation is DIFFERENT</strong> from alkene/alkyne — it does not give these tests because delocalised π electrons are too stable to be attacked by ordinary reagents.
+    </div></div>
+  </div>
 </div>`;
 
 
@@ -3031,7 +3182,40 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {t:"Naming",q:"In IUPAC priority, aldehyde has priority number?",o:["1st","3rd","6th","8th"],a:2,e:"Aldehyde (–CHO) has priority 6 in the list: COOH(1) > SO₃H(2) > COX(3) > CONH₂(4) > CN(5) > CHO(6)."},
     {t:"Naming",q:"IUPAC suffix for ketone group >C=O is?",o:["–al","–ol","–one","–oic acid"],a:2,e:"Ketone suffix = –one. The oxo– prefix is used when ketone is not the principal functional group."},
     {t:"Naming",q:"Strategy for naming a compound in IUPAC system: what is done FIRST?",o:["Name all substituents","Select the LONGEST carbon chain","Count total H atoms","Identify double bonds only"],a:1,e:"Step 1: Select the longest carbon chain (parent chain). Step 2: Number from the end closest to the principal functional group. Step 3: Name substituents alphabetically as prefixes. Then apply IUPAC suffix."},
-    {t:"Naming",q:"Which compound is named 4,4-dimethyl pent-2-yne?",o:["5C chain, triple bond at C2, two methyls at C4","4C chain, single bonds only","5C chain, double bond at C2","3C chain with triple bond"],a:0,e:"4,4-dimethyl pent-2-yne: pent = 5C chain, -2-yne = triple bond between C2 and C3, 4,4-dimethyl = two –CH₃ groups at C4. Structure: CH₃–C≡C–C(CH₃)₂–CH₃."}
+    {t:"Naming",q:"Which compound is named 4,4-dimethyl pent-2-yne?",o:["5C chain, triple bond at C2, two methyls at C4","4C chain, single bonds only","5C chain, double bond at C2","3C chain with triple bond"],a:0,e:"4,4-dimethyl pent-2-yne: pent = 5C chain, -2-yne = triple bond between C2 and C3, 4,4-dimethyl = two –CH₃ groups at C4. Structure: CH₃–C≡C–C(CH₃)₂–CH₃."},
+
+    // ── FROM PAGES 48–60 ──
+    {t:"Arenes",q:"The word 'aromatic' comes from the Greek word meaning?",o:["Carbon","Sweet smell","Fire","Cyclic"],a:1,e:"The word 'aromatic' is derived from the Greek word 'aroma' meaning sweet smell. Early chemists found that sweet-smelling compounds had different properties from aliphatic compounds."},
+    {t:"Arenes",q:"Benzene is considered as which compound of the aromatic class?",o:["Last compound","Simplest compound","Prime compound","Most complex compound"],a:2,e:"Benzene (C₆H₆) is considered as the prime compound of the aromatic class. All other aromatic compounds are derived from or related to benzene."},
+    {t:"Arenes",q:"Aromatic hydrocarbons are also called?",o:["Alkanes","Arenes","Alkynes","Cycloalkanes"],a:1,e:"Aromatic hydrocarbons are also called arenes. They have one or more six-membered benzenoid rings with delocalised π electrons."},
+    {t:"Arenes",q:"C–C bond length in benzene is 0.139 nm. This is in between which two values?",o:["0.120 nm and 0.130 nm","0.154 nm (single) and 0.134 nm (double)","0.100 nm and 0.120 nm","0.200 nm and 0.300 nm"],a:1,e:"Benzene C–C bond length 0.139 nm is between single bond (C–C = 0.154 nm) and double bond (C=C = 0.134 nm). This unique length is due to resonance/delocalisation."},
+    {t:"Arenes",q:"All six carbon atoms in benzene are hybridised as?",o:["sp³","sp²","sp","sp³d"],a:1,e:"All six C atoms in benzene are sp² hybridised. Each C forms 2 sigma bonds with adjacent C atoms and 1 sigma bond with H. The remaining unhybridised 2p_z orbital forms the π system."},
+    {t:"Arenes",q:"In benzene, six 2p_z orbitals overlap to form?",o:["Six separate π bonds","A symmetrical delocalised molecular π-orbital","Six sigma bonds","A single double bond"],a:1,e:"Six 2p_z orbitals of benzene C atoms overlap sideways to form a symmetrical molecular π-orbital with delocalised electron cloud above and below the plane of the hexagonal ring."},
+    {t:"Arenes",q:"Kekule (1865) proposed that benzene structure is a?",o:["Fixed single bond structure","Resonance hybrid","Linear chain","Zigzag chain"],a:1,e:"Kekule proposed that C–C single and C=C double bonds in benzene are constantly changing positions. So benzene structure is a resonance hybrid of structures with 6 resonating π electrons."},
+    {t:"Arenes",q:"Benzene does NOT give bromine solution test because?",o:["It has no carbon","Its delocalised π electrons are too stable to be attacked","It is a gas","It has no hydrogen"],a:1,e:"Benzene's delocalised π electrons are too stable (extra resonance energy) to be attacked by ordinary reagents like Br₂ in CCl₄. Unlike alkenes/alkynes, benzene does NOT decolourise bromine solution."},
+    {t:"Arenes",q:"Benzene mainly undergoes which type of reactions?",o:["Addition only","Substitution only","Electrophilic substitution (mainly) and addition (some)","No reactions"],a:2,e:"Unlike alkenes (addition reactions), benzene mainly undergoes electrophilic substitution reactions — halogenation, nitration, sulphonation, Friedel-Craft. It also does some addition reactions (H₂, Cl₂, O₃)."},
+    {t:"Arenes",q:"Benzene + 3H₂ with Ni catalyst at 200°C gives?",o:["Toluene","Cyclohexane","Benzene hexachloride","Nitrobenzene"],a:1,e:"C₆H₆ + 3H₂ → Ni, 200°C → C₆H₁₂ (cyclohexane). This is a free-radical type addition reaction. Each mole benzene adds 3 moles H₂."},
+    {t:"Arenes",q:"Benzene + 3Cl₂ in direct sunlight gives?",o:["Chlorobenzene","Benzene hexachloride (gammexane) C₆H₆Cl₆","Toluene","Nitrobenzene"],a:1,e:"C₆H₆ + 3Cl₂ → UV/sunlight → C₆H₆Cl₆ (benzene hexachloride, also called gammexane or BHC). Free-radical type addition. Used as insecticide."},
+    {t:"Arenes",q:"Benzene + Cl₂ with anhydrous AlCl₃ (no light) gives?",o:["Benzene hexachloride","Chlorobenzene C₆H₅Cl","Cyclohexane","Benzene sulphonic acid"],a:1,e:"C₆H₆ + Cl₂ → anhydrous AlCl₃ → C₆H₅Cl (chlorobenzene) + HCl. This is electrophilic substitution (halogenation). AlCl₃ acts as halogen carrier/Lewis acid."},
+    {t:"Arenes",q:"In halogenation of benzene, AlCl₃ forms which electrophile from Cl₂?",o:["Cl⁻","Cl⁺ (chloronium ion)","AlCl₄⁻","HCl"],a:1,e:"AlCl₃ + Cl₂ → AlCl₄⁻ (nucleophile) + Cl⁺ (chloronium ion = electrophile). The Cl⁺ electrophile attacks benzene's π electrons → σ-complex → chlorobenzene + HCl + AlCl₃ (regenerated)."},
+    {t:"Arenes",q:"Nitration of benzene uses which reagents?",o:["Conc. HNO₃ only","Conc. HNO₃ + conc. H₂SO₄ at 60°C","Dilute HNO₃ + water","HNO₃ + NaOH"],a:1,e:"Benzene + conc. HNO₃ + conc. H₂SO₄ (equal volumes) at 60°C → C₆H₅NO₂ (nitrobenzene) + H₂O. H₂SO₄ generates the NO₂⁺ (nitronium ion) electrophile."},
+    {t:"Arenes",q:"In nitration, what is the electrophile that attacks benzene?",o:["HNO₃","NO₂⁻","NO₂⁺ (nitronium ion)","H₂SO₄"],a:2,e:"H₂SO₄ donates H⁺ to HNO₃ → forms NO₂⁺ (nitronium ion) which is the electrophile. NO₂⁺ attacks benzene π electrons → σ-complex → HSO₄⁻ removes H⁺ → nitrobenzene + H₂SO₄ regenerated."},
+    {t:"Arenes",q:"Sulphonation of benzene with fuming H₂SO₄ at 100°C gives?",o:["Chlorobenzene","Nitrobenzene","Benzene sulphonic acid C₆H₅SO₃H","Phenol"],a:2,e:"C₆H₆ + HO–SO₃H → SO₃, 100°C → C₆H₅SO₃H (benzene sulphonic acid) + H₂O. SO₃ acts as electrophile. Water formed is absorbed by SO₃ → H₂SO₄ (favours forward reaction)."},
+    {t:"Arenes",q:"Friedel-Craft's reaction definition: benzene + alkyl halide (RX) with anhydrous AlCl₃ gives?",o:["Phenol","Aromatic hydrocarbon by alkylation","Carboxylic acid","Alkene"],a:1,e:"In Friedel-Craft's alkylation: benzene + alkyl halide (RX) + anhydrous AlCl₃ → aromatic hydrocarbon + HCl. Example: C₆H₆ + CH₃Cl → AlCl₃ → C₆H₅CH₃ (toluene) + HCl."},
+    {t:"Arenes",q:"Friedel-Craft acylation: benzene + CH₃COCl with AlCl₃ gives?",o:["Toluene","Acetophenone (methyl phenyl ketone) C₆H₅COCH₃","Chlorobenzene","Benzaldehyde"],a:1,e:"C₆H₆ + CH₃COCl → dry AlCl₃ → C₆H₅COCH₃ (acetophenone/methyl phenyl ketone) + HCl. The acyl carbonium ion (CH₃C⁺=O) is the electrophile."},
+    {t:"Arenes",q:"Why is DRY AlCl₃ used in Friedel-Craft's reaction?",o:["Dry is cheaper","Moisture destroys AlCl₃: AlCl₃+3H₂O→Al(OH)₃+3HCl — can no longer form electrophile","Dry reacts faster","Water makes the reaction safer"],a:1,e:"If moisture is present: AlCl₃ + 3H₂O → Al(OH)₃ + 3HCl. Then AlCl₃ is destroyed and cannot act as Lewis acid to prepare the electrophile from the alkyl/acyl halide. So DRY AlCl₃ is essential."},
+    {t:"Arenes",q:"Benzene is a polymer of ethyne. 3 HC≡CH at 450°C with Fe catalyst gives?",o:["Cyclohexane","Naphthalene","Benzene C₆H₆","Anthracene"],a:2,e:"3 HC≡CH → Fe, 450°C → C₆H₆ (benzene). When ethyne gas is passed through an iron tube at 450°C, three molecules of ethyne polymerise to form one molecule of benzene. This is a trimerisation reaction."},
+    {t:"Arenes",q:"Benzene from sodium benzoate + sodalime reaction is called?",o:["Nitration","Halogenation","Decarboxylation","Sulphonation"],a:2,e:"C₆H₅COONa + NaOH(CaO) → Δ → C₆H₆ + Na₂CO₃. This reaction between sodium salt of carboxylic acid and sodalime to form hydrocarbon with elimination of CO₂ is called decarboxylation."},
+    {t:"Arenes",q:"Toluene from chlorobenzene + methyl chloride + 2Na in dry ether is called?",o:["Friedel-Craft reaction","Wurtz reaction","Wurtz-Fitting reaction","Grignard reaction"],a:2,e:"C₆H₅Cl + 2Na + CH₃Cl → dry ether, Δ → C₆H₅CH₃ + 2NaCl. This is Wurtz-Fitting reaction. ArX + 2Na + RX → Ar-R + 2NaX. Any alkyl arene can be prepared this way."},
+    {t:"Arenes",q:"In coal tar distillation, light oil (up to 170°C) contains mainly?",o:["Anthracene and phenanthrene","Phenol, cresols, naphthalene","Benzene, toluene, xylene, phenol, pyridine","Coke carbons"],a:2,e:"Light oil (sp.gr. 0.97, up to 170°C, 5% by volume) contains benzene, toluene, xylene, phenol, pyridine and thiophene. It is the most valuable fraction for obtaining pure benzene."},
+    {t:"Arenes",q:"90% benzol from light oil contains approximately?",o:["90% benzene","84% benzene + 13% toluene + 3% xylene","50% benzene + 50% toluene","100% benzene"],a:1,e:"90% benzol (obtained by fractional distillation at 70–110°C) contains 84% benzene + 13% toluene + 3% xylene. Further distillation at 80–82°C gives 99% pure benzene."},
+    {t:"Arenes",q:"To get chemically pure benzene, 99% benzene is cooled at 5.4°C to remove?",o:["Toluene","Xylene","Thiophene (using cold conc. H₂SO₄)","Naphthalene"],a:2,e:"99% benzene cooled at 5.4°C → crystals form still containing 0.5% thiophene. Treating with cold conc. H₂SO₄ removes thiophene. Finally distilled at 80.4°C → chemically pure benzene."},
+    {t:"Arenes",q:"Hückel's aromaticity rule was proposed by Eric Hückel in?",o:["1865","1901","1931","1955"],a:2,e:"Eric Hückel proposed his aromaticity rules in 1931. He extended the concept to cyclic ions and heterocyclic compounds, not just benzene. His key condition: (4n+2) delocalised π electrons."},
+    {t:"Arenes",q:"For aromaticity, Hückel rule requires the compound to have (4n+2) π electrons. For benzene n=1, so π electrons =?",o:["2","4","6","8"],a:2,e:"(4n+2) where n=1: (4×1)+2 = 6 π electrons. Benzene has exactly 6 π electrons (3 double bonds × 2 electrons each) — satisfies Hückel rule. ✅"},
+    {t:"Arenes",q:"In 5-membered heterocyclic compounds like furan, which contributes to (4n+2) π electron count?",o:["The C–H bonds","Lone pair of the heteroatom (O, N, S)","The sigma bonds","The molecular weight"],a:1,e:"In 5-membered heterocyclic aromatics (furan, pyrrole, thiophene), the lone pair of the heteroatom (O, N, or S) participates in the delocalised π electron count to satisfy the (4n+2) Hückel rule."},
+    {t:"Arenes",q:"Ozonolysis of benzene (+ 3O₃ in CCl₄, then H₂O/Zn) gives?",o:["3 glyoxal + 3ZnO","Cyclohexane","Nitrobenzene","Benzene sulphonic acid"],a:0,e:"C₆H₆ + 3O₃ → CCl₄ → benzene triozonide → H₂O/Zn, Δ → 3 glyoxal (OHC–CHO) + 3ZnO. This proves benzene has 3 double bonds (takes exactly 3 moles ozone)."},
+    {t:"Arenes",q:"C₃H₆O has how many isomers including aldehyde, ketone and alkenol?",o:["2","3","4","5"],a:1,e:"C₃H₆O has 3 functional group isomers: propanal CH₃CH₂CHO (bp 48.8°C), propanone CH₃COCH₃ (bp 56°C), and 2-propen-1-ol/allyl alcohol CH₂=CHCH₂OH (bp 97°C)."},
+    {t:"Arenes",q:"C₃H₈O has how many isomers (alcohol and ether types)?",o:["2","3","4","5"],a:1,e:"C₃H₈O (CₙH₂ₙ₊₂O) has 3 isomers: propan-1-ol (CH₃CH₂CH₂OH), propan-2-ol (CH₃CHOHCH₃), and methoxy ethane/methyl ethyl ether (CH₃OCH₂CH₃)."}
   ];
 
   let EQ2 = [], EA = {}, ET = null, ES = 0, EE = 0, ED = false;
