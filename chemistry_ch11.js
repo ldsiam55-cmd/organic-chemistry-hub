@@ -2446,13 +2446,153 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   //  7. INTERACTIVE FUNCTIONS (exposed globally)
   // ─────────────────────────────────────────────
 
-  // Panel show
-  window.chShow = function(id, btn) {
-    document.querySelectorAll('.panel').forEach(p => p.classList.remove('on'));
-    document.querySelectorAll('.btn').forEach(b => b.classList.remove('on'));
-    document.getElementById('panel-' + id).classList.add('on');
-    btn.classList.add('on');
+  // Hash → Panel ID map
+  const HASH_MAP = {
+    '':         'home',
+    'home':     'home',
+    'alkane':   'ka', 'alkene': 'ke', 'alkyne': 'ky',
+    'alcohol':  'al', 'aldehyde': 'ad', 'fatty-acid': 'ac',
+    'exchange': 'ex', 'synthesis': 'sy',
+    'mcq':      'mq', 'name-lookup': 'nm', 'formula-builder': 'fb',
+    'flashcards':'fc', 'mol-weight': 'mw', 'notes': 'nt',
+    'reaction-chart':'rc', 'topic-quiz': 'tq',
+    'theory':   'th', 'functional-groups': 'fg',
+    'isomerism':'is', 'arenes': 'ar',
+    'ai-tutor': 'ai', 'reaction-helper': 'rh'
   };
+
+  // Panel ID → hash slug
+  const ID_TO_HASH = {
+    home:'', ka:'alkane', ke:'alkene', ky:'alkyne',
+    al:'alcohol', ad:'aldehyde', ac:'fatty-acid',
+    ex:'exchange', sy:'synthesis',
+    mq:'mcq', nm:'name-lookup', fb:'formula-builder',
+    fc:'flashcards', mw:'mol-weight', nt:'notes',
+    rc:'reaction-chart', tq:'topic-quiz',
+    th:'theory', fg:'functional-groups',
+    is:'isomerism', ar:'arenes',
+    ai:'ai-tutor', rh:'reaction-helper'
+  };
+
+  // Panel ID → human-readable page title
+  const PAGE_TITLES = {
+    home:'Home',
+    ka:'🔥 Alkane', ke:'🌿 Alkene', ky:'⚡ Alkyne',
+    al:'🧪 Alcohol', ad:'✨ Aldehyde', ac:'🧬 Fatty Acid',
+    ex:'⇄ Exchange Pathways', sy:'🔬 Synthesis — How Made',
+    mq:'📝 MCQ Exam', nm:'🔍 Name Lookup', fb:'🧩 Formula Builder',
+    fc:'⏱️ Flashcards', mw:'🧮 Molecular Weight', nt:'📝 Chapter Notes',
+    rc:'📊 Reaction Chart', tq:'🎯 Topic Quiz',
+    th:'📖 Theory', fg:'🏷️ Functional Groups',
+    is:'🔄 Isomerism', ar:'💎 Arenes',
+    ai:'🤖 AI Chemistry Tutor', rh:'🔬 AI Reaction Helper'
+  };
+
+  // Breadcrumb bar
+  const bcBar = document.createElement('div');
+  bcBar.id = 'bc-bar';
+  bcBar.style.cssText = 'display:none;align-items:center;gap:.4rem;padding:.5rem 1.2rem;background:rgba(0,0,0,.25);border-bottom:1px solid rgba(255,255,255,.06);font-size:.78rem;font-weight:700;color:#6b7280;font-family:Nunito,sans-serif;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)';
+  const mainContent = document.getElementById('main-content');
+  mainContent.parentNode.insertBefore(bcBar, mainContent);
+
+  function updateBreadcrumb(id) {
+    if (id === 'home') { bcBar.style.display = 'none'; return; }
+    bcBar.style.display = 'flex';
+    bcBar.innerHTML = `<span style="cursor:pointer;color:#818cf8" onclick="goHome()">⚗️ Home</span>
+      <span style="color:#374151">›</span>
+      <span style="color:#e2e8f0">${PAGE_TITLES[id] || id}</span>`;
+  }
+
+  function updateDocTitle(id) {
+    const titles = {
+      en: 'Organic Chemistry Hub',
+      bn: 'অর্গানিক কেমিস্ট্রি হাব',
+      hi: 'ऑर्गेनिक केमिस्ट्री हब'
+    };
+    const base = titles[CLANG] || titles.en;
+    const page = PAGE_TITLES[id];
+    document.title = id === 'home' ? base + ' — For Class 9–12' : base + ' · ' + page;
+  }
+
+  // Core navigate function — updates DOM + URL + breadcrumb + title
+  function navigateTo(id, pushState) {
+    if (!panelOrder.includes(id)) id = 'home';
+
+    // Panel transition
+    const current = document.querySelector('.panel.on');
+    const next = document.getElementById('panel-' + id);
+    if (!next || next === current) return;
+
+    if (current) {
+      current.style.opacity = '0';
+      current.style.transform = 'translateY(8px)';
+      current.style.transition = 'opacity .18s ease, transform .18s ease';
+      setTimeout(() => {
+        current.classList.remove('on');
+        current.style.opacity = '';
+        current.style.transform = '';
+        current.style.transition = '';
+        next.classList.add('on');
+        next.style.opacity = '0';
+        next.style.transform = 'translateY(8px)';
+        next.style.transition = 'opacity .22s ease, transform .22s ease';
+        setTimeout(() => {
+          next.style.opacity = '1';
+          next.style.transform = 'translateY(0)';
+          setTimeout(() => {
+            next.style.opacity = '';
+            next.style.transform = '';
+            next.style.transition = '';
+          }, 240);
+        }, 10);
+      }, 160);
+    } else {
+      next.classList.add('on');
+    }
+
+    // Highlight active nav button
+    document.querySelectorAll('.btn').forEach(b => b.classList.remove('on'));
+    const slug = ID_TO_HASH[id];
+    document.querySelectorAll('.btn').forEach(b => {
+      if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + id + "'")) {
+        b.classList.add('on');
+      }
+    });
+
+    // Update URL hash
+    if (pushState !== false) {
+      const hash = slug ? '#' + slug : window.location.pathname;
+      window.history.pushState({ panelId: id }, '', slug ? '#' + slug : window.location.pathname.split('#')[0]);
+    }
+
+    // Update breadcrumb + title
+    updateBreadcrumb(id);
+    updateDocTitle(id);
+
+    // Scroll to top of main
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Panel show — called by nav buttons
+  window.chShow = function(id, btn) {
+    navigateTo(id, true);
+  };
+
+  // Handle browser back/forward
+  window.addEventListener('popstate', function(e) {
+    const id = e.state?.panelId || HASH_MAP[location.hash.replace('#','')] || 'home';
+    navigateTo(id, false);
+  });
+
+  // Handle direct URL with hash on load
+  (function handleInitialHash() {
+    const hash = location.hash.replace('#', '');
+    const id = HASH_MAP[hash] || 'home';
+    if (id !== 'home') {
+      // Small delay to let DOM settle
+      setTimeout(() => navigateTo(id, false), 80);
+    }
+  })();
 
   // Carbon tabs
   window.chTab = function(btn, g, n) {
@@ -3142,11 +3282,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   //  HOME BUTTON (click on site title)
   // ─────────────────────────────────────────────
   window.goHome = function() {
-    document.querySelectorAll('.panel').forEach(p => p.classList.remove('on'));
-    document.querySelectorAll('.btn').forEach(b => b.classList.remove('on'));
-    const home = document.getElementById('panel-home');
-    if (home) home.classList.add('on');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    navigateTo('home', true);
   };
 
   // ═══════════════════════════════════════════════
