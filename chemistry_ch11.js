@@ -1728,6 +1728,23 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {topic:'Arenes',q:'Phenol reactions (ortho-para directing, –OH is +M)?',a:'1. Nitration (20–25°C, dil.HNO₃): → ortho + para nitrophenol\n2. Picric acid (conc.HNO₃+H₂SO₄): → 2,4,6-trinitrophenol (antiseptic)\n3. Bromination (25°C, no carrier): + 3Br₂ → 2,4,6-tribromophenol (yellow-white ppt) — identifies phenol!\nAll reactions at much lower temp/milder conditions than benzene.',hint:'–OH activates ring enormously: phenol reacts faster than benzene'},
     {topic:'Arenes',q:'Aniline reactions — why nitration gives META?',a:'–NH₂ is normally ortho-para directing (+M effect).\nBUT in acid (HNO₃+H₂SO₄): –NH₂ protonated → –NH₃⁺ (anilinium ion) which is META-directing.\nSo nitration of aniline → meta-nitroaniline!\nFix: acetylate first (→ acetanilide) then nitrate at 30°C → ortho(5%)+para(95%).',hint:'Anilinium ion is meta-directing — important exam trick!'},
     {topic:'Arenes',q:'Swarts reaction and Grouve\'s method?',a:'Swarts reaction: alkyl chloride + AgF/Hg₂F₂/SbF₃ → alkyl FLUORIDE. Used because R-OH + HF is too slow.\n2CH₃CH₂Cl + Hg₂F₂ → 2CH₃CH₂F + Hg₂Cl₂\nGrouve\'s method: R-OH + HCl + anhydrous ZnCl₂ → R-Cl + H₂O. ZnCl₂ absorbs water (forward reaction).',hint:'Swarts = fluoride via exchange. Grouve = ZnCl₂ as water absorber'},
+    // ── PAGES 111–140 NEW FLASHCARDS ──
+    {topic:'Alcohol',q:'4 identification tests for Alcohol?',a:'1. Na metal test: 2R-OH + 2Na → 2R-ONa + H₂↑ (H₂ bubbles prove –OH)\n2. PCl₅ test: R-OH + PCl₅ → R-Cl + POCl₃ + HCl↑ (white fumes of NH₄Cl with NH₃)\n3. Methanol test (salicylic acid): MeOH + salicylic acid + conc.H₂SO₄ → methyl salicylate (iodex smell)\n4. Iodoform test (ethanol): EtOH + I₂ + NaOH, 60°C → yellow CHI₃ ppt',hint:'Tests 1 and 2 = all alcohols; Test 3 = methanol specific; Test 4 = ethanol/2° alcohol specific'},
+    {topic:'Alcohol',q:'Iodoform (haloform) reaction — which compounds give it?',a:'Compounds with CH₃CO– group joined to H or alkyl give iodoform.\nThese give it: CH₃CHO (ethanal), CH₃COCH₃ (propanone), CH₃COC₂H₅ (butan-2-one), CH₃COC₆H₅ (acetophenone)\nAlso: ethanol (1° oxidised to ethanal first), 2° alcohols with CH₃CHOH–R group\nThese do NOT: CH₃COCl, CH₃CONH₂, CH₃COOH — CH₃CO is not joined to H/alkyl in these',hint:'Key rule: CH₃CO– must be bonded to H atom or alkyl/aryl group, NOT to Cl, NH₂, or OH'},
+    {topic:'Alcohol',q:'Lucas test — how to distinguish 1°, 2°, 3° alcohols?',a:'Lucas reagent = anhydrous ZnCl₂ dissolved in conc. HCl (acts as acid + Lewis acid)\n3° alcohol: reacts immediately at room temp → turbid/milky in seconds (SN1)\n2° alcohol: reacts slowly → turbid in 5–10 minutes at room temp (SN1)\n1° alcohol: does NOT react at room temp. Only reacts on heating (SN2)\nRule: more stable carbocation = faster reaction = SN1 mechanism',hint:'Turbidity = alkyl chloride formed. Faster = more stable carbocation = higher degree alcohol'},
+    {topic:'Alcohol',q:'Rectified spirit vs Absolute alcohol vs Methylated spirit?',a:'Rectified spirit = 95.6% ethanol + 4.4% water. Azeotropic (constant boiling) mixture. bp = 78.1°C\nAbsolute alcohol = 99.7% pure ethanol. Made by treating rectified spirit with quicklime (CaO) then distilling at 78.3°C\nMethylated spirit / denatured alcohol = rectified spirit + 5–10% poisonous methanol (unfit for drinking)\nWood spirit = impure methanol from destructive distillation of wood at 350°C',hint:'Cannot get 100% ethanol by normal distillation — azeotrope forms at 95.6%. CaO absorbs the last 4.4% water'},
+    {topic:'Alcohol',q:'Fermentation steps from starch to ethanol?',a:'Step 1: Starch + diastase enzyme (from malt), 40°C → maltose (C₁₂H₂₂O₁₁)\nStep 2: Maltose + maltase enzyme (from yeast), 25°C → 2 glucose (C₆H₁₂O₆)\nStep 3: Glucose + zymase enzyme (from yeast), 25°C → 2 ethanol + 2CO₂\nFinal: fractional distillation → 12–15% ethanol → rectified spirit (95.6%)',hint:'Three enzymes: diastase (starch→maltose), maltase (maltose→glucose), zymase (glucose→ethanol)'},
+    {topic:'Alcohol',q:'Polarity order: water, alcohol, ether?',a:'H₂O > CH₃–OH > CH₃–O–CH₃ (decreasing polarity)\nWater: O–H bond ΔEN = (3.5–2.1) = 1.4\nAlcohol: C–O bond ΔEN = (3.5–2.5) = 1.0, but O–H still 1.4\nEther: C–O–C, both sides ΔEN = 1.0 only. No O–H bond\nAlcohol and amine are water-soluble (H-bonds). Ether is water-INSOLUBLE (cannot form H-bond with water)',hint:'Ether has NO H attached to O → cannot H-bond with water → insoluble'},
+    {topic:'Alcohol',q:'Why is ethanol a liquid but ethane is a gas at room temperature?',a:'Ethanol (C₂H₅OH) is liquid because –OH group can form INTERMOLECULAR H-BONDS creating cluster molecules. bp = 78.4°C\nEthane (C₂H₆) is non-polar saturated hydrocarbon. Cannot form H-bonds. Molecules held only by weak Van der Waals forces. bp = −88.6°C (gas)\nKey: H-bonding in alcohol increases bp dramatically',hint:'Same carbon count but alcohol bp >>  alkane bp due to H-bonding'},
+    {topic:'Aryl Halide',q:'4 methods to prepare Aryl Halide?',a:'1. Halogenation of benzene: C₆H₆ + Cl₂ → AlCl₃/FeBr₃, 80°C → C₆H₅Cl + HCl\n2. From phenol + PCl₅: C₆H₅OH + PCl₅ → C₆H₅Cl + POCl₃ + HCl\n3. Sandmeyer reaction: C₆H₅N₂Cl + Cu₂Cl₂/HCl, 100°C → C₆H₅Cl + N₂ (or Cu₂Br₂/HBr → bromobenzene)\n4. From toluene: + Cl₂ (FeCl₃, no light) → ortho+para chlorotoluene',hint:'Sandmeyer uses diazonium salt. All aryl halides need Lewis acid carrier (AlCl₃/FeBr₃) unlike alkane halogenation'},
+    {topic:'Aryl Halide',q:'Identification of alkyl halide vs aryl halide?',a:'Alkyl halide R–Cl: heat with NaOH(aq) → R–OH + Cl⁻. Then Cl⁻ + AgNO₃ → AgCl↓ (white ppt). Easily hydrolysed.\nAryl halide Ar–Cl (e.g. C₆H₅Cl): barely hydrolysed even with boiling NaOH. Needs 300°C and 150 atm pressure with NaOH to form phenol.\nTo identify aryl halide: heat C₆H₅Cl with NH₃/Cu₂S at 200°C, 300 atm → aniline (C₆H₅NH₂) → heat with CHCl₃/KOH(alc.) → phenyl isocyanide (disagreeable smell)',hint:'Aryl halide is MUCH less reactive than alkyl halide due to C–Cl bond strengthened by resonance with ring π electrons'},
+    {topic:'Aryl Halide',q:'Uses of Haloalkanes (6 uses)?',a:'1. Solvent: CCl₄, CHCl₃, CH₂Cl₂ dissolve oil, fat, grease\n2. Refrigerant (Freon): CCl₃F (Freon-11), CCl₂F₂ (Freon-12)\n3. Fire extinguisher: BCF = CBr₂ClF (dibromo chloro fluoro methane)\n4. Anaesthetic: CHCl₃ (chloroform, historic), fluothane (modern), CH₃Cl+C₂H₅Cl mixture (local)\n5. Dry-washing: CHCl=CCl₂ (westrosol, 1,1,2-trichloroethylene) for woollen/synthetic clothes\n6. DDT insecticide: chlorobenzene + chloral → DDT (banned since 1950s, proved harmful)',hint:'BCF = fire extinguisher. CFC/Freons = refrigerants. Westrosol = dry cleaning. Chloroform = first anaesthetic (1837)'},
+    {topic:'Alcohol',q:'6 methods to prepare Alcohols (from textbook)?',a:'1. R–X + NaOH(aq) → R–OH (SN2, 1° best)\n2. Alkene + conc.H₂SO₄ + H₂O (Markovnikov hydration)\n3. Aldehyde + H₂ (Ni/Pt/Pd) → 1° alcohol; Ketone + LiAlH₄ → 2° alcohol\n4. Carboxylic acid + LiAlH₄ (dry ether) → 1° alcohol\n5. Acid chloride / ester / acid anhydride + LiAlH₄ → 1° alcohol\n6. Grignard + HCHO → 1°; RCHO → 2°; ketone → 3° alcohol',hint:'LiAlH₄ = strong reducer for all carbonyl. Grignard adds C: HCHO+1C=2C product, RCHO+R gives 2° with one more C'},
+    {topic:'Ether',q:'What is Williamson\'s Ether Synthesis?',a:'Sodium alkoxide (R–ONa) + alkyl halide (R–X) → R–O–R + NaX\nSimple ether: C₂H₅I + C₂H₅ONa → C₂H₅–O–C₂H₅ (diethyl ether) + NaI\nMixed ether: CH₃Br + C₂H₅ONa → CH₃–O–C₂H₅ (methyl ethyl ether) + NaBr\nPreparation of diethyl ether: ethanol + conc.H₂SO₄ at 140°C (dehydration)',hint:'Williamson synthesis = best method for both simple (same alkyl) and mixed (different alkyl) ethers'},
+    {topic:'Ether',q:'Why is ether chemically inactive and why must it be stored carefully?',a:'Ether is inactive because C–O–C bond is strengthened by +I effect of two alkyl groups. Oxidising/reducing agents have no effect on ethers.\nDanger: In sunlight + air, ether forms explosive diethyl peroxide (C₂H₅–O–O–C₂H₅)!\nStorage: sealed dark/brown bottle. Detect peroxide: KI+starch → blue colour (I₂ released)\nRemove peroxide: shake with FeSO₄ or Na₂SO₃ (reducing agents) before use.\nIdent from alcohol: both + PCl₅ give alkyl chloride, but only alcohol gives HCl gas (white fumes with NH₃)',hint:'Ether+PCl₅ → no HCl gas. Alcohol+PCl₅ → HCl gas. This differentiates them!'},
+    {topic:'Amines',q:'Basicity order of amines?',a:'Gradational basicity: R₂NH > R–NH₂ > R₃N > NH₃\nAliphatic amines are MORE basic than NH₃ because alkyl groups (+I effect) donate electrons to N → N accepts proton more easily\nAromatic amine (aniline) is LESS basic than NH₃ because lone pair of N enters benzene ring resonance → electron density on N decreases → pKb of aniline (9.4) >> pKb NH₃ (4.74)\nSo: aliphatic amines > NH₃ > aromatic amines (aniline)',hint:'Secondary amine (R₂NH) most basic because 2 alkyl groups donate electrons. 3° has steric hindrance reducing basicity'},
+    {topic:'Amines',q:'Classification of amines (3 ways)?',a:'By structure: (1) Aliphatic amine — alkyl groups only (CH₃NH₂, (CH₃)₂NH) (2) Aromatic amine — aryl group (C₆H₅NH₂ = aniline) (3) Heterocyclic amine — N in ring (pyrrole, pyridine)\nBy H-atoms on N: (1) Primary (1°): R–NH₂ — monovalent amino group\n(2) Secondary (2°): R–NH–R — imino group –NH–\n(3) Tertiary (3°): R₃N — no H on N\nAniline + H⁺ → anilinium ion (C₆H₅NH₃⁺). Drugs like morphine, tetracycline converted to ammonium salts for water solubility',hint:'Primary = 1 alkyl on N. Secondary = 2 alkyls. Tertiary = 3 alkyls. Count substitutions on N, not on C'},
+    {topic:'Mixed',q:'Phenol vs Alcohol — key differences?',a:'Phenol: –OH directly on benzene ring. Acidic (turns blue litmus red). Reacts with NaOH → sodium phenate + H₂O\nAlcohol: –OH on aliphatic C. Litmus neutral. Does NOT react with NaOH.\nBenzyl alcohol (C₆H₅CH₂OH): –OH on side chain → aliphatic alcohol, neutral\nPhenol ionises in water: C₆H₅OH + H₂O ⇌ C₆H₅O⁻ (phenoxide) + H₃O⁺\nAromatic alcohol = –OH on side chain (not ring). e.g. benzyl alcohol, 2-phenyl ethanol',hint:'Ring –OH = phenol (acidic). Side-chain –OH = aromatic alcohol (neutral). Key exam distinction!'},
   ];
 
   panels['fc'] = `
@@ -1747,6 +1764,9 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     <button class="fc-filter" onclick="fcFilter('Isomers',this)" style="color:#2dd4bf">🔄 Isomers</button>
     <button class="fc-filter" onclick="fcFilter('Arenes',this)" style="color:#a78bfa">💎 Arenes</button>
     <button class="fc-filter" onclick="fcFilter('Reactions',this)" style="color:#22d3ee">⚗️ Reactions</button>
+    <button class="fc-filter" onclick="fcFilter('Aryl Halide',this)" style="color:#a78bfa">🔶 Aryl Halide</button>
+    <button class="fc-filter" onclick="fcFilter('Ether',this)" style="color:#67e8f9">💨 Ether</button>
+    <button class="fc-filter" onclick="fcFilter('Amines',this)" style="color:#c084fc">🟣 Amines</button>
     <button class="fc-filter" onclick="fcFilter('Mixed',this)" style="color:#94a3b8">🔬 Mixed</button>
   </div>
   <div class="fc-progress"><div class="fc-bar"><div class="fc-fill" id="fc-fill" style="width:0%"></div></div><div class="fc-count" id="fc-count">1 / ${FC_CARDS.length}</div></div>
@@ -1917,7 +1937,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   <div id="tq-home">
     <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:#94a3b8;margin-bottom:.9rem">Choose a topic to quiz yourself:</div>
     <div class="tq-picks">
-      ${[['ka','🔥','Alkane','CₙH₂ₙ₊₂'],['ke','🌿','Alkene','CₙH₂ₙ'],['ky','⚡','Alkyne','CₙH₂ₙ₋₂'],['al','🧪','Alcohol','–OH group'],['ad','✨','Aldehyde','–CHO group'],['ac','🧬','Fatty Acid','–COOH group'],['Petroleum','⛽','Petroleum','Fossil fuels'],['Polymer','🔗','Polymer','Polymerisation'],['Bonds','🔗','Bonds','σ and π'],['Naming','🏷️','IUPAC Naming','SPWPS rule'],['Isomers','🔄','Isomers','Cis/Trans'],['Theory','📖','Theory','EV Textbook'],['Arenes','💎','Arenes','Benzene ring'],['Reactions','⚗️','Reactions','Mechanisms'],['Mixed','🔬','Mixed','General']].map(([id,icon,name,sub])=>`<div class="tq-pick" style="color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'});border-color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'})" onclick="tqStart('${id}','${name}')"><span class="tq-pick-icon">${icon}</span><span class="tq-pick-name">${name}</span><span class="tq-pick-count">${sub}</span></div>`).join('')}
+      ${[['ka','🔥','Alkane','CₙH₂ₙ₊₂'],['ke','🌿','Alkene','CₙH₂ₙ'],['ky','⚡','Alkyne','CₙH₂ₙ₋₂'],['al','🧪','Alcohol','–OH group'],['ad','✨','Aldehyde','–CHO group'],['ac','🧬','Fatty Acid','–COOH group'],['Petroleum','⛽','Petroleum','Fossil fuels'],['Polymer','🔗','Polymer','Polymerisation'],['Bonds','🔗','Bonds','σ and π'],['Naming','🏷️','IUPAC Naming','SPWPS rule'],['Isomers','🔄','Isomers','Cis/Trans'],['Theory','📖','Theory','EV Textbook'],['Arenes','💎','Arenes','Benzene ring'],['Reactions','⚗️','Reactions','Mechanisms'],['Aryl Halide','🔶','Aryl Halide','Haloarenes'],['Ether','💨','Ether','Properties'],['Amines','🟣','Amines','Basicity'],['Mixed','🔬','Mixed','General']].map(([id,icon,name,sub])=>`<div class="tq-pick" style="color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'});border-color:var(--${['ka','ke','ky','al','ad','ac'].includes(id)?id:'al'})" onclick="tqStart('${id}','${name}')"><span class="tq-pick-icon">${icon}</span><span class="tq-pick-name">${name}</span><span class="tq-pick-count">${sub}</span></div>`).join('')}
     </div>
   </div>
   <div class="tq-exam" id="tq-exam">
@@ -2074,6 +2094,8 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     <button class="nt-tab" style="color:#f43f5e" onclick="ntTab(this,'th-aliaro')">⚖️ Ali vs Aro</button>
     <button class="nt-tab" style="color:#22d3ee" onclick="ntTab(this,'th-react')">⚗️ Reactions</button>
     <button class="nt-tab" style="color:#a3e635" onclick="ntTab(this,'th-mech')">🔧 Mechanisms</button>
+    <button class="nt-tab" style="color:#38bdf8" onclick="ntTab(this,'th-alcohol')">🧪 Alcohol & Ether</button>
+    <button class="nt-tab" style="color:#c084fc" onclick="ntTab(this,'th-amines')">🟣 Amines</button>
   </div>
 
   <div id="th-intro" class="nt-pane on">
@@ -2244,6 +2266,151 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   // ══════════════════════════════════════════════
   //  🏷️  FUNCTIONAL GROUPS PANEL
   // ══════════════════════════════════════════════
+
+// ─── Inject Alcohol/Ether + Amines panes into Theory panel ───────────────────
+(function(){
+  const alcoholPane = `
+  <div id="th-alcohol" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#38bdf8"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:#38bdf8">Alcohol — Definition & Classification</span></div>
+    <div class="note-card-body">
+      <strong>Definition:</strong> When one or more H atoms of aliphatic hydrocarbon are replaced by –OH groups, the hydroxy compounds formed are called <strong>alcohols</strong>.<br><br>
+      <strong>Classification 1 — by number of –OH groups:</strong><br>
+      • Monohydric (1 –OH): CH₃OH, C₂H₅OH<br>
+      • Polyhydric: Diol (2 –OH), Triol (3 –OH), Tetraol (4 –OH)<br>
+      • Glycol = ethane-1,2-diol | Glycerol = propane-1,2,3-triol | Sorbitol = hexane-1,2,3,4,5,6-hexol<br><br>
+      <strong>Classification 2 — by degree (monohydric only):</strong>
+      <table class="note-table">
+        <tr><th>Type</th><th>Group</th><th>Definition</th><th>Example</th></tr>
+        <tr><td style="color:#38bdf8">Primary (1°)</td><td>–CH₂–OH</td><td>–OH carbon has at least 2 H atoms, bonded to 1 alkyl</td><td>CH₃CH₂OH (ethanol)</td></tr>
+        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>–CHOH–</td><td>–OH carbon has 1 H, bonded to 2 alkyls</td><td>CH₃CHOHCH₃ (propan-2-ol)</td></tr>
+        <tr><td style="color:#f87171">Tertiary (3°)</td><td>>C–OH</td><td>–OH carbon has NO H, bonded to 3 alkyls</td><td>(CH₃)₃COH (2-methylpropan-2-ol)</td></tr>
+      </table>
+      <div style="margin-top:.6rem;font-size:.82rem;color:#6b7280">Polyhydric alcohols used as moisturising agents: glycerol in eye drops, sorbitol in creams — absorb water from air through H-bonds.</div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#4ade80"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:#4ade80">Identification Reactions of Alcohol — 4 Tests</span></div>
+    <div class="note-card-body">
+      <div style="display:flex;flex-direction:column;gap:.7rem">
+        ${[
+          {n:'1',col:'#fbbf24',t:'Na Metal Test — ALL alcohols',r:'2CH₃CH₂OH + 2Na → 2CH₃CH₂ONa + H₂↑',o:'H₂ gas bubbles produced (burns with blue flame when ignited). Confirms –OH group in ANY alcohol.'},
+          {n:'2',col:'#60a5fa',t:'PCl₅ Test — ALL alcohols',r:'CH₃CH₂OH + PCl₅ → CH₃CH₂Cl + POCl₃ + HCl(g)',o:'HCl gas + NH₃ gas → NH₄Cl (white fumes). BOTH alcohol AND ether give R-Cl with PCl₅, but ONLY ALCOHOL gives HCl gas → differentiates them!'},
+          {n:'3',col:'#f472b6',t:'Methanol Specific — Salicylate Test',r:'CH₃OH + salicylic acid + conc.H₂SO₄ → methyl salicylate + H₂O',o:'Methyl salicylate has distinctive IODEX (pain balm) smell. Specific to METHANOL only. Ethanol does not give this.'},
+          {n:'4',col:'#c084fc',t:'Iodoform Test — Ethanol & CH₃CO– compounds',r:'CH₃CH₂OH + 4I₂ + 6NaOH → CHI₃↓ + HCOONa + 5NaI + 5H₂O',o:'Yellow precipitate of iodoform (CHI₃). Also given by: ethanal, propanone, butan-2-one, acetophenone, and 2° alcohols with CH₃CHOH–R group.'}
+        ].map(x=>`<div style="background:rgba(0,0,0,.18);border-left:4px solid ${x.col};border-radius:0 10px 10px 0;padding:.7rem 1rem">
+          <div style="font-family:'Fredoka One',cursive;font-size:.92rem;color:${x.col};margin-bottom:.3rem">${x.n}. ${x.t}</div>
+          <div class="note-formula" style="margin:.3rem 0">${x.r}</div>
+          <div style="font-size:.78rem;color:#94a3b8">${x.o}</div>
+        </div>`).join('')}
+      </div>
+      <div style="margin-top:.8rem;background:rgba(251,191,36,.07);border:1.5px solid rgba(251,191,36,.3);border-radius:10px;padding:.75rem">
+        <div style="font-family:'Fredoka One',cursive;color:#fbbf24;font-size:.9rem;margin-bottom:.35rem">⚠️ Haloform / Iodoform — Which compounds GIVE it vs DON'T</div>
+        <div style="font-size:.82rem;color:#94a3b8">
+          ✅ GIVE iodoform: CH₃CHO, CH₃COCH₃, CH₃COC₂H₅, CH₃COC₆H₅, CH₃CH₂OH, and 2° alcohols CH₃CHOH–R<br>
+          ❌ DO NOT give iodoform: CH₃COCl (acetyl chloride), CH₃CONH₂ (acetamide), CH₃COOH (acetic acid) — all have CH₃CO– BUT not joined to H or alkyl group
+        </div>
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#f59e0b"><span class="note-card-icon">🥃</span><span class="note-card-title" style="color:#f59e0b">Types of Ethanol-Based Mixtures</span></div>
+    <div class="note-card-body">
+      <table class="note-table">
+        <tr><th>Name</th><th>Composition</th><th>bp / Note</th></tr>
+        <tr><td style="color:#4ade80">Rectified Spirit</td><td>95.6% ethanol + 4.4% water</td><td>bp 78.1°C — azeotrope (constant boiling mixture)</td></tr>
+        <tr><td style="color:#38bdf8">Absolute Alcohol</td><td>99.7% pure ethanol</td><td>bp 78.3°C — made by treating rectified spirit with quicklime (CaO)</td></tr>
+        <tr><td style="color:#f87171">Methylated Spirit</td><td>Rectified spirit + 5–10% methanol</td><td>Poisonous — unfit for drinking. Used as industrial solvent.</td></tr>
+        <tr><td style="color:#fbbf24">Power Alcohol</td><td>Ethanol + benzene + petrol</td><td>Used as alternate motor fuel</td></tr>
+        <tr><td style="color:#c084fc">Proof Spirit</td><td>57.1% ethanol + 42.9% water</td><td>Standard to measure strength of imported alcohol</td></tr>
+        <tr><td style="color:#94a3b8">Wood Spirit</td><td>Impure methanol (98% CH₃OH + 1-2% acetone)</td><td>bp 65°C — from destructive distillation of wood at 350°C</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fb923c"><span class="note-card-icon">🔵</span><span class="note-card-title" style="color:#fb923c">Lucas Test — Distinguish 1°, 2°, 3° Alcohols</span></div>
+    <div class="note-card-body">
+      <strong>Lucas Reagent</strong> = anhydrous ZnCl₂ dissolved in concentrated HCl.<br><br>
+      <table class="note-table">
+        <tr><th>Alcohol</th><th>Rate with Lucas</th><th>Mechanism</th><th>Observation</th></tr>
+        <tr><td style="color:#f87171">Tertiary (3°)</td><td>Immediately turbid at room temp</td><td>SN1 — stable 3° carbocation forms instantly</td><td>White/milky immediately</td></tr>
+        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>Turbid in 5–10 minutes</td><td>SN1 — 2° carbocation forms slowly</td><td>Oily/turbid in 5–10 min</td></tr>
+        <tr><td style="color:#4ade80">Primary (1°)</td><td>No reaction at room temp</td><td>SN2 — only on heating</td><td>No turbidity (unless heated)</td></tr>
+      </table>
+      <div style="margin-top:.5rem;font-size:.8rem;color:#6b7280">Turbidity = alkyl chloride (white precipitate) formed. 3° carbocation most stable → fastest SN1. 1° carbocation least stable → cannot form readily → SN2 on heating.</div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#67e8f9"><span class="note-card-icon">💨</span><span class="note-card-title" style="color:#67e8f9">Ether — Structure, Properties & Preparation</span></div>
+    <div class="note-card-body">
+      <strong>Definition:</strong> When two alkyl or aryl groups are joined with a divalent oxygen atom, the compounds are called <strong>ethers</strong>. IUPAC name = alkoxy alkane.<br><br>
+      <strong>Key properties:</strong><br>
+      • Functional group: –C–O–C– (bond angle C–O–C = 110°, O atom is sp³)<br>
+      • Polarity: H₂O &gt; R–OH &gt; R–O–R (ether least polar — no O–H bond)<br>
+      • <strong>Water-insoluble</strong> (no O–H → cannot H-bond with water)<br>
+      • <strong>Chemically inactive</strong> — C–O–C bond strengthened by +I effect of two alkyl groups<br>
+      • Diethyl ether = representative member. Used as aprotic polar solvent and anaesthetic.<br><br>
+      <strong>Ether ≠ Alcohol test (PCl₅):</strong><br>
+      Alcohol + PCl₅ → R–Cl + POCl₃ + <strong>HCl gas</strong> (white fumes with NH₃) ✅<br>
+      Ether + PCl₅ → 2 R–Cl + POCl₃ (no HCl gas) ❌<br><br>
+      <strong>Methods of Preparation:</strong><br>
+      1. <strong>Williamson Synthesis:</strong> R–ONa + R–X → R–O–R + NaX (best method, works for simple & mixed ethers)<br>
+      &nbsp;&nbsp;&nbsp;e.g. C₂H₅ONa + C₂H₅I → C₂H₅–O–C₂H₅ + NaI<br>
+      2. <strong>Dehydration of alcohol:</strong> 2 C₂H₅OH + conc.H₂SO₄ at <strong>140°C</strong> → C₂H₅–O–C₂H₅ + H₂O<br>
+      &nbsp;&nbsp;&nbsp;(Note: at 170°C+ same conditions gives ethene, not ether!)<br><br>
+      <strong>⚠️ Ether storage danger:</strong> Sunlight + O₂ → diethyl peroxide (C₂H₅–O–O–C₂H₅) — poisonous and explosive.<br>
+      Store in sealed <strong>dark bottle</strong>. Detect peroxide: KI + starch → blue (I₂ released).<br>
+      Remove peroxide: shake with FeSO₄ or Na₂SO₃ solution.
+    </div></div>
+  </div>
+
+  <div id="th-amines" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">🟣</span><span class="note-card-title" style="color:#c084fc">Amines — Definition & Classification</span></div>
+    <div class="note-card-body">
+      <strong>Definition:</strong> Organic compounds formed by substitution of one or more H atoms of ammonia (NH₃) by alkyl or aryl groups.<br>
+      Alcohols = alkyl-substituted water. Amines = alkyl/aryl-substituted ammonia.<br><br>
+      <strong>Classification by structure:</strong>
+      <table class="note-table">
+        <tr><th>Type</th><th>Definition</th><th>Examples</th></tr>
+        <tr><td style="color:#60a5fa">Aliphatic amine</td><td>H of NH₃ replaced by alkyl groups only</td><td>CH₃NH₂, (CH₃)₂NH, (CH₃)₃N</td></tr>
+        <tr><td style="color:#f472b6">Aromatic amine</td><td>H of NH₃ replaced by aryl group</td><td>C₆H₅NH₂ (aniline), N-methyl phenyl amine</td></tr>
+        <tr><td style="color:#a78bfa">Heterocyclic amine</td><td>N atom in the cyclic ring</td><td>Pyrrole, Pyridine, Purine, Pyrimidine (DNA/RNA bases)</td></tr>
+      </table>
+      <br>
+      <strong>Classification by degree (H atoms on N):</strong>
+      <table class="note-table">
+        <tr><th>Degree</th><th>Group on N</th><th>Functional group</th><th>Example</th></tr>
+        <tr><td style="color:#4ade80">Primary (1°)</td><td>1 alkyl/aryl, 2 H on N</td><td>–NH₂ (monovalent amino)</td><td>CH₃NH₂, C₆H₅NH₂</td></tr>
+        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>2 alkyl/aryl, 1 H on N</td><td>=NH (imino, divalent)</td><td>(CH₃)₂NH, C₆H₅NHCH₃</td></tr>
+        <tr><td style="color:#f87171">Tertiary (3°)</td><td>3 alkyl/aryl, 0 H on N</td><td>≡N (trivalent)</td><td>(CH₃)₃N, (C₆H₅)₃N</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#818cf8"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#818cf8">Basicity of Amines — Full Comparison</span></div>
+    <div class="note-card-body">
+      <strong>Basicity order: R₂NH &gt; R–NH₂ &gt; R₃N &gt; NH₃ &gt; C₆H₅NH₂ (aniline)</strong><br><br>
+      <div style="display:flex;flex-direction:column;gap:.5rem">
+        <div style="background:rgba(74,222,128,.07);border-left:3px solid #4ade80;border-radius:0 8px 8px 0;padding:.6rem .9rem">
+          <div style="font-family:'Fredoka One',cursive;color:#4ade80;font-size:.88rem">Aliphatic amines &gt; NH₃</div>
+          <div style="font-size:.82rem;color:#94a3b8">Alkyl groups (+I effect) donate electron density to N → N more able to accept H⁺ → more basic.<br>Methylamine pKb = 3.36, Dimethylamine pKb = 3.23 (lower pKb = stronger base)</div>
+        </div>
+        <div style="background:rgba(251,191,36,.07);border-left:3px solid #fbbf24;border-radius:0 8px 8px 0;padding:.6rem .9rem">
+          <div style="font-family:'Fredoka One',cursive;color:#fbbf24;font-size:.88rem">R₂NH (2°) most basic</div>
+          <div style="font-size:.82rem;color:#94a3b8">2 alkyl groups donate maximum electrons to N. pKb = 3.23</div>
+        </div>
+        <div style="background:rgba(251,146,60,.07);border-left:3px solid #fb923c;border-radius:0 8px 8px 0;padding:.6rem .9rem">
+          <div style="font-family:'Fredoka One',cursive;color:#fb923c;font-size:.88rem">R₃N (3°) LESS basic than R₂NH</div>
+          <div style="font-size:.82rem;color:#94a3b8">Despite 3 alkyl groups, steric hindrance — 3 bulky groups block access of H⁺ to lone pair. Trimethylamine pKb = 4.22 (weaker than dimethylamine)</div>
+        </div>
+        <div style="background:rgba(248,113,113,.07);border-left:3px solid #f87171;border-radius:0 8px 8px 0;padding:.6rem .9rem">
+          <div style="font-family:'Fredoka One',cursive;color:#f87171;font-size:.88rem">Aniline &lt; NH₃ (weakest base)</div>
+          <div style="font-size:.82rem;color:#94a3b8">Lone pair of N in C₆H₅NH₂ enters benzene ring π-electron resonance → N electron density decreases → very poor proton acceptor.<br>Aniline Kb = 4.1×10⁻¹⁰, pKb = 9.4 (much weaker than NH₃ pKb = 4.74)</div>
+        </div>
+      </div>
+      <div style="margin-top:.6rem;font-size:.82rem;color:#94a3b8">💊 Drug application: Morphine, tetracycline (amines) are water-insoluble. Converting to ammonium salts (+ HCl → R₃NH⁺Cl⁻) increases water solubility → can travel in blood stream to target site.</div>
+    </div></div>
+  </div>`;
+
+  // Inject the panes before the closing backtick of the Theory panel
+  const thPanel = panels['th'];
+  panels['th'] = thPanel.replace('</div>`', alcoholPane + '\n</div>`');
+})();
+
   panels['fg'] = `
 <div class="ph" style="border-color:#b45309;color:#b45309"><div class="phi">🏷️</div><div><div class="pht">Functional Groups — All 11 Types</div><div class="phb"><span class="badge">11 functional groups</span><span class="badge">Structures shown</span><span class="badge">Examples from textbook</span></div><div class="phd">All functional groups from EV Chemistry Chapter 2 — with formula, structure and reaction type.</div></div></div>
 <div class="nt-wrap">
@@ -3719,7 +3886,41 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {t:"Alkane",q:"Reactivity order of HX with alcohols is?",o:["HF > HCl > HBr > HI","HI > HBr > HCl > HF","HCl > HBr > HI > HF","All equal"],a:1,e:"HI > HBr > HCl > HF. HI is most reactive with alcohols. Reactivity of alcohols: 3° > 2° > 1°. Alkyl fluoride (R–F) is prepared by Swarts reaction: R–Cl + AgF → R–F + AgCl (not from R–OH + HF because too slow)."},
     {t:"Alkane",q:"Swarts reaction prepares?",o:["Alkyl chloride","Alkyl bromide","Alkyl fluoride — R-Cl + AgF/Hg₂F₂ → R-F + AgCl","Alkyl iodide"],a:2,e:"Alkyl fluoride is prepared by Swarts reaction: 2CH₃CH₂Cl + Hg₂F₂ → 2CH₃CH₂F + Hg₂Cl₂. Because R–OH + HF reaction is too slow. Inorganic fluoride (AgF, Hg₂F₂, SbF₃, AsF₃) reacts with alkyl chloride."},
     {t:"Alkane",q:"Alkane from Grignard reagent + water gives?",o:["Alcohol","Alkyne","Alkane + Mg(OH)X — same carbon count as RMgX","Carboxylic acid"],a:2,e:"RMgX + H–OH → R–H + Mg(OH)X. Grignard reagent acts as source of R⁻. Water provides H⁺. Product alkane has SAME carbon count as the R group. C₂H₅MgBr + H₂O → C₂H₆ + Mg(OH)Br."},
-    {t:"Alkyne",q:"From natural gas (methane): 6CH₄ + O₂ at 1500°C gives?",o:["CO₂ + H₂O","2 HC≡CH + 2CO + 10H₂","Benzene only","CH₃OH"],a:1,e:"6CH₄ + O₂ → 1500°C → 2H–C≡C–H (acetylene) + 2CO + 10H₂. Natural gas methane is partially oxidised at 1500°C to produce acetylene (ethyne). Product stored in propanone under high pressure to avoid explosion."}
+    {t:"Alkyne",q:"From natural gas (methane): 6CH₄ + O₂ at 1500°C gives?",o:["CO₂ + H₂O","2 HC≡CH + 2CO + 10H₂","Benzene only","CH₃OH"],a:1,e:"6CH₄ + O₂ → 1500°C → 2H–C≡C–H (acetylene) + 2CO + 10H₂. Natural gas methane is partially oxidised at 1500°C to produce acetylene (ethyne). Product stored in propanone under high pressure to avoid explosion."},
+
+    // ── NEW QUESTIONS FROM PAGES 111–140 ──
+    // ARYL HALIDE
+    {t:"Arenes",q:"Sandmeyer reaction uses which starting material?",o:["Chlorobenzene","Aniline","Benzene diazonium chloride + Cu₂Cl₂/HCl, 100°C","Phenol + PCl₅"],a:2,e:"Sandmeyer reaction: C₆H₅N₂Cl (benzene diazonium chloride) + Cu₂Cl₂/HCl at 100°C → C₆H₅Cl (chlorobenzene) + N₂. With Cu₂Br₂/HBr → bromobenzene. Used to introduce halogen into aromatic ring via diazonium salt."},
+    {t:"Arenes",q:"Chlorotoluene from toluene with Cl₂ and FeCl₃ (no sunlight) gives?",o:["Only meta-chlorotoluene","Benzyl chloride (side chain product)","Ortho + para chlorotoluene (ring substitution)","Benzene hexachloride"],a:2,e:"Cl₂ + FeCl₃ (halogen carrier), no sunlight → electrophilic substitution on RING → ortho-chlorotoluene + para-chlorotoluene. But Cl₂ + sunlight/111°C (no carrier) → free radical → side chain –CH₃ gives benzyl chloride → benzal chloride → benzo chloride."},
+    {t:"Arenes",q:"Aryl halide (C₆H₅Cl) compared to alkyl halide (C₂H₅Cl) hydrolysis requires?",o:["Same conditions","Milder conditions","Much harsher: 300°C and 150 atm pressure with NaOH","Dilute acid only"],a:2,e:"Aryl halide C–Cl bond is strengthened by resonance with the benzene ring π electrons. So aryl halide is MUCH less reactive. Needs 300°C and 150 atm pressure with NaOH to form sodium phenate. Alkyl halide is easily hydrolysed by aq. NaOH at room temperature."},
+    {t:"Arenes",q:"DDT full name and why it was banned?",o:["Di-chloro diphenyl trichloroethane — safe insecticide","Para-para dichloro diphenyl trichloro ethane — harmful to environment, banned since ~1950","Dimethyl diphenyl trichloromethane — banned for smell","Dichloro diphenyl toluene — too expensive"],a:1,e:"DDT = para-para dichloro diphenyl trichloro ethane. Made from chlorobenzene + chloral (CCl₃CHO) + conc. H₂SO₄. Used as insecticide 1940–1950. Then proved harmful to environment (persists in food chain) and was abandoned internationally."},
+    {t:"Arenes",q:"Uses of haloalkanes as refrigerants are called?",o:["Westrosols","Freons or CFC compounds (CCl₃F, CCl₂F₂)","BCF compounds","Fluothane"],a:1,e:"Freons = chloro-fluoro carbons (CFCs). Freon-11 = CCl₃F, Freon-12 = CCl₂F₂, Freon-114 = CClF₂–CClF₂. Used in refrigerators and air coolers. Their bp is below room temp so they can be liquefied by pressure. Note: CFCs damage the ozone layer."},
+    {t:"Arenes",q:"BCF used as fire extinguisher has formula?",o:["CCl₄","CHCl₃","CBr₂ClF (dibromo chloro fluoro methane)","CCl₂F₂"],a:2,e:"BCF = dibromo chloro fluoro methane (CBr₂ClF). It is incombustible, volatile and heavier than air — smothers fire by cutting off oxygen supply. Replaces the older CCl₄ fire extinguisher."},
+    {t:"Arenes",q:"Westrosol used for dry-washing is?",o:["CCl₄","CHCl₃","1,1,2-trichloroethylene CHCl=CCl₂ (bp 90°C)","CH₂Cl₂"],a:2,e:"Westrosol = 1,1,2-trichloroethylene (CHCl=CCl₂, bp 90°C). Used as dry-washing solvent for woollen and high-quality synthetic clothes. CCl₄ is also used as dry-washing solvent."},
+    // ALCOHOL IDENTIFICATION
+    {t:"Alcohol",q:"Iodoform (CHI₃) yellow precipitate test confirms which compound?",o:["Methanol only","Ethanol (and compounds with CH₃CO– group)","All alcohols","Propanoic acid"],a:1,e:"Iodoform test: ethanol + I₂ + NaOH at 60°C → CHI₃ (yellow ppt) + HCOONa + NaI + H₂O. Also works for ethanal, propanone, acetophenone, butan-2-one, and 2° alcohols with CH₃CHOH–R group. Methanol does NOT give this test."},
+    {t:"Alcohol",q:"Methanol is specifically identified by reaction with?",o:["Na metal","KMnO₄","Salicylic acid + conc. H₂SO₄ → methyl salicylate (iodex smell)","PCl₅"],a:2,e:"Methanol identification: methanol + salicylic acid + 2–3 drops conc. H₂SO₄ → methyl salicylate (smell like iodex/pain balm). This test is SPECIFIC to methanol. Ethanol does NOT give this test."},
+    {t:"Alcohol",q:"Lucas reagent (anhydrous ZnCl₂ + conc. HCl) reacts with 3° alcohol at room temp?",o:["No reaction","Slowly turbid in 5–10 min","Immediately turbid (white alkyl chloride forms) — SN1","Turbid only on heating"],a:2,e:"3° alcohol + Lucas reagent → IMMEDIATELY turbid at room temp. 3° carbocation is most stable → SN1 mechanism fast. 2° alcohol → turbid in 5–10 min. 1° alcohol → no reaction at room temp (only on heating). Lucas test differentiates 1°, 2°, 3° alcohols."},
+    {t:"Alcohol",q:"Rectified spirit is an azeotropic mixture containing?",o:["100% ethanol","95.6% ethanol + 4.4% water, bp 78.1°C","90% ethanol + 10% methanol","96% ethanol + 4% benzene"],a:1,e:"Rectified spirit = azeotropic (constant boiling) mixture of 95.6% ethanol + 4.4% water. bp = 78.1°C. Cannot get 100% ethanol by normal distillation because this azeotrope boils before pure ethanol. Absolute alcohol (99.7%) requires treatment with quicklime (CaO) to absorb water."},
+    {t:"Alcohol",q:"To convert rectified spirit to absolute alcohol (99.7%), which method is used?",o:["Add more water","Distillation with quicklime (CaO) which absorbs water, then distil at 78.3°C","Filter through charcoal","Add Na metal"],a:1,e:"Rectified spirit + quicklime (CaO) → CaO absorbs the 4.4% water (CaO + H₂O → Ca(OH)₂) → distil at 78.3°C → absolute alcohol (99.7% pure). Alternatively, distillation with benzene as azeotropic agent removes all water."},
+    {t:"Alcohol",q:"Methylated spirit (denatured alcohol) contains?",o:["Pure methanol","Rectified spirit + 5–10% methanol (poisonous, unfit for drinking)","50% methanol + 50% ethanol","Water + ethanol + NaCl"],a:1,e:"Methylated spirit = rectified spirit (95.6% ethanol) + 5–10% poisonous methanol. The methanol makes it toxic and unfit for drinking, but it is still useful as industrial solvent and for varnishing work."},
+    {t:"Alcohol",q:"Ethanol from fermentation: starch is converted in how many enzyme steps?",o:["1 step","2 steps","3 steps — diastase→maltase→zymase","4 steps"],a:2,e:"3 enzyme steps: Step 1: Starch + diastase → maltose (40°C). Step 2: Maltose + maltase → 2 glucose (25°C). Step 3: Glucose + zymase → 2 ethanol + 2CO₂ (25°C). Fractional distillation gives 12–15% ethanol, further distillation gives rectified spirit (95.6%)."},
+    {t:"Alcohol",q:"Grignard reagent + formaldehyde (HCHO) + water gives?",o:["2° alcohol","3° alcohol","1° primary alcohol","Carboxylic acid"],a:2,e:"RMgX + HCHO (formaldehyde/methanal) + H₂O → 1° primary alcohol. RMgX + RCHO (other aldehyde) + H₂O → 2° alcohol. RMgX + ketone + H₂O → 3° tertiary alcohol. Key rule: formaldehyde gives 1° alcohol, other aldehydes give 2°, ketones give 3°."},
+    {t:"Alcohol",q:"Polarity order: H₂O, CH₃OH, CH₃OCH₃ (from high to low)?",o:["CH₃OCH₃ > CH₃OH > H₂O","CH₃OH > H₂O > CH₃OCH₃","H₂O > CH₃OH > CH₃OCH₃","All equal polarity"],a:2,e:"H₂O > CH₃OH > CH₃OCH₃ (decreasing polarity). Water O–H bond ΔEN = 1.4, alcohol O–H = 1.4 but C–O = 1.0, ether C–O–C both sides = 1.0 only (no polar O–H). Ether is LEAST polar. Alcohol and amine are water-soluble (H-bonds). Ether is water-insoluble."},
+    {t:"Alcohol",q:"Definition of phenol — how it differs from alcohol?",o:["Phenol is same as alcohol","Phenol: –OH directly on benzene ring → acidic. Alcohol: –OH on aliphatic C → neutral","Phenol has –COOH group","Phenol is a ketone"],a:1,e:"Phenol (C₆H₅OH): –OH is directly on the benzene ring. Phenol is weakly ACIDIC (turns blue litmus red) because O–H ionises in water: C₆H₅OH + H₂O ⇌ C₆H₅O⁻ + H₃O⁺. Alcohol: –OH on aliphatic carbon → neutral, does not change litmus. Benzyl alcohol (C₆H₅CH₂OH) = aromatic alcohol (neutral, not phenol)."},
+    {t:"Alcohol",q:"Which alcohol test involves PCl₅?",o:["PCl₅ test: R-OH + PCl₅ → R-Cl + POCl₃ + HCl gas. HCl + NH₃ → NH₄Cl (white fumes). Proves –OH","Iodoform test","Lucas test","Na metal test"],a:0,e:"PCl₅ test for –OH group: organic compound + PCl₅ → alkyl chloride + POCl₃ + HCl gas. HCl gas reacts with NH₃ gas on a glass rod → NH₄Cl white fumes. Ether also gives alkyl chloride with PCl₅ but NO HCl gas — so PCl₅ test differentiates alcohol from ether."},
+    // ETHER
+    {t:"Mixed",q:"Ether is water-insoluble because?",o:["It is a large molecule","Ether has no H atom bonded to O atom — cannot form H-bond with water","Ether is non-polar","Ether reacts with water"],a:1,e:"Ether functional group is C–O–C. There is NO H atom bonded to oxygen in ether. So ether CANNOT form hydrogen bonds with water molecules → insoluble in water. Alcohol (R–OH) and amine (R–NH₂) both have H bonded to electronegative atom → can H-bond with water → soluble."},
+    {t:"Mixed",q:"Ether stored in brown/black bottles to prevent?",o:["Evaporation","Formation of poisonous explosive diethyl peroxide (C₂H₅–O–O–C₂H₅) in sunlight+air","Colour change","Acid formation"],a:1,e:"In sunlight + air, ether reacts with O₂ → highly poisonous and explosive diethyl peroxide. Storage in sealed dark bottle + small amount of hydroquinone/cuprous oxide prevents peroxide formation. Peroxide detected by KI+starch test (turns blue if peroxide present)."},
+    {t:"Mixed",q:"Williamson ether synthesis: C₂H₅ONa + CH₃Br gives?",o:["Diethyl ether","Methyl ethyl ether CH₃–O–C₂H₅","Dimethyl ether","Ethyl bromide"],a:1,e:"C₂H₅ONa (sodium ethoxide) + CH₃Br (methyl bromide) → CH₃–O–C₂H₅ (methyl ethyl ether / ethoxy methane) + NaBr. This is Williamson synthesis — sodium alkoxide + alkyl halide → ether. Useful for both simple and MIXED ethers."},
+    // AMINES
+    {t:"Mixed",q:"Basicity order of amines: which is MOST basic?",o:["NH₃","Primary amine (R–NH₂)","Secondary amine (R₂NH) is most basic","Tertiary amine (R₃N)"],a:2,e:"R₂NH > R–NH₂ > R₃N > NH₃ (basicity). Secondary amine is most basic because 2 alkyl groups (+I effect) donate maximum electrons to N. Tertiary has 3 alkyls but steric hindrance prevents protonation. Aniline (aromatic amine) is LESS basic than NH₃ (pKb = 9.4 vs 4.74) because lone pair enters benzene ring resonance."},
+    {t:"Mixed",q:"Why is aniline less basic than ammonia?",o:["Aniline has too many H atoms","Lone pair of N in aniline delocalises into benzene ring (resonance) → decreases electron density on N → less able to accept proton → pKb = 9.4 >> NH₃ pKb = 4.74","Aniline is too large","Aniline has no lone pair"],a:1,e:"Aniline C₆H₅–NH₂: the lone pair on N is attracted into the π electrons of the benzene ring by resonance. This reduces electron density on N. So N is less able to act as Lewis base/proton acceptor. Kb of aniline = 4.1×10⁻¹⁰ (very weak base). Aliphatic amines have alkyl groups that push electrons TO N (+I) → stronger bases than NH₃."},
+    {t:"Mixed",q:"Amines can form water-soluble ammonium salts with acids. Why is this useful?",o:["To increase boiling point","Drugs like morphine and tetracycline are water-insoluble amines. Converting to ammonium salts increases water solubility → better delivery in blood stream","To make them flammable","To increase smell"],a:1,e:"Many amine drugs (morphine, tetracycline antibiotic) are insoluble in body fluids. Reacting with HCl → ammonium chloride salts → water-soluble → can dissolve in blood plasma → delivered to target site. R₃N + HCl → R₃NH⁺Cl⁻ (ammonium salt)."},
+    {t:"Mixed",q:"Primary amine functional group is?",o:["=NH (imino)","–NH₂ (amino, monovalent)","–N (trivalent)","–NR₂"],a:1,e:"Primary (1°) amine: –NH₂ (monovalent primary amino group). Secondary (2°) amine: –NH– (divalent imino group). Tertiary (3°) amine: –N< (trivalent, no H on N). Primary amine examples: CH₃NH₂ (methyl amine), C₆H₅NH₂ (aniline)."},
+    {t:"Mixed",q:"The 3 enzyme steps in fermentation of starch to ethanol are (in order)?",o:["Zymase→Maltase→Diastase","Diastase (starch→maltose) → Maltase (maltose→glucose) → Zymase (glucose→ethanol)","Maltase→Diastase→Zymase","All happen at once"],a:1,e:"Order: (1) Diastase enzyme from malt: starch (C₆H₁₀O₅)n + nH₂O → n maltose C₁₂H₂₂O₁₁ at 40°C. (2) Maltase from yeast: C₁₂H₂₂O₁₁ + H₂O → 2C₆H₁₂O₆ at 25°C. (3) Zymase from yeast: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ at 25°C."},
+    {t:"Mixed",q:"Grignard reagent is prepared in dry ether because?",o:["Dry ether is cheaper","(i) Dry ether has no acidic H — aprotic polar solvent. (ii) Ether's polar C–O bond solvates Mg²⁺ stabilising RMgX. If water present: RMgX + H₂O → R–H + Mg(OH)X — reagent destroyed","Ether increases yield","No reason — any solvent works"],a:1,e:"Two reasons for dry ether: (1) Ether is aprotic polar solvent — no acidic H atom to destroy Grignard. (2) Ether oxygen solvates the Mg²⁺ ion of RMgX, stabilising the Grignard reagent in solution. If water or alcohol present: Grignard + acidic H → alkane + destroyed reagent. Must use absolutely DRY ether."},
+    {t:"Mixed",q:"Methanol preparation from water gas uses which catalyst?",o:["Ni at 250°C","ZnO/Cr₂O₃ at 300–400°C, 200–300 atm","H₂SO₄ at 100°C","AlCl₃ at 80°C"],a:1,e:"Water gas (CO+H₂) + H₂ → ZnO/Cr₂O₃ catalyst, 250–350°C, 200–300 atm → CH₃OH (methanol, 99% pure). About 90% of world methanol is produced this way. Water gas = equimolar CO+H₂ from red hot coke + steam at 1300°C."}
   ];
 
   let EQ2 = [], EA = {}, ET = null, ES = 0, EE = 0, ED = false;
