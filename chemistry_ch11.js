@@ -25,6 +25,15 @@ html{scroll-behavior:smooth}
 body{font-family:'Nunito',sans-serif;background:#07071a;color:#e2e8f0;min-height:100vh;background-image:radial-gradient(ellipse 80% 50% at 20% 0%,rgba(99,102,241,.07),transparent),radial-gradient(ellipse 60% 60% at 80% 100%,rgba(192,132,252,.06),transparent)}
 :root{--ka:#ff7043;--ke:#00e5a0;--ky:#c084fc;--al:#38bdf8;--ad:#fbbf24;--ac:#f472b6;--cy:#fb923c;--sf:#131328;--bd:#1e1e42}
 header{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid #1e1e42;position:relative}
+.gojo-mascot{position:absolute;right:1.2rem;bottom:-60px;width:110px;height:auto;filter:drop-shadow(0 0 18px rgba(96,165,250,.5));transition:transform .3s,filter .3s;cursor:pointer;z-index:10;animation:gojoFloat 3s ease-in-out infinite}
+.gojo-mascot:hover{transform:scale(1.08) rotate(-3deg);filter:drop-shadow(0 0 28px rgba(192,132,252,.8))}
+@keyframes gojoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.gojo-home-card{display:flex;align-items:center;gap:1.5rem;background:linear-gradient(135deg,rgba(30,30,66,.9),rgba(96,165,250,.08));border:1.5px solid rgba(96,165,250,.25);border-radius:20px;padding:1.5rem 2rem;margin:0 auto 1.5rem;max-width:700px;box-shadow:0 4px 32px rgba(96,165,250,.1)}
+.gojo-home-img{width:120px;flex-shrink:0;filter:drop-shadow(0 0 16px rgba(96,165,250,.6));animation:gojoFloat 3s ease-in-out infinite}
+.gojo-home-text h2{font-family:'Fredoka One',cursive;font-size:1.5rem;color:#60a5fa;margin:0 0 .4rem}
+.gojo-home-text p{font-size:.9rem;color:#94a3b8;line-height:1.5;margin:0}
+.gojo-home-text .gojo-quote{font-style:italic;color:#c084fc;font-size:.85rem;margin-top:.5rem;border-left:3px solid #c084fc;padding-left:.7rem}
+@media(max-width:600px){.gojo-home-card{flex-direction:column;text-align:center}.gojo-mascot{width:80px;right:.5rem;bottom:-45px}}
 .bkash-top-btn{position:absolute;top:1rem;right:1rem;font-family:'Fredoka One',cursive;font-size:.8rem;padding:.45rem 1rem;background:linear-gradient(135deg,#e2136e,#c0006e);color:#fff;border:none;border-radius:50px;cursor:pointer;box-shadow:0 3px 12px rgba(226,19,110,.4);transition:all .22s cubic-bezier(.34,1.56,.64,1);display:flex;align-items:center;gap:.35rem;z-index:10}
 .bkash-top-btn:hover{transform:translateY(-2px) scale(1.06);box-shadow:0 6px 18px rgba(226,19,110,.55)}
 .hl{font-size:.78rem;letter-spacing:.25em;color:#6366f1;text-transform:uppercase;font-weight:800;margin-bottom:.5rem}
@@ -510,6 +519,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   <div class="hl" data-i18n="hl">⚗️ Organic Chemistry · For Class 9–12 Students</div>
   <h1 onclick="goHome()" style="cursor:pointer" title="Go to Home">Organic Chemistry Hub</h1>
   <div class="hd" data-i18n="hd">🔬 Reactions · Isomerism · Synthesis · Formula Lookup · MCQ Exam</div>
+  <img src="gojo.png" alt="Gojo Sensei" class="gojo-mascot" title="The strongest sorcerer guides your chemistry! ∞" onclick="goHome()">
 </header>
 <nav>
   <div class="nav-divider" data-i18n="div1">📚 Organic Compounds</div>
@@ -607,7 +617,21 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
   const panels = {};
 
   // HOME
-  panels['home'] = `<div class="empty"><span class="ei">⚗️</span><div class="et" data-i18n="home_title">Choose a Section!</div><div class="es" data-i18n="home_desc">Click any button above to explore reactions, exchange conversions, synthesis or MCQ exam 🚀</div></div>`;
+  panels['home'] = `
+<div class="gojo-home-card">
+  <img src="gojo.png" alt="Gojo Sensei" class="gojo-home-img">
+  <div class="gojo-home-text">
+    <h2>Welcome to Organic Chemistry Hub! ⚗️</h2>
+    <p>Master organic chemistry with 449+ MCQs, 139 flashcards, reaction charts, synthesis guides, molecular weight calculator and complete theory — all in one place.</p>
+    <div class="gojo-quote">"Throughout Heaven and Earth, I alone am the one who understands organic chemistry." — Gojo Sensei 😄</div>
+  </div>
+</div>
+<div class="empty" style="margin-top:0">
+  <span class="ei">⚗️</span>
+  <div class="et" data-i18n="home_title">Choose a Section!</div>
+  <div class="es" data-i18n="home_desc">Click any button above to explore reactions, exchange conversions, synthesis or MCQ exam 🚀</div>
+</div>
+`;
 
   // ── ALKANE ──
   panels['ka'] = `
