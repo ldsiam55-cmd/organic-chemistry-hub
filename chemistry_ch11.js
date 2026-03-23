@@ -2076,6 +2076,8 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     <button class="nt-tab" style="color:#a3e635" onclick="ntTab(this,'th-mech')">🔧 Mechanisms</button>
     <button class="nt-tab" style="color:#38bdf8" onclick="ntTab(this,'th-alcohol')">🧪 Alcohol &amp; Ether</button>
     <button class="nt-tab" style="color:#c084fc" onclick="ntTab(this,'th-amines')">🟣 Amines</button>
+    <button class="nt-tab" style="color:#fb923c" onclick="ntTab(this,'th-aldket')">🫧 Aldehyde &amp; Ketone</button>
+    <button class="nt-tab" style="color:#f43f5e" onclick="ntTab(this,'th-acid')">🧴 Acid, Ester &amp; Amide</button>
   </div>
 
   <div id="th-intro" class="nt-pane on">
@@ -2242,189 +2244,627 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     </div></div>
   </div>
 
+  <!-- ALI vs ARO -->
   <div id="th-aliaro" class="nt-pane">
-    <div class="note-card"><div class="note-card-head" style="border-color:#f43f5e"><span class="note-card-icon">⚖️</span><span class="note-card-title" style="color:#f43f5e">Aliphatic vs Aromatic — 7 Differences</span></div>
+    <div class="note-card"><div class="note-card-head" style="border-color:#f43f5e"><span class="note-card-icon">⚖️</span><span class="note-card-title" style="color:#f43f5e">Aliphatic vs Aromatic Compounds — 7 Key Differences</span></div>
     <div class="note-card-body">
-      <table class="note-table">
-        <tr><th>#</th><th>Point</th><th style="color:#60a5fa">Aliphatic</th><th style="color:#a78bfa">Aromatic</th></tr>
-        <tr><td>1</td><td>Structure</td><td>Open chain or non-aromatic cyclic</td><td>Closed planar ring, (4n+2) π electrons (Hückel rule)</td></tr>
-        <tr><td>2</td><td>Carbon %</td><td>CH₄: C=75%, H=25%</td><td>C₆H₆: C=92.3%, H=7.7% — more carbon</td></tr>
-        <tr><td>3</td><td>Unsaturation</td><td>Saturated or normal unsaturated</td><td>Special stable unsaturation: (4n+2) π electrons only</td></tr>
-        <tr><td>4</td><td>Br₂/KMnO₄ test</td><td>Unsaturated aliphatic decolourises both ✅</td><td>Benzene does NOT decolourise either ❌</td></tr>
-        <tr><td>5</td><td>Halide reactivity</td><td>R–X easily hydrolysed by aq.KOH → alcohol</td><td>Ar–X barely hydrolysed — needs 300°C, 150 atm + KOH!</td></tr>
-        <tr><td>6</td><td>Hydroxy compound</td><td>Alcohol (–OH on C chain) — litmus neutral</td><td>Phenol (–OH on ring) — turns litmus RED (acidic)</td></tr>
-        <tr><td>7</td><td>Reactions</td><td>Addition + nucleophilic substitution + elimination</td><td>Mainly electrophilic substitution (halogenation, nitration, Friedel-Craft)</td></tr>
+      Organic compounds are broadly divided into aliphatic (open-chain) and aromatic (ring-containing) compounds. Benzene (C₆H₆) is the parent of all aromatic compounds.
+      <table class="note-table" style="margin-top:.6rem">
+        <tr><th>#</th><th>Property</th><th style="color:#60a5fa">Aliphatic</th><th style="color:#a78bfa">Aromatic</th></tr>
+        <tr><td>1</td><td>Structure</td><td>Open chain or non-aromatic cyclic compounds</td><td>Closed, planar ring structure obeying Hückel rule: (4n+2) π electrons</td></tr>
+        <tr><td>2</td><td>Carbon %</td><td>Lower. e.g. CH₄ has C=75%, H=25%</td><td>Higher. e.g. C₆H₆ has C=92.3%, H=7.7% — much more carbon per molecule</td></tr>
+        <tr><td>3</td><td>Stability</td><td>Normal stability. Unsaturated ones react readily with Br₂ and KMnO₄</td><td>Extra stable due to delocalised π electrons. Benzene resists addition reactions</td></tr>
+        <tr><td>4</td><td>Br₂/KMnO₄ test</td><td>Unsaturated aliphatic compounds decolourise bromine water and KMnO₄ ✅</td><td>Benzene does NOT decolourise either reagent — it prefers substitution ❌</td></tr>
+        <tr><td>5</td><td>Halide reactivity</td><td>Alkyl halide (R–X) is easily hydrolysed by aqueous KOH at room temperature → alcohol</td><td>Aryl halide (Ar–X) is almost unreactive. Needs 300°C and 150 atm with NaOH to form phenol</td></tr>
+        <tr><td>6</td><td>Hydroxy compound</td><td>Alcohol (–OH on aliphatic C) — litmus neutral, does not react with NaOH</td><td>Phenol (–OH directly on benzene ring) — turns litmus red (weakly acidic), reacts with NaOH → sodium phenate</td></tr>
+        <tr><td>7</td><td>Preferred reaction</td><td>Electrophilic addition (C=C), nucleophilic substitution (R–X), elimination</td><td>Mainly electrophilic SUBSTITUTION (halogenation, nitration, sulphonation, Friedel-Craft) — ring stays intact</td></tr>
       </table>
-      <div style="margin-top:.6rem;font-size:.82rem;color:#6b7280">Key: Aromatic = MORE stable, MORE C%, LESS reactive halide, ACIDIC –OH, SUBSTITUTION preferred</div>
+      <div style="margin-top:.7rem;background:rgba(244,63,94,.07);border:1.5px solid rgba(244,63,94,.3);border-radius:10px;padding:.65rem .9rem;font-size:.82rem;color:#94a3b8">
+        💡 <b>Easy memory trick:</b> Aromatic = MORE stable, MORE carbon%, LESS reactive halide, ACIDIC hydroxy compound, prefers SUBSTITUTION reactions. Everything is the opposite of aliphatic.
+      </div>
     </div></div>
   </div>
 
+  <!-- REACTIONS OVERVIEW -->
   <div id="th-react" class="nt-pane">
-    <div class="note-card"><div class="note-card-head" style="border-color:#22d3ee"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#22d3ee">5 Types of Organic Reactions</span></div>
+    <div class="note-card"><div class="note-card-head" style="border-color:#22d3ee"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#22d3ee">5 Types of Organic Reactions — Complete Guide</span></div>
     <div class="note-card-body">
-      <div style="display:flex;flex-direction:column;gap:.55rem">
-        <div style="border-left:4px solid #60a5fa;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#60a5fa">1. Substitution</b> — one atom/group replaced by another<br><span style="font-size:.8rem;color:#94a3b8">Free radical (alkane + X₂/UV) | Electrophilic (arenes + Cl₂/AlCl₃) | Nucleophilic (R–X + OH⁻)</span><br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">CH₄ + Cl₂ → UV → CH₃Cl + HCl &nbsp;|&nbsp; C₆H₆ + Cl₂ → AlCl₃ → C₆H₅Cl + HCl</span></div>
-        <div style="border-left:4px solid #34d399;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#34d399">2. Addition</b> — two molecules combine into one (at C=C, C≡C, C=O)<br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br &nbsp;|&nbsp; CH₃CHO + HCN → CH₃CH(OH)CN</span></div>
-        <div style="border-left:4px solid #fbbf24;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#fbbf24">3. Elimination</b> — atoms/groups removed to form double bond<br><span style="font-size:.8rem;color:#94a3b8">E1: ionisation first (3°). E2: concerted (2°,3°). Saytzeff rule: more substituted alkene preferred.</span><br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">RCH₂–CH₂X + KOH(alc.) → RCH=CH₂ + KX + H₂O</span></div>
-        <div style="border-left:4px solid #f87171;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#f87171">4. Rearrangement</b> — atoms rearrange within same molecule<br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">n-butane ⇌ isobutane &nbsp;|&nbsp; 1,2-hydride shift via carbocation</span></div>
-        <div style="border-left:4px solid #c084fc;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#c084fc">5. Oxidation-Reduction</b> — add/remove O or H<br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">CH₃CH₂OH + [O] → K₂Cr₂O₇ → CH₃CHO &nbsp;|&nbsp; CH₃CHO + 2[H] → Ni → CH₃CH₂OH</span></div>
+      <div style="display:flex;flex-direction:column;gap:.65rem">
+        <div style="border-left:4px solid #60a5fa;padding:.65rem 1rem;background:rgba(0,0,0,.15);border-radius:0 10px 10px 0">
+          <b style="color:#60a5fa;font-size:.95rem">1. Substitution Reaction</b><br>
+          <span style="font-size:.84rem;color:#94a3b8">One atom or group of atoms in a molecule is replaced by another atom or group. There are three sub-types depending on which kind of attacking species is involved:</span><br>
+          <span style="font-size:.83rem;color:#c0caf5">• <b>Free radical substitution</b> (e.g. alkane + halogen under UV light): CH₄ + Cl₂ → UV → CH₃Cl + HCl<br>
+          • <b>Electrophilic substitution</b> (e.g. benzene + halogen with Lewis acid): C₆H₆ + Cl₂ → AlCl₃ → C₆H₅Cl + HCl<br>
+          • <b>Nucleophilic substitution</b> (e.g. alkyl halide + OH⁻): R–X + OH⁻ → R–OH + X⁻</span>
+        </div>
+        <div style="border-left:4px solid #34d399;padding:.65rem 1rem;background:rgba(0,0,0,.15);border-radius:0 10px 10px 0">
+          <b style="color:#34d399;font-size:.95rem">2. Addition Reaction</b><br>
+          <span style="font-size:.84rem;color:#94a3b8">Two molecules combine to form one larger molecule. Always occurs at a multiple bond (C=C, C≡C, or C=O). The π bond breaks and the two new groups attach to the two carbon atoms.</span><br>
+          <span style="font-size:.83rem;color:#c0caf5">• CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br (electrophilic addition to alkene)<br>
+          • CH₃CHO + HCN → CH₃CH(OH)CN (nucleophilic addition to carbonyl group)</span>
+        </div>
+        <div style="border-left:4px solid #fbbf24;padding:.65rem 1rem;background:rgba(0,0,0,.15);border-radius:0 10px 10px 0">
+          <b style="color:#fbbf24;font-size:.95rem">3. Elimination Reaction</b><br>
+          <span style="font-size:.84rem;color:#94a3b8">A small molecule (like HX or H₂O) is removed from two adjacent carbon atoms to form a double bond. Elimination is the opposite of addition.<br>
+          <b>Saytzeff's Rule:</b> when two different alkenes can form, the more substituted (more stable) alkene is the major product.</span><br>
+          <span style="font-size:.83rem;color:#c0caf5">• R–CH₂–CH₂X + KOH(alc.) → R–CH=CH₂ + KX + H₂O (E2 elimination)</span>
+        </div>
+        <div style="border-left:4px solid #f87171;padding:.65rem 1rem;background:rgba(0,0,0,.15);border-radius:0 10px 10px 0">
+          <b style="color:#f87171;font-size:.95rem">4. Rearrangement Reaction</b><br>
+          <span style="font-size:.84rem;color:#94a3b8">Atoms rearrange within the same molecule to produce a structural isomer. Commonly involves a 1,2-hydride or 1,2-methyl shift via a carbocation intermediate.</span><br>
+          <span style="font-size:.83rem;color:#c0caf5">• n-butane ⇌ isobutane (industrial isomerisation) &nbsp;|&nbsp; Hofmann rearrangement of amides</span>
+        </div>
+        <div style="border-left:4px solid #c084fc;padding:.65rem 1rem;background:rgba(0,0,0,.15);border-radius:0 10px 10px 0">
+          <b style="color:#c084fc;font-size:.95rem">5. Oxidation-Reduction (Redox) Reactions</b><br>
+          <span style="font-size:.84rem;color:#94a3b8">Oxidation = gain of oxygen OR loss of hydrogen. Reduction = loss of oxygen OR gain of hydrogen. Most organic reactions involve partial redox (not complete combustion).</span><br>
+          <span style="font-size:.83rem;color:#c0caf5">• CH₃CH₂OH + [O] → K₂Cr₂O₇ → CH₃CHO (1° alcohol → aldehyde — oxidation)<br>
+          • CH₃CHO + 2[H] → Ni catalyst → CH₃CH₂OH (aldehyde → alcohol — reduction)</span>
+        </div>
       </div>
-      <br><b>Attacking Reagents:</b>
-      <table class="note-table" style="margin-top:.4rem">
-        <tr><th>Reagent</th><th>Nature</th><th>Attacks</th><th>Example</th></tr>
-        <tr><td style="color:#fbbf24">Free radical (R•)</td><td>Neutral, unpaired e⁻</td><td>Any C–H bond</td><td>Cl• from Cl₂/UV</td></tr>
-        <tr><td style="color:#f87171">Electrophile (E⁺)</td><td>e⁻-deficient, accepts e⁻</td><td>e⁻-rich sites (C=C, ring)</td><td>NO₂⁺, Br⁺, Cl⁺, H⁺, R⁺</td></tr>
-        <tr><td style="color:#60a5fa">Nucleophile (Nu⁻)</td><td>e⁻-rich, donates e⁻</td><td>e⁻-poor C (δ+)</td><td>OH⁻, CN⁻, NH₃, RO⁻, Br⁻</td></tr>
-      </table>
+      <div style="margin-top:.9rem">
+        <b style="color:#f59e0b">Three Types of Attacking Reagents:</b>
+        <table class="note-table" style="margin-top:.4rem">
+          <tr><th>Reagent type</th><th>Nature</th><th>What it attacks</th><th>Common examples</th></tr>
+          <tr><td style="color:#fbbf24">Free radical (R•)</td><td>Neutral species with an unpaired electron. Very reactive.</td><td>C–H bonds of alkanes under UV light or high temperature</td><td>Cl•, Br• from Cl₂/Br₂ under UV</td></tr>
+          <tr><td style="color:#f87171">Electrophile (E⁺)</td><td>Electron-deficient species. Accepts electrons from the substrate.</td><td>Electron-rich sites like C=C double bonds and benzene rings</td><td>NO₂⁺, Br⁺, Cl⁺, H⁺, R⁺ (carbocation), AlCl₃</td></tr>
+          <tr><td style="color:#60a5fa">Nucleophile (Nu⁻)</td><td>Electron-rich species. Donates electrons to an electron-poor carbon.</td><td>Electron-poor carbon atoms (e.g. δ+ carbon in C–X or C=O)</td><td>OH⁻, CN⁻, NH₃, RO⁻, Br⁻, :CN⁻</td></tr>
+        </table>
+      </div>
     </div></div>
   </div>
 
+  <!-- MECHANISMS -->
   <div id="th-mech" class="nt-pane">
-    <div class="note-card"><div class="note-card-head" style="border-color:#a3e635"><span class="note-card-icon">🔧</span><span class="note-card-title" style="color:#a3e635">Key Reaction Mechanisms</span></div>
+    <div class="note-card"><div class="note-card-head" style="border-color:#a3e635"><span class="note-card-icon">🔧</span><span class="note-card-title" style="color:#a3e635">Reaction Mechanisms — Detailed Guide</span></div>
     <div class="note-card-body">
-      <div style="display:flex;flex-direction:column;gap:.6rem">
-        <div style="background:rgba(96,165,250,.08);border:1.5px solid rgba(96,165,250,.3);border-radius:10px;padding:.7rem">
-          <b style="color:#60a5fa">SN1 — Unimolecular Nucleophilic Substitution (2 steps)</b><br>
-          <span style="font-size:.81rem;color:#94a3b8">Step 1: ionisation → carbocation intermediate (slow, rate-determining). Step 2: Nu⁻ attacks (fast).<br>Favoured by 3° &gt; 2° alkyl halides. Rate ∝ [R–X] only.</span><br>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">(CH₃)₃C–Br → slow → (CH₃)₃C⁺ + Br⁻ → fast + OH⁻ → (CH₃)₃C–OH</span>
+      <div style="display:flex;flex-direction:column;gap:.75rem">
+
+        <div style="background:rgba(96,165,250,.07);border:1.5px solid rgba(96,165,250,.3);border-radius:12px;padding:.8rem 1rem">
+          <b style="color:#60a5fa;font-size:.95rem">SN1 — Unimolecular Nucleophilic Substitution (2 steps)</b><br>
+          <span style="font-size:.84rem;color:#94a3b8"><b>Step 1 (slow — rate determining):</b> The C–X bond breaks on its own. A stable carbocation intermediate forms. This step is slow because breaking a bond needs energy.<br>
+          <b>Step 2 (fast):</b> The nucleophile (Nu⁻) attacks the carbocation from either side → product.<br>
+          <b>Favoured by:</b> 3° &gt; 2° alkyl halides (more stable carbocation). Polar protic solvents (water, ethanol) stabilise the carbocation.<br>
+          <b>Rate law:</b> Rate = k[R–X] only (doesn't depend on nucleophile concentration).</span><br>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5;margin-top:.3rem">(CH₃)₃C–Br → slow → (CH₃)₃C⁺ + Br⁻ → fast + OH⁻ → (CH₃)₃C–OH</div>
         </div>
-        <div style="background:rgba(52,211,153,.08);border:1.5px solid rgba(52,211,153,.3);border-radius:10px;padding:.7rem">
-          <b style="color:#34d399">SN2 — Bimolecular Nucleophilic Substitution (1 step)</b><br>
-          <span style="font-size:.81rem;color:#94a3b8">Nu⁻ attacks from back → transition state → product with inverted configuration. Favoured by 1° alkyl halides (less steric). Rate ∝ [R–X][Nu⁻].</span><br>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">HO⁻ + CH₃Br → [HO···CH₃···Br]‡ → CH₃OH + Br⁻ (Walden inversion)</span>
+
+        <div style="background:rgba(52,211,153,.07);border:1.5px solid rgba(52,211,153,.3);border-radius:12px;padding:.8rem 1rem">
+          <b style="color:#34d399;font-size:.95rem">SN2 — Bimolecular Nucleophilic Substitution (1 step)</b><br>
+          <span style="font-size:.84rem;color:#94a3b8"><b>One concerted step:</b> The nucleophile attacks from the back side of the C–X bond at exactly the same time as X⁻ leaves. This forms a pentacoordinate transition state (not an intermediate).<br>
+          <b>Result:</b> The configuration at the carbon is inverted (like an umbrella flipping) — called Walden inversion.<br>
+          <b>Favoured by:</b> 1° alkyl halides (less steric hindrance around the carbon). Polar aprotic solvents (acetone, DMSO) where the nucleophile is not solvated and remains reactive.<br>
+          <b>Rate law:</b> Rate = k[R–X][Nu⁻] (depends on BOTH reactant concentrations).</span><br>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5;margin-top:.3rem">HO⁻ + CH₃Br → [HO···CH₃···Br]‡ → CH₃OH + Br⁻ (configuration inverted)</div>
         </div>
-        <div style="background:rgba(251,191,36,.08);border:1.5px solid rgba(251,191,36,.3);border-radius:10px;padding:.7rem">
-          <b style="color:#fbbf24">E1 vs E2 Elimination + Saytzeff Rule</b><br>
-          <span style="font-size:.81rem;color:#94a3b8">E1: 2 steps, carbocation intermediate, KOH(alc.) + heat, 3°. E2: 1 step concerted, KOH(alc.), 2° and 3°.<br><b>Saytzeff rule:</b> more substituted (more stable) alkene is the major product.</span><br>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">R–X + KOH(aq) → R–OH (SN2) &nbsp;|&nbsp; R–X + KOH(alc.) → alkene (E2)</span>
+
+        <div style="background:rgba(251,191,36,.07);border:1.5px solid rgba(251,191,36,.3);border-radius:12px;padding:.8rem 1rem">
+          <b style="color:#fbbf24;font-size:.95rem">Markovnikov's Rule &amp; Anti-Markovnikov (Kharasch Effect)</b><br>
+          <span style="font-size:.84rem;color:#94a3b8"><b>Markovnikov's Rule:</b> When HX adds to an unsymmetrical alkene, the H atom goes to the carbon that already has more hydrogen atoms. Reason: the other carbon forms a more stable (more substituted) carbocation.<br>
+          <b>Anti-Markovnikov (Kharasch/peroxide effect):</b> When HBr is added in the presence of peroxides (ROOR), the reaction follows a free radical mechanism. The Br• radical (not H•) adds first to the less substituted carbon, giving the opposite product to Markovnikov.<br>
+          <b>Key point:</b> Anti-Markovnikov ONLY works with HBr (not HCl or HI — their radical reactions are either too slow or too fast to be selective).</span><br>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5;margin-top:.3rem">CH₃–CH=CH₂ + HBr → (Markov) → CH₃–CHBr–CH₃ (2-bromopropane, major product)<br>CH₃–CH=CH₂ + HBr → (ROOR/peroxide) → CH₃–CH₂–CH₂Br (1-bromopropane, anti-Markov)</div>
         </div>
-        <div style="background:rgba(248,113,113,.08);border:1.5px solid rgba(248,113,113,.3);border-radius:10px;padding:.7rem">
-          <b style="color:#f87171">Markovnikov's Rule &amp; Anti-Markovnikov (Kharasch)</b><br>
-          <span style="font-size:.81rem;color:#94a3b8">Markovnikov: H of HX adds to C with MORE H (more stable carbocation on other C).<br>Anti-Markovnikov (peroxide/ROOR): free radical addition → H to C with LESS H.</span><br>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">CH₃CH=CH₂ + HBr → Markov → CH₃CHBrCH₃ (2-bromopropane, major)<br>CH₃CH=CH₂ + HBr → ROOR → CH₃CH₂CH₂Br (1-bromopropane, anti-Markov)</span>
+
+        <div style="background:rgba(248,113,113,.07);border:1.5px solid rgba(248,113,113,.3);border-radius:12px;padding:.8rem 1rem">
+          <b style="color:#f87171;font-size:.95rem">Inductive Effect (+I and –I) &amp; Mesomeric Effect (+M and –M)</b><br>
+          <span style="font-size:.84rem;color:#94a3b8"><b>+I effect (electron-donating through σ bonds):</b> Alkyl groups like –CH₃, –C₂H₅ push electron density towards the attached atom through the carbon chain. This increases electron density on C (or N), making the compound more basic or nucleophilic.<br>
+          <b>–I effect (electron-withdrawing through σ bonds):</b> Electronegative groups like –Cl, –NO₂, –COOH pull electron density away through σ bonds. This makes the attached C more δ+, increasing acidity of –OH and reactivity of C=O.<br>
+          <b>+M effect:</b> Groups with lone pairs (–OH, –NH₂, –OR) donate electrons into a π system by resonance. On a benzene ring, this activates ortho and para positions → ortho/para directing substituents.<br>
+          <b>–M effect:</b> Groups that can accept π electrons (–NO₂, –CHO, –COOH, –CN) withdraw electrons from the ring by resonance. This deactivates the ring and directs incoming electrophiles to the meta position.</span>
         </div>
-        <div style="background:rgba(192,132,252,.08);border:1.5px solid rgba(192,132,252,.3);border-radius:10px;padding:.7rem">
-          <b style="color:#c084fc">Inductive &amp; Mesomeric Effects + Carbocation Stability</b><br>
-          <span style="font-size:.81rem;color:#94a3b8">+I effect (alkyl groups): donate e⁻ through σ bonds → increase e⁻ density.<br>+M effect (–OH, –NH₂): donate lone pair into π system → ortho/para directing.<br>–M effect (–NO₂, –CHO): withdraw π electrons → meta directing.<br>Carbocation stability: 3° &gt; 2° &gt; 1° &gt; CH₃⁺ (more alkyl = more stable)</span>
+
+        <div style="background:rgba(192,132,252,.07);border:1.5px solid rgba(192,132,252,.3);border-radius:12px;padding:.8rem 1rem">
+          <b style="color:#c084fc;font-size:.95rem">Carbocation &amp; Carbanion Stability</b><br>
+          <span style="font-size:.84rem;color:#94a3b8"><b>Carbocation (R⁺) stability: 3° &gt; 2° &gt; 1° &gt; CH₃⁺</b><br>
+          More alkyl groups attached to the positive carbon donate electrons via +I effect and hyperconjugation → more stable. This is why SN1 and E1 are favoured by tertiary substrates.<br>
+          <b>Carbanion (R⁻) stability: CH₃⁻ &gt; 1° &gt; 2° &gt; 3°</b><br>
+          The opposite of carbocation — more alkyl groups destabilise a carbanion because they push even more electrons onto an already electron-rich centre.<br>
+          <b>Free radical stability: 3° &gt; 2° &gt; 1°</b> — similar to carbocation stability due to hyperconjugation and +I effect delocalising the unpaired electron.</span>
         </div>
+
       </div>
     </div></div>
   </div>
 
+  <!-- ALCOHOL & ETHER -->
   <div id="th-alcohol" class="nt-pane">
-    <div class="note-card"><div class="note-card-head" style="border-color:#38bdf8"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:#38bdf8">Alcohol — Classification &amp; Preparation</span></div>
+    <div class="note-card"><div class="note-card-head" style="border-color:#38bdf8"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:#38bdf8">Alcohol — Full Classification &amp; 6 Preparation Methods</span></div>
     <div class="note-card-body">
-      <b>Definition:</b> H atoms of aliphatic hydrocarbon replaced by –OH groups → alcohols. Formula: CₙH₂ₙ₊₁OH.<br><br>
-      <b>By –OH count:</b> Monohydric | Diol (ethylene glycol) | Triol (glycerol/propane-1,2,3-triol) | Tetraol (sorbitol)<br><br>
-      <b>Monohydric by degree:</b>
-      <table class="note-table">
-        <tr><th>Type</th><th>Group</th><th>Rule</th><th>Example</th></tr>
-        <tr><td style="color:#38bdf8">Primary (1°)</td><td>–CH₂OH</td><td>C with –OH has ≥2 H, bonded to 1 alkyl</td><td>CH₃CH₂OH (ethanol)</td></tr>
-        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>–CHOH–</td><td>C with –OH has 1 H, bonded to 2 alkyls</td><td>CH₃CHOHCH₃ (propan-2-ol)</td></tr>
-        <tr><td style="color:#f87171">Tertiary (3°)</td><td>&gt;C–OH</td><td>C with –OH has 0 H, bonded to 3 alkyls</td><td>(CH₃)₃COH</td></tr>
-      </table>
-      <div style="margin-top:.5rem;font-size:.82rem;color:#94a3b8"><b>Isomerism:</b> Position (propan-1-ol vs propan-2-ol) | Chain | Functional group (C₂H₆O: ethanol ↔ dimethyl ether)<br><b>Phenol</b> = –OH directly on benzene ring → acidic (turns litmus red). <b>Aromatic alcohol</b> = –OH on side chain → neutral.</div>
-      <br><b>6 Preparation Methods:</b>
-      <div style="display:flex;flex-direction:column;gap:.4rem;margin-top:.4rem">
-        <div style="border-left:3px solid #60a5fa;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#60a5fa">1.</b> R–X + NaOH(aq) → R–OH + NaX (SN2, best with 1° R–X)</div>
-        <div style="border-left:3px solid #34d399;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#34d399">2.</b> Alkene + conc.H₂SO₄ + H₂O → alcohol (Markovnikov hydration)</div>
-        <div style="border-left:3px solid #fbbf24;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#fbbf24">3.</b> Aldehyde + 2[H] (Ni/Pt) → 1° alcohol; Ketone + LiAlH₄/ether → 2° alcohol</div>
-        <div style="border-left:3px solid #f87171;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#f87171">4.</b> R–COOH + LiAlH₄/dry ether → 1° alcohol + H₂O</div>
-        <div style="border-left:3px solid #c084fc;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#c084fc">5.</b> Acid chloride / ester / anhydride + LiAlH₄ → 1° alcohol</div>
-        <div style="border-left:3px solid #fb923c;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#fb923c">6. Grignard:</b> RMgX + HCHO → 1° | + RCHO → 2° | + ketone → 3° alcohol (dry ether, no water!)</div>
-      </div>
-      <div style="margin-top:.6rem;font-size:.82rem;color:#94a3b8"><b>Methanol:</b> water gas (CO+H₂) + H₂ → ZnO/Cr₂O₃, 250–350°C, 200–300 atm → CH₃OH (99%)<br>
-      <b>Ethanol:</b> Starch →<em>diastase 40°C</em>→ Maltose →<em>maltase 25°C</em>→ Glucose →<em>zymase 25°C</em>→ 2C₂H₅OH + 2CO₂</div>
-    </div></div>
-
-    <div class="note-card"><div class="note-card-head" style="border-color:#4ade80"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:#4ade80">4 Identification Tests + Ethanol Types + Lucas Test + Ether</span></div>
-    <div class="note-card-body">
-      <div style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:.8rem">
-        <div style="border-left:4px solid #fbbf24;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#fbbf24">1. Na Metal — ALL alcohols:</b> 2R–OH + 2Na → 2R–ONa + H₂↑ (H₂ gas burns blue)</div>
-        <div style="border-left:4px solid #60a5fa;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#60a5fa">2. PCl₅ — differentiates alcohol from ether:</b><br>Alcohol: R–OH + PCl₅ → R–Cl + POCl₃ + HCl↑ → white fumes with NH₃ ✅<br>Ether: R–O–R + PCl₅ → 2R–Cl + POCl₃ (NO HCl gas) ❌</div>
-        <div style="border-left:4px solid #f472b6;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#f472b6">3. Methanol only — salicylic acid + conc.H₂SO₄ → methyl salicylate (IODEX smell)</b></div>
-        <div style="border-left:4px solid #a78bfa;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#a78bfa">4. Iodoform — ethanol &amp; CH₃CO– compounds:</b><br>CH₃CH₂OH + 4I₂ + 6NaOH → 60°C → CHI₃↓ (yellow) + HCOONa + 5NaI + 5H₂O<br><span style="font-size:.78rem;color:#4ade80">✅ Give: ethanol, ethanal, propanone, butan-2-one, acetophenone, 2° alcohols (CH₃CHOH–R)</span><br><span style="font-size:.78rem;color:#f87171">❌ Don't: CH₃COCl, CH₃CONH₂, CH₃COOH (CH₃CO– not joined to H/alkyl)</span></div>
-      </div>
-      <b>Ethanol types:</b>
-      <table class="note-table" style="margin:.4rem 0 .8rem">
-        <tr><th>Name</th><th>Composition</th><th>Key fact</th></tr>
-        <tr><td style="color:#4ade80">Rectified Spirit</td><td>95.6% EtOH + 4.4% H₂O</td><td>Azeotrope bp 78.1°C — cannot separate by distillation</td></tr>
-        <tr><td style="color:#38bdf8">Absolute Alcohol</td><td>99.7% EtOH</td><td>Rectified spirit + CaO (absorbs H₂O) → distil at 78.3°C</td></tr>
-        <tr><td style="color:#f87171">Methylated Spirit</td><td>95.6% EtOH + 5–10% MeOH</td><td>Poisonous, unfit for drinking</td></tr>
-        <tr><td style="color:#fbbf24">Power Alcohol</td><td>EtOH + benzene + petrol</td><td>Alternate motor fuel</td></tr>
-        <tr><td style="color:#94a3b8">Wood Spirit</td><td>98% MeOH + 1–2% acetone</td><td>From destructive distillation of wood at 350°C</td></tr>
-      </table>
-      <b>Lucas Test</b> (anhydrous ZnCl₂ + conc.HCl):
-      <table class="note-table" style="margin:.4rem 0 .9rem">
-        <tr><td style="color:#f87171">3° alcohol</td><td>Immediately turbid — SN1, stable 3° carbocation</td></tr>
-        <tr><td style="color:#fbbf24">2° alcohol</td><td>Turbid in 5–10 min — SN1 slower</td></tr>
-        <tr><td style="color:#4ade80">1° alcohol</td><td>No reaction at room temp — SN2, only on heating</td></tr>
-      </table>
-      <b>Ether:</b> Two alkyl/aryl groups + divalent O. IUPAC = alkoxy alkane. C–O–C bond angle 110°.<br>
-      H₂O &gt; R–OH &gt; R–O–R (polarity). Ether water-INSOLUBLE (no O–H bond → no H-bond with water).<br>
-      <b>Williamson synthesis:</b> R–ONa + R–X → R–O–R + NaX (best method, simple &amp; mixed ethers)<br>
-      <b>Dehydration:</b> 2C₂H₅OH + conc.H₂SO₄ → <b>140°C</b> → diethyl ether (at 170°C → ethylene!)<br>
-      <b>⚠️ Peroxide:</b> Ether + sunlight + O₂ → explosive C₂H₅–O–O–C₂H₅. Store in sealed dark bottle.
-    </div></div>
-  </div>
-
-  <div id="th-amines" class="nt-pane">
-    <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">🟣</span><span class="note-card-title" style="color:#c084fc">Amines — Classification &amp; Basicity</span></div>
-    <div class="note-card-body">
-      <b>Definition:</b> NH₃ derivatives where H atoms are replaced by alkyl/aryl groups.<br><br>
-      <table class="note-table">
-        <tr><th>By Structure</th><th>Definition</th><th>Examples</th></tr>
-        <tr><td style="color:#60a5fa">Aliphatic</td><td>Only alkyl groups on N</td><td>CH₃NH₂, (CH₃)₂NH, (CH₃)₃N</td></tr>
-        <tr><td style="color:#f472b6">Aromatic</td><td>Aryl group on N</td><td>C₆H₅NH₂ (aniline), N-methyl phenyl amine</td></tr>
-        <tr><td style="color:#a78bfa">Heterocyclic</td><td>N atom inside cyclic ring</td><td>Pyrrole, Pyridine, Purine, Pyrimidine (DNA/RNA)</td></tr>
-      </table>
-      <br>
-      <table class="note-table">
-        <tr><th>Degree</th><th>H on N</th><th>Group</th><th>Example</th></tr>
-        <tr><td style="color:#4ade80">Primary (1°)</td><td>2 H</td><td>–NH₂ (amino)</td><td>CH₃NH₂, C₆H₅NH₂</td></tr>
-        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>1 H</td><td>=NH (imino)</td><td>(CH₃)₂NH</td></tr>
-        <tr><td style="color:#f87171">Tertiary (3°)</td><td>0 H</td><td>≡N (trivalent)</td><td>(CH₃)₃N, N,N-dimethylaniline</td></tr>
-      </table>
-      <br><b>Basicity order: R₂NH &gt; R–NH₂ &gt; R₃N &gt; NH₃ &gt;&gt; C₆H₅NH₂</b>
-      <table class="note-table" style="margin-top:.4rem">
-        <tr><th>Amine</th><th>pKb</th><th>Reason</th></tr>
-        <tr><td style="color:#fbbf24">Dimethylamine (CH₃)₂NH</td><td>3.23</td><td>2 alkyl groups: max +I effect → most basic</td></tr>
-        <tr><td style="color:#4ade80">Methylamine CH₃NH₂</td><td>3.36</td><td>1 alkyl group +I effect</td></tr>
-        <tr><td style="color:#fb923c">Trimethylamine (CH₃)₃N</td><td>4.22</td><td>3 alkyls but steric hindrance blocks H⁺</td></tr>
-        <tr><td style="color:#94a3b8">Ammonia NH₃</td><td>4.74</td><td>No alkyl groups — baseline</td></tr>
-        <tr><td style="color:#f87171">Aniline C₆H₅NH₂</td><td>9.4</td><td>N lone pair in benzene π resonance → very weak base</td></tr>
-      </table>
-      <div style="margin-top:.5rem;font-size:.81rem;color:#94a3b8">💊 Drugs like morphine &amp; tetracycline (amines) are water-insoluble. As ammonium salts (+ HCl) → water-soluble → delivered through blood stream.</div>
-    </div></div>
-
-    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#34d399">Preparation (7 methods) &amp; Identification Tests</span></div>
-    <div class="note-card-body">
-      <b>Preparation:</b>
-      <div style="display:flex;flex-direction:column;gap:.4rem;margin:.5rem 0 .9rem">
-        <div style="border-left:3px solid #60a5fa;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#60a5fa">1.</b> R–X + NH₃ (alc., heat, closed vessel) → 1°+2°+3° mixture → separate by KOH distillation</div>
-        <div style="border-left:3px solid #34d399;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#34d399">2.</b> Nitrile + LiAlH₄/ether → 1° amine: R–C≡N + 4[H] → R–CH₂–NH₂</div>
-        <div style="border-left:3px solid #fbbf24;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#fbbf24">3.</b> Isonitrile + LiAlH₄/ether → 2° amine: R–N=C + 4[H] → R–NH–CH₃</div>
-        <div style="border-left:3px solid #f87171;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#f87171">4.</b> Amide + LiAlH₄ → 1° amine (same C count): R–CO–NH₂ + 4[H] → R–CH₂–NH₂</div>
-        <div style="border-left:3px solid #f472b6;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#f472b6">5. Hofmann Degradation — 1° amine, ONE LESS carbon!</b><br>R–CO–NH₂ + Br₂ + 4NaOH → R–NH₂ + 2NaBr + Na₂CO₃ + 2H₂O<br><span style="font-size:.77rem;color:#6b7280">e.g. CH₃CONH₂ (acetamide) → CH₃NH₂ (methylamine). C count DECREASES by 1.</span></div>
-        <div style="border-left:3px solid #a78bfa;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#a78bfa">6.</b> Aniline from nitrobenzene: Industrial: C₆H₅NO₂ + 3H₂ → Cu/silica, 270°C, 2 atm → C₆H₅NH₂<br>Lab: C₆H₅NO₂ + 6[H] (Sn + conc.HCl, 70°C) → C₆H₅NH₂ + 2H₂O</div>
-        <div style="border-left:3px solid #38bdf8;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#38bdf8">7.</b> Aniline: from phenol (ZnCl₂/300°C) | chlorobenzene (Cu₂O, 200°C, 300 atm) | diazonium + 6[H] (Zn/HCl)</div>
-      </div>
-      <b>Carbylamine Test — PRIMARY amines ONLY:</b><br>
-      <span style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#c0caf5">R–NH₂ + CHCl₃ + 3KOH → 60°C → R–N=C (isocyanide — foul smell) + 3KCl + 2H₂O</span><br>
-      Both CH₃NH₂ (aliphatic) and C₆H₅NH₂ (aromatic) give this. 2° and 3° amines do NOT.<br><br>
-      <b>Nitrous Acid Test (HNO₂ = NaNO₂ + HCl):</b>
+      <b>Definition:</b> When one or more hydrogen atoms of an aliphatic hydrocarbon are replaced by the same number of –OH (hydroxyl) groups, the compounds formed are called <b>alcohols</b>. General formula: CₙH₂ₙ₊₁OH (monohydric).<br><br>
+      <b>Classification by number of –OH groups:</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">• Monohydric (1 –OH group): methanol (CH₃OH), ethanol (C₂H₅OH)<br>
+      • Diol (2 –OH groups): ethylene glycol = ethane-1,2-diol<br>
+      • Triol (3 –OH groups): glycerol = propane-1,2,3-triol (used in skin creams, eye drops — absorbs moisture via H-bonds)<br>
+      • Tetraol and above: sorbitol = hexane-1,2,3,4,5,6-hexol</span><br><br>
+      <b>Classification of monohydric alcohols by degree:</b>
       <table class="note-table" style="margin:.5rem 0">
-        <tr><th>Amine</th><th>Product</th><th>Observation</th></tr>
-        <tr><td style="color:#4ade80">Aliphatic 1° (R–NH₂)</td><td>Alcohol + N₂↑</td><td>N₂ gas bubbles</td></tr>
-        <tr><td style="color:#fbbf24">Aliphatic 2° (R₂NH)</td><td>Yellow nitroso amine</td><td>Yellow oily layer</td></tr>
-        <tr><td style="color:#f87171">Aliphatic 3° (R₃N)</td><td>Ammonium nitrite salt</td><td>Water-soluble</td></tr>
-        <tr><td style="color:#a78bfa">Aniline at 0–5°C</td><td>Diazonium salt C₆H₅N₂Cl</td><td>Stable → dyes &amp; Sandmeyer!</td></tr>
-        <tr><td style="color:#94a3b8">Aniline at 35°C</td><td>Phenol + N₂↑</td><td>Diazonium decomposes on heating</td></tr>
+        <tr><th>Type</th><th>What it means</th><th>Functional group</th><th>Example</th></tr>
+        <tr><td style="color:#38bdf8">Primary (1°)</td><td>The carbon bearing –OH has at least 2 hydrogen atoms and is connected to only 1 alkyl group</td><td>–CH₂–OH</td><td>CH₃OH, CH₃CH₂OH (ethanol)</td></tr>
+        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>The carbon bearing –OH has exactly 1 hydrogen atom and is connected to 2 alkyl groups</td><td>–CH(OH)–</td><td>CH₃CHOHCH₃ (propan-2-ol, or isopropanol)</td></tr>
+        <tr><td style="color:#f87171">Tertiary (3°)</td><td>The carbon bearing –OH has NO hydrogen atoms — it is connected to 3 alkyl groups</td><td>&gt;C(OH)</td><td>(CH₃)₃COH (2-methylpropan-2-ol)</td></tr>
       </table>
-      <b>Diazonium reaction:</b> C₆H₅–NH₂ + HNO₂ + HCl → <b>0–5°C</b> → C₆H₅–N₂Cl + 2H₂O<br>
-      <span style="font-size:.8rem;color:#94a3b8">Stable ONLY from aromatic amines (ring resonance stabilises –N₂⁺). Aliphatic diazonium instantly decomposes → N₂ + carbonium ion. Used for bright coloured dyes and Sandmeyer reaction.</span>
+      <b>Phenol vs Aromatic Alcohol (very important distinction!):</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">• <b>Phenol</b>: The –OH group is directly bonded to a carbon of the benzene ring. Phenol is <b>weakly acidic</b> (turns blue litmus red) because the O–H bond ionises in water: C₆H₅OH + H₂O ⇌ C₆H₅O⁻ + H₃O⁺<br>
+      • <b>Aromatic alcohol</b>: The –OH group is on a side chain attached to the ring — NOT on the ring itself. Completely neutral (does not change litmus). Example: benzyl alcohol (C₆H₅–CH₂–OH)</span><br><br>
+      <b>Isomerism in monohydric alcohols (3 types):</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">1. Position isomerism: propan-1-ol (CH₃CH₂CH₂OH) vs propan-2-ol (CH₃CHOHCH₃) — same formula, –OH in different positions<br>
+      2. Chain isomerism: pentanol-1 (straight chain) vs 2-methylbutanol-1 (branched chain)<br>
+      3. Functional group isomerism: C₂H₆O — ethanol (alcohol) is isomeric with dimethyl ether (ether) — completely different functional groups!</span><br><br>
+      <b>6 Preparation Methods for Alcohols:</b>
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.5rem">
+        <div style="border-left:4px solid #60a5fa;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#60a5fa">1. From Alkyl Halide (R–X) + Aqueous NaOH — Nucleophilic Substitution (SN2)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–CH₂–X + NaOH(aq) → R–CH₂–OH + NaX</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Best with primary alkyl halides — less steric hindrance. Reactivity order: R–I &gt; R–Br &gt; R–Cl. Secondary and tertiary halides tend to give alkene (elimination) as a side product.</span>
+        </div>
+        <div style="border-left:4px solid #34d399;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#34d399">2. From Alkene + Water (Hydration) — Markovnikov's Rule Followed</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–CH=CH₂ + H–OH → conc.H₂SO₄, heat → R–CH(OH)–CH₃</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Conc. H₂SO₄ first forms alkyl hydrogen sulphate (R–OSO₃H), which is then hydrolysed with water to give alcohol. H attaches to the carbon with MORE hydrogens (Markovnikov).</span>
+        </div>
+        <div style="border-left:4px solid #fbbf24;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#fbbf24">3. From Carbonyl Compounds by Reduction</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Aldehyde + 2[H] → Ni, Pt, or Pd catalyst → Primary (1°) alcohol<br>
+          CH₃CHO + 2[H] → Ni → CH₃CH₂OH (ethanal → ethanol)<br>
+          Ketone + LiAlH₄ → dry ether → Secondary (2°) alcohol<br>
+          CH₃COCH₃ + 2[H] → LiAlH₄ → CH₃CHOHCH₃ (propanone → propan-2-ol)</span>
+        </div>
+        <div style="border-left:4px solid #f87171;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#f87171">4. From Carboxylic Acid — Using LiAlH₄ in Dry Ether</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–COOH + 4[H] → LiAlH₄/dry ether → R–CH₂OH + H₂O</span><br>
+          <span style="font-size:.8rem;color:#6b7280">LiAlH₄ is a powerful reducing agent that reduces the –COOH group to –CH₂OH. Always gives primary alcohol. Example: CH₃COOH → CH₃CH₂OH</span>
+        </div>
+        <div style="border-left:4px solid #c084fc;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#c084fc">5. From Acid Derivatives (Acid Chloride / Ester / Anhydride) + LiAlH₄</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Acid chloride: R–COCl + 4[H] → LiAlH₄ → R–CH₂OH + HCl<br>
+          Ester: R–COO–R' + 4[H] → LiAlH₄ → R–CH₂OH + R'–OH (two alcohols!)<br>
+          Anhydride: (RCO)₂O + 8[H] → LiAlH₄ → 2R–CH₂OH + H₂O</span>
+        </div>
+        <div style="border-left:4px solid #fb923c;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#fb923c">6. From Grignard Reagent (RMgX) — Carbon Chain Extends by One!</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">RMgX + HCHO (methanal/formaldehyde) + H₂O/HCl → Primary (1°) alcohol with one more C<br>
+          RMgX + RCHO (any other aldehyde) + H₂O/HCl → Secondary (2°) alcohol<br>
+          RMgX + ketone + H₂O/HCl → Tertiary (3°) alcohol</span><br>
+          <span style="font-size:.8rem;color:#6b7280">⚠️ Grignard reagent is destroyed by water or any compound with an acidic H. Must use completely dry ether as solvent. The reaction must be done under anhydrous conditions.</span>
+        </div>
+      </div>
+      <div style="margin-top:.7rem;background:rgba(56,189,248,.07);border:1.5px solid rgba(56,189,248,.2);border-radius:10px;padding:.65rem .9rem;font-size:.83rem;color:#94a3b8">
+        <b style="color:#38bdf8">Methanol from water gas:</b> CO(g) + H₂(g) [water gas] + H₂(g) → ZnO/Cr₂O₃ catalyst, 250–350°C, 200–300 atm → CH₃OH (99% pure). About 90% of world's methanol is made this way.<br>
+        <b style="color:#38bdf8">Ethanol by fermentation:</b> Starch →<em>diastase enzyme, 40°C</em>→ Maltose →<em>maltase enzyme, 25°C</em>→ Glucose →<em>zymase enzyme, 25°C</em>→ 2 C₂H₅OH + 2 CO₂
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#4ade80"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:#4ade80">Alcohol Identification Tests + Ethanol Types + Lucas Test</span></div>
+    <div class="note-card-body">
+      <b>4 identification reactions of alcohol:</b>
+      <div style="display:flex;flex-direction:column;gap:.6rem;margin:.6rem 0 .9rem">
+        <div style="border-left:4px solid #fbbf24;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#fbbf24">Test 1 — Na Metal Test (confirms –OH in ANY alcohol)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">2R–OH + 2Na → 2R–ONa (sodium alkoxide) + H₂↑</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Hydrogen gas is released as bubbles. When ignited, it burns with a blue flame. This test confirms the presence of –OH group in any alcohol or phenol.</span>
+        </div>
+        <div style="border-left:4px solid #60a5fa;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#60a5fa">Test 2 — PCl₅ Test (also DIFFERENTIATES alcohol from ether!)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Alcohol: R–OH + PCl₅ → R–Cl + POCl₃ + HCl↑ (HCl gives white fumes with NH₃ → NH₄Cl)<br>
+          Ether: R–O–R + PCl₅ → 2R–Cl + POCl₃ (no HCl gas is produced!)</span><br>
+          <span style="font-size:.8rem;color:#6b7280">The key difference: ONLY alcohol gives HCl gas. Hold a glass rod moistened with NH₃ near the mouth of the test tube — white fumes of NH₄Cl confirm HCl from alcohol. Ether gives no white fumes.</span>
+        </div>
+        <div style="border-left:4px solid #f472b6;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#f472b6">Test 3 — Methanol Identification: Salicylic Acid + Conc. H₂SO₄</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">CH₃OH + salicylic acid + 2–3 drops conc. H₂SO₄ → methyl salicylate + H₂O</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Methyl salicylate has a very distinctive smell — exactly like IODEX (pain-relief balm). This test is SPECIFIC to methanol only. If you smell iodex, methanol is confirmed. Ethanol does NOT give this test.</span>
+        </div>
+        <div style="border-left:4px solid #a78bfa;padding:.6rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#a78bfa">Test 4 — Iodoform Test (confirms Ethanol &amp; all CH₃CO– compounds)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">CH₃CH₂OH + 4I₂ + 6NaOH → heat at 60°C → CHI₃↓ (yellow precipitate) + HCOONa + 5NaI + 5H₂O</span><br>
+          <span style="font-size:.8rem;color:#4ade80">✅ Compounds that GIVE iodoform (all contain CH₃CO– group or are oxidised to it): ethanol, ethanal (acetaldehyde), propanone (acetone), butan-2-one, acetophenone, and all 2° alcohols with structure CH₃–CHOH–R</span><br>
+          <span style="font-size:.8rem;color:#f87171">❌ Compounds that do NOT give iodoform despite having CH₃CO–: acetyl chloride (CH₃COCl), acetamide (CH₃CONH₂), acetic acid (CH₃COOH) — in these molecules the CH₃CO– is bonded to Cl, NH₂, or OH (not to H or an alkyl group), so the iodoform condition is not met.</span>
+        </div>
+      </div>
+      <b>Types of ethanol-based mixtures (important for exam):</b>
+      <table class="note-table" style="margin:.5rem 0 .9rem">
+        <tr><th>Name</th><th>Composition</th><th>Key fact / Use</th></tr>
+        <tr><td style="color:#4ade80">Rectified Spirit</td><td>95.6% ethanol + 4.4% water</td><td>Constant-boiling azeotrope at 78.1°C. Cannot remove the last 4.4% water by distillation alone.</td></tr>
+        <tr><td style="color:#38bdf8">Absolute Alcohol</td><td>99.7% ethanol</td><td>Made by adding quicklime (CaO) to rectified spirit — CaO absorbs water — then distil at 78.3°C.</td></tr>
+        <tr><td style="color:#f87171">Methylated Spirit</td><td>95.6% ethanol + 5–10% methanol + traces of pyridine</td><td>Poisonous — cannot be drunk. Used as industrial solvent and for varnishing. Also called denatured alcohol.</td></tr>
+        <tr><td style="color:#fbbf24">Power Alcohol</td><td>Ethanol + benzene + petrol mixture</td><td>Used as alternative fuel for motor engines.</td></tr>
+        <tr><td style="color:#c084fc">Proof Spirit</td><td>57.1% ethanol + 42.9% water by volume</td><td>International standard for measuring alcoholic strength of imported spirits.</td></tr>
+        <tr><td style="color:#94a3b8">Wood Spirit</td><td>98% methanol + 1–2% acetone</td><td>Obtained from destructive distillation of wood at 350°C. Boils at 65°C.</td></tr>
+      </table>
+      <b>Lucas Test — Distinguish 1°, 2°, 3° Alcohols:</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">Lucas reagent = anhydrous ZnCl₂ dissolved in concentrated HCl. The reagent converts –OH into –Cl (alkyl chloride). Since alkyl chloride is insoluble in the reagent, the solution turns cloudy (turbid) when reaction occurs.</span>
+      <table class="note-table" style="margin-top:.4rem">
+        <tr><th>Alcohol type</th><th>Observation at room temp</th><th>Mechanism &amp; Reason</th></tr>
+        <tr><td style="color:#f87171">Tertiary (3°) alcohol</td><td>Solution turns immediately turbid (milky white) within seconds</td><td>SN1 mechanism. The 3° carbocation forms instantly because it is the most stable (3 alkyl groups donating electrons). Very fast reaction.</td></tr>
+        <tr><td style="color:#fbbf24">Secondary (2°) alcohol</td><td>Turbid layer appears after 5 to 10 minutes</td><td>SN1 mechanism but slower. The 2° carbocation is less stable than 3°, so it takes more time to form.</td></tr>
+        <tr><td style="color:#4ade80">Primary (1°) alcohol</td><td>No turbidity at room temperature. Only reacts on gentle heating.</td><td>SN2 mechanism. 1° carbocation is too unstable to form easily for SN1. Requires heating to proceed via direct backside attack.</td></tr>
+      </table>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#67e8f9"><span class="note-card-icon">💨</span><span class="note-card-title" style="color:#67e8f9">Ether — Properties, Polarity &amp; Preparation</span></div>
+    <div class="note-card-body">
+      <b>Definition:</b> When two alkyl or aryl groups are joined together through a divalent oxygen atom, the compound formed is called an <b>ether</b>. IUPAC name: alkoxy alkane. Functional group: –C–O–C– (bond angle = 110°, oxygen is sp³ hybridised).<br><br>
+      <b>Why ether is chemically inactive:</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">Two alkyl groups are attached on both sides of the oxygen in ether. These alkyl groups have +I (positive inductive) effect, meaning they push electron density toward the oxygen atom. This increases the electron density along the C–O–C bond, making the bond stronger and harder to break. Because of this, most oxidising agents and reducing agents have no action on ethers. Ethers are among the most chemically inactive organic compounds.</span><br><br>
+      <b>Why ether is water-insoluble:</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">For a compound to dissolve in water, it must be able to form hydrogen bonds with water molecules. In ether (R–O–R), there is NO hydrogen atom bonded directly to the oxygen. So ether CANNOT form H-bonds with water → insoluble. Compare: alcohol (R–O–H) HAS an O–H group → forms H-bonds with water → water-soluble.</span><br><br>
+      <b>Polarity comparison: H₂O &gt; R–OH &gt; R–O–R</b><br>
+      <span style="font-size:.83rem;color:#6b7280">Water: O–H bond, ΔEN = 1.4 (very polar). Alcohol: C–O bond ΔEN = 1.0 AND O–H bond ΔEN = 1.4. Ether: only C–O bonds on both sides, ΔEN = 1.0 each. So ether is least polar.</span><br><br>
+      <b>Preparation methods:</b><br>
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.4rem">
+        <div style="border-left:3px solid #60a5fa;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#60a5fa">1. Williamson Synthesis (best method — works for both simple and mixed ethers)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Sodium alkoxide + alkyl halide → heat → ether + sodium halide<br>
+          R–ONa + R–X → R–O–R + NaX<br>
+          Simple ether: C₂H₅ONa + C₂H₅I → C₂H₅–O–C₂H₅ (diethyl ether) + NaI<br>
+          Mixed ether: C₂H₅ONa + CH₃Br → CH₃–O–C₂H₅ (methyl ethyl ether) + NaBr</span>
+        </div>
+        <div style="border-left:3px solid #34d399;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#34d399">2. Dehydration of Alcohol with Conc. H₂SO₄</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">2 C₂H₅OH + conc. H₂SO₄ → heat at 140°C → C₂H₅–O–C₂H₅ + H₂O</span><br>
+          <span style="font-size:.8rem;color:#6b7280">⚠️ Temperature is critical: at 140°C → ether (elimination of water between two alcohols). But at 170°C with the same reagents → ethylene (intramolecular dehydration, one molecule loses water to give alkene).</span>
+        </div>
+      </div>
+      <br><b>⚠️ Peroxide formation — serious storage hazard:</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">When diethyl ether is exposed to sunlight and air (oxygen), it slowly reacts with O₂ to form diethyl peroxide (C₂H₅–O–O–C₂H₅) — which is extremely poisonous and highly explosive.<br>
+      <b>Storage:</b> Keep in sealed, opaque (dark brown or black) bottles away from light. Add a small amount of hydroquinone or cuprous oxide to prevent peroxide formation.<br>
+      <b>Test for peroxide:</b> Add KI solution + starch solution. If the mixture turns blue, peroxide is present (peroxide oxidises I⁻ to I₂, which turns starch blue).<br>
+      <b>Remove peroxide:</b> Shake the ether with FeSO₄ or Na₂SO₃ solution (these are reducing agents that destroy the peroxide safely).</span>
     </div></div>
   </div>
+
+  <!-- AMINES -->
+  <div id="th-amines" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">🟣</span><span class="note-card-title" style="color:#c084fc">Amines — Full Classification &amp; Basicity</span></div>
+    <div class="note-card-body">
+      <b>Definition:</b> Amines are organic compounds formed by replacing one or more hydrogen atoms of ammonia (NH₃) with alkyl or aryl groups. Just as alcohols are "alkyl-substituted water," amines are "alkyl/aryl-substituted ammonia."<br><br>
+      <b>Classification by structure:</b>
+      <table class="note-table" style="margin:.5rem 0">
+        <tr><th>Type</th><th>What it means</th><th>Examples</th></tr>
+        <tr><td style="color:#60a5fa">Aliphatic amine</td><td>All the groups attached to nitrogen are alkyl groups (no benzene ring on N)</td><td>CH₃NH₂ (methylamine), (CH₃)₂NH (dimethylamine), (CH₃)₃N (trimethylamine)</td></tr>
+        <tr><td style="color:#f472b6">Aromatic amine</td><td>At least one aryl (benzene) group is directly attached to nitrogen</td><td>C₆H₅NH₂ (aniline / phenylamine), N-methyl phenyl amine</td></tr>
+        <tr><td style="color:#a78bfa">Heterocyclic amine</td><td>The nitrogen atom is part of a cyclic ring structure</td><td>Pyrrole, Pyridine, Purine and Pyrimidine (the bases of DNA and RNA are heterocyclic amines)</td></tr>
+      </table>
+      <b>Classification by degree (number of H atoms remaining on N):</b>
+      <table class="note-table" style="margin:.5rem 0">
+        <tr><th>Degree</th><th>H atoms on N</th><th>Functional group</th><th>Example</th></tr>
+        <tr><td style="color:#4ade80">Primary (1°) amine</td><td>2 H atoms remain on N</td><td>–NH₂ (monovalent amino group)</td><td>CH₃NH₂, C₂H₅NH₂, C₆H₅NH₂ (aniline)</td></tr>
+        <tr><td style="color:#fbbf24">Secondary (2°) amine</td><td>1 H atom remains on N</td><td>=NH (divalent imino group)</td><td>(CH₃)₂NH, C₆H₅NH–CH₃ (N-methyl aniline)</td></tr>
+        <tr><td style="color:#f87171">Tertiary (3°) amine</td><td>0 H atoms on N</td><td>≡N (trivalent)</td><td>(CH₃)₃N, N,N-dimethyl aniline</td></tr>
+      </table>
+      <div style="margin-top:.5rem;font-size:.82rem;color:#94a3b8">💊 <b>Medical importance:</b> Drugs like morphine (painkiller) and tetracycline (antibiotic) are amines — they are water-insoluble in free form. Pharmaceutical companies convert them to ammonium salts by reacting with HCl: R₃N + HCl → R₃NH⁺Cl⁻. This makes them water-soluble so they can dissolve in blood plasma and be delivered to the target site in the body.</div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#818cf8"><span class="note-card-icon">📊</span><span class="note-card-title" style="color:#818cf8">Basicity of Amines — Why the Order is R₂NH &gt; RNH₂ &gt; R₃N &gt; NH₃ &gt; Aniline</span></div>
+    <div class="note-card-body">
+      A base is a substance that can accept a proton (H⁺). Amines are bases because the nitrogen atom has a lone pair of electrons to accept H⁺. The more available the lone pair, the stronger the base. pKb value measures basicity — <b>lower pKb = stronger base</b>.<br><br>
+      <table class="note-table" style="margin:.5rem 0">
+        <tr><th>Amine</th><th>pKb</th><th>Why this basicity</th></tr>
+        <tr><td style="color:#fbbf24">Dimethylamine (CH₃)₂NH</td><td>3.23 (strongest)</td><td>Two methyl groups both donate electron density to N via +I effect. N has maximum electrons to donate to H⁺ → most basic of all listed.</td></tr>
+        <tr><td style="color:#4ade80">Methylamine CH₃NH₂</td><td>3.36</td><td>One methyl group donates electrons to N via +I effect → more electron density on N than in NH₃ → stronger base than NH₃.</td></tr>
+        <tr><td style="color:#fb923c">Trimethylamine (CH₃)₃N</td><td>4.22</td><td>Three methyl groups give even more +I effect, but the three bulky groups create steric hindrance around N — the H⁺ cannot easily reach the lone pair → less basic than dimethylamine despite more alkyl groups.</td></tr>
+        <tr><td style="color:#94a3b8">Ammonia NH₃</td><td>4.74</td><td>No alkyl groups at all. The lone pair on N is not enhanced by any electron-donating groups → baseline reference for comparison.</td></tr>
+        <tr><td style="color:#f87171">Aniline C₆H₅NH₂</td><td>9.4 (weakest)</td><td>The lone pair on N is pulled into the benzene ring by resonance (π conjugation). This delocalisation greatly reduces the electron density on N → N cannot easily accept H⁺ → very weak base — even weaker than NH₃.</td></tr>
+      </table>
+      <div style="background:rgba(129,140,248,.07);border:1.5px solid rgba(129,140,248,.3);border-radius:10px;padding:.65rem .9rem;margin-top:.5rem;font-size:.83rem;color:#94a3b8">
+        <b>Summary rule:</b> Aliphatic amines are stronger bases than NH₃ (alkyl +I effect pushes electrons to N). Aromatic amine (aniline) is WEAKER than NH₃ (resonance pulls electrons away from N into ring). Secondary amine is most basic because 2 alkyls donate electrons without complete steric blockage.
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#34d399">Amine Preparation (7 Methods) &amp; Identification Tests</span></div>
+    <div class="note-card-body">
+      <b>7 Methods of Preparing Amines:</b>
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin:.5rem 0 .9rem">
+        <div style="border-left:3px solid #60a5fa;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#60a5fa">1. Alkyl Halide + Excess NH₃ (in ethanol, closed vessel, heat)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–X + NH₃ → [R–NH₃⁺X⁻] (quaternary salt) → + more R–X → mixture of 1°, 2°, 3° amines</span><br>
+          <span style="font-size:.8rem;color:#6b7280">The reaction is hard to stop at one stage. A mixture is obtained, then separated by fractional distillation in the presence of KOH solution.</span>
+        </div>
+        <div style="border-left:3px solid #34d399;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#34d399">2. From Nitrile (R–C≡N) + LiAlH₄ → Primary Amine (same number of C)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–C≡N + 4[H] → LiAlH₄/dry ether → R–CH₂–NH₂<br>
+          e.g. CH₃–C≡N (ethanenitrile) + 4[H] → CH₃–CH₂–NH₂ (ethylamine)</span>
+        </div>
+        <div style="border-left:3px solid #fbbf24;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#fbbf24">3. From Isonitrile (R–N=C) + LiAlH₄ → Secondary Amine</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–N=C + 4[H] → LiAlH₄/dry ether → R–NH–CH₃<br>
+          e.g. CH₃–N=C + 4[H] → CH₃–NH–CH₃ (dimethylamine)</span>
+        </div>
+        <div style="border-left:3px solid #f87171;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#f87171">4. From Amide + LiAlH₄ → Primary Amine (same C count)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–CO–NH₂ + 4[H] → LiAlH₄/dry ether → R–CH₂–NH₂ + H₂O</span>
+        </div>
+        <div style="border-left:3px solid #f472b6;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#f472b6">5. Hofmann Degradation — Product has ONE LESS Carbon! ⚠️</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–CO–NH₂ + Br₂ + 4NaOH → heat → R–NH₂ + 2NaBr + Na₂CO₃ + 2H₂O</span><br>
+          <span style="font-size:.8rem;color:#6b7280">This is called "degradation" because the carbon count decreases by 1 (the carbonyl carbon is lost as CO₂). Example: acetamide (CH₃CONH₂, 2C) → methylamine (CH₃NH₂, 1C). Very useful when you need a shorter-chain amine.</span>
+        </div>
+        <div style="border-left:3px solid #a78bfa;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#a78bfa">6. Aniline from Nitrobenzene (industrial and laboratory)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Industrial: C₆H₅NO₂ + 3H₂ → Cu/silica catalyst, 270°C, 2 atm → C₆H₅NH₂ + 2H₂O<br>
+          Laboratory: C₆H₅NO₂ + 6[H] → Sn + conc.HCl, 70°C → C₆H₅NH₂ + 2H₂O</span>
+        </div>
+        <div style="border-left:3px solid #38bdf8;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#38bdf8">7. Aniline from Other Aromatic Compounds</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">From phenol: C₆H₅OH + 2NH₃ → ZnCl₂ catalyst, 300°C → C₆H₅NH₂ + H₂O<br>
+          From chlorobenzene: C₆H₅Cl + 2NH₃ → Cu₂O catalyst, 200°C, 300 atm → C₆H₅NH₂ + NH₄Cl<br>
+          From diazonium salt: C₆H₅N₂Cl + 6[H] → Zn + conc.HCl → C₆H₅NH₂ + NH₄Cl</span>
+        </div>
+      </div>
+      <b>Identification Tests for Amines:</b><br><br>
+      <b style="color:#fb923c">Carbylamine Test — identifies PRIMARY amines ONLY (works for both aliphatic and aromatic 1° amines):</b><br>
+      <span style="font-size:.83rem;color:#c0caf5">R–NH₂ + CHCl₃ + 3KOH → heat at 60°C → R–N=C (alkyl isocyanide) + 3KCl + 2H₂O</span><br>
+      <span style="font-size:.8rem;color:#6b7280">The isocyanide formed has an intensely disagreeable, foul smell. CH₃NH₂ → methyl isocyanide. C₆H₅NH₂ → phenyl isocyanide. Secondary (2°) and tertiary (3°) amines do NOT give this test — so it cleanly distinguishes 1° from 2° and 3°.</span><br><br>
+      <b>Nitrous Acid Test — distinguishes all three degrees AND aromatic from aliphatic:</b>
+      <table class="note-table" style="margin-top:.4rem">
+        <tr><th>Amine type</th><th>Product formed</th><th>Observable result</th></tr>
+        <tr><td style="color:#4ade80">Aliphatic primary (R–NH₂)</td><td>Alcohol + N₂ gas</td><td>Bubbles of nitrogen gas evolve</td></tr>
+        <tr><td style="color:#fbbf24">Aliphatic secondary (R₂NH)</td><td>N-nitroso compound (R₂N–NO) — yellow nitroso amine</td><td>Yellow oily liquid layer forms</td></tr>
+        <tr><td style="color:#f87171">Aliphatic tertiary (R₃N)</td><td>Water-soluble ammonium nitrite salt [R₃NH⁺]NO₂⁻</td><td>Dissolves — colourless solution</td></tr>
+        <tr><td style="color:#a78bfa">Aromatic primary (aniline) at 0–5°C</td><td>Stable diazonium salt C₆H₅N₂Cl</td><td>Clear solution — stable at 0–5°C (used to make dyes!)</td></tr>
+        <tr><td style="color:#94a3b8">Aromatic primary (aniline) at 35°C</td><td>Phenol + N₂ gas</td><td>N₂ gas evolved, phenol smell</td></tr>
+      </table>
+      <div style="margin-top:.6rem;background:rgba(251,146,60,.07);border:1.5px solid rgba(251,146,60,.3);border-radius:10px;padding:.65rem .9rem;font-size:.83rem;color:#94a3b8">
+        <b style="color:#fb923c">Diazonium reaction (Diazotisation):</b> Aniline + HNO₂ (from NaNO₂ + HCl) at 0–5°C → benzene diazonium chloride (C₆H₅N₂Cl) + 2H₂O.<br>
+        Diazonium salts are stable ONLY from aromatic primary amines — the diazo group (–N₂⁺) is stabilised by resonance with the benzene ring. Aliphatic diazonium ions instantly decompose → N₂ gas + carbonium ion → no stable diazonium salt possible.<br>
+        <b>Use of diazonium salts:</b> Making bright coloured azo dyes. Also used in Sandmeyer reaction to introduce halogens into benzene ring.
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ALDEHYDE & KETONE -->
+  <div id="th-aldket" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#fb923c"><span class="note-card-icon">🫧</span><span class="note-card-title" style="color:#fb923c">Aldehydes &amp; Ketones — Definition, Examples &amp; 7 Preparation Methods</span></div>
+    <div class="note-card-body">
+      <b>Carbonyl group (C=O):</b> The carbon-oxygen double bond is called the carbonyl group. Both C and O are sp² hybridised. The carbonyl group is present in aldehydes, ketones, carboxylic acids, esters, and amides.<br><br>
+      <b>Aldehyde:</b> When one H atom is bonded to the divalent carbonyl group (–CO–), a terminal –CHO group forms. This is the aldehyde functional group. Examples: methanal (HCHO, formaldehyde), ethanal (CH₃CHO, acetaldehyde), benzaldehyde (C₆H₅CHO).<br>
+      <b>Ketone:</b> When two alkyl or aryl groups are both bonded to the carbonyl carbon, a ketone forms. The carbonyl group is in the middle of the chain. Examples: propanone (CH₃COCH₃, acetone), butan-2-one (CH₃COC₂H₅), benzophenone (C₆H₅COC₆H₅).<br><br>
+      <b>Why aldehydes are more reactive than ketones in nucleophilic addition:</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">Reactivity in nucleophilic addition depends on how positive the carbonyl carbon is (δ+ charge on C). The more positive the carbon, the more easily a nucleophile can attack it.<br>
+      In an aldehyde, only ONE alkyl group is attached to the carbonyl carbon. In a ketone, TWO alkyl groups are attached. Each alkyl group donates electrons to the carbonyl carbon via +I effect, reducing its δ+ charge. So ketone has LESS δ+ on carbonyl C → less reactive.<br>
+      Also, two alkyl groups in ketone create more steric hindrance, blocking the nucleophile's approach.<br>
+      <b>Order of reactivity:</b> HCHO (methanal/formaldehyde, no alkyl groups) &gt; R–CHO (aldehyde, 1 alkyl) &gt; R–CO–R (ketone, 2 alkyls)</span><br><br>
+      <b>Uses of formaldehyde:</b> 40% aqueous solution of formaldehyde is called <b>formalin</b> — used as antiseptic for preserving dead organisms and as a bacteriocide for sterilising surgical instruments. Used in making Bakelite, urea-formaldehyde resin.<br><br>
+      <b>7 Preparation Methods (Aldehyde and Ketone):</b>
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.5rem">
+        <div style="border-left:3px solid #60a5fa;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#60a5fa">1. From Alcohol by Oxidation (most common method)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Primary alcohol + mild oxidising agent (K₂Cr₂O₇/dil. H₂SO₄) → Aldehyde<br>
+          R–CH₂OH + [O] → R–CHO + H₂O<br>
+          Secondary alcohol + oxidising agent → Ketone<br>
+          R–CHOH–R' + [O] → R–CO–R' + H₂O</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Example: CH₃CH₂OH (ethanol) → K₂Cr₂O₇/H₂SO₄ → CH₃CHO (ethanal). Tertiary alcohols cannot be oxidised this way (no H on C bearing –OH).</span>
+        </div>
+        <div style="border-left:3px solid #34d399;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#34d399">2. From Alkyne Hydration (Markovnikov addition of water)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Alkyne-1 + H₂O → 2% HgSO₄, 20% H₂SO₄ catalyst → Aldehyde (via tautomerism)<br>
+          HC≡CH + H₂O → CH₃CHO (acetylene → acetaldehyde)<br>
+          Alkyne-2 + H₂O → 2% HgSO₄ catalyst → Ketone<br>
+          R–C≡C–CH₃ + H₂O → R–CO–CH₂–CH₃ (rearranges to ketone-3)</span>
+        </div>
+        <div style="border-left:3px solid #fbbf24;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#fbbf24">3. Acetone from Acetylene (industrial)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">2HC≡CH + 3H₂O → Fe₂O₃/ZnO catalyst, 350°C → CH₃COCH₃ (acetone) + CO₂ + 2H₂</span><br>
+          <span style="font-size:.8rem;color:#6b7280">In presence of iron oxide and zinc oxide mixture at 350°C, acetylene reacts with steam to give mainly acetone (90% yield). This is an important industrial source of acetone.</span>
+        </div>
+        <div style="border-left:3px solid #f87171;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#f87171">4. From Alkene by Ozonolysis (cuts C=C bond)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Alkene + O₃ (in CCl₄) → ozonide compound → Zn powder/H₂O, heat → Aldehyde + ZnO + H₂O<br>
+          R–CH=CH–R + O₃ → ozonide → Zn/H₂O → 2R–CHO (two aldehydes)<br>
+          CH₃CH=CHCH₃ + O₃ → 2CH₃CHO + ZnO + H₂O</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Zn powder is added to prevent the aldehyde product from being further oxidised by the H₂O₂ also formed in the reaction. Zn reacts with H₂O₂ → ZnO + H₂O (removes the oxidising agent).</span>
+        </div>
+        <div style="border-left:3px solid #c084fc;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#c084fc">5. From Calcium Salt of Carboxylic Acid — Dry Distillation</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Calcium formate alone → dry distillation → Formaldehyde (methanal) + CaCO₃<br>
+          (HCOO)₂Ca → heat → H–CHO (g) + CaCO₃<br>
+          Calcium formate + calcium acetate → dry distillation → Ethanal (acetaldehyde)<br>
+          (CH₃COO)₂Ca + (HCOO)₂Ca → heat → 2CH₃CHO + 2CaCO₃<br>
+          Single calcium carboxylate salt alone → Ketone<br>
+          (CH₃COO)₂Ca → heat → CH₃COCH₃ (acetone) + CaCO₃</span>
+        </div>
+        <div style="border-left:3px solid #fb923c;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#fb923c">6. Rosenmund Reduction — Aldehyde from Acid Chloride</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–COCl + H₂ → Pd/BaSO₄ catalyst, boiling xylene (144°C) → R–CHO + HCl</span><br>
+          <span style="font-size:.8rem;color:#6b7280">BaSO₄ is a catalyst poison that partially deactivates the Pd — it slows the reaction just enough to stop at aldehyde and prevent over-reduction to alcohol. Without BaSO₄ the alcohol would form. This method cannot make formaldehyde (the required formyl chloride H–COCl is unstable).</span>
+        </div>
+        <div style="border-left:3px solid #38bdf8;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#38bdf8">7. Benzaldehyde from Toluene (2 methods)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Method A (Side chain chlorination then hydrolysis):<br>
+          Toluene + 2Cl₂ → 111°C → benzal chloride (C₆H₅–CHCl₂) + 2HCl<br>
+          C₆H₅–CHCl₂ + H₂O → heat → C₆H₅–CHO (benzaldehyde) + 2HCl<br>
+          Method B (Etard Reaction — direct oxidation):<br>
+          Toluene + 2[O] → (i) CrO₂Cl₂/CCl₄ → Etard complex → (ii) H₂O, heat → benzaldehyde + H₂O</span>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:#fbbf24">3 Identification Tests for Aldehyde &amp; Ketone</span></div>
+    <div class="note-card-body">
+      <div style="display:flex;flex-direction:column;gap:.65rem">
+        <div style="border-left:4px solid #60a5fa;padding:.65rem 1rem;background:rgba(0,0,0,.13);border-radius:0 10px 10px 0">
+          <b style="color:#60a5fa">Test 1 — 2,4-DNP Test (Detects the C=O group — works for BOTH aldehyde and ketone)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Carbonyl compound + 2,4-dinitrophenyl hydrazine → yellow or yellow-orange precipitate of 2,4-dinitrophenyl hydrazone</span><br>
+          <span style="font-size:.83rem;color:#94a3b8">Add 2–3 mL of 2,4-DNP reagent to 5–6 drops of the organic compound in a test tube. If a yellow or orange-yellow precipitate forms, it confirms that a carbonyl group (C=O) is present in the compound — whether aldehyde or ketone. This test confirms C=O but cannot tell them apart.</span>
+        </div>
+        <div style="border-left:4px solid #34d399;padding:.65rem 1rem;background:rgba(0,0,0,.13);border-radius:0 10px 10px 0">
+          <b style="color:#34d399">Test 2 — Tollen's Reagent Test (Confirms ALDEHYDE only — ketone does NOT respond)</b><br>
+          <span style="font-size:.83rem;color:#94a3b8"><b>What is Tollen's reagent?</b> A colourless alkaline solution containing diammine silver(I) ion [Ag(NH₃)₂]⁺. It is prepared by mixing 10% AgNO₃ solution with 10% NaOH (gives AgOH precipitate), then dissolving it with excess NH₄OH to give a clear solution of [Ag(NH₃)₂]⁺ OH⁻. It acts as a weak oxidising agent.</span><br>
+          <span style="font-size:.83rem;color:#c0caf5">Aldehyde + 2[Ag(NH₃)₂]⁺OH⁻ → heat at 40°C in water bath → 2Ag(s) deposited on test tube wall + ammonium salt + NH₃</span><br>
+          <span style="font-size:.83rem;color:#4ade80">If a shining silver mirror forms on the inner wall of the test tube → ALDEHYDE confirmed!</span><br>
+          <span style="font-size:.83rem;color:#f87171">Ketones do NOT give the silver mirror test because ketones cannot be oxidised by the weak oxidising agent Tollen's reagent.</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Example: CH₃CHO + 2[Ag(NH₃)₂]OH → 2Ag(s) + CH₃COONH₄ + 3NH₃ + H₂O</span>
+        </div>
+        <div style="border-left:4px solid #f87171;padding:.65rem 1rem;background:rgba(0,0,0,.13);border-radius:0 10px 10px 0">
+          <b style="color:#f87171">Test 3 — Fehling's Solution Test (Confirms ALDEHYDE only — ketone does NOT respond)</b><br>
+          <span style="font-size:.83rem;color:#94a3b8"><b>What is Fehling's solution?</b> A deep blue solution made by mixing equal volumes of Fehling's A (5% copper sulphate solution) and Fehling's B (5% sodium-potassium tartrate in alkaline NaOH solution). The blue colour comes from the complex ditartarato cuprate(II) ion [Cu(C₄H₄O₆)₂]²⁻. The Cu²⁺ ion acts as the oxidising agent.</span><br>
+          <span style="font-size:.83rem;color:#c0caf5">Aldehyde + 2Cu(OH)₂ + NaOH → heat at 40°C → Cu₂O↓ (red/brick-red precipitate) + carboxylate salt + H₂O</span><br>
+          <span style="font-size:.83rem;color:#4ade80">If brick-red precipitate of Cu₂O forms → ALDEHYDE confirmed!</span><br>
+          <span style="font-size:.83rem;color:#f87171">Ketones do NOT give the Fehling's test because they cannot reduce Cu²⁺ to Cu⁺ (Cu₂O).</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Example: CH₃CHO + 2Cu(OH)₂ + NaOH → Cu₂O↓ + CH₃COONa + 3H₂O. By combining Tollen's and Fehling's tests: if both give positive results → aldehyde. If neither works → ketone.</span>
+        </div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- CARBOXYLIC ACID, ESTER & AMIDE -->
+  <div id="th-acid" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#f43f5e"><span class="note-card-icon">🧴</span><span class="note-card-title" style="color:#f43f5e">Carboxylic Acid — Definition, Fatty Acids &amp; Preparation</span></div>
+    <div class="note-card-body">
+      <b>Definition:</b> Organic compounds containing the carboxyl group (–COOH) that exhibit acidic properties are called carboxylic acids. They are generally also called <b>organic acids</b>. Examples: ethanoic acid (CH₃COOH, acetic acid/vinegar), butanoic acid (rancid butter smell), stearic acid (animal fats), benzoic acid (aromatic).<br><br>
+      <b>Fatty Acid:</b> When an aliphatic carboxylic acid contains only ONE –COOH group in its molecule, it is called a monocarboxylic acid — also called a <b>fatty acid</b>, because the higher members were first obtained from hydrolysis of animal fats and plant oils.<br>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin:.5rem 0">
+        <div style="background:rgba(96,165,250,.07);border:1.5px solid rgba(96,165,250,.2);border-radius:10px;padding:.6rem .8rem">
+          <b style="color:#60a5fa;font-size:.88rem">Saturated fatty acids (CₙH₂ₙ₊₁–COOH)</b><br>
+          <span style="font-size:.8rem;color:#94a3b8">No double bonds in the carbon chain.<br>
+          • Propanoic acid: CH₃CH₂COOH<br>
+          • Stearic acid: C₁₇H₃₅COOH (in animal fat)<br>
+          • Palmitic acid: C₁₅H₃₁COOH (in palm oil)</span>
+        </div>
+        <div style="background:rgba(52,211,153,.07);border:1.5px solid rgba(52,211,153,.2);border-radius:10px;padding:.6rem .8rem">
+          <b style="color:#34d399;font-size:.88rem">Unsaturated fatty acids (contain C=C)</b><br>
+          <span style="font-size:.8rem;color:#94a3b8">One or more double bonds in the chain.<br>
+          • Acrylic acid: CH₂=CH–COOH<br>
+          • Oleic acid: C₁₇H₃₃COOH (olive oil)<br>
+          • Linoleic acid: C₁₇H₃₁COOH (corn oil)</span>
+        </div>
+      </div>
+      <b>5 Methods of Carboxylic Acid Preparation:</b>
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.5rem">
+        <div style="border-left:3px solid #60a5fa;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#60a5fa">1. Oxidation of Primary Alcohol or Aldehyde with Strong Oxidising Agent</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">1° alcohol + [O] → K₂Cr₂O₇/conc. H₂SO₄ → Aldehyde → further [O] → Carboxylic acid<br>
+          CH₃CH₂OH → ethanal → acetic acid (ethanoic acid)</span>
+        </div>
+        <div style="border-left:3px solid #34d399;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#34d399">2. From Alkyl Cyanide (Nitrile) by Acid Hydrolysis — adds 1 carbon!</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–X + KCN → R–C≡N + KX (first make nitrile)<br>
+          R–C≡N + 2H₂O → HCl, heat → R–COOH + NH₃</span><br>
+          <span style="font-size:.8rem;color:#6b7280">This method is useful because the product has one MORE carbon than the starting alkyl halide (the –CN group contributes the extra C). Example: C₂H₅Br → C₂H₅CN → propanoic acid (3C from 2C starting material).</span>
+        </div>
+        <div style="border-left:3px solid #fbbf24;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#fbbf24">3. Grignard Reagent + CO₂ (Carbonation) — also adds 1 carbon!</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–X + Mg → dry ether → RMgX (Grignard reagent)<br>
+          RMgX + CO₂(solid/dry ice) → R–COOMgX (magnesium salt) → + H₂O/HCl → R–COOH + Mg(OH)X</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Very useful — adds exactly one –COOH group. One more carbon than starting material.</span>
+        </div>
+        <div style="border-left:3px solid #f87171;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#f87171">4. Hydrolysis of Esters (fats and oils → fatty acids)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Triglyceride (fat/oil) + 3H₂O → dil. HCl, heat → Glycerol + 3 Fatty acid molecules<br>
+          Ester + H₂O → HCl, heat → Carboxylic acid + Alcohol</span>
+        </div>
+        <div style="border-left:3px solid #c084fc;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#c084fc">5. Formic Acid (Methanoic acid) — Industrial Preparation</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">CO gas + NaOH(aq) → 200°C, 8 atm → H–COONa (sodium formate)<br>
+          H–COONa + dil. H₂SO₄ → 101°C distillation → H–COOH (formic acid) + NaHSO₄</span>
+        </div>
+      </div>
+      <div style="margin-top:.6rem;background:rgba(244,63,94,.07);border:1.5px solid rgba(244,63,94,.2);border-radius:10px;padding:.65rem .9rem;font-size:.83rem;color:#94a3b8">
+        <b style="color:#f43f5e">Acetic acid preparation:</b> Acetylene + H₂O → 2%HgSO₄/20%H₂SO₄ → ethanal → + O₂/Mn²⁺ at 60°C → acetic acid (ethanoic acid)<br>
+        <b style="color:#f43f5e">Benzoic acid from toluene:</b> Toluene + 3[O] → KMnO₄/KOH, heat → benzoic acid + H₂O (the –CH₃ side chain is oxidised to –COOH)
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#fb923c"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:#fb923c">Acid Identification Tests + Acid Strength Comparison</span></div>
+    <div class="note-card-body">
+      <b>2 Identification Tests for Carboxylic Acid:</b>
+      <div style="display:flex;flex-direction:column;gap:.55rem;margin:.5rem 0 .9rem">
+        <div style="border-left:4px solid #f87171;padding:.55rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#f87171">1. Litmus Test</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Carboxylic acid + H₂O → R–COO⁻ + H₃O⁺ (acid ionisation)</span><br>
+          <span style="font-size:.83rem;color:#94a3b8">The H₃O⁺ produced turns blue litmus paper red. This confirms acidic nature. Carboxylic acids are stronger acids than carbonic acid, so they can also decompose carbonates and bicarbonates.</span>
+        </div>
+        <div style="border-left:4px solid #fbbf24;padding:.55rem .9rem;background:rgba(0,0,0,.13);border-radius:0 9px 9px 0">
+          <b style="color:#fbbf24">2. NaHCO₃ Solution Test (5% sodium bicarbonate)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">CH₃COOH + NaHCO₃ → CH₃COONa + CO₂↑ + H₂O</span><br>
+          <span style="font-size:.83rem;color:#94a3b8">Brisk effervescence (CO₂ gas bubbles) forms when carboxylic acid is added to 5% NaHCO₃ solution. The evolved CO₂ turns lime water milky (CaCO₃ forms). This test distinguishes carboxylic acid from phenol — phenol does NOT react with NaHCO₃.</span>
+        </div>
+      </div>
+      <b>Formic acid (HCOOH) vs Acetic acid (CH₃COOH) — Why formic is stronger:</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">Formic acid: Ka = 1.8 × 10⁻⁴, pKa = 3.74 &nbsp;|&nbsp; Acetic acid: Ka = 1.8 × 10⁻⁵, pKa = 4.74<br>
+      In formic acid (H–COOH), the –COOH group is bonded to a H atom. There is no alkyl group attached.<br>
+      In acetic acid (CH₃–COOH), the –COOH group is bonded to a methyl group (–CH₃). The methyl group has a <b>positive inductive effect (+I)</b> — it pushes electrons toward the –COOH group. This reduces the partial positive charge (δ+) on the carbonyl carbon, making it harder for the O–H bond to ionise and release H⁺. So acetic acid is a WEAKER acid than formic acid.</span><br><br>
+      <b>Chloroacetic acid (Cl–CH₂COOH) &gt; Acetic acid — Why chloro acid is stronger:</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">In chloroacetic acid, one H of the –CH₃ group is replaced by Cl. Chlorine has a <b>negative inductive effect (–I)</b> — it pulls electrons away from the –COOH group. This increases the δ+ on the carbonyl carbon, making the O–H bond easier to ionise → more acidic.<br>
+      Ka values: formic (1.8×10⁻⁴) &gt; chloroacetic (1.4×10⁻³ — wait, actually chloroacetic is Ka=1.4×10⁻³ &gt; formic 1.8×10⁻⁴ &gt; acetic 1.8×10⁻⁵) &gt; acetic<br>
+      Acid strength order: Cl–CH₂COOH &gt; H–COOH &gt; CH₃COOH (and dichloroacetic &gt; monochloroacetic)</span>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#4ade80"><span class="note-card-icon">🌸</span><span class="note-card-title" style="color:#4ade80">Esters — Definition, Fruit Fragrances &amp; Preparation</span></div>
+    <div class="note-card-body">
+      <b>Definition:</b> When a carboxylic acid reacts with an alcohol in the presence of an acid catalyst, the –OH of the acid is replaced by the –O–R' of the alcohol, forming a compound called an <b>ester</b>. This reaction is called <b>esterification</b>. Functional group: –CO–O– (–COO–).<br><br>
+      <b>IUPAC naming:</b> Alkyl group from alcohol + '-ate' suffix from the acid name. Example: ethanol + acetic acid → ethyl acetate (or ethyl ethanoate).<br><br>
+      <b>Esters are responsible for the pleasant smell of fruits and flowers:</b>
+      <table class="note-table" style="margin:.5rem 0">
+        <tr><th>Source</th><th>Ester name</th><th>Formula</th></tr>
+        <tr><td style="color:#fbbf24">Ripe banana</td><td>Pentyl acetate ester (isoamyl acetate)</td><td>CH₃CO.OC₅H₁₁</td></tr>
+        <tr><td style="color:#fb923c">Ripe orange</td><td>Octyl acetate ester</td><td>CH₃CO.OC₈H₁₇</td></tr>
+        <tr><td style="color:#4ade80">Ripe pineapple</td><td>Butyl butanoate (butyl butyrate) ester</td><td>C₃H₇CO.OC₄H₉</td></tr>
+        <tr><td style="color:#c084fc">Jasmine flower</td><td>Benzyl acetate ester</td><td>CH₃CO.OCH₂C₆H₅</td></tr>
+      </table>
+      <b>Other uses of esters:</b> Ethyl acetate is a good solvent for nail polish and general glue. Esters are used as artificial flavours in food and cosmetics.<br><br>
+      <b>3 Methods of Ester Preparation:</b>
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.5rem">
+        <div style="border-left:3px solid #60a5fa;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#60a5fa">1. Esterification — Carboxylic Acid + Alcohol (main method)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–COOH + HO–R' → H⁺ (conc.H₂SO₄ as catalyst) → R–COO–R' + H₂O</span><br>
+          <span style="font-size:.83rem;color:#94a3b8">Conc. H₂SO₄ has TWO roles: (1) It donates H⁺ (proton donor/acid catalyst) to activate the reaction. (2) It absorbs the water produced (dehydrating agent), shifting equilibrium forward and making the reaction proceed to completion. Without H₂SO₄, the reaction is reversible and yields only about 67%.</span>
+        </div>
+        <div style="border-left:3px solid #34d399;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#34d399">2. From Acid Chloride + Alcohol (gives ester + HCl)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–COCl + HO–R' → R–COO–R' + HCl(g)<br>
+          e.g. CH₃COCl + HO–C₂H₅ → CH₃COO–C₂H₅ (ethyl ethanoate) + HCl</span>
+        </div>
+        <div style="border-left:3px solid #fbbf24;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#fbbf24">3. From Acid Anhydride + Alcohol (gives ester + acid)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">(RCO)₂O + HO–R' → RCO–O–R' + R–COOH<br>
+          (CH₃CO)₂O + C₂H₅OH → CH₃COO–C₂H₅ + CH₃COOH</span>
+        </div>
+      </div>
+      <div style="margin-top:.6rem;background:rgba(74,222,128,.07);border:1.5px solid rgba(74,222,128,.2);border-radius:10px;padding:.65rem .9rem;font-size:.83rem;color:#94a3b8">
+        <b style="color:#4ade80">Ester Identification — Ferric Hydramide Test:</b><br>
+        Ester + hydroxylamine hydrochloride + NaOH → heat → hydroxamic acid → + HCl to acidify → + FeCl₃ solution → reddish-brown complex of ferric hydramide formed. The reddish-brown colour confirms the presence of an ester group.
+      </div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#818cf8"><span class="note-card-icon">🧬</span><span class="note-card-title" style="color:#818cf8">Amides — Definition, Importance &amp; Preparation</span></div>
+    <div class="note-card-body">
+      <b>Definition:</b> The compound formed by a substitution reaction between an ester (or acid chloride or anhydride) and ammonia or an amine — where the –OR group is replaced by –NH₂ — is called an <b>amide</b>. Functional group: –CO–NH₂<br><br>
+      <b>Example:</b><br>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#c0caf5">CH₃–CO–O–C₂H₅ + NH₃ → CH₃–CO–NH₂ (ethanamide) + C₂H₅OH<br>
+      CH₃–CO–O–CH₃ + H–N(C₂H₅) → CH₃–CO–N(C₂H₅) (N-ethyl ethanamide) + CH₃OH</span><br><br>
+      <b>Why amides are critically important:</b><br>
+      <span style="font-size:.83rem;color:#94a3b8">The amide bond (–CO–NH–) between a carbonyl carbon and nitrogen is the <b>peptide bond</b> — the fundamental link between amino acids in all proteins. Without the amide bond, life as we know it would not be possible because proteins, enzymes, and structural fibres all depend on it.<br>
+      Synthetic applications: <b>Nylon-66</b> is a synthetic polymer whose repeating unit contains amide bonds. <b>Paracetamol</b> (acetaminophen) — the common painkiller and substitute for aspirin — is an amide. <b>Penicillin</b> antibiotics also contain amide bonds.</span><br><br>
+      <b>3 Methods of Amide Preparation:</b>
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.5rem">
+        <div style="border-left:3px solid #60a5fa;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#60a5fa">1. From Ammonium Carboxylate Salt — Heat at 230°C</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–CO–O–NH₄⁺ → heat at 230°C → R–CO–NH₂ + H₂O</span><br>
+          <span style="font-size:.8rem;color:#6b7280">Ammonium salt of a carboxylic acid is heated strongly to 230°C. Water is eliminated and amide is formed.</span>
+        </div>
+        <div style="border-left:3px solid #34d399;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#34d399">2. From Carboxylic Acid + Amine — Direct Heating</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">R–COOH + H₂N–CH₃ → heat → R–CO–NH–CH₃ (N-substituted amide) + H₂O<br>
+          e.g. CH₃COOH + CH₃NH₂ → CH₃CO–NHCH₃ (N-methyl acetamide) + H₂O</span>
+        </div>
+        <div style="border-left:3px solid #fbbf24;padding:.5rem .9rem;background:rgba(0,0,0,.12);border-radius:0 9px 9px 0">
+          <b style="color:#fbbf24">3. From Ester / Acid Chloride / Anhydride + NH₃ (in closed vessel)</b><br>
+          <span style="font-size:.83rem;color:#c0caf5">Ester: R–COOR' + NH₃ → heat → R–CO–NH₂ + R'OH<br>
+          Acid chloride: RCOCl + 2NH₃ → heat → R–CO–NH₂ + NH₄Cl<br>
+          Anhydride: (RCO)₂O + 2NH₃ → heat → R–CO–NH₂ + RCOONH₄</span>
+        </div>
+      </div>
+      <div style="margin-top:.6rem;background:rgba(129,140,248,.07);border:1.5px solid rgba(129,140,248,.25);border-radius:10px;padding:.65rem .9rem;font-size:.83rem;color:#94a3b8">
+        <b style="color:#818cf8">Amide Identification Test — Hydrolysis:</b><br>
+        When an amide is heated with dilute HCl or NaOH solution, it breaks down (hydrolyses) to give a carboxylic acid and an amine (or NH₃ gas).<br>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:.77rem;color:#c0caf5">CH₃–CO–NH₂ + H₂O → NaOH, heat → CH₃COOH + NH₃(g)<br>
+        NH₃(g) + HCl(g) → NH₄Cl(s) (white fumes on glass rod near mouth of test tube)</span><br>
+        The white fumes of NH₄Cl confirm NH₃ release, which confirms the amide. Also, the amine produced may have a fishy smell that helps identification.
+      </div>
+    </div></div>
+  </div>
+
 </div>`;
 
   // ══════════════════════════════════════════════
@@ -3905,7 +4345,45 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     {t:"Alkane",q:"Reactivity order of HX with alcohols is?",o:["HF > HCl > HBr > HI","HI > HBr > HCl > HF","HCl > HBr > HI > HF","All equal"],a:1,e:"HI > HBr > HCl > HF. HI is most reactive with alcohols. Reactivity of alcohols: 3° > 2° > 1°. Alkyl fluoride (R–F) is prepared by Swarts reaction: R–Cl + AgF → R–F + AgCl (not from R–OH + HF because too slow)."},
     {t:"Alkane",q:"Swarts reaction prepares?",o:["Alkyl chloride","Alkyl bromide","Alkyl fluoride — R-Cl + AgF/Hg₂F₂ → R-F + AgCl","Alkyl iodide"],a:2,e:"Alkyl fluoride is prepared by Swarts reaction: 2CH₃CH₂Cl + Hg₂F₂ → 2CH₃CH₂F + Hg₂Cl₂. Because R–OH + HF reaction is too slow. Inorganic fluoride (AgF, Hg₂F₂, SbF₃, AsF₃) reacts with alkyl chloride."},
     {t:"Alkane",q:"Alkane from Grignard reagent + water gives?",o:["Alcohol","Alkyne","Alkane + Mg(OH)X — same carbon count as RMgX","Carboxylic acid"],a:2,e:"RMgX + H–OH → R–H + Mg(OH)X. Grignard reagent acts as source of R⁻. Water provides H⁺. Product alkane has SAME carbon count as the R group. C₂H₅MgBr + H₂O → C₂H₆ + Mg(OH)Br."},
-    {t:"Alkyne",q:"From natural gas (methane): 6CH₄ + O₂ at 1500°C gives?",o:["CO₂ + H₂O","2 HC≡CH + 2CO + 10H₂","Benzene only","CH₃OH"],a:1,e:"6CH₄ + O₂ → 1500°C → 2H–C≡C–H (acetylene) + 2CO + 10H₂. Natural gas methane is partially oxidised at 1500°C to produce acetylene (ethyne). Product stored in propanone under high pressure to avoid explosion."}
+    {t:"Alkyne",q:"From natural gas (methane): 6CH₄ + O₂ at 1500°C gives?",o:["CO₂ + H₂O","2 HC≡CH + 2CO + 10H₂","Benzene only","CH₃OH"],a:1,e:"6CH₄ + O₂ → 1500°C → 2H–C≡C–H (acetylene) + 2CO + 10H₂. Natural gas methane is partially oxidised at 1500°C to produce acetylene (ethyne). Product stored in propanone under high pressure to avoid explosion."},
+
+    // ── NEW MCQs FROM PAGES 151–170 ──
+    // ALDEHYDE & KETONE
+    {t:"Aldehyde",q:"Why is aldehyde more reactive than ketone in nucleophilic addition?",o:["Aldehyde has more carbon atoms","Aldehyde has only ONE alkyl group on carbonyl C (less +I effect, less steric hindrance). Ketone has TWO alkyl groups reducing δ+ on C.","Aldehyde is smaller","Ketone has no carbonyl group"],a:1,e:"Reactivity in nucleophilic addition depends on δ+ charge on carbonyl carbon. Alkyl groups donate electrons (+I effect) reducing this δ+ charge, so ketone (2 alkyl groups) is LESS reactive than aldehyde (1 alkyl group). Also two alkyl groups create steric hindrance blocking nucleophile access. Order: HCHO > RCHO > RCOR'."},
+    {t:"Aldehyde",q:"Tollen's reagent test confirms which compound?",o:["Both aldehyde and ketone","Ketone only","Aldehyde only — shining silver mirror forms on test tube inner wall. Ketone gives NO silver mirror.","Neither aldehyde nor ketone"],a:2,e:"Tollen's reagent contains [Ag(NH₃)₂]⁺ ion (diammine silver I). It is a weak oxidising agent. Aldehyde reduces Ag⁺ to Ag metal, forming a shining silver mirror on the glass. Ketones cannot be oxidised by this weak agent — they do NOT give a silver mirror. This is the key test to distinguish aldehyde from ketone."},
+    {t:"Aldehyde",q:"Fehling's solution test gives a brick-red precipitate with which compound?",o:["Ketone only","Aldehyde only — red Cu₂O precipitate forms. Ketone gives no precipitate.","Both aldehyde and ketone","Carboxylic acid"],a:1,e:"Fehling's solution (blue — contains Cu²⁺ in alkaline tartrate complex) acts as a mild oxidising agent. Aldehyde reduces Cu²⁺ to Cu⁺, producing brick-red Cu₂O precipitate. Ketone cannot reduce Cu²⁺ — no precipitate forms. Like Tollen's test, Fehling's test is specific to aldehydes. HCHO + 2Cu(OH)₂ + NaOH → Cu₂O↓ + HCOONa + 3H₂O."},
+    {t:"Aldehyde",q:"2,4-DNP (2,4-dinitrophenylhydrazine) test gives yellow precipitate with?",o:["Aldehyde only","Ketone only","BOTH aldehyde and ketone — any compound with C=O group gives yellow/orange precipitate","Alcohol only"],a:2,e:"2,4-DNP reacts with any compound containing a carbonyl group (C=O) to form a yellow or orange-yellow crystalline precipitate of 2,4-dinitrophenylhydrazone. This test detects C=O — so it works for BOTH aldehydes and ketones. It cannot distinguish between them. Use Tollen's or Fehling's to confirm specifically which one it is."},
+    {t:"Aldehyde",q:"Rosenmund reduction converts acid chloride to aldehyde. Which catalyst is used and why?",o:["Ni/H₂ — complete reduction","Pd/BaSO₄ in boiling xylene (144°C) — BaSO₄ poisons Pd partially to stop reaction at aldehyde","AlCl₃ — Lewis acid","ZnO/Cr₂O₃ at 350°C"],a:1,e:"Rosenmund reduction: R–COCl + H₂ → Pd/BaSO₄, xylene 144°C → R–CHO + HCl. BaSO₄ (barium sulphate) acts as a catalyst poison — it partially deactivates the Pd catalyst just enough to stop reduction at the aldehyde stage. Without BaSO₄, the reaction would continue all the way to give alcohol (over-reduction). This method cannot make formaldehyde because formyl chloride (H–COCl) is unstable."},
+    {t:"Aldehyde",q:"Ozonolysis of an alkene (R–CH=CH–R) gives which products on Zn/H₂O hydrolysis?",o:["Ketones only","Carboxylic acids","Two aldehydes (R–CHO). Zn powder is added to prevent further oxidation of aldehyde by H₂O₂.","One aldehyde and one alcohol"],a:2,e:"Ozonolysis: alkene + O₃ (in CCl₄) → ozonide → Zn powder/H₂O, heat → 2R–CHO + ZnO + H₂O. The double bond is cleaved completely, giving two aldehyde molecules. Zn powder is essential — without it, the H₂O₂ produced in the reaction would oxidise the aldehyde product to carboxylic acid. Zn reacts with H₂O₂ → ZnO + H₂O (destroys the oxidant)."},
+    // CARBOXYLIC ACID
+    {t:"Fatty Acid",q:"Fatty acid is defined as?",o:["Any acid with fat","An aliphatic monocarboxylic acid (only one –COOH group) — called fatty acid because higher members were first obtained from hydrolysis of fats and oils","A polyhydric acid","An aromatic acid only"],a:1,e:"Fatty acid = aliphatic monocarboxylic acid with one –COOH group. The name 'fatty acid' comes from the fact that stearic acid (C₁₇H₃₅COOH), palmitic acid (C₁₅H₃₁COOH), and similar higher acids were first isolated from animal fats and plant oils. Saturated fatty acids: CₙH₂ₙ₊₁COOH. Unsaturated: contain one or more C=C double bonds (e.g. oleic acid C₁₇H₃₃COOH, linoleic acid C₁₇H₃₁COOH)."},
+    {t:"Fatty Acid",q:"Why is acetic acid (CH₃COOH) a weaker acid than formic acid (H–COOH)?",o:["Acetic acid has more carbon atoms","The methyl group (–CH₃) in acetic acid has +I effect — it donates electrons to –COOH group, reducing δ+ on carbonyl C, making O–H ionisation harder. Ka of acetic = 1.8×10⁻⁵ vs formic = 1.8×10⁻⁴.","Formic acid is smaller","Acetic acid is more volatile"],a:1,e:"In formic acid (H–COOH) there is no alkyl group — the carbonyl carbon has maximum δ+ charge → O–H ionises easily → stronger acid (Ka = 1.8×10⁻⁴, pKa 3.74). In acetic acid (CH₃–COOH) the methyl group has +I effect, pushing electrons into the –COOH group → reduces δ+ on C → harder for O–H to ionise → weaker acid (Ka = 1.8×10⁻⁵, pKa 4.74). Chloroacetic acid (Cl–CH₂COOH) is stronger than both because Cl has –I effect, withdrawing electrons and increasing δ+."},
+    {t:"Fatty Acid",q:"NaHCO₃ solution test for carboxylic acid — what is observed?",o:["Blue colour","No reaction","Brisk effervescence (CO₂ bubbles) — CO₂ turns lime water milky. Phenol does NOT give this test.","Red precipitate"],a:2,e:"Carboxylic acid + NaHCO₃ → sodium carboxylate + CO₂↑ + H₂O. The CO₂ gas produces brisk bubbles (effervescence). If the evolved gas is passed into lime water Ca(OH)₂, it turns milky due to CaCO₃ formation. Important distinction: phenol is also acidic (turns litmus red) but phenol does NOT react with NaHCO₃ because it is too weakly acidic. So the NaHCO₃ test distinguishes carboxylic acid from phenol."},
+    {t:"Fatty Acid",q:"Grignard reagent + CO₂ (dry ice) gives?",o:["An alcohol","Ketone only","Carboxylic acid — product has one MORE carbon than the starting alkyl halide","An ether"],a:2,e:"R–X + Mg/dry ether → RMgX (Grignard reagent). RMgX + CO₂ (solid/dry ice) → R–COOMgX (intermediate salt) → + H₂O/HCl → R–COOH + Mg(OH)X. This is called 'carbonation of Grignard reagent'. The product carboxylic acid has one more carbon than the starting alkyl halide (R–X) because the –CO₂ inserts one carbon. Very useful for building up the carbon chain."},
+    {t:"Fatty Acid",q:"Formic acid (HCOOH) acts as both an acid AND a reducing agent. Why?",o:["Because it contains nitrogen","Because formic acid contains both –COOH (acid part) and –CHO (aldehyde part) in the same molecule — so it reduces Tollen's and Fehling's like an aldehyde, AND turns litmus red and reacts with NaHCO₃ like an acid","Because it is a liquid","Because it contains two O atoms"],a:1,e:"Formic acid (H–COOH) is unique — its molecule contains BOTH a carboxyl group (–COOH, giving acidic properties) AND an aldehyde group (–CHO, the H–C= part gives reducing properties). As an acid: turns litmus red, reacts with NaHCO₃ → CO₂↑. As a reductant/aldehyde: reduces Fehling's solution → Cu₂O red ppt, reduces Tollen's reagent → silver mirror. Exception: formic acid does NOT give a precipitate with 2,4-DNP reagent."},
+    // ESTER & AMIDE
+    {t:"Fatty Acid",q:"Which ester is responsible for the smell of ripe banana?",o:["Octyl acetate","Butyl butyrate","Pentyl acetate (isoamyl acetate) — CH₃CO.OC₅H₁₁","Benzyl acetate"],a:2,e:"Different esters are responsible for fruit fragrances: Banana = pentyl acetate (CH₃CO.OC₅H₁₁). Orange = octyl acetate (CH₃CO.OC₈H₁₇). Pineapple = butyl butanoate (C₃H₇CO.OC₄H₉). Jasmine flower = benzyl acetate (CH₃CO.OCH₂C₆H₅). Esters also have industrial uses: ethyl acetate (ethyl ethanoate) is a solvent for nail polish and adhesives."},
+    {t:"Fatty Acid",q:"What are the TWO roles of conc. H₂SO₄ in esterification?",o:["Only as a dehydrating agent","Only as an acid catalyst","(1) Proton donor/acid catalyst — activates the carboxylic acid. (2) Dehydrating agent — absorbs the water produced, shifting equilibrium forward to increase yield.","It acts as a reducing agent"],a:2,e:"In esterification R–COOH + R'OH ⇌ R–COOR' + H₂O, conc. H₂SO₄ serves two crucial purposes: First, it donates H⁺ (proton) to protonate the carbonyl oxygen of the acid, making the carbonyl carbon more electrophilic and easier for the alcohol to attack. Second, it absorbs the water produced (dehydrating agent), removing it from the equilibrium mixture. This drives the reversible reaction forward (Le Chatelier's principle) → reaction becomes essentially irreversible → near-complete conversion."},
+    {t:"Fatty Acid",q:"Amide identification: amide heated with NaOH gives?",o:["CO₂ gas","Alkene","NH₃ gas (pungent smell) + carboxylic acid. NH₃ + HCl → NH₄Cl white fumes confirms amide.","Yellow precipitate"],a:2,e:"Amide hydrolysis: R–CO–NH₂ + H₂O → NaOH, heat → R–COO⁻Na⁺ + NH₃↑. The NH₃ gas has a pungent smell and when a glass rod moistened with HCl is held near the test tube mouth, white fumes of NH₄Cl form (NH₃ + HCl → NH₄Cl). This confirms the presence of an amide. With HCl acid: R–CO–NH₂ + H₂O → HCl → R–COOH + NH₄Cl (the amine smell may also be detected)."},
+    {t:"Fatty Acid",q:"Why is the amide bond (–CO–NH–) biologically so important?",o:["It is found in DNA","The amide bond (peptide bond) is the fundamental link between amino acids in ALL proteins. Without it there would be no proteins, enzymes, or living structures.","It makes substances taste sweet","It is found in fats only"],a:1,e:"The amide bond –C(=O)–NH– is also called the peptide bond in biochemistry. Every protein in living organisms — whether structural proteins like collagen, enzymes like amylase, or hormones like insulin — is made of amino acids linked together by amide/peptide bonds. Synthetic amides include: Nylon-66 (repeating amide bonds, synthetic fibre), paracetamol/acetaminophen (common painkiller, contains –CONH– group), and penicillin antibiotics."},
+    {t:"Fatty Acid",q:"Hofmann degradation of amide gives a primary amine with how many carbon atoms?",o:["Same number as amide","One MORE carbon than amide","One LESS carbon than amide — the carbonyl C is lost as CO₂ during reaction","Two fewer carbons"],a:2,e:"Hofmann degradation: R–CO–NH₂ + Br₂ + 4NaOH → R–NH₂ + 2NaBr + Na₂CO₃ + 2H₂O. The product amine has ONE LESS carbon than the starting amide because the carbonyl carbon (the C of –CO–) is removed and released as CO₂/carbonate. This is why it is called 'degradation' — the carbon chain degrades (shortens). Example: acetamide (CH₃–CO–NH₂, 2 carbons) → methylamine (CH₃–NH₂, 1 carbon)."}
+  ,
+
+    // ── PAGES 151–170 MCQs ──────────────────────────────────────────────────
+    {t:"Aldehyde",q:"The confirmatory test for ALDEHYDE group (not ketone) is?",o:["2,4-DNP test — gives yellow ppt with both aldehyde and ketone","Tollen's reagent — silver mirror forms ONLY with aldehyde, NOT ketone","Iodoform test","Litmus test"],a:1,e:"Tollen's reagent [Ag(NH₃)₂]⁺ is reduced ONLY by aldehyde to give a shining silver mirror on the test tube wall. Ketones are too stable to reduce Tollen's reagent. Fehling's solution (blue Cu²⁺ complex → red Cu₂O precipitate on heating) is also specific for aldehydes only. 2,4-DNP detects carbonyl group in BOTH aldehyde and ketone — it does not distinguish them."},
+    {t:"Aldehyde",q:"2,4-DNP reagent gives yellow/orange precipitate with which compounds?",o:["Only aldehydes","Only ketones","Both aldehydes AND ketones — detects the C=O (carbonyl) group","Carboxylic acids only"],a:2,e:"2,4-Dinitrophenylhydrazine (2,4-DNP) reacts with any compound containing a C=O group (carbonyl) — both aldehyde (R–CHO) and ketone (R–CO–R) — to give a yellow or orange-yellow precipitate of 2,4-dinitrophenylhydrazone. This test CONFIRMS the presence of carbonyl group but does NOT distinguish aldehyde from ketone. Use Tollen's or Fehling's test to tell them apart."},
+    {t:"Aldehyde",q:"Fehling's solution test gives red Cu₂O precipitate with?",o:["Ketones only","Both aldehyde and ketone","Aldehyde ONLY — ketones cannot reduce Cu²⁺ complex","Carboxylic acid only"],a:2,e:"Fehling's solution (blue Cu²⁺ complex made from CuSO₄ + sodium-potassium tartarate + NaOH) is reduced by aldehyde at 40°C to give brick-red precipitate of cuprous oxide Cu₂O. Ketones have no reducing power and CANNOT reduce Fehling's solution. So red ppt = aldehyde confirmed. Formaldehyde (H–COOH/formic acid) is a special exception that also reduces Fehling's even though it is a carboxylic acid."},
+    {t:"Aldehyde",q:"Why is methanal (H–CHO) MORE reactive than ethanal (CH₃–CHO) in nucleophilic addition?",o:["Methanal is lighter","Methanal has NO alkyl group on C=O — maximum δ+ on carbonyl C → nucleophile attacks easily. Ethanal has one –CH₃ (+I effect) reducing δ+","Methanal has more H atoms","Methanal dissolves better"],a:1,e:"Reactivity in nucleophilic addition depends on the δ+ (partial positive charge) on the carbonyl carbon. Alkyl groups like –CH₃ have a positive inductive effect (+I) — they donate electrons to the carbonyl C, reducing its δ+. Methanal (H–CHO) has NO alkyl group → maximum δ+ → most reactive. Each alkyl group added reduces the δ+ and the reactivity. Ketones (two alkyl groups) are least reactive. Order: H–CHO > R–CHO > R–CO–R."},
+    {t:"Aldehyde",q:"Rosenmund reduction uses Pd/BaSO₄ in xylene at 144°C. Why is BaSO₄ added?",o:["BaSO₄ is the main reactant","BaSO₄ is a catalyst poison — it partially deactivates Pd so reduction stops at aldehyde, preventing over-reduction to alcohol","BaSO₄ absorbs HCl","BaSO₄ provides the hydrogen"],a:1,e:"Rosenmund reduction: R–COCl + H₂ → Pd/BaSO₄, xylene 144°C → R–CHO + HCl. Palladium (Pd) alone would fully reduce acid chloride all the way to alcohol. BaSO₄ is added as a catalyst poison — it reduces Pd activity just enough so that reduction stops at the aldehyde stage. This is a carefully controlled partial reduction. Note: Formaldehyde CANNOT be made by this method (formyl chloride H–COCl is unstable)."},
+    {t:"Aldehyde",q:"In ozonolysis of alkene to form aldehyde, why is Zn powder added during hydrolysis?",o:["Zn provides energy","Zn is a reducing agent that destroys H₂O₂ by-product, preventing it from oxidising the aldehyde product to carboxylic acid","Zn speeds up the reaction","Zn acts as Lewis acid catalyst"],a:1,e:"Ozonolysis: R–CH=CH–R + O₃ → CCl₄ → ozonide → [Zn powder, H₂O, Δ] → 2R–CHO + ZnO + H₂O. During hydrolysis of ozonide, H₂O₂ is also produced as a by-product. H₂O₂ is an oxidising agent that would oxidise the freshly formed aldehyde to carboxylic acid, destroying the product. Zinc reacts immediately with H₂O₂ → ZnO + H₂O, eliminating the threat. Zn powder is therefore essential for clean aldehyde production."},
+    {t:"FattyAcid",q:"Which test specifically identifies CARBOXYLIC ACID and distinguishes it from phenol?",o:["Litmus test — both phenol and RCOOH turn litmus red (not specific)","NaHCO₃ test — RCOOH reacts → CO₂ bubbles; phenol does NOT react with NaHCO₃","AgNO₃ test","2,4-DNP test"],a:1,e:"Carboxylic acid + NaHCO₃ → RCOO⁻ + Na⁺ + CO₂↑ (vigorous bubbling) + H₂O. CO₂ turns lime water milky. Phenol is a MUCH weaker acid (Ka ≈ 10⁻¹⁰) than carboxylic acid and is too weak to react with NaHCO₃ — no CO₂ is produced. This makes the NaHCO₃ test the most important and specific test for carboxylic acids. Litmus test cannot distinguish phenol from carboxylic acid since both turn litmus red."},
+    {t:"FattyAcid",q:"Why is acetic acid (CH₃COOH) a weaker acid than formic acid (H–COOH)?",o:["Acetic acid has more carbons — larger molecules are weaker acids","The –CH₃ group has +I (positive inductive) effect — pushes electrons toward –COOH, reducing ionisation → weaker acid. Ka acetic = 1.8×10⁻⁵ < Ka formic = 1.8×10⁻⁴","They have equal Ka values","Acetic acid has a –OH group that blocks ionisation"],a:1,e:"Acid strength depends on how easily –OH of –COOH ionises to give H⁺. In formic acid (H–COOH): –COOH bonded to H — no inductive effect. In acetic acid (CH₃–COOH): –COOH bonded to –CH₃. Methyl group has +I (positive inductive) effect — donates electron density to the carbonyl C, reducing the positive charge on it. Less positive carbonyl C = –OH ionises less = weaker acid. Ka(formic) = 1.8×10⁻⁴ (pKa 3.74) vs Ka(acetic) = 1.8×10⁻⁵ (pKa 4.74). Higher Ka = stronger acid."},
+    {t:"FattyAcid",q:"Chloroacetic acid (Cl–CH₂–COOH) is STRONGER than acetic acid. Why?",o:["Cl is larger than H, making the molecule bigger","Cl has –I (negative inductive) effect — pulls electrons away from –COOH, INCREASING positive charge on carbonyl C → MORE ionisation → stronger acid","Cl makes the molecule lighter","Cl provides an extra –OH group"],a:1,e:"The –I (negative inductive) effect of Cl withdraws electrons from the –CH₂–COOH chain towards itself. This increases the electron deficiency (higher δ+) on the carbonyl carbon of –COOH, which in turn increases ionisation of the –O–H bond → releases more H⁺ → stronger acid. Ka(ClCH₂COOH) = 1.4×10⁻³ >> Ka(CH₃COOH) = 1.8×10⁻⁵. Adding more Cl makes it even stronger: Cl₂CH–COOH (Ka 5.5×10⁻²) > Cl–CH₂–COOH > CH₃–COOH."},
+    {t:"Mixed",q:"The ester in ripe banana is pentyl acetate. What ester gives orange smell?",o:["Pentyl acetate","Octyl acetate (CH₃CO.OC₈H₁₇) — ripe orange","Butyl butyrate — ripe pineapple","Benzyl acetate — jasmine flower"],a:1,e:"Esters are responsible for fruit and flower aromas. Banana = pentyl acetate (CH₃CO.OC₅H₁₁). Orange = octyl acetate (CH₃CO.OC₈H₁₇). Pineapple = butyl butyrate (C₃H₇CO.OC₄H₉). Jasmine = benzyl acetate (CH₃CO.OCH₂C₆H₅). All formed by esterification: R–COOH + R'–OH → conc.H₂SO₄, Δ → R–COO–R' + H₂O."},
+    {t:"Mixed",q:"In esterification with conc. H₂SO₄, the H₂SO₄ serves which two functions?",o:["Oxidising agent and reducing agent","Proton donor (acid catalyst) AND dehydrating agent — absorbs water to push reversible reaction forward → more ester produced","Solvent and catalyst","Reactant and product"],a:1,e:"Esterification: R–COOH + R'–OH ⇌ R–COO–R' + H₂O is REVERSIBLE. Conc. H₂SO₄ has two roles: (1) Acid catalyst — donates H⁺ to activate the –OH of acid, making it a good leaving group. (2) Dehydrating agent — absorbs the water produced, shifting equilibrium to the right by Le Chatelier's principle, making the reaction essentially irreversible and giving maximum ester yield."},
+    {t:"Mixed",q:"Amide identification: hydrolysis of amide with NaOH gives what observable sign?",o:["Red precipitate","Silver mirror","Pungent fishy smell of NH₃ gas; NH₃ + HCl → white fumes of NH₄Cl on glass rod","Yellow precipitate"],a:2,e:"Amide hydrolysis: R–CO–NH₂ + H₂O → NaOH/Δ → R–COOH + NH₃↑. The ammonia (NH₃) gas released has a distinctive pungent, fishy smell. When a glass rod moistened with HCl is held near the mouth of the test tube, NH₃ + HCl → NH₄Cl (dense white fumes) — this visually confirms amide. With dilute HCl instead: R–CO–NH₂ + HCl + H₂O → R–COOH + NH₄Cl (white salt)."},
+    {t:"Mixed",q:"Why is the amide bond (–CO–NH–) called the 'bond of life'?",o:["It smells pleasant","It is the peptide bond — the fundamental link between amino acids in ALL proteins. Without amide bonds there are no proteins, no enzymes, no life","It is found only in DNA","It stores energy"],a:1,e:"The amide bond (–C(=O)–NH–) is called the peptide bond in biology. Every protein — whether enzyme, muscle fibre, hormone, or antibody — is built from amino acids linked together by amide (peptide) bonds. Without amide bonds, proteins cannot form. No proteins = no life. Additionally: nylon synthetic polymer contains amide bonds. Paracetamol (acetaminophen, common pain killer) is an amide. Amide bond is literally everywhere in biochemistry and industry."},
+    {t:"Mixed",q:"Formic acid (H–COOH) is unique because it behaves as both an acid and?",o:["A ketone","An alcohol","An aldehyde — reduces Tollen's reagent (silver mirror) and Fehling's solution (red Cu₂O), but does NOT give 2,4-DNP test","An amine"],a:2,e:"Formic acid (methanoic acid, H–COOH) contains both –COOH (carboxyl group) and –CHO (aldehyde group) in the same molecule. (1) As ACID: ionises in water → H⁺ + HCOO⁻; turns litmus red; reacts with NaHCO₃ → CO₂. (2) As ALDEHYDE (reductant): reduces Tollen's reagent → silver mirror; reduces Fehling's → red Cu₂O ppt. BUT: formic acid does NOT give a precipitate with 2,4-DNP reagent — because the aldehyde C is part of the –COOH and is not a free C=O group."}
   ];
 
   let EQ2 = [], EA = {}, ET = null, ES = 0, EE = 0, ED = false;
