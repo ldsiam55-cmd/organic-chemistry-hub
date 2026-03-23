@@ -2074,7 +2074,7 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
     <button class="nt-tab" style="color:#f43f5e" onclick="ntTab(this,'th-aliaro')">⚖️ Ali vs Aro</button>
     <button class="nt-tab" style="color:#22d3ee" onclick="ntTab(this,'th-react')">⚗️ Reactions</button>
     <button class="nt-tab" style="color:#a3e635" onclick="ntTab(this,'th-mech')">🔧 Mechanisms</button>
-    <button class="nt-tab" style="color:#38bdf8" onclick="ntTab(this,'th-alcohol')">🧪 Alcohol & Ether</button>
+    <button class="nt-tab" style="color:#38bdf8" onclick="ntTab(this,'th-alcohol')">🧪 Alcohol &amp; Ether</button>
     <button class="nt-tab" style="color:#c084fc" onclick="ntTab(this,'th-amines')">🟣 Amines</button>
   </div>
 
@@ -2240,168 +2240,236 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
         <tr><td>7</td><td style="color:#a78bfa">Amine</td><td>CₙH₂ₙ₊₁–NH₂</td><td>CH₃NH₂, C₂H₅NH₂</td></tr>
       </table>
     </div></div>
+  </div>
 
-  <div id="th-alcohol" class="nt-pane">
-    <div class="note-card"><div class="note-card-head" style="border-color:#38bdf8"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:#38bdf8">Alcohol — Definition & Classification</span></div>
+  <div id="th-aliaro" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#f43f5e"><span class="note-card-icon">⚖️</span><span class="note-card-title" style="color:#f43f5e">Aliphatic vs Aromatic — 7 Differences</span></div>
     <div class="note-card-body">
-      <b>Definition:</b> When H atoms of aliphatic hydrocarbon are replaced by –OH groups, the hydroxy compounds are called <b>alcohols</b>. General formula: CₙH₂ₙ₊₁OH (monohydric).<br><br>
-      <b>Classification 1 — by number of –OH groups:</b><br>
-      • Monohydric (1 –OH): CH₃OH, C₂H₅OH &nbsp;|&nbsp; Diol (2 –OH): ethylene glycol (ethane-1,2-diol)<br>
-      • Triol (3 –OH): glycerol (propane-1,2,3-triol) &nbsp;|&nbsp; Tetraol+ : sorbitol (hexane-1,2,3,4,5,6-hexol)<br>
-      Polyhydric alcohols used as moisturising agents — absorb water via –OH groups (eye drops, creams).<br><br>
-      <b>Classification 2 — monohydric by degree:</b>
       <table class="note-table">
-        <tr><th>Type</th><th>Group</th><th>Rule</th><th>Example</th></tr>
-        <tr><td style="color:#38bdf8">Primary (1°)</td><td>–CH₂OH</td><td>C bearing –OH has ≥2 H, bonded to 1 alkyl</td><td>CH₃CH₂OH, CH₃OH</td></tr>
-        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>–CHOH–</td><td>C bearing –OH has 1 H, bonded to 2 alkyls</td><td>CH₃CHOHCH₃ (propan-2-ol)</td></tr>
-        <tr><td style="color:#f87171">Tertiary (3°)</td><td>&gt;C–OH</td><td>C bearing –OH has NO H, bonded to 3 alkyls</td><td>(CH₃)₃COH (2-methylpropan-2-ol)</td></tr>
+        <tr><th>#</th><th>Point</th><th style="color:#60a5fa">Aliphatic</th><th style="color:#a78bfa">Aromatic</th></tr>
+        <tr><td>1</td><td>Structure</td><td>Open chain or non-aromatic cyclic</td><td>Closed planar ring, (4n+2) π electrons (Hückel rule)</td></tr>
+        <tr><td>2</td><td>Carbon %</td><td>CH₄: C=75%, H=25%</td><td>C₆H₆: C=92.3%, H=7.7% — more carbon</td></tr>
+        <tr><td>3</td><td>Unsaturation</td><td>Saturated or normal unsaturated</td><td>Special stable unsaturation: (4n+2) π electrons only</td></tr>
+        <tr><td>4</td><td>Br₂/KMnO₄ test</td><td>Unsaturated aliphatic decolourises both ✅</td><td>Benzene does NOT decolourise either ❌</td></tr>
+        <tr><td>5</td><td>Halide reactivity</td><td>R–X easily hydrolysed by aq.KOH → alcohol</td><td>Ar–X barely hydrolysed — needs 300°C, 150 atm + KOH!</td></tr>
+        <tr><td>6</td><td>Hydroxy compound</td><td>Alcohol (–OH on C chain) — litmus neutral</td><td>Phenol (–OH on ring) — turns litmus RED (acidic)</td></tr>
+        <tr><td>7</td><td>Reactions</td><td>Addition + nucleophilic substitution + elimination</td><td>Mainly electrophilic substitution (halogenation, nitration, Friedel-Craft)</td></tr>
       </table>
-      <br>
-      <b>Phenol vs Aromatic Alcohol:</b><br>
-      • Phenol: –OH directly on benzene ring → <b>acidic</b> (turns litmus red). C₆H₅OH ⇌ C₆H₅O⁻ + H⁺<br>
-      • Aromatic alcohol: –OH on side chain → <b>neutral</b>. e.g. benzyl alcohol (C₆H₅CH₂OH), 2-phenyl ethanol<br><br>
-      <b>Isomerism in monohydric alcohols:</b><br>
-      (1) Position isomerism: propan-1-ol vs propan-2-ol<br>
-      (2) Chain isomerism: pentanol-1 vs 2-methylbutanol-1<br>
-      (3) Functional group isomerism: C₂H₆O — ethanol (alcohol) vs dimethyl ether (ether)
+      <div style="margin-top:.6rem;font-size:.82rem;color:#6b7280">Key: Aromatic = MORE stable, MORE C%, LESS reactive halide, ACIDIC –OH, SUBSTITUTION preferred</div>
     </div></div>
+  </div>
 
-    <div class="note-card"><div class="note-card-head" style="border-color:#4ade80"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#4ade80">Alcohol Preparation — 6 Methods</span></div>
+  <div id="th-react" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#22d3ee"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#22d3ee">5 Types of Organic Reactions</span></div>
     <div class="note-card-body">
       <div style="display:flex;flex-direction:column;gap:.55rem">
-        <div style="border-left:4px solid #60a5fa;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#60a5fa">1. From R–X + NaOH(aq)</b> — SN2 substitution<br><span style="font-family:'JetBrains Mono',monospace;font-size:.77rem;color:#c0caf5">R–CH₂–X + NaOH(aq) → R–CH₂–OH + NaX</span><br><span style="font-size:.77rem;color:#6b7280">Best with 1° alkyl halide. Reactivity: R–I &gt; R–Br &gt; R–Cl</span></div>
-        <div style="border-left:4px solid #34d399;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#34d399">2. From Alkene hydration</b> — Markovnikov's rule<br><span style="font-family:'JetBrains Mono',monospace;font-size:.77rem;color:#c0caf5">R–CH=CH₂ + H₂O → conc.H₂SO₄ → R–CH(OH)–CH₃</span><br><span style="font-size:.77rem;color:#6b7280">Alkene + conc.H₂SO₄ → alkyl H-sulphate → hydrolysis by water → alcohol</span></div>
-        <div style="border-left:4px solid #fbbf24;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#fbbf24">3. From Carbonyl compounds</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.77rem;color:#c0caf5">R–CHO + 2[H] → Ni/Pt/Pd or LiAlH₄ → R–CH₂OH (1° alcohol)<br>R–CO–R' + 2[H] → LiAlH₄/ether → R–CHOH–R' (2° alcohol)</span></div>
-        <div style="border-left:4px solid #f87171;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#f87171">4. From Carboxylic acid</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.77rem;color:#c0caf5">R–COOH + 4[H] → LiAlH₄/dry ether → R–CH₂OH + H₂O</span><br><span style="font-size:.77rem;color:#6b7280">e.g. CH₃COOH + 4[H] → LiAlH₄ → CH₃CH₂OH + H₂O</span></div>
-        <div style="border-left:4px solid #c084fc;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#c084fc">5. From Acid derivatives (LiAlH₄)</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.77rem;color:#c0caf5">R–COCl + 4[H] → R–CH₂OH + HCl (from acid chloride)<br>R–COOR' + 4[H] → R–CH₂OH + R'OH (from ester)<br>(RCO)₂O + 8[H] → 2R–CH₂OH + H₂O (from acid anhydride)</span></div>
-        <div style="border-left:4px solid #fb923c;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#fb923c">6. From Grignard Reagent (RMgX)</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.77rem;color:#c0caf5">RMgX + HCHO + H₂O → 1° alcohol (one more C)<br>RMgX + RCHO + H₂O → 2° alcohol<br>RMgX + ketone + H₂O → 3° alcohol</span><br><span style="font-size:.77rem;color:#6b7280">Must use dry ether — Grignard destroyed by water!</span></div>
+        <div style="border-left:4px solid #60a5fa;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#60a5fa">1. Substitution</b> — one atom/group replaced by another<br><span style="font-size:.8rem;color:#94a3b8">Free radical (alkane + X₂/UV) | Electrophilic (arenes + Cl₂/AlCl₃) | Nucleophilic (R–X + OH⁻)</span><br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">CH₄ + Cl₂ → UV → CH₃Cl + HCl &nbsp;|&nbsp; C₆H₆ + Cl₂ → AlCl₃ → C₆H₅Cl + HCl</span></div>
+        <div style="border-left:4px solid #34d399;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#34d399">2. Addition</b> — two molecules combine into one (at C=C, C≡C, C=O)<br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br &nbsp;|&nbsp; CH₃CHO + HCN → CH₃CH(OH)CN</span></div>
+        <div style="border-left:4px solid #fbbf24;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#fbbf24">3. Elimination</b> — atoms/groups removed to form double bond<br><span style="font-size:.8rem;color:#94a3b8">E1: ionisation first (3°). E2: concerted (2°,3°). Saytzeff rule: more substituted alkene preferred.</span><br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">RCH₂–CH₂X + KOH(alc.) → RCH=CH₂ + KX + H₂O</span></div>
+        <div style="border-left:4px solid #f87171;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#f87171">4. Rearrangement</b> — atoms rearrange within same molecule<br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">n-butane ⇌ isobutane &nbsp;|&nbsp; 1,2-hydride shift via carbocation</span></div>
+        <div style="border-left:4px solid #c084fc;padding:.55rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#c084fc">5. Oxidation-Reduction</b> — add/remove O or H<br><span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">CH₃CH₂OH + [O] → K₂Cr₂O₇ → CH₃CHO &nbsp;|&nbsp; CH₃CHO + 2[H] → Ni → CH₃CH₂OH</span></div>
       </div>
-      <br><b>Methanol from water gas:</b> CO + H₂ (water gas) + H₂ → ZnO/Cr₂O₃, 250–350°C, 200–300 atm → CH₃OH (99% pure)<br>
-      <b>Ethanol from fermentation:</b> Starch →<em>diastase 40°C</em>→ Maltose →<em>maltase 25°C</em>→ Glucose →<em>zymase 25°C</em>→ 2C₂H₅OH + 2CO₂
-    </div></div>
-
-    <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:#fbbf24">4 Identification Tests for Alcohol</span></div>
-    <div class="note-card-body">
-      <div style="display:flex;flex-direction:column;gap:.6rem">
-        <div style="border-left:4px solid #fbbf24;padding:.6rem .9rem;background:rgba(0,0,0,.15);border-radius:0 9px 9px 0">
-          <b style="color:#fbbf24">1. Na Metal Test — confirms –OH in ALL alcohols</b><br>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#c0caf5">2R–OH + 2Na → 2R–ONa + H₂↑ (burns blue)</span><br>
-          <span style="font-size:.77rem;color:#6b7280">H₂ gas bubbles with sodium metal. Any compound with –OH gives this.</span>
-        </div>
-        <div style="border-left:4px solid #60a5fa;padding:.6rem .9rem;background:rgba(0,0,0,.15);border-radius:0 9px 9px 0">
-          <b style="color:#60a5fa">2. PCl₅ Test — differentiates alcohol from ether!</b><br>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#c0caf5">R–OH + PCl₅ → R–Cl + POCl₃ + HCl↑ (white fumes with NH₃)<br>R–O–R + PCl₅ → 2R–Cl + POCl₃ (NO HCl gas — ether!)</span><br>
-          <span style="font-size:.77rem;color:#6b7280">HCl + NH₃ → NH₄Cl white fumes on glass rod. Only alcohol gives HCl.</span>
-        </div>
-        <div style="border-left:4px solid #f472b6;padding:.6rem .9rem;background:rgba(0,0,0,.15);border-radius:0 9px 9px 0">
-          <b style="color:#f472b6">3. Methanol specific — salicylic acid + conc.H₂SO₄</b><br>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#c0caf5">CH₃OH + salicylic acid + conc.H₂SO₄ → methyl salicylate (IODEX/pain balm smell)</span><br>
-          <span style="font-size:.77rem;color:#6b7280">Specific to METHANOL only. Ethanol does NOT give this smell.</span>
-        </div>
-        <div style="border-left:4px solid #a78bfa;padding:.6rem .9rem;background:rgba(0,0,0,.15);border-radius:0 9px 9px 0">
-          <b style="color:#a78bfa">4. Iodoform Test — ethanol &amp; CH₃CO– compounds</b><br>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#c0caf5">CH₃CH₂OH + 4I₂ + 6NaOH → 60°C → CHI₃↓ (yellow ppt) + HCOONa + 5NaI + 5H₂O</span><br>
-          <span style="font-size:.77rem;color:#6b7280">✅ GIVE iodoform: ethanol, ethanal, propanone, butan-2-one, acetophenone, 2° alcohols (CH₃CHOH–R)<br>❌ DON'T give: CH₃COCl, CH₃CONH₂, CH₃COOH — CH₃CO– not joined to H/alkyl</span>
-        </div>
-      </div>
-    </div></div>
-
-    <div class="note-card"><div class="note-card-head" style="border-color:#fb923c"><span class="note-card-icon">🥃</span><span class="note-card-title" style="color:#fb923c">Ethanol Types, Lucas Test &amp; Ether</span></div>
-    <div class="note-card-body">
-      <table class="note-table" style="margin-bottom:.9rem">
-        <tr><th>Name</th><th>Composition</th><th>Key fact</th></tr>
-        <tr><td style="color:#4ade80">Rectified Spirit</td><td>95.6% ethanol + 4.4% water</td><td>Azeotrope bp 78.1°C — cannot remove water by distillation</td></tr>
-        <tr><td style="color:#38bdf8">Absolute Alcohol</td><td>99.7% ethanol</td><td>Rectified spirit + quicklime (CaO) absorbs water → distil at 78.3°C</td></tr>
-        <tr><td style="color:#f87171">Methylated Spirit</td><td>95.6% ethanol + 5–10% methanol</td><td>Poisonous — unfit to drink. Industrial solvent &amp; varnishing.</td></tr>
-        <tr><td style="color:#fbbf24">Power Alcohol</td><td>Ethanol + benzene + petrol</td><td>Alternate motor fuel</td></tr>
-        <tr><td style="color:#c084fc">Proof Spirit</td><td>57.1% ethanol + 42.9% water</td><td>Standard for measuring imported alcohol strength</td></tr>
-        <tr><td style="color:#94a3b8">Wood Spirit</td><td>98% methanol + 1–2% acetone</td><td>Impure methanol from destructive distillation of wood at 350°C. bp 65°C</td></tr>
+      <br><b>Attacking Reagents:</b>
+      <table class="note-table" style="margin-top:.4rem">
+        <tr><th>Reagent</th><th>Nature</th><th>Attacks</th><th>Example</th></tr>
+        <tr><td style="color:#fbbf24">Free radical (R•)</td><td>Neutral, unpaired e⁻</td><td>Any C–H bond</td><td>Cl• from Cl₂/UV</td></tr>
+        <tr><td style="color:#f87171">Electrophile (E⁺)</td><td>e⁻-deficient, accepts e⁻</td><td>e⁻-rich sites (C=C, ring)</td><td>NO₂⁺, Br⁺, Cl⁺, H⁺, R⁺</td></tr>
+        <tr><td style="color:#60a5fa">Nucleophile (Nu⁻)</td><td>e⁻-rich, donates e⁻</td><td>e⁻-poor C (δ+)</td><td>OH⁻, CN⁻, NH₃, RO⁻, Br⁻</td></tr>
       </table>
-      <b>Lucas Test</b> — ZnCl₂ (anhydrous) + conc. HCl = Lucas reagent:
-      <table class="note-table" style="margin:.5rem 0">
-        <tr><th>Alcohol</th><th>Observation</th><th>Mechanism</th></tr>
-        <tr><td style="color:#f87171">3° alcohol</td><td>Immediately turbid (room temp)</td><td>SN1 — stable 3° carbocation instantly</td></tr>
-        <tr><td style="color:#fbbf24">2° alcohol</td><td>Turbid in 5–10 minutes</td><td>SN1 — slower 2° carbocation</td></tr>
-        <tr><td style="color:#4ade80">1° alcohol</td><td>No reaction at room temp</td><td>SN2 — only reacts on heating</td></tr>
-      </table>
-      <b>Ether (Section 2.11.5):</b><br>
-      Two alkyl/aryl groups joined by divalent O. IUPAC = alkoxy alkane. Bond angle C–O–C = 110° (O is sp³).<br>
-      <b>Polarity:</b> H₂O &gt; R–OH &gt; R–O–R (ether least polar — no O–H bond → water-INSOLUBLE)<br>
-      <b>Chemically inactive</b> — C–O–C strengthened by +I effect of 2 alkyl groups. Most oxidising/reducing agents have no action.<br>
-      <b>⚠️ Danger:</b> Ether + sunlight + O₂ → explosive diethyl peroxide (C₂H₅–O–O–C₂H₅). Store in sealed dark bottle. Detect: KI+starch → blue. Remove: shake with FeSO₄ or Na₂SO₃.<br>
-      <b>Preparation:</b><br>
-      (1) <b>Williamson synthesis:</b> R–ONa + R–X → R–O–R + NaX (simple &amp; mixed ethers)<br>
-      (2) <b>Dehydration:</b> 2C₂H₅OH + conc.H₂SO₄ → 140°C → C₂H₅–O–C₂H₅ + H₂O<br>
-      (3) Grignard + chloromethyl ether: RMgX + Cl–CH₂–OR → R–O–CH₂R + MgXCl
     </div></div>
   </div>
-  <div id="th-amines" class="nt-pane">
-    <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">🟣</span><span class="note-card-title" style="color:#c084fc">Amines — Definition &amp; Classification</span></div>
+
+  <div id="th-mech" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#a3e635"><span class="note-card-icon">🔧</span><span class="note-card-title" style="color:#a3e635">Key Reaction Mechanisms</span></div>
     <div class="note-card-body">
-      <b>Definition:</b> Organic compounds formed by replacing H atoms of NH₃ with alkyl or aryl groups. Amines = alkyl/aryl-substituted ammonia.<br><br>
+      <div style="display:flex;flex-direction:column;gap:.6rem">
+        <div style="background:rgba(96,165,250,.08);border:1.5px solid rgba(96,165,250,.3);border-radius:10px;padding:.7rem">
+          <b style="color:#60a5fa">SN1 — Unimolecular Nucleophilic Substitution (2 steps)</b><br>
+          <span style="font-size:.81rem;color:#94a3b8">Step 1: ionisation → carbocation intermediate (slow, rate-determining). Step 2: Nu⁻ attacks (fast).<br>Favoured by 3° &gt; 2° alkyl halides. Rate ∝ [R–X] only.</span><br>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">(CH₃)₃C–Br → slow → (CH₃)₃C⁺ + Br⁻ → fast + OH⁻ → (CH₃)₃C–OH</span>
+        </div>
+        <div style="background:rgba(52,211,153,.08);border:1.5px solid rgba(52,211,153,.3);border-radius:10px;padding:.7rem">
+          <b style="color:#34d399">SN2 — Bimolecular Nucleophilic Substitution (1 step)</b><br>
+          <span style="font-size:.81rem;color:#94a3b8">Nu⁻ attacks from back → transition state → product with inverted configuration. Favoured by 1° alkyl halides (less steric). Rate ∝ [R–X][Nu⁻].</span><br>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">HO⁻ + CH₃Br → [HO···CH₃···Br]‡ → CH₃OH + Br⁻ (Walden inversion)</span>
+        </div>
+        <div style="background:rgba(251,191,36,.08);border:1.5px solid rgba(251,191,36,.3);border-radius:10px;padding:.7rem">
+          <b style="color:#fbbf24">E1 vs E2 Elimination + Saytzeff Rule</b><br>
+          <span style="font-size:.81rem;color:#94a3b8">E1: 2 steps, carbocation intermediate, KOH(alc.) + heat, 3°. E2: 1 step concerted, KOH(alc.), 2° and 3°.<br><b>Saytzeff rule:</b> more substituted (more stable) alkene is the major product.</span><br>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">R–X + KOH(aq) → R–OH (SN2) &nbsp;|&nbsp; R–X + KOH(alc.) → alkene (E2)</span>
+        </div>
+        <div style="background:rgba(248,113,113,.08);border:1.5px solid rgba(248,113,113,.3);border-radius:10px;padding:.7rem">
+          <b style="color:#f87171">Markovnikov's Rule &amp; Anti-Markovnikov (Kharasch)</b><br>
+          <span style="font-size:.81rem;color:#94a3b8">Markovnikov: H of HX adds to C with MORE H (more stable carbocation on other C).<br>Anti-Markovnikov (peroxide/ROOR): free radical addition → H to C with LESS H.</span><br>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c0caf5">CH₃CH=CH₂ + HBr → Markov → CH₃CHBrCH₃ (2-bromopropane, major)<br>CH₃CH=CH₂ + HBr → ROOR → CH₃CH₂CH₂Br (1-bromopropane, anti-Markov)</span>
+        </div>
+        <div style="background:rgba(192,132,252,.08);border:1.5px solid rgba(192,132,252,.3);border-radius:10px;padding:.7rem">
+          <b style="color:#c084fc">Inductive &amp; Mesomeric Effects + Carbocation Stability</b><br>
+          <span style="font-size:.81rem;color:#94a3b8">+I effect (alkyl groups): donate e⁻ through σ bonds → increase e⁻ density.<br>+M effect (–OH, –NH₂): donate lone pair into π system → ortho/para directing.<br>–M effect (–NO₂, –CHO): withdraw π electrons → meta directing.<br>Carbocation stability: 3° &gt; 2° &gt; 1° &gt; CH₃⁺ (more alkyl = more stable)</span>
+        </div>
+      </div>
+    </div></div>
+  </div>
+
+  <div id="th-alcohol" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#38bdf8"><span class="note-card-icon">🧪</span><span class="note-card-title" style="color:#38bdf8">Alcohol — Classification &amp; Preparation</span></div>
+    <div class="note-card-body">
+      <b>Definition:</b> H atoms of aliphatic hydrocarbon replaced by –OH groups → alcohols. Formula: CₙH₂ₙ₊₁OH.<br><br>
+      <b>By –OH count:</b> Monohydric | Diol (ethylene glycol) | Triol (glycerol/propane-1,2,3-triol) | Tetraol (sorbitol)<br><br>
+      <b>Monohydric by degree:</b>
+      <table class="note-table">
+        <tr><th>Type</th><th>Group</th><th>Rule</th><th>Example</th></tr>
+        <tr><td style="color:#38bdf8">Primary (1°)</td><td>–CH₂OH</td><td>C with –OH has ≥2 H, bonded to 1 alkyl</td><td>CH₃CH₂OH (ethanol)</td></tr>
+        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>–CHOH–</td><td>C with –OH has 1 H, bonded to 2 alkyls</td><td>CH₃CHOHCH₃ (propan-2-ol)</td></tr>
+        <tr><td style="color:#f87171">Tertiary (3°)</td><td>&gt;C–OH</td><td>C with –OH has 0 H, bonded to 3 alkyls</td><td>(CH₃)₃COH</td></tr>
+      </table>
+      <div style="margin-top:.5rem;font-size:.82rem;color:#94a3b8"><b>Isomerism:</b> Position (propan-1-ol vs propan-2-ol) | Chain | Functional group (C₂H₆O: ethanol ↔ dimethyl ether)<br><b>Phenol</b> = –OH directly on benzene ring → acidic (turns litmus red). <b>Aromatic alcohol</b> = –OH on side chain → neutral.</div>
+      <br><b>6 Preparation Methods:</b>
+      <div style="display:flex;flex-direction:column;gap:.4rem;margin-top:.4rem">
+        <div style="border-left:3px solid #60a5fa;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#60a5fa">1.</b> R–X + NaOH(aq) → R–OH + NaX (SN2, best with 1° R–X)</div>
+        <div style="border-left:3px solid #34d399;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#34d399">2.</b> Alkene + conc.H₂SO₄ + H₂O → alcohol (Markovnikov hydration)</div>
+        <div style="border-left:3px solid #fbbf24;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#fbbf24">3.</b> Aldehyde + 2[H] (Ni/Pt) → 1° alcohol; Ketone + LiAlH₄/ether → 2° alcohol</div>
+        <div style="border-left:3px solid #f87171;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#f87171">4.</b> R–COOH + LiAlH₄/dry ether → 1° alcohol + H₂O</div>
+        <div style="border-left:3px solid #c084fc;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#c084fc">5.</b> Acid chloride / ester / anhydride + LiAlH₄ → 1° alcohol</div>
+        <div style="border-left:3px solid #fb923c;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#fb923c">6. Grignard:</b> RMgX + HCHO → 1° | + RCHO → 2° | + ketone → 3° alcohol (dry ether, no water!)</div>
+      </div>
+      <div style="margin-top:.6rem;font-size:.82rem;color:#94a3b8"><b>Methanol:</b> water gas (CO+H₂) + H₂ → ZnO/Cr₂O₃, 250–350°C, 200–300 atm → CH₃OH (99%)<br>
+      <b>Ethanol:</b> Starch →<em>diastase 40°C</em>→ Maltose →<em>maltase 25°C</em>→ Glucose →<em>zymase 25°C</em>→ 2C₂H₅OH + 2CO₂</div>
+    </div></div>
+
+    <div class="note-card"><div class="note-card-head" style="border-color:#4ade80"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:#4ade80">4 Identification Tests + Ethanol Types + Lucas Test + Ether</span></div>
+    <div class="note-card-body">
+      <div style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:.8rem">
+        <div style="border-left:4px solid #fbbf24;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#fbbf24">1. Na Metal — ALL alcohols:</b> 2R–OH + 2Na → 2R–ONa + H₂↑ (H₂ gas burns blue)</div>
+        <div style="border-left:4px solid #60a5fa;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#60a5fa">2. PCl₅ — differentiates alcohol from ether:</b><br>Alcohol: R–OH + PCl₅ → R–Cl + POCl₃ + HCl↑ → white fumes with NH₃ ✅<br>Ether: R–O–R + PCl₅ → 2R–Cl + POCl₃ (NO HCl gas) ❌</div>
+        <div style="border-left:4px solid #f472b6;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#f472b6">3. Methanol only — salicylic acid + conc.H₂SO₄ → methyl salicylate (IODEX smell)</b></div>
+        <div style="border-left:4px solid #a78bfa;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 8px 8px 0"><b style="color:#a78bfa">4. Iodoform — ethanol &amp; CH₃CO– compounds:</b><br>CH₃CH₂OH + 4I₂ + 6NaOH → 60°C → CHI₃↓ (yellow) + HCOONa + 5NaI + 5H₂O<br><span style="font-size:.78rem;color:#4ade80">✅ Give: ethanol, ethanal, propanone, butan-2-one, acetophenone, 2° alcohols (CH₃CHOH–R)</span><br><span style="font-size:.78rem;color:#f87171">❌ Don't: CH₃COCl, CH₃CONH₂, CH₃COOH (CH₃CO– not joined to H/alkyl)</span></div>
+      </div>
+      <b>Ethanol types:</b>
+      <table class="note-table" style="margin:.4rem 0 .8rem">
+        <tr><th>Name</th><th>Composition</th><th>Key fact</th></tr>
+        <tr><td style="color:#4ade80">Rectified Spirit</td><td>95.6% EtOH + 4.4% H₂O</td><td>Azeotrope bp 78.1°C — cannot separate by distillation</td></tr>
+        <tr><td style="color:#38bdf8">Absolute Alcohol</td><td>99.7% EtOH</td><td>Rectified spirit + CaO (absorbs H₂O) → distil at 78.3°C</td></tr>
+        <tr><td style="color:#f87171">Methylated Spirit</td><td>95.6% EtOH + 5–10% MeOH</td><td>Poisonous, unfit for drinking</td></tr>
+        <tr><td style="color:#fbbf24">Power Alcohol</td><td>EtOH + benzene + petrol</td><td>Alternate motor fuel</td></tr>
+        <tr><td style="color:#94a3b8">Wood Spirit</td><td>98% MeOH + 1–2% acetone</td><td>From destructive distillation of wood at 350°C</td></tr>
+      </table>
+      <b>Lucas Test</b> (anhydrous ZnCl₂ + conc.HCl):
+      <table class="note-table" style="margin:.4rem 0 .9rem">
+        <tr><td style="color:#f87171">3° alcohol</td><td>Immediately turbid — SN1, stable 3° carbocation</td></tr>
+        <tr><td style="color:#fbbf24">2° alcohol</td><td>Turbid in 5–10 min — SN1 slower</td></tr>
+        <tr><td style="color:#4ade80">1° alcohol</td><td>No reaction at room temp — SN2, only on heating</td></tr>
+      </table>
+      <b>Ether:</b> Two alkyl/aryl groups + divalent O. IUPAC = alkoxy alkane. C–O–C bond angle 110°.<br>
+      H₂O &gt; R–OH &gt; R–O–R (polarity). Ether water-INSOLUBLE (no O–H bond → no H-bond with water).<br>
+      <b>Williamson synthesis:</b> R–ONa + R–X → R–O–R + NaX (best method, simple &amp; mixed ethers)<br>
+      <b>Dehydration:</b> 2C₂H₅OH + conc.H₂SO₄ → <b>140°C</b> → diethyl ether (at 170°C → ethylene!)<br>
+      <b>⚠️ Peroxide:</b> Ether + sunlight + O₂ → explosive C₂H₅–O–O–C₂H₅. Store in sealed dark bottle.
+    </div></div>
+  </div>
+
+  <div id="th-amines" class="nt-pane">
+    <div class="note-card"><div class="note-card-head" style="border-color:#c084fc"><span class="note-card-icon">🟣</span><span class="note-card-title" style="color:#c084fc">Amines — Classification &amp; Basicity</span></div>
+    <div class="note-card-body">
+      <b>Definition:</b> NH₃ derivatives where H atoms are replaced by alkyl/aryl groups.<br><br>
       <table class="note-table">
         <tr><th>By Structure</th><th>Definition</th><th>Examples</th></tr>
-        <tr><td style="color:#60a5fa">Aliphatic</td><td>H of NH₃ replaced by alkyl groups</td><td>CH₃NH₂ (methylamine), (CH₃)₂NH, (CH₃)₃N</td></tr>
-        <tr><td style="color:#f472b6">Aromatic</td><td>H of NH₃ replaced by aryl group</td><td>C₆H₅NH₂ (aniline), N-methyl phenyl amine</td></tr>
-        <tr><td style="color:#a78bfa">Heterocyclic</td><td>N atom inside cyclic ring</td><td>Pyrrole, Pyridine, Purine, Pyrimidine (DNA/RNA bases)</td></tr>
+        <tr><td style="color:#60a5fa">Aliphatic</td><td>Only alkyl groups on N</td><td>CH₃NH₂, (CH₃)₂NH, (CH₃)₃N</td></tr>
+        <tr><td style="color:#f472b6">Aromatic</td><td>Aryl group on N</td><td>C₆H₅NH₂ (aniline), N-methyl phenyl amine</td></tr>
+        <tr><td style="color:#a78bfa">Heterocyclic</td><td>N atom inside cyclic ring</td><td>Pyrrole, Pyridine, Purine, Pyrimidine (DNA/RNA)</td></tr>
       </table>
       <br>
       <table class="note-table">
-        <tr><th>Degree</th><th>H on N</th><th>Functional group</th><th>Example</th></tr>
-        <tr><td style="color:#4ade80">Primary (1°)</td><td>2 H on N</td><td>–NH₂ (monovalent amino)</td><td>CH₃NH₂, C₆H₅NH₂</td></tr>
-        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>1 H on N</td><td>=NH (imino, divalent)</td><td>(CH₃)₂NH, C₆H₅NHCH₃</td></tr>
-        <tr><td style="color:#f87171">Tertiary (3°)</td><td>0 H on N</td><td>≡N (trivalent amino)</td><td>(CH₃)₃N, N,N-dimethyl aniline</td></tr>
+        <tr><th>Degree</th><th>H on N</th><th>Group</th><th>Example</th></tr>
+        <tr><td style="color:#4ade80">Primary (1°)</td><td>2 H</td><td>–NH₂ (amino)</td><td>CH₃NH₂, C₆H₅NH₂</td></tr>
+        <tr><td style="color:#fbbf24">Secondary (2°)</td><td>1 H</td><td>=NH (imino)</td><td>(CH₃)₂NH</td></tr>
+        <tr><td style="color:#f87171">Tertiary (3°)</td><td>0 H</td><td>≡N (trivalent)</td><td>(CH₃)₃N, N,N-dimethylaniline</td></tr>
       </table>
-      <div style="margin-top:.6rem;font-size:.82rem;color:#6b7280">💊 Amine drugs like morphine &amp; tetracycline are water-insoluble. Converting to ammonium salts (+ HCl → R₃NH⁺Cl⁻) → water soluble → deliverable through blood stream.</div>
-    </div></div>
-
-    <div class="note-card"><div class="note-card-head" style="border-color:#818cf8"><span class="note-card-icon">📊</span><span class="note-card-title" style="color:#818cf8">Basicity Order of Amines</span></div>
-    <div class="note-card-body">
-      <b>Order: R₂NH &gt; R–NH₂ &gt; R₃N &gt; NH₃ &gt;&gt; C₆H₅NH₂ (aniline)</b><br><br>
-      <table class="note-table">
+      <br><b>Basicity order: R₂NH &gt; R–NH₂ &gt; R₃N &gt; NH₃ &gt;&gt; C₆H₅NH₂</b>
+      <table class="note-table" style="margin-top:.4rem">
         <tr><th>Amine</th><th>pKb</th><th>Reason</th></tr>
-        <tr><td style="color:#fbbf24">Dimethylamine (CH₃)₂NH</td><td>3.23</td><td>2 alkyl groups donate max electrons to N via +I effect → strongest base</td></tr>
+        <tr><td style="color:#fbbf24">Dimethylamine (CH₃)₂NH</td><td>3.23</td><td>2 alkyl groups: max +I effect → most basic</td></tr>
         <tr><td style="color:#4ade80">Methylamine CH₃NH₂</td><td>3.36</td><td>1 alkyl group +I effect</td></tr>
-        <tr><td style="color:#fb923c">Trimethylamine (CH₃)₃N</td><td>4.22</td><td>3 alkyls but steric hindrance blocks H⁺ access to lone pair</td></tr>
-        <tr><td style="color:#94a3b8">Ammonia NH₃</td><td>4.74</td><td>No alkyl groups — baseline reference</td></tr>
-        <tr><td style="color:#f87171">Aniline C₆H₅NH₂</td><td>9.4</td><td>N lone pair in benzene ring resonance → electron density on N↓ → very weak base</td></tr>
+        <tr><td style="color:#fb923c">Trimethylamine (CH₃)₃N</td><td>4.22</td><td>3 alkyls but steric hindrance blocks H⁺</td></tr>
+        <tr><td style="color:#94a3b8">Ammonia NH₃</td><td>4.74</td><td>No alkyl groups — baseline</td></tr>
+        <tr><td style="color:#f87171">Aniline C₆H₅NH₂</td><td>9.4</td><td>N lone pair in benzene π resonance → very weak base</td></tr>
       </table>
-      <div style="margin-top:.5rem;font-size:.8rem;color:#94a3b8">Lower pKb = stronger base. Aliphatic amines &gt; NH₃ because alkyl groups (+I) push electrons to N. Aromatic amine (aniline) &lt;&lt; NH₃ because lone pair delocalized into benzene ring.</div>
+      <div style="margin-top:.5rem;font-size:.81rem;color:#94a3b8">💊 Drugs like morphine &amp; tetracycline (amines) are water-insoluble. As ammonium salts (+ HCl) → water-soluble → delivered through blood stream.</div>
     </div></div>
 
-    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#34d399">Amine Preparation — 7 Methods</span></div>
+    <div class="note-card"><div class="note-card-head" style="border-color:#34d399"><span class="note-card-icon">⚗️</span><span class="note-card-title" style="color:#34d399">Preparation (7 methods) &amp; Identification Tests</span></div>
     <div class="note-card-body">
-      <div style="display:flex;flex-direction:column;gap:.5rem">
-        <div style="border-left:4px solid #60a5fa;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#60a5fa">1. R–X + NH₃ (alc., heat, closed vessel)</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#c0caf5">R–X + NH₃ → [R–NH₃]X⁻ (quaternary salt) → + more R–X → 1°, 2°, 3° mixture → fractional distillation with KOH</span></div>
-        <div style="border-left:4px solid #34d399;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#34d399">2. Nitrile (R–C≡N) + LiAlH₄ → 1° amine</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#c0caf5">R–C≡N + 4[H] → LiAlH₄/ether → R–CH₂–NH₂</span><br><span style="font-size:.76rem;color:#6b7280">e.g. CH₃–C≡N + 4[H] → CH₃–CH₂–NH₂ (ethylamine from ethanenitrile)</span></div>
-        <div style="border-left:4px solid #fbbf24;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#fbbf24">3. Isonitrile (R–N=C) + LiAlH₄ → 2° amine</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#c0caf5">R–N=C + 4[H] → LiAlH₄/ether → R–NH–CH₃</span><br><span style="font-size:.76rem;color:#6b7280">e.g. CH₃–N=C + 4[H] → CH₃–NH–CH₃ (dimethylamine)</span></div>
-        <div style="border-left:4px solid #f87171;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#f87171">4. Amide + LiAlH₄ → 1° amine (same C count)</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#c0caf5">R–CO–NH₂ + 4[H] → LiAlH₄ → R–CH₂–NH₂ + H₂O</span></div>
-        <div style="border-left:4px solid #f472b6;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#f472b6">5. Hofmann Degradation — 1° amine with ONE LESS carbon!</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#c0caf5">R–CO–NH₂ + Br₂ + 4NaOH → R–NH₂ + 2NaBr + Na₂CO₃ + 2H₂O</span><br><span style="font-size:.76rem;color:#6b7280">Acetamide → methylamine (6C amide → 5C amine). The "degradation" name is because C count decreases!</span></div>
-        <div style="border-left:4px solid #a78bfa;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#a78bfa">6. Aniline from nitrobenzene (industrial &amp; lab)</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#c0caf5">Industrial: C₆H₅NO₂ + 3H₂ → Cu-silica, 270°C, 2 atm → C₆H₅NH₂ + 2H₂O<br>Lab: C₆H₅NO₂ + 6[H] → Sn/conc.HCl, 70°C → C₆H₅NH₂ + 2H₂O</span></div>
-        <div style="border-left:4px solid #38bdf8;padding:.5rem .9rem;background:rgba(0,0,0,.14);border-radius:0 9px 9px 0"><b style="color:#38bdf8">7. Aniline from phenol / chlorobenzene / diazonium</b><br><span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#c0caf5">C₆H₅OH + 2NH₃ → ZnCl₂, 300°C → C₆H₅NH₂ + H₂O<br>C₆H₅Cl + 2NH₃ → Cu₂O, 200°C, 300 atm → C₆H₅NH₂ + NH₄Cl<br>C₆H₅N₂Cl + 6[H] → Zn/HCl → C₆H₅NH₂ + NH₄Cl</span></div>
+      <b>Preparation:</b>
+      <div style="display:flex;flex-direction:column;gap:.4rem;margin:.5rem 0 .9rem">
+        <div style="border-left:3px solid #60a5fa;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#60a5fa">1.</b> R–X + NH₃ (alc., heat, closed vessel) → 1°+2°+3° mixture → separate by KOH distillation</div>
+        <div style="border-left:3px solid #34d399;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#34d399">2.</b> Nitrile + LiAlH₄/ether → 1° amine: R–C≡N + 4[H] → R–CH₂–NH₂</div>
+        <div style="border-left:3px solid #fbbf24;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#fbbf24">3.</b> Isonitrile + LiAlH₄/ether → 2° amine: R–N=C + 4[H] → R–NH–CH₃</div>
+        <div style="border-left:3px solid #f87171;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#f87171">4.</b> Amide + LiAlH₄ → 1° amine (same C count): R–CO–NH₂ + 4[H] → R–CH₂–NH₂</div>
+        <div style="border-left:3px solid #f472b6;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#f472b6">5. Hofmann Degradation — 1° amine, ONE LESS carbon!</b><br>R–CO–NH₂ + Br₂ + 4NaOH → R–NH₂ + 2NaBr + Na₂CO₃ + 2H₂O<br><span style="font-size:.77rem;color:#6b7280">e.g. CH₃CONH₂ (acetamide) → CH₃NH₂ (methylamine). C count DECREASES by 1.</span></div>
+        <div style="border-left:3px solid #a78bfa;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#a78bfa">6.</b> Aniline from nitrobenzene: Industrial: C₆H₅NO₂ + 3H₂ → Cu/silica, 270°C, 2 atm → C₆H₅NH₂<br>Lab: C₆H₅NO₂ + 6[H] (Sn + conc.HCl, 70°C) → C₆H₅NH₂ + 2H₂O</div>
+        <div style="border-left:3px solid #38bdf8;padding:.4rem .8rem;background:rgba(0,0,0,.12);border-radius:0 8px 8px 0"><b style="color:#38bdf8">7.</b> Aniline: from phenol (ZnCl₂/300°C) | chlorobenzene (Cu₂O, 200°C, 300 atm) | diazonium + 6[H] (Zn/HCl)</div>
       </div>
-    </div></div>
-
-    <div class="note-card"><div class="note-card-head" style="border-color:#fb923c"><span class="note-card-icon">🔬</span><span class="note-card-title" style="color:#fb923c">Identification Tests &amp; Diazonium Reaction</span></div>
-    <div class="note-card-body">
-      <b>Carbylamine Test — 1° amines ONLY (aliphatic &amp; aromatic):</b><br>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#c0caf5;margin:.4rem 0">R–NH₂ + CHCl₃ + 3KOH → 60°C → R–N=C (isocyanide — foul smell) + 3KCl + 2H₂O</div>
-      CH₃NH₂ → methyl isocyanide. C₆H₅NH₂ → phenyl isocyanide. 2° and 3° amines do NOT give this.<br><br>
+      <b>Carbylamine Test — PRIMARY amines ONLY:</b><br>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#c0caf5">R–NH₂ + CHCl₃ + 3KOH → 60°C → R–N=C (isocyanide — foul smell) + 3KCl + 2H₂O</span><br>
+      Both CH₃NH₂ (aliphatic) and C₆H₅NH₂ (aromatic) give this. 2° and 3° amines do NOT.<br><br>
       <b>Nitrous Acid Test (HNO₂ = NaNO₂ + HCl):</b>
       <table class="note-table" style="margin:.5rem 0">
-        <tr><th>Amine type</th><th>Product</th><th>Observation</th></tr>
+        <tr><th>Amine</th><th>Product</th><th>Observation</th></tr>
         <tr><td style="color:#4ade80">Aliphatic 1° (R–NH₂)</td><td>Alcohol + N₂↑</td><td>N₂ gas bubbles</td></tr>
-        <tr><td style="color:#fbbf24">Aliphatic 2° (R₂NH)</td><td>Yellow nitroso amine (R₂N–NO)</td><td>Yellow oily liquid</td></tr>
-        <tr><td style="color:#f87171">Aliphatic 3° (R₃N)</td><td>Ammonium nitrite salt</td><td>Water-soluble salt</td></tr>
-        <tr><td style="color:#a78bfa">Aromatic 1° (aniline) at 0–5°C</td><td>Diazonium salt C₆H₅N₂Cl</td><td>Stable solution — for dyes!</td></tr>
-        <tr><td style="color:#94a3b8">Aromatic 1° (aniline) at 35°C</td><td>Phenol + N₂↑</td><td>Diazonium decomposes on heating</td></tr>
+        <tr><td style="color:#fbbf24">Aliphatic 2° (R₂NH)</td><td>Yellow nitroso amine</td><td>Yellow oily layer</td></tr>
+        <tr><td style="color:#f87171">Aliphatic 3° (R₃N)</td><td>Ammonium nitrite salt</td><td>Water-soluble</td></tr>
+        <tr><td style="color:#a78bfa">Aniline at 0–5°C</td><td>Diazonium salt C₆H₅N₂Cl</td><td>Stable → dyes &amp; Sandmeyer!</td></tr>
+        <tr><td style="color:#94a3b8">Aniline at 35°C</td><td>Phenol + N₂↑</td><td>Diazonium decomposes on heating</td></tr>
       </table>
-      <b>Diazonium (Diazotisation) Reaction:</b><br>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#c0caf5;margin:.4rem 0">C₆H₅–NH₂ + HNO₂ + HCl → 0–5°C → C₆H₅–N₂Cl (benzene diazonium chloride) + 2H₂O</div>
-      HNO₂ prepared in situ: NaNO₂ + HCl → HNO₂ + NaCl<br>
-      <span style="font-size:.8rem;color:#94a3b8">Diazonium salts stable ONLY from aromatic amines — diazo group (–N₂⁺) stabilised by resonance with benzene ring. Aliphatic diazonium ions instantly decompose → N₂ + carbonium ion. Diazonium salts used to make bright coloured dyes and for Sandmeyer reaction.</span>
+      <b>Diazonium reaction:</b> C₆H₅–NH₂ + HNO₂ + HCl → <b>0–5°C</b> → C₆H₅–N₂Cl + 2H₂O<br>
+      <span style="font-size:.8rem;color:#94a3b8">Stable ONLY from aromatic amines (ring resonance stabilises –N₂⁺). Aliphatic diazonium instantly decomposes → N₂ + carbonium ion. Used for bright coloured dyes and Sandmeyer reaction.</span>
     </div></div>
   </div>
+</div>`;
+
+  // ══════════════════════════════════════════════
+  //  🏷️  FUNCTIONAL GROUPS PANEL
+  // ══════════════════════════════════════════════
+  panels['fg'] = `
+<div class="ph" style="border-color:#b45309;color:#b45309"><div class="phi">🏷️</div><div><div class="pht">Functional Groups — All 11 Types</div><div class="phb"><span class="badge">11 functional groups</span><span class="badge">Structures shown</span><span class="badge">Examples from textbook</span></div><div class="phd">All functional groups from EV Chemistry Chapter 2 — with formula, structure and reaction type.</div></div></div>
+<div class="nt-wrap">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;margin-bottom:1rem">
+    ${[
+      {n:1,name:'Alkene',class:'–',group:'C=C',type:'Carbon–Carbon double bond',fg:'C=C',hyb:'sp²',react:'Addition reactions',example:'Ethene CH₂=CH₂',col:'#00e5a0',icon:'🌿'},
+      {n:2,name:'Alkyne',class:'–',group:'C≡C',type:'Carbon–Carbon triple bond',fg:'C≡C',hyb:'sp',react:'Addition reactions',example:'Ethyne CH≡CH',col:'#c084fc',icon:'⚡'},
+      {n:3,name:'Alcohol',class:'R–OH',group:'–OH',type:'Hydroxyl group',fg:'–OH',hyb:'sp³',react:'Substitution & Elimination',example:'Ethanol C₂H₅OH',col:'#38bdf8',icon:'🧪'},
+      {n:4,name:'Amine',class:'R–NH₂',group:'–NH₂',type:'Amino group',fg:'–NH₂',hyb:'sp³',react:'Substitution',example:'Methylamine CH₃NH₂',col:'#a78bfa',icon:'🟣'},
+      {n:5,name:'Ether',class:'R–O–R',group:'–O–',type:'Ether linkage',fg:'–O–',hyb:'sp³',react:'Substitution',example:'Dimethyl ether CH₃OCH₃',col:'#67e8f9',icon:'💨'},
+      {n:6,name:'Aldehyde',class:'R–CHO',group:'–CHO',type:'Aldehyde group (terminal C=O)',fg:'–CHO',hyb:'sp²',react:'Addition & Oxidation',example:'Ethanal CH₃CHO',col:'#fbbf24',icon:'✨'},
+      {n:7,name:'Ketone',class:'R–CO–R',group:'>C=O',type:'Carbonyl / keto group',fg:'>C=O',hyb:'sp²',react:'Addition',example:'Acetone CH₃COCH₃',col:'#f59e0b',icon:'🫧'},
+      {n:8,name:'Carboxylic Acid',class:'R–COOH',group:'–COOH',type:'Carboxyl group',fg:'–COOH',hyb:'sp²',react:'Substitution + single & double bond',example:'Ethanoic acid CH₃COOH',col:'#f472b6',icon:'🧬'},
+      {n:9,name:'Ester',class:'R–COO–R',group:'–COO–',type:'Ester group',fg:'–COO–',hyb:'sp²',react:'Hydrolysis',example:'Methyl ethanoate CH₃COOCH₃',col:'#4ade80',icon:'🌺'},
+      {n:10,name:'Amide',class:'R–CONH₂',group:'–CONH₂',type:'Amide group',fg:'–CONH₂',hyb:'sp²',react:'Hydrolysis',example:'Ethanamide CH₃CONH₂',col:'#818cf8',icon:'🔵'},
+      {n:11,name:'Nitrile',class:'R–CN',group:'–C≡N',type:'Nitrile / Cyanide group',fg:'–C≡N:',hyb:'sp',react:'Addition / Hydrolysis',example:'Ethanenitrile CH₃CN',col:'#60a5fa',icon:'🔵'}
+    ].map(f=>`<div style="background:var(--sf);border:2px solid ${f.col};border-radius:14px;overflow:hidden">
+      <div style="background:rgba(0,0,0,.3);padding:.7rem 1rem;display:flex;align-items:center;gap:.7rem;border-bottom:1px solid var(--bd)">
+        <span style="font-size:1.4rem">${f.icon}</span>
+        <div>
+          <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:${f.col}">${f.n}. ${f.name}</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#6b7280">${f.class}</div>
+        </div>
+        <div style="margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:1.1rem;color:${f.col};font-weight:800">${f.fg}</div>
+      </div>
+      <div style="padding:.8rem 1rem;font-size:.82rem;color:#94a3b8;display:flex;flex-direction:column;gap:.3rem">
+        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Type · </span>${f.type}</div>
+        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Hybridisation · </span><span style="color:#fde68a">${f.hyb}</span></div>
+        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Reaction type · </span><span style="color:#6ee7b7">${f.react}</span></div>
+        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Example · </span>${f.example}</div>
+      </div>
+    </div>`).join('')}
+  </div>
+  <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">💡</span><span class="note-card-title" style="color:#fbbf24">Reaction Type Rule (from PDF)</span></div>
+  <div class="note-card-body">
+    <strong>Single bond only (–OH, –NH₂):</strong> Undergo <span style="color:#4ade80">substitution</span> and <span style="color:#4ade80">elimination</span> reactions<br><br>
+    <strong>Double or triple bond (C=C, C≡C):</strong> Undergo <span style="color:#fbbf24">addition</span> reactions<br><br>
+    <strong>Both single + double bond (–COOH, –COO–):</strong> Undergo <span style="color:#f472b6">substitution</span> reactions
+  </div></div>
+</div>
 
   <!-- ALIPHATIC vs AROMATIC -->
   <div id="th-aliaro" class="nt-pane">
@@ -2542,52 +2610,6 @@ footer{border-top:1px solid #1e1e42;padding:1.4rem 1rem 1rem;text-align:center;f
       </table>
     </div></div>
   </div>
-</div>
-  </div>
-</div>`;
-
-  // ══════════════════════════════════════════════
-  //  🏷️  FUNCTIONAL GROUPS PANEL
-  // ══════════════════════════════════════════════
-  panels['fg'] = `
-<div class="ph" style="border-color:#b45309;color:#b45309"><div class="phi">🏷️</div><div><div class="pht">Functional Groups — All 11 Types</div><div class="phb"><span class="badge">11 functional groups</span><span class="badge">Structures shown</span><span class="badge">Examples from textbook</span></div><div class="phd">All functional groups from EV Chemistry Chapter 2 — with formula, structure and reaction type.</div></div></div>
-<div class="nt-wrap">
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;margin-bottom:1rem">
-    ${[
-      {n:1,name:'Alkene',class:'–',group:'C=C',type:'Carbon–Carbon double bond',fg:'C=C',hyb:'sp²',react:'Addition reactions',example:'Ethene CH₂=CH₂',col:'#00e5a0',icon:'🌿'},
-      {n:2,name:'Alkyne',class:'–',group:'C≡C',type:'Carbon–Carbon triple bond',fg:'C≡C',hyb:'sp',react:'Addition reactions',example:'Ethyne CH≡CH',col:'#c084fc',icon:'⚡'},
-      {n:3,name:'Alcohol',class:'R–OH',group:'–OH',type:'Hydroxyl group',fg:'–OH',hyb:'sp³',react:'Substitution & Elimination',example:'Ethanol C₂H₅OH',col:'#38bdf8',icon:'🧪'},
-      {n:4,name:'Amine',class:'R–NH₂',group:'–NH₂',type:'Amino group',fg:'–NH₂',hyb:'sp³',react:'Substitution',example:'Methylamine CH₃NH₂',col:'#a78bfa',icon:'🟣'},
-      {n:5,name:'Ether',class:'R–O–R',group:'–O–',type:'Ether linkage',fg:'–O–',hyb:'sp³',react:'Substitution',example:'Dimethyl ether CH₃OCH₃',col:'#67e8f9',icon:'💨'},
-      {n:6,name:'Aldehyde',class:'R–CHO',group:'–CHO',type:'Aldehyde group (terminal C=O)',fg:'–CHO',hyb:'sp²',react:'Addition & Oxidation',example:'Ethanal CH₃CHO',col:'#fbbf24',icon:'✨'},
-      {n:7,name:'Ketone',class:'R–CO–R',group:'>C=O',type:'Carbonyl / keto group',fg:'>C=O',hyb:'sp²',react:'Addition',example:'Acetone CH₃COCH₃',col:'#f59e0b',icon:'🫧'},
-      {n:8,name:'Carboxylic Acid',class:'R–COOH',group:'–COOH',type:'Carboxyl group',fg:'–COOH',hyb:'sp²',react:'Substitution + single & double bond',example:'Ethanoic acid CH₃COOH',col:'#f472b6',icon:'🧬'},
-      {n:9,name:'Ester',class:'R–COO–R',group:'–COO–',type:'Ester group',fg:'–COO–',hyb:'sp²',react:'Hydrolysis',example:'Methyl ethanoate CH₃COOCH₃',col:'#4ade80',icon:'🌺'},
-      {n:10,name:'Amide',class:'R–CONH₂',group:'–CONH₂',type:'Amide group',fg:'–CONH₂',hyb:'sp²',react:'Hydrolysis',example:'Ethanamide CH₃CONH₂',col:'#818cf8',icon:'🔵'},
-      {n:11,name:'Nitrile',class:'R–CN',group:'–C≡N',type:'Nitrile / Cyanide group',fg:'–C≡N:',hyb:'sp',react:'Addition / Hydrolysis',example:'Ethanenitrile CH₃CN',col:'#60a5fa',icon:'🔵'}
-    ].map(f=>`<div style="background:var(--sf);border:2px solid ${f.col};border-radius:14px;overflow:hidden">
-      <div style="background:rgba(0,0,0,.3);padding:.7rem 1rem;display:flex;align-items:center;gap:.7rem;border-bottom:1px solid var(--bd)">
-        <span style="font-size:1.4rem">${f.icon}</span>
-        <div>
-          <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:${f.col}">${f.n}. ${f.name}</div>
-          <div style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#6b7280">${f.class}</div>
-        </div>
-        <div style="margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:1.1rem;color:${f.col};font-weight:800">${f.fg}</div>
-      </div>
-      <div style="padding:.8rem 1rem;font-size:.82rem;color:#94a3b8;display:flex;flex-direction:column;gap:.3rem">
-        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Type · </span>${f.type}</div>
-        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Hybridisation · </span><span style="color:#fde68a">${f.hyb}</span></div>
-        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Reaction type · </span><span style="color:#6ee7b7">${f.react}</span></div>
-        <div><span style="color:#6b7280;font-weight:800;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em">Example · </span>${f.example}</div>
-      </div>
-    </div>`).join('')}
-  </div>
-  <div class="note-card"><div class="note-card-head" style="border-color:#fbbf24"><span class="note-card-icon">💡</span><span class="note-card-title" style="color:#fbbf24">Reaction Type Rule (from PDF)</span></div>
-  <div class="note-card-body">
-    <strong>Single bond only (–OH, –NH₂):</strong> Undergo <span style="color:#4ade80">substitution</span> and <span style="color:#4ade80">elimination</span> reactions<br><br>
-    <strong>Double or triple bond (C=C, C≡C):</strong> Undergo <span style="color:#fbbf24">addition</span> reactions<br><br>
-    <strong>Both single + double bond (–COOH, –COO–):</strong> Undergo <span style="color:#f472b6">substitution</span> reactions
-  </div></div>
 </div>`;
 
   // ══════════════════════════════════════════════
